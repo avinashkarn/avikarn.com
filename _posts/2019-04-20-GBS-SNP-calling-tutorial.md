@@ -6,33 +6,34 @@ image: /image/GBS/GBS.png
 share-img: /image/GBS/GBS.png
 ---
 
-__Genotype-by-Sequencing (GBS)__ is reduced representation of a genome, which utilizes restriction enzymes (e.g. ApeKI) and NextGen sequencing to identify biallelic markers and presence/absence markers. 
-In this post, my attempt is to consisely present the GBS SNP calling process in *7 steps* using the TASSEL GBSv2 pipeline. Pleae note:, <strong>Buckler et al. </strong> provides descriptive documentation on this SNP calling at https://www.maizegenetics.net/tassel
+__Genotype-by-Sequencing (GBS)__ is reduced representation of a genome, which utilizes restriction enzymes (e.g. *ApeKI*) and NextGen sequencing to identify biallelic markers and presence/absence markers. 
+
+__In this post__, my attempt is to consisely present the GBS SNP calling process in *7 steps* using the TASSEL GBSv2 pipeline. Pleae note:, <strong>Buckler et al. </strong> provides descriptive documentation on this SNP calling at https://www.maizegenetics.net/tassel
 
 <center> <h2> Flowchart of the GBSv2 SNP calling pipeline </h2></center>
 <center><img src="/image/GBS/gbsv2pipeline.png"></center>
 
 <h2> Step 1. Preparing files and creating folders </h2>
-To get started, create four folders named: <strong> fastq  key  output  referenceGenome </strong>, using the command below:
+To get started, create four folders named: `fastq`, `key`, `output`, `referenceGenome`, using the command below:
 ```bash
 $ mkdir fastq  key  output  referenceGenome
 ```
-__1.1__ Place the GBS sequencing files (.fastq.gz) files in the <strong> fastq </strong> folder. Please remember the file names has to be in this fromat * flowcell_lane_fastq.txt.gz * If your fastq files does not have <strong>.fastq.txt.gz </strong> extenion, then pleae re-name them. 
+__1.1__ Place the GBS sequencing files (.fastq.gz) files in the <strong> fastq </strong> folder. Please remember the file names has to be in this fromat `flowcell_lane_fastq.txt.gz` If your fastq files does not have `.fastq.txt.gz`extenion, then pleae re-name them. 
 
 __1.2__ Prepare the *Key file* with headers and information shown below figure, and place the file in the <strong> key </strong> folder.
 <center><img src="/image/GBS/keyfile.png"></center>
 
-__1.3__ Download the reference genome file and place it in the <strong> referenceGenome </strong> folder.
+__1.3__ Download the reference genome file and place it in the `referenceGenome` folder.
 
 <h2> Step 2. GBSSeqToTagDBPlugin</h2>
-In this step, *GBSSeqToTagDBPlugin* identifies tags and the taxa from the fastq files and store in the local database. Command:
+In this step, `GBSSeqToTagDBPlugin` identifies tags and the taxa from the fastq files and store in the local database. Command:
 ```bash
 $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -GBSSeqToTagDBPlugin -e ApeKI -i fastq/ -db output/GBSV2.db -k key/keyFile_160_271.txt -kmerLength 64 -minKmerL 20 -mnQS 20 -mxKmerNum 100000000 -endPlugin -runfork1
 ```
 In the above command, ApeKI = enzyme used in the library preparation; GBSV2.db = the name of the local database.
 
 <h2> Step 3. TagExportToFastqPlugin</h2>
-In this step, *TagExportToFastqPlugin* is used to retrieve the distinct tags stored in the <strong>GBSV2.db</strong> database, and reformmated to the fastq tags, which can be read by the *Bowtie2* aligner program. The output is a *.sam* file . Command:
+In this step, `TagExportToFastqPlugin` is used to retrieve the distinct tags stored in the <strong>GBSV2.db</strong> database, and reformmated to the fastq tags, which can be read by the *Bowtie2* aligner program. The output is a *.sam* file . Command:
 ```bash
 $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -TagExportToFastqPlugin -db output/GBSV2.db -o output/tagsForAlign.fa.gz -c 1 -endPlugin  -runfork1
 ```
@@ -60,7 +61,7 @@ $ bowtie2  -p 15 --very-sensitive -x referenceGenome/PN40024v2/PN40024v2 -U outp
 ```
 
 <h2> Step 5. SAMToGBSdbPlugin</h2>
-In this step, *SAMToGBSdbPlugin* reads the SAM file (output file from Bowtie alignment step) to identify the potential positions of the GBS tags against the reference genome.
+In this step, `SAMToGBSdbPlugin` reads the SAM file (output file from Bowtie alignment step) to identify the potential positions of the GBS tags against the reference genome.
 Command:
 ```bash
 $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -SAMToGBSdbPlugin -i tagsForAlignFullvs.sam -db output/GBSV2.db -aProp 0.0 -aLen 0  -endPlugin  -runfork1
@@ -80,15 +81,15 @@ $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -SAMToGBSdbPlugi
 ```
 
 <h2> Step 6. DiscoverySNPCallerPluginV2</h2>
-In this step, *DiscoverySNPCallerPluginV2* takes the files from the GBSV2.db database as an input and identifies SNPs from aligned tags. 
+In this step, `DiscoverySNPCallerPluginV2` takes the files from the GBSV2.db database as an input and identifies SNPs from aligned tags. 
 Command:
 ```bash 
 $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -DiscoverySNPCallerPluginV2 -db output/GBSV2.db -sC "Noirv2.chr1" -eC "Noirv2.chr19" -mnLCov 0.1 -deleteOldData true  -endPlugin  -runfork1
 ```
-<strong> Note:</strong> *sC* start chromsome and *eC* end chromosme. It is important to know how the chromosomes in the reference gneome are named. For example, in the above command, chromosome 1 is named as "Noirv2.1".
+<strong> Note:</strong> `sC` start chromsome and `eC` end chromosme. It is important to know how the chromosomes in the reference gneome are named. For example, in the above command, chromosome 1 is named as "Noirv2.1".
 
 <h2> Step 7. ProductionSNPCallerPluginV2</h2>
-In this step, *ProductionSNPCallerPluginV2* converts the fastq and keyfile to genotypes, then its is added to a VCF file (default). 
+In this step, `ProductionSNPCallerPluginV2` converts the fastq and keyfile to genotypes, then its is added to a VCF file (default). 
 Command:
 ```bash
 $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -ProductionSNPCallerPluginV2 -db output/GBSV2.db -e ApeKI -i fastq/ -k key/keyFile_160_271.txt -kmerLength 64 -o 160_271_Londo_041919.vcf  -endPlugin  -runfork1
