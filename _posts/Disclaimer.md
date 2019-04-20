@@ -1,4 +1,4 @@
-<h1>Disclaimer - lakshmanbasnet.com </h1>
+<h1>Disclaimer - https://AviKarn.com </h1>
 
 <strong>Please read following dislaimer as you browse https://avikarn.com <strong>
 
