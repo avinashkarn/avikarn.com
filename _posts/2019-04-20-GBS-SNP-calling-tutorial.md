@@ -7,7 +7,7 @@ share-img: /image/GBS/GBS.png
 ---
 
 __Genotype-by-Sequencing (GBS)__ is reduced representation of a genome, which utilizes restriction enzymes (e.g. ApeKI) and NextGen sequencing to identify biallelic markers and presence/absence markers. 
-In this post, my attempt is to simplify the GBS SNP calling process in 7 steps using the TASSEL GBSv2 pipeline. However, Buckler et al. provides a very well written documentation to run the SNP calling pipeline at https://www.maizegenetics.net/tassel.
+In this post, my attempt is to simplify the GBS SNP calling process in 7 steps using the TASSEL GBSv2 pipeline. However, <strong>Buckler et al. </strong> provides a very well written documentation to run the SNP calling pipeline at https://www.maizegenetics.net/tassel
 
 <center> <h2> Flowchart of the GBSv2 SNP calling pipeline </h2></center>
 <center><img src="/image/GBS/gbsv2pipeline.png"></center>
@@ -17,22 +17,25 @@ To get started, create four folders: <strong> fastq  key  output  referenceGenom
 ```bash
 $ mkdir fastq  key  output  referenceGenome
 ```
-__1.1__ Place the sequecning files (.fastq.gz) files in the <strong> fastq </strong> folder. Please remember the file names has to be in this fromat * flowcell_lane_fastq.txt.gz * If your fastq files does not have <strong>.fastq.txt.gz </strong> extenion, then pleae re-name them. 
+__1.1__ Place the GBS sequencing files (.fastq.gz) files in the <strong> fastq </strong> folder. Please remember the file names has to be in this fromat * flowcell_lane_fastq.txt.gz * If your fastq files does not have <strong>.fastq.txt.gz </strong> extenion, then pleae re-name them. 
 
 __1.2__ Prepare the *Key file* with headers and information shown below figure, and place the file in the <strong> key </strong> folder.
 <center><img src="/image/GBS/keyfile.png"></center>
 
+__1.3__ Download the reference genome file and place it in the <strong> referenceGenome </strong> folder.
 
-2) GBS reads are at : /data1/chengzou/08.GBS/01.raw_flowcell/
+<h2> Step 2. GBSSeqToTagDBPlugin</h2>
+In this step, *GBSSeqToTagDBPlugin* identifies tags and the taxa from the fastq files and store in the local database. Command:
+```bash
+$ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -GBSSeqToTagDBPlugin -e ApeKI -i fastq/ -db output/GBSV2.db -k key/keyFile_160_271.txt -kmerLength 64 -minKmerL 20 -mnQS 20 -mxKmerNum 100000000 -endPlugin -runfork1
+```
+In the above command, ApeKI = enzyme used in the library preparation; GBSV2.db = the name of the local database.
 
-############ following from TASSEL documentation https://bitbucket.org/tasseladmin/tassel-5-source/wiki/Tassel5GBSv2Pipeline
-
-#GBSSeqToTagDBPlugin
-	[ak956@cbsudesktop04 Jason_GBS_SNPcalling_160_271]$ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -GBSSeqToTagDBPlugin -e ApeKI -i fastq/ -db output/GBSV2.db -k key/keyFile_160_271.txt -kmerLength 64 -minKmerL 20 -mnQS 20 -mxKmerNum 100000000 -endPlugin -runfork1
-
-#TagExportToFastqPlugin
-	[ak956@cbsudesktop04 Jason_GBS_SNPcalling_160_271]$ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -TagExportToFastqPlugin -db output/GBSV2.db -o output/tagsForAlign.fa.gz -c 1 -endPlugin  -runfork1
-
+<h2> Step 3. TagExportToFastqPlugin</h2>
+In this step, *TagExportToFastqPlugin* is used to retrieve the distinct tags stored in the <strong>GBSV2.db</strong> database, and reformmated to the fastq tags, which can be read by the *Bowtie2* aligner program. The output is a *.sam* file . Command:
+```bash
+$ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -TagExportToFastqPlugin -db output/GBSV2.db -o output/tagsForAlign.fa.gz -c 1 -endPlugin  -runfork1
+```
 #Run Alignment Program(s)
 	[ak956@cbsudesktop04 Jason_GBS_SNPcalling_160_271]$ bwa index -a bwtsw referenceGenome/Noirv2.upper.fa
 
