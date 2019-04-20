@@ -38,7 +38,7 @@ Command:
 $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -TagExportToFastqPlugin -db output/GBSV2.db -o output/tagsForAlign.fa.gz -c 1 -endPlugin  -runfork1
 ```
 <h2> Step 4. Run Alignment Program(s)</h2>
-__4.1__ Run BWA software to create an index from the reference genome.
+__4.1__ Run `Bowtie2` software to create an index from the reference genome.
 Command:
 ```bash
 $ bowtie2-build referenceGenome/Noirv2.upper.fa PN40024v2
@@ -86,7 +86,7 @@ Command:
 ```bash 
 $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -DiscoverySNPCallerPluginV2 -db output/GBSV2.db -sC "Noirv2.chr1" -eC "Noirv2.chr19" -mnLCov 0.1 -deleteOldData true  -endPlugin  -runfork1
 ```
-<strong> Note:</strong> `sC` start chromsome and `eC` end chromosme. It is important to know how the chromosomes in the reference gneome are named. For example, in the above command, chromosome 1 is named as "Noirv2.1".
+<strong> Note:</strong> `sC` start chromsome and `eC` end chromosme. It is important to know how the chromosomes in the reference gneome are named. For example, in the above command, chromosome 1 is named as "Noirv2.chr1".
 
 <h2> Step 7. ProductionSNPCallerPluginV2</h2>
 In this step, `ProductionSNPCallerPluginV2` converts the fastq and keyfile to genotypes, then its is added to a VCF file (default). 
@@ -96,7 +96,8 @@ $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -ProductionSNPCa
 ```
 
 The output VCF file can be opened directly on GUI version of the <a href="https://www.maizegenetics.net/tassel">TASSEL <a/>software.
-<center><h3> End of Tutorial </h3></center>
+	
+<center><h3> --- End of Tutorial --- </h3></center>
 
 __Thank you__ for reading this tutorial. I really hope these steps will get you started in GBS snp calling in TASSEL. If you have any questions or comments, please let comment below or send me an email. 
 
