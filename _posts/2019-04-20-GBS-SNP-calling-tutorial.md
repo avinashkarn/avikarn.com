@@ -27,7 +27,7 @@ __1.3__ Download the reference genome file and place it in the `referenceGenome`
 In this step, `GBSSeqToTagDBPlugin` identifies tags and the taxa from the fastq files and store in the local database. 
 Command:
 ```bash
-$ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -GBSSeqToTagDBPlugin -e ApeKI -i fastq/ -db output/GBSV2.db -k key/keyFile_160_271.txt -kmerLength 64 -minKmerL 20 -mnQS 20 -mxKmerNum 100000000 -endPlugin -runfork1
+$ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -GBSSeqToTagDBPlugin -e ApeKI -i fastq/ -db output/GBSV2.db -k key/keyFile_160_271.txt -kmerLength 64 -minKmerL 20 -mnQS 20 -mxKmerNum 100000000 -endPlugin -runfork1
 ```
 In the above command, ApeKI = enzyme used in the library preparation; GBSV2.db = the name of the local database.
 
