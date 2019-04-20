@@ -13,7 +13,7 @@ In this post, my attempt is to consisely present the GBS SNP calling process in 
 <center><img src="/image/GBS/gbsv2pipeline.png"></center>
 
 <h2> Step 1. Preparing files and creating folders </h2>
-To get started, create four folders: <strong> fastq  key  output  referenceGenome </strong>, using the command below:
+To get started, create four folders named: <strong> fastq  key  output  referenceGenome </strong>, using the command below:
 ```bash
 $ mkdir fastq  key  output  referenceGenome
 ```
@@ -95,7 +95,7 @@ Command:
 $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -ProductionSNPCallerPluginV2 -db output/GBSV2.db -e ApeKI -i fastq/ -k key/keyFile_160_271.txt -kmerLength 64 -o 160_271_Londo_041919.vcf  -endPlugin  -runfork1
 ```
 
-The output VCF file can be opened directly on GUI version of the TASEEL software.
+The output VCF file can be opened directly on GUI version of the <a href="https://www.maizegenetics.net/tassel">TASEEL <a/>software.
 <center><h3> End of Tutorial </h3></center>
 
 __Thank you__ for reading this tutorial. I really hope these steps will get you started in GBS snp calling in TASSEL. If you have any questions or comments, please let comment below or send me an email. 
