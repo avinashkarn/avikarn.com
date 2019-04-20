@@ -95,7 +95,7 @@ Command:
 $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -ProductionSNPCallerPluginV2 -db output/GBSV2.db -e ApeKI -i fastq/ -k key/keyFile_160_271.txt -kmerLength 64 -o 160_271_Londo_041919.vcf  -endPlugin  -runfork1
 ```
 
-The output VCF file can be opened directly on GUI version of the <a href="https://www.maizegenetics.net/tassel">TASEEL <a/>software.
+The output VCF file can be opened directly on GUI version of the <a href="https://www.maizegenetics.net/tassel">TASSEL <a/>software.
 <center><h3> End of Tutorial </h3></center>
 
 __Thank you__ for reading this tutorial. I really hope these steps will get you started in GBS snp calling in TASSEL. If you have any questions or comments, please let comment below or send me an email. 
