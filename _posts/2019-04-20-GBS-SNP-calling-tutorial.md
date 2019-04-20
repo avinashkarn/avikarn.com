@@ -10,7 +10,7 @@ __Genotype-by-Sequencing (GBS)__ is reduced representation of a genome, which ut
 In this post, my attempt is to simplify the GBS SNP calling process in 7 steps using the TASSEL GBSv2 pipeline. However, Buckler et al. provides a very well written documentation to run the SNP calling pipeline at https://www.maizegenetics.net/tassel.
 
 <center> <h2> Flowchart of the GBSv2 SNP calling pipeline </h2></center>
-<center><img src="/image/gbs/gbsv2pipeline.png"></center>
+<center><img src="/image/GBS/gbsv2pipeline.png"></center>
 
 <h2> Step 1. Preparing files and creating folders </h2>
 To get started, create four folders: <strong> fastq  key  output  referenceGenome </strong>, using the command below:
@@ -20,7 +20,7 @@ $ mkdir fastq  key  output  referenceGenome
 __1.1__ Place the sequecning files (.fastq.gz) files in the <strong> fastq </strong> folder. Please remember the file names has to be in this fromat * flowcell_lane_fastq.txt.gz * If your fastq files does not have <strong>.fastq.txt.gz </strong> extenion, then pleae re-name them. 
 
 __1.2__ Prepare the *Key file* with headers and information shown below figure, and place the file in the <strong> key </strong> folder.
-<center><img src="/image/gbs/keyfile.png"></center>
+<center><img src="/image/GBS/keyfile.png"></center>
 
 
 2) GBS reads are at : /data1/chengzou/08.GBS/01.raw_flowcell/
