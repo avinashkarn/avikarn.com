@@ -26,16 +26,18 @@ __1.2__ Prepare the *Key file* with headers and information shown below figure, 
 __1.3__ Download the reference genome file and place it in the `referenceGenome` folder.
 
 <h2> Step 2. GBSSeqToTagDBPlugin</h2>
-In this step, `GBSSeqToTagDBPlugin` identifies tags and the taxa from the fastq files and store in the local database. Command:
+In this step, `GBSSeqToTagDBPlugin` identifies tags and the taxa from the fastq files and store in the local database. 
+Command:
 ```bash
 $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -GBSSeqToTagDBPlugin -e ApeKI -i fastq/ -db output/GBSV2.db -k key/keyFile_160_271.txt -kmerLength 64 -minKmerL 20 -mnQS 20 -mxKmerNum 100000000 -endPlugin -runfork1
 ```
 In the above command, ApeKI = enzyme used in the library preparation; GBSV2.db = the name of the local database.
 
 <h2> Step 3. TagExportToFastqPlugin</h2>
-In this step, `TagExportToFastqPlugin` is used to retrieve the distinct tags stored in the <strong>GBSV2.db</strong> database, and reformmated to the fastq tags, which can be read by the *Bowtie2* aligner program. The output is a *.sam* file . Command:
+In this step, `TagExportToFastqPlugin` is used to retrieve the distinct tags stored in the <strong>GBSV2.db</strong> database, and reformmated to the fastq tags, which can be read by the `Bowtie2` aligner program. The output is a `.sam` file.
+Command:
 ```bash
-$ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -TagExportToFastqPlugin -db output/GBSV2.db -o output/tagsForAlign.fa.gz -c 1 -endPlugin  -runfork1
+$ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -TagExportToFastqPlugin -db output/GBSV2.db -o output/tagsForAlign.fa.gz -c 1 -endPlugin  -runfork1
 ```
 <h2> Step 4. Run Alignment Program(s)</h2>
 __4.1__ Run BWA software to create an index from the reference genome.
