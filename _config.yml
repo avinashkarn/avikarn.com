@@ -8,8 +8,8 @@
   baseurl: "/avi.github.io"
 
 # Name of website
-#title: "Home"
-#description: "Personal website"
+  title: "Home"
+  description: "Personal website"
 
 #For my changes
 # use meta-title: for the center heading of the page.
