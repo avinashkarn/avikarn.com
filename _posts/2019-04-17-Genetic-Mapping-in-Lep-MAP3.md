@@ -67,7 +67,8 @@ One may convert the genotypes in <strong> 1 1 => A, 2 2 => B, 1 2 or 2 1 => H fo
 <center><img src="/image/lepmap/qtl.png"></center>
 
 <h2> 5.0 Graphical presentation of linkage maps in Mapchart </h2>
-Software Mapchart can be downloaded from here.(https://www.wur.nl/en/show/Mapchart.htm)
+Software Mapchart can be downloaded from below link.
+https://www.wur.nl/en/show/Mapchart.htm
 <center><img src="/image/lepmap/mapChart.png"></center>
 
 __Thank you__ for reading this tutorial. I really hope these steps will get you started in genetic map construction in Lep-MAP3. The key is to <strong> PRACTISE. </strong>. 
