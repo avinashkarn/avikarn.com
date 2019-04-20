@@ -1,5 +1,5 @@
 ------
-laypout = post
+layout = post
 -------
 
 <h1>Privacy Policy - avikarn.com </h1>
