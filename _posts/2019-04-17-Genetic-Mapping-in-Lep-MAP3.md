@@ -2,19 +2,19 @@
 layout: post
 title: "Genetic map construction in Lep-MAP3 (LM3)"
 tags: [Lep-MAP3, Genetic Mapping, Mapchart]
-image: /avi.github.io/image/lepmap/cropped_nih_geneticmap.jpg
-share-img: /avi.github.io/image/lepmap/cropped_nih_geneticmap.jpg
+image: /image/lepmap/cropped_nih_geneticmap.jpg
+share-img: /image/lepmap/cropped_nih_geneticmap.jpg
 ---
 
 __Building genetic maps__ can be challenging and sometimes quite stressful, especially, when dealing with thousands or even millions of markers. In this post, I am hoping to help anyone who would like to get started to build a decent genetic map in an open software <a href="https://sourceforge.net/projects/lep-map3/"> Lep-MAP3 </a>, and finally, the evaluating the accuarcy of the map and plotting it.
 
 The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the flow chart below. 
-<center><img src="/avi.github.io/image/lepmap/lepmap_flow.png"></center>
+<center><img src="/image/lepmap/lepmap_flow.png"></center>
 
 <h3>Step 1.1. Installation and File Preparation</h3>
 <strong> Important - </strong> Correctly install the Lep-MAP3 software on your computer, and please make sure you have the latest version of the software. 
 There are two files that are needed as an input - (1) <strong> genotype file</strong> in a VCF format, and (2), <strong>pedigree </strong> file in .txt format. A snippet of the pedigree file showing relationship between all individuals in a family or population is shown below. It is important that the pedigree file is formatted exactly as shown in the below figure 
-<center><img src=/avi.github.io"/image/lepmap/ped.png"></center>
+<center><img src="/image/lepmap/ped.png"></center>
 
 <h3>Step 1.2. Parent Call</h3>
 The parental genotypes are called using the *ParentCall2* module, using the below command:
@@ -49,7 +49,7 @@ One may use the parameter *sexAveraged*  to calculate sex-averaged map distances
 <h2> 2.0 Checking the accuracy of the marker order </h2>
 If the physical positons of the markers in the genetic map curation are known, then, it is a good thing to use that information to evaluate the markers order by making a correlation plot of the genetic and physical positions of the markers. <strong>Note:</strong> It is quite common to see that the marker orders are flipped. There is nothing to panic about, one may fix it by the sorting it.
 
-<center><img src="/avi.github.io/image/lepmap/corr_geneticmap.png"></center>
+<center><img src="/image/lepmap/corr_geneticmap.png"></center>
 
 <h2> 3.0 Converting phased output data from OrderMarkers2 to genotypes </h2>
 The phased data from OrderMarkers2 step can be converted to fully informative "genotype" data by using <strong> map2gentypes.awk </strong> script and command below: 
@@ -57,18 +57,18 @@ The phased data from OrderMarkers2 step can be converted to fully informative "g
 	$ awk -vfullData=1 -f map2genotypes.awk order.txt > genotypes.txt
 ```
 Snippet of the map2gentypes.awk output:
-<center><img src="/avi.github.io/image/lepmap/orderOutput.png"></center>
+<center><img src="/image/lepmap/orderOutput.png"></center>
 
 One may convert the genotypes in <strong> 1 1 => A, 2 2 => B, 1 2 or 2 1 => H format </strong> (See below figure) in MS Excel using find/Replace function, which can be then loaded in R/Qtl for QTL mapping.
 
-<center><img src="/avi.github.io/image/lepmap/rqtlFormat.png"></center>
+<center><img src="/image/lepmap/rqtlFormat.png"></center>
 
 <h2> 4.0 Validate the genetic map by conducting QTL analysis on well studied phenotype </h2>
-<center><img src="/avi.github.io/image/lepmap/qtl.png"></center>
+<center><img src="/image/lepmap/qtl.png"></center>
 
 <h2> 5.0 Graphical presentation of linkage maps in Mapchart </h2>
 Software Mapchart can be downloaded from here.(https://www.wur.nl/en/show/Mapchart.htm)
-<center><img src="/avi.github.io/image/lepmap/mapChart.png"></center>
+<center><img src="/image/lepmap/mapChart.png"></center>
 
 __Thank you__ for reading this tutorial. I really hope these steps will get you started in genetic map construction in Lep-MAP3. The key is to <strong> PRACTISE. </strong>. 
 If you have any comments or suggestions, please let comment below or send me an email. 
