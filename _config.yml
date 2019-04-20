@@ -44,7 +44,7 @@
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-    avatar: "/img/avi.jpg"
+  avatar: "/img/avi.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter. The logo will have a height of 40px
@@ -66,53 +66,53 @@
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
-author:
-  name: © Avinash Karn
-  email: "avi.karn6@gmail.com"
-  facebook: avi.karn
-  github: avinashkarn
-  twitter: avi_karn
+  author:
+    name: © Avinash Karn
+    email: "avi.karn6@gmail.com"
+    facebook: avi.karn
+    github: avinashkarn
+    twitter: avi_karn
 # google-plus: +AnuditVerma
-  linkedin: avikarn
+    linkedin: avikarn
   #stackoverflow: 4590331/anudit-verma
   #instagram: anuditverma
 # reddit: yourname
 # xing: yourname
 # stackoverflow: yourlink  # eg. "3943160/daattali"
 # snapchat: yourname
- youtube: channel/UCV2BcD3705UNrF50VvsXsMw   # eg. user/daattali or channel/daattali
+    youtube: channel/UCV2BcD3705UNrF50VvsXsMw   # eg. user/daattali or channel/daattali
 # spotify: yourname
 # steam: yourname
 # twitch: yourname
 # yelp: yourname
 
 # Select which links to show in the footer
-footer-links-active:
-  rss: false
-  facebook: true
-  email: true
-  twitter: true
-  google-plus: false
-  github: true
-  linkedin: true
-  stackoverflow: false
-  instagram: false
-  reddit: false
-  xing: false
-  stackoverflow: false
-  snapchat: false
-  youtube: true
-  spotify: false
-  steam: false
-  twitch: false
-  yelp: false
+  footer-links-active:
+    rss: false
+    facebook: true
+    email: true
+    twitter: true
+    google-plus: false
+    github: true
+    linkedin: true
+    stackoverflow: false
+    instagram: false
+    reddit: false
+    xing: false
+    stackoverflow: false
+    snapchat: false
+    youtube: true
+    spotify: false
+    steam: false
+    twitch: false
+    yelp: false
 
 # Select which share links to show in posts
-share-links-active:
-  twitter: true
-  facebook: true
-  google: false
-  linkedin: true
+  share-links-active:
+    twitter: true
+    facebook: true
+    google: false
+    linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
