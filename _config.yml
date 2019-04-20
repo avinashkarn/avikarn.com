@@ -23,28 +23,28 @@
 
 # List of links in the navigation bar
   navbar-links:
-  About Me: "aboutme"
-  #Tutorials: "books"
-  Publications:
-    - Google Scholar Profile: "https://scholar.google.com/citations?user=2XuofkoAAAAJ&hl=en"
-    - ResearchGate Profile: "https://www.researchgate.net/profile/Avinash_Karn"
-    - ORCID profile: "https://orcid.org/0000-0001-9730-8922"
-    - Publons Profile: "https://publons.com/researcher/1700487/avinash-karn/"
-  Projects:
-    - VitisGen2: "http://www.vitisgen2.org/"
-    - VitisBase (Breeding Database): "https://vitisbase.org/"
-    - Maize Roots (@rootsinthefield): "https://lab.igb.illinois.edu/leakey/integrated-phenomics-approach-identifying-genetic-basis-maize-root-structure-and-control-plant-0"
-    - PanZea: "https://www.panzea.org/"
-    - Maize Domestication: "http://web.missouri.edu/~flint-garcias/research.html"
-    - Maize Evolution: "http://src.truman.edu/browse/facultylist.asp?fac_id=121&year=2012"
-    - USDA ARS GEM: "https://usda-gem.public.iastate.edu/GEM_Project/GEM_Project.htm"
+    About Me: "aboutme"
+    #Tutorials: "books"
+    Publications:
+      - Google Scholar Profile: "https://scholar.google.com/citations?user=2XuofkoAAAAJ&hl=en"
+      - ResearchGate Profile: "https://www.researchgate.net/profile/Avinash_Karn"
+      - ORCID profile: "https://orcid.org/0000-0001-9730-8922"
+      - Publons Profile: "https://publons.com/researcher/1700487/avinash-karn/"
+    Projects:
+      - VitisGen2: "http://www.vitisgen2.org/"
+      - VitisBase (Breeding Database): "https://vitisbase.org/"
+      - Maize Roots (@rootsinthefield): "https://lab.igb.illinois.edu/leakey/integrated-phenomics-approach-identifying-genetic-basis-maize-root-structure-and-control-plant-0"
+      - PanZea: "https://www.panzea.org/"
+      - Maize Domestication: "http://web.missouri.edu/~flint-garcias/research.html"
+      - Maize Evolution: "http://src.truman.edu/browse/facultylist.asp?fac_id=121&year=2012"
+      - USDA ARS GEM: "https://usda-gem.public.iastate.edu/GEM_Project/GEM_Project.htm"
     
-  Resume: "https://avinashkarn.github.io/resume/"
+    Resume: "https://avinashkarn.github.io/resume/"
 #  Tags: "tags"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avi.jpg"
+    avatar: "/img/avi.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter. The logo will have a height of 40px
