@@ -1,13 +1,76 @@
 ---
 layout: post
-title: "Call GBS SNPs in 6 steps using TASSEL GBSv2 pipeline"
+title: "Call GBS SNPs in 7 steps using TASSEL GBSv2 pipeline"
 tags: [GBS, SNP calling, TASSEL, Bioinformatics]
 image: /image/GBS/GBS.png
 share-img: /image/GBS/GBS.png
 ---
 
 __Genotype-by-Sequencing (GBS)__ is reduced representation of a genome, which utilizes restriction enzymes (e.g. ApeKI) and NextGen sequencing to identify biallelic markers and presence/absence markers. 
-In this post, my attempt is to simplify the GBS SNP calling in 6 steps using the TASSEL GBSv2 pipeline. However, Buckler et al. provides a very well written instrcution to run the SNP calling at (https://www.maizegenetics.net/tassel).
+In this post, my attempt is to simplify the GBS SNP calling process in 7 steps using the TASSEL GBSv2 pipeline. However, Buckler et al. provides a very well written documentation to run the SNP calling pipeline at https://www.maizegenetics.net/tassel.
+
+<center> <h2> Flowchart of the GBSv2 SNP calling pipeline </h2></center>
+<center><img src="/image/gbs/gbsv2pipeline.png"></center>
+
+<h2> Step 1. Preparing files and creating folders </h2>
+To get started, create four folders: <strong> fastq  key  output  referenceGenome </strong>, using the command below:
+```bash
+$ mkdir fastq  key  output  referenceGenome
+```
+__1.1__ Place the sequecning files (.fastq.gz) files in the <strong> fastq </strong> folder. Please remember the file names has to be in this fromat * flowcell_lane_fastq.txt.gz * If your fastq files does not have <strong>.fastq.txt.gz </strong> extenion, then pleae re-name them. 
+
+__1.2__ Prepare the *Key file* with headers and information shown below figure, and place the file in the <strong> key </strong> folder.
+<center><img src="/image/gbs/keyfile.png"></center>
+
+
+2) GBS reads are at : /data1/chengzou/08.GBS/01.raw_flowcell/
+
+############ following from TASSEL documentation https://bitbucket.org/tasseladmin/tassel-5-source/wiki/Tassel5GBSv2Pipeline
+
+#GBSSeqToTagDBPlugin
+	[ak956@cbsudesktop04 Jason_GBS_SNPcalling_160_271]$ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -GBSSeqToTagDBPlugin -e ApeKI -i fastq/ -db output/GBSV2.db -k key/keyFile_160_271.txt -kmerLength 64 -minKmerL 20 -mnQS 20 -mxKmerNum 100000000 -endPlugin -runfork1
+
+#TagExportToFastqPlugin
+	[ak956@cbsudesktop04 Jason_GBS_SNPcalling_160_271]$ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -TagExportToFastqPlugin -db output/GBSV2.db -o output/tagsForAlign.fa.gz -c 1 -endPlugin  -runfork1
+
+#Run Alignment Program(s)
+	[ak956@cbsudesktop04 Jason_GBS_SNPcalling_160_271]$ bwa index -a bwtsw referenceGenome/Noirv2.upper.fa
+
+	[ak956@cbsudesktop04 Jason_GBS_SNPcalling_160_271]$ bwa aln -t 12 referenceGenome/Noirv2.upper.fa output/tagsForAlign.fa.gz > tagsForAlign.sai
+
+	[ak956@cbsudesktop04 Jason_GBS_SNPcalling_160_271]$ bwa samse referenceGenome/Noirv2.upper.fa  tagsForAlign.sai output/tagsForAlign.fa.gz > tagsForAlign.sam
+
+	[ak956@cbsudesktop04 Jason_GBS_SNPcalling_160_271]$ bowtie2-build referenceGenome/Noirv2.upper.fa PN40024v2
+
+	[ak956@cbsudesktop04 Jason_GBS_SNPcalling_160_271]$ bowtie2  -p 15 --very-sensitive -x referenceGenome/PN40024v2/PN40024v2 -U output/tagsForAlign.fa.gz -S tagsForAlignFullvs.sam
+
+	595364 reads; of these:
+	  595364 (100.00%) were unpaired; of these:
+		81305 (13.66%) aligned 0 times
+		340723 (57.23%) aligned exactly 1 time
+		173336 (29.11%) aligned >1 times
+	86.34% overall alignment rate
+
+#SAMToGBSdbPlugin
+	[ak956@cbsudesktop04 Jason_GBS_SNPcalling_160_271]$ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -SAMToGBSdbPlugin -i tagsForAlignFullvs.sam -db output/GBSV2.db -aProp 0.0 -aLen 0  -endPlugin  -runfork1
+
+	Total number of cut sites: 250131
+	Number of cut sites with 1 tag: 130620
+	Number of cut sites with 2 tags: 55554
+	Number of cut sites with 3 tags: 30647
+	Number of cut sites with more than 3 tags: 33310
+	[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.SAMToGBSdbPlugin - Finished reading SAM file and adding tags to DB.
+	Total number of tags mapped: 514059 (total mappings 514059)
+	Tags not mapped: 81305
+	Tags dropped due to minimum mapq value: 0
+
+#DiscoverySNPCallerPluginV2 
+	[ak956@cbsudesktop04 Jason_GBS_SNPcalling_160_271]$ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -DiscoverySNPCallerPluginV2 -db output/GBSV2.db -sC "Noirv2.chr1" -eC "Noirv2.chr19" -mnLCov 0.1 -deleteOldData true  -endPlugin  -runfork1
+
+#ProductionSNPCallerPluginV2
+	[ak956@cbsudesktop04 Jason_GBS_SNPcalling_160_271]$ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -ProductionSNPCallerPluginV2 -db output/GBSV2.db -e ApeKI -i fastq/ -k key/keyFile_160_271.txt -kmerLength 64 -o 160_271_Londo_041919.vcf  -endPlugin  -runfork1
+
+
 to help anyone who would like to get started to build a decent genetic map in an open software <a href="https://sourceforge.net/projects/lep-map3/"> Lep-MAP3 </a>, and finally, the evaluating the accuarcy of the map and plotting it.
 
 The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the flow chart below. 
