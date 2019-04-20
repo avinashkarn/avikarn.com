@@ -7,7 +7,7 @@ share-img: /image/GBS/GBS.png
 ---
 
 __Genotype-by-Sequencing (GBS)__ is reduced representation of a genome, which utilizes restriction enzymes (e.g. ApeKI) and NextGen sequencing to identify biallelic markers and presence/absence markers. 
-In this post, my attempt is to simplify the GBS SNP calling process in 7 steps using the TASSEL GBSv2 pipeline. However, <strong>Buckler et al. </strong> provides a very well written documentation to run the SNP calling pipeline at https://www.maizegenetics.net/tassel
+In this post, my attempt is to consisely present the GBS SNP calling process in *7 steps* using the TASSEL GBSv2 pipeline. Pleae note:, <strong>Buckler et al. </strong> provides descriptive documentation on this SNP calling at https://www.maizegenetics.net/tassel
 
 <center> <h2> Flowchart of the GBSv2 SNP calling pipeline </h2></center>
 <center><img src="/image/GBS/gbsv2pipeline.png"></center>
@@ -92,8 +92,11 @@ $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 
 In this step, *ProductionSNPCallerPluginV2* converts the fastq and keyfile to genotypes, then its is added to a VCF file (default). 
 Command:
 ```bash
-	[ak956@cbsudesktop04 Jason_GBS_SNPcalling_160_271]$ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -ProductionSNPCallerPluginV2 -db output/GBSV2.db -e ApeKI -i fastq/ -k key/keyFile_160_271.txt -kmerLength 64 -o 160_271_Londo_041919.vcf  -endPlugin  -runfork1
+$ /programs/tassel-5-standalone_20180419/run_pipeline.pl -Xms20G -Xmx50G -fork1 -ProductionSNPCallerPluginV2 -db output/GBSV2.db -e ApeKI -i fastq/ -k key/keyFile_160_271.txt -kmerLength 64 -o 160_271_Londo_041919.vcf  -endPlugin  -runfork1
 ```
+
+The output VCF file can be opened directly on GUI version of the TASEEL software.
+<center><h3> End of Tutorial </h3></center>
 
 __Thank you__ for reading this tutorial. I really hope these steps will get you started in GBS snp calling in TASSEL. If you have any questions or comments, please let comment below or send me an email. 
 
