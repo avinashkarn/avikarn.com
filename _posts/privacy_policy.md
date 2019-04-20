@@ -1,6 +1,7 @@
-------
+---
 layout: post
--------
+
+---
 
 <h1>Privacy Policy - avikarn.com </h1>
 avikarn.com follow the following privacy policy for all visitors on this webapes:
