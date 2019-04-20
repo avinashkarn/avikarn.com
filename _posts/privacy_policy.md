@@ -1,6 +1,5 @@
 ---
-layout: post
-
+layout:
 ---
 
 <h1>Privacy Policy - avikarn.com </h1>
