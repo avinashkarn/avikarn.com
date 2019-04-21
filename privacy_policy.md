@@ -1,3 +1,6 @@
+---
+layout: post
+---
 <h1>Privacy Policy - https://avikarn.com</h1>
 
 https://avikarn.com follows the following privacy policy for all visitors on this website and its content:
