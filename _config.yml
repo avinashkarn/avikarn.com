@@ -117,7 +117,9 @@
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
   url-pretty: "https://AviKarn.com"
-
+  Privacy Policy:
+  Disclaimer:
+  
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
