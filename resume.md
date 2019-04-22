@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Resume
-meta-title: Avinash "Avi" Karn, Ph.D.
+meta-title: Avi Karn, Ph.D.
 subtitle: Quantitative Geneticist & Computational Biologist
 ---
 I am a passionate plant quantitative geneticits and computational biologist, however, have a greater interest in digital agriculture and robotics. My hobbies include astronomy, painting, online blogging, photography and cooking. I have over ten years of research experience in the field of plant breeding, quantitative genetics and high-throughput phenotyping, and possss a strong knowledge and experience in conducting big data analysis and visualization especially on a large set of phenotypic and genotypic data in software such as `MS Excel`, `TASSEL`, `R` and `SAS` and `CIRCOS` (written in `PERL`).
 
-## Education
+<center> <h2> Education </h2> </center> 
 <hr>
 #### 2012–2017 PhD - Plant Breeding, Genetics & Genomics — University of Missouri Columbia, USA
 <li>Dissertation ***Evaluation of Teosinte Genetic Diversity for Agronomic and Domestication Traits in Maize***</li>
@@ -19,7 +19,7 @@ I am a passionate plant quantitative geneticits and computational biologist, how
 <li>Received President’s Honorary Scholarship and Dr. Max E. Bell Scholarship</li>
 <li>Presented research at student research conferences at Truman, Adair County extension center and annual Maize genetics conference</li>
 
-## Work Experience
+<center> <h2> Work Experience </h2> </center>
 <hr>
 #### 2018–Present Computational biologist (Postdoc) — Cornell University, Geneva, NY
 Analyzed of large-scale genotyping data (from Genotyping-by-Sequencing, Amplicon Sequencing, Illumina resequencing, and/or PacBio de novo sequencing) such as SNP and Haplotype calling. Developed genetic markers for traits like powdery mildew disease resistance and fruit quality, to assist breeders with marker assisted selection; conducted statistical analysis of large-scale data sets from DNA sequencing and trait data from related and unrelated vines for genetic mapping in Lep-MAP3, QTL mapping in R, genome wide association studies in TASSEL/FarmCPU/GAPIT. Managed grapevine breeding database www.VitisBase.org , and led setting up trials and phenotype data collection on Field Book android application.
@@ -44,7 +44,7 @@ Analyzed retained homeologous paralog pairs from syntenic regions in Maize and S
 #### Summer 2009 & 2012 NSF TruScholars Research Program - Truman State University, USA
 Designed gene specific molecular marker for a novel of starch branching enzyme Ia (SBE-1a) allele involved in high amylose starch in maize. Discovered novel recessive starch branching enzyme 1a (sbe1a) likely plays a significant role in the presence of the ae allele in elevating starch amylose from ~55% to >70% in the germplasm release 'GEMS-0067'. Conducted linkage based mapping studies to identify QTLs for high amylose starch in maize using SSR markers and QTL cartographer software. Sequenced starch branching enzyme allele (SBE1a) from high amylose maize line, GEMS-0067; Discovered 8bp insertion site at intron 9 resulting splicing mutation, which putatively resulted in truncated protein product post-translation.
 
-## Publications
+<center> <h2> Publications </h2> </center> 
 <hr>
 #### A rhAmpSeq haplotype strategy targeting the collinear core genome improves marker transferability across a diverse genus
 Cheng Zou, **Avinash Karn**, Bruce Reisch, Allen Nguyen, Yongming Sun, Yun Bao, Michael S. Campbell, Deanna Church, Stephen Williams, Timothy P. L. Smith, Anne Fennell, Doreen Ware, Jason Londo, Qi Sun and Lance Cadle-Davidson
@@ -70,7 +70,7 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I.
 **Karn, Avinash**, Brent Buckner, Diane Janick-Buckner, Mark Campbell, Michael Blanco, Marvin Scott, and Adrienne Moran Lauter .
 *Maize Genetics Conference Abstracts*
 
-## Knowledge
+<center> <h2> Knowledge </h2> </center>
 <hr>
 #### Programming languages
 
@@ -80,6 +80,13 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I.
 <hr>
 Linux and Windows.
 
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-5126027065024936",
+          enable_page_level_ads: true
+     });
+</script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359651-1"></script>
 <script>
@@ -88,3 +95,4 @@ Linux and Windows.
   gtag('js', new Date());
   gtag('config', 'UA-123359651-1');
 </script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
