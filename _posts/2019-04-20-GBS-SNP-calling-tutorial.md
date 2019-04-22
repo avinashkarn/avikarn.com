@@ -9,7 +9,7 @@ share-img: /image/GBS/GBS.png
 __Genotype-by-Sequencing (GBS)__ is reduced representation of a genome, which utilizes restriction enzymes (e.g. *ApeKI*) and NextGen sequencing to identify biallelic markers and presence/absence markers. __In this post__, my attempt is to consisely present the GBS SNP calling process in *7 steps* using the TASSEL GBSv2 pipeline. Pleae note:, <strong>Buckler et al. </strong> provides descriptive documentation on this SNP calling at https://www.maizegenetics.net/tassel
 
 <center> <h2> Flowchart of the GBSv2 SNP calling pipeline </h2></center>
-<center><img src="/image/GBS/gbsv2pipeline.png"></center>
+<center><img style="max-width:95%" src="/image/GBS/gbsv2pipeline.png"></center>
 
 <h2> Step 1. Preparing files and creating folders </h2>
 To get started, create four folders named: `fastq`, `key`, `output`, `referenceGenome`, using the command below:
