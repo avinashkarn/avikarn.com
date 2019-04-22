@@ -1,3 +1,9 @@
+---
+layout: page
+title: Resume
+meta-title: Avinash "Avi" Karn, Ph.D.
+subtitle: Quantitative Geneticist & Computational Biologist
+---
 I am a plant quantitative geneticits and computational biologist, and digital agriculture and robotics enthusiast, and an amateur astronomer, painter, online blogging, photography and vivid cook. I have over ten years of research experience in the field of plant breeding, quantitative genetics and high-throughput phenotyping, including, I have developed statistical models to non-destructively phenotype various seed composition using near infrared reflectance spectroscopy (NIRS) and nuclear magnetic resonance (NMR) instruments. I have developed gene specific molecular markers for marker selection studies and prepared RAD Genotype-By-Sequencing libraries for NextGen sequencing, and called SNPs using TASSEL and Sentioen pipeline, and built genetic maps using SNP and haplotype based genetic maps, and conducted joint-linkage QTL mapping and genome wide association studies. I have strong knowledge and experience in conducting big data analysis and visualization especially on a large set of phenotypic and genotypic data in software such as MS Excel, TASSEL, R and SAS and CIRCOS (written in PERL).
 
 ## Education
@@ -93,15 +99,6 @@ Linux and Windows.
             </a>
 </div>
             
-<div class="col-lg-2 col-lg-offset-1 text-center">
-            <a href="https://twitter.com/avi_karn/" target="_blank">
-                <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p>Tweet</p>
-            </a>
-</div>
-  
-
-
 
 <p><script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=0rn8vq73z9x&amp;m=7&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=1" async="async"></script></p>
 
