@@ -52,12 +52,12 @@ $ bowtie2  -p 15 --very-sensitive -x referenceGenome/PN40024v2/PN40024v2 -U outp
 ```
 <strong> Below is the example of the alignment statistics: </strong>
 ```bash
-	  	595364 reads; of these:
-	  	595364 (100.00%) were unpaired; of these:
-		81305 (13.66%) aligned 0 times
-		340723 (57.23%) aligned exactly 1 time
-		173336 (29.11%) aligned >1 times
-		86.34% overall alignment rate
+595364 reads; of these:
+595364 (100.00%) were unpaired; of these:
+81305 (13.66%) aligned 0 times
+340723 (57.23%) aligned exactly 1 time
+173336 (29.11%) aligned >1 times
+86.34% overall alignment rate
 ```
 
 <h2> Step 5. SAMToGBSdbPlugin </h2>
@@ -69,15 +69,15 @@ $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -SAMToGBSdbPlugi
 
 <strong> Below is the example output: </strong>
 ```bash
-	Total number of cut sites: 250131
-	Number of cut sites with 1 tag: 130620
-	Number of cut sites with 2 tags: 55554
-	Number of cut sites with 3 tags: 30647
-	Number of cut sites with more than 3 tags: 33310
-	[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.SAMToGBSdbPlugin - Finished reading SAM file and adding tags to DB.
-	Total number of tags mapped: 514059 (total mappings 514059)
-	Tags not mapped: 81305
-	Tags dropped due to minimum mapq value: 0
+Total number of cut sites: 250131
+Number of cut sites with 1 tag: 130620
+Number of cut sites with 2 tags: 55554
+Number of cut sites with 3 tags: 30647
+Number of cut sites with more than 3 tags: 33310
+[pool-1-thread-1] INFO net.maizegenetics.analysis.gbs.v2.SAMToGBSdbPlugin - Finished reading SAM file and adding tags to DB.
+Total number of tags mapped: 514059 (total mappings 514059)
+Tags not mapped: 81305
+Tags dropped due to minimum mapq value: 0
 ```
 
 <h2> Step 6. DiscoverySNPCallerPluginV2 </h2>
