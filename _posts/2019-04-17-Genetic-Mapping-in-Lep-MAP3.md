@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Genetic map construction in Lep-MAP3 (LM3)"
+title: "How to construct a genetic map in Lep-MAP3 (LM3)"
 tags: [Lep-MAP3, Genetic Mapping, Mapchart]
 image: /image/lepmap/cropped_nih_geneticmap.jpg
 share-img: /image/lepmap/cropped_nih_geneticmap.jpg
@@ -13,53 +13,53 @@ The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the f
 
 <h3>Step 1.1. Installation and File Preparation</h3>
 <strong> Important - </strong> Correctly install the Lep-MAP3 software on your computer, and please make sure you have the latest version of the software. 
-There are two files that are needed as an input - (1) <strong> genotype file</strong> in a VCF format, and (2), <strong>pedigree </strong> file in .txt format. A snippet of the pedigree file showing relationship between all individuals in a family or population is shown below. It is important that the pedigree file is formatted exactly as shown in the below figure 
+There are two files that are needed as an input - (1) <strong> genotype file</strong> in a `VCF` format, and (2), `pedigree` file in `.txt` format. A snippet of the pedigree file showing relationship between all individuals in a family or population is shown below. It is important that the pedigree file is formatted exactly as shown in the below figure 
 <center><img src="/image/lepmap/ped.png"></center>
 
 <h3>Step 1.2. Parent Call</h3>
-The parental genotypes are called using the *ParentCall2* module, using the below command:
+The parental genotypes are called using the `ParentCall2` module, using the below command:
 
 ```bash
 $ java -cp /path/Lep-MAP3/bin ParentCall2 data = pedigree.txt  vcfFile = File.vcf > p.call
 ```
 
 <h3>Step 1.3. Filtering </h3>
-One may use the *Filtering2* module to remove non-informative markers (Markers that are monomorphic or homozygous in both parents), and similarly, to remove distorted markers the below command line can be used to run the module:
+One may use the `Filtering2` module to remove non-informative markers (Markers that are monomorphic or homozygous in both parents), and similarly, to remove distorted markers the below command line can be used to run the module:
 
 ```bash
  $ java -cp /path/Lep-MAP3/bin Filtering2 data=p.call  removeNonInformative=1 dataTolerance=0.001  > p_fil.call
 ```
-Note: Use: *removeNonInformative* parameter to remove markers that are homozygous in both parent and *dataTolerance* to remove distorted markers at given p-value threshold.
+Note: Use: `removeNonInformative` parameter to remove markers that are homozygous in both parent and `dataTolerance` to remove distorted markers at given p-value threshold.
 
 <h3>Step 1.3 Separate Chromosomes </h3>
-In this step, *SeparateChromosomes2* module is used to categorized markers into their linkage groups or chromosomes using the below command:
+In this step, `SeparateChromosomes2` module is used to categorized markers into their linkage groups or chromosomes using the below command:
 
 ```bash
 $ java -cp /path/Lep-MAP3/bin  SeparateChromosomes2 data=p_fil.call lodLimit=10 > map.txt
 ```
 
 <h3>Step 1.4 Order Markers </h3>
-In this step, markers separated into their corresponding linkage groups are ordered using *OrderMarkers2* module using the below command:
+In this step, markers separated into their corresponding linkage groups are ordered using `OrderMarkers2` module using the below command:
 
 ```bash
 $ java -cp /path/Lep-MAP3/bin  OrderMarkers2 data=p_fil.call map=map.txt > order.txt
 ```
-One may use the parameter *sexAveraged*  to calculate sex-averaged map distances ( by default male and female genetic maps are curated separately), also *numMergeIterations* paramteres are used to adjust number of iterations (by deafault its is 6 iterations per linkage group). 
+One may use the parameter `sexAveraged`  to calculate sex-averaged map distances ( by default male and female genetic maps are curated separately), also `numMergeIterations` paramteres are used to adjust number of iterations (by deafault its is 6 iterations per linkage group). 
 
 <h2> 2.0 Checking the accuracy of the marker order </h2>
-If the physical positons of the markers in the genetic map curation are known, then, it is a good thing to use that information to evaluate the markers order by making a correlation plot of the genetic and physical positions of the markers. <strong>Note:</strong> It is quite common to see that the marker orders are flipped. There is nothing to panic about, one may fix it by the sorting it.
+If the physical positons of the markers in the genetic map curation are known, then, it is a good thing to use that information to evaluate the markers order especially markers that <strong> inflat </strong> the chromosome length, by making a correlation plot of the genetic and physical positions of the markers by chromosome. <strong>Note:</strong> It is quite common to see that the marker orders are flipped. There is nothing to panic about, one may fix it by manually sorting it.
 
 <center><img src="/image/lepmap/corr_geneticmap.png"></center>
 
 <h2> 3.0 Converting phased output data from OrderMarkers2 to genotypes </h2>
-The phased data from OrderMarkers2 step can be converted to fully informative "genotype" data by using <strong> map2gentypes.awk </strong> script and command below: 
+The phased data from OrderMarkers2 step can be converted to fully informative "genotype" data by using `map2gentypes.awk` script and command below: 
 ```bash
 	$ awk -vfullData=1 -f map2genotypes.awk order.txt > genotypes.txt
 ```
-Snippet of the map2gentypes.awk output:
+Snippet of the `map2gentypes.awk` output:
 <center><img src="/image/lepmap/orderOutput.png"></center>
 
-One may convert the genotypes in <strong> 1 1 => A, 2 2 => B, 1 2 or 2 1 => H format </strong> (See below figure) in MS Excel using find/Replace function, which can be then loaded in R/Qtl for QTL mapping.
+One may convert the genotypes in <strong> 1 1 => A, 2 2 => B, 1 2 or 2 1 => H format </strong> (See below figure) in MS Excel using find/Replace function, which can be then loaded in `R/Qtl` for QTL mapping.
 
 <center><img src="/image/lepmap/rqtlFormat.png"></center>
 
