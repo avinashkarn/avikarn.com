@@ -216,6 +216,17 @@
       &nbsp;&bull;&nbsp;
       <a href="{{ site.url }}">{{ site.privacy }}</a>
       {% endif %}
+    {% if site.author.google-plus and site.footer-links-active.google-plus %}
+    <li>
+      <a href="https://plus.google.com/{{ site.author.google-plus }}" title="Google+">
+        <span class="fa-stack fa-lg" aria-hidden="true">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+        </span>
+        <span class="sr-only">Google+</span>
+      </a>
+    </li>
+    {% endif %}
       </p>
 <!-- Please don't remove this, keep my open source work credited :) -->
       <p style="text-align:center">
