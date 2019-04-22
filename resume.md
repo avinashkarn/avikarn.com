@@ -5,7 +5,7 @@ meta-title: Avi Karn, Ph.D.
 subtitle: Quantitative Geneticist & Computational Biologist
 ---
 I am a passionate plant quantitative geneticits and computational biologist, however, have a greater interest in digital agriculture and robotics. My hobbies include astronomy, painting, online blogging, photography and cooking. I have over ten years of research experience in the field of plant breeding, quantitative genetics and high-throughput phenotyping, and possss a strong knowledge and experience in conducting big data analysis and visualization especially on a large set of phenotypic and genotypic data in software such as `MS Excel`, `TASSEL`, `R` and `SAS` and `CIRCOS` (written in `PERL`).
-
+<hr>
 <center> <h2> Education </h2> </center> 
 <hr>
 #### 2012–2017 PhD - Plant Breeding, Genetics & Genomics — University of Missouri Columbia, USA
@@ -36,7 +36,7 @@ Involved in the development of novel genetic resource and mapping populations su
 #### 2009-2012 Undergraduate Research Assistant (BSc) - Truman State University, USA
 Conducted molecular genetic analysis to exploit the biodiversity of exotic inbred lines from Central and South America to develop high amylose corn using SSR markers and gel electrophoresis. Assisted in preparing summer maize nurseries such as plowing field with a tractor, planting seeds with hand and dumping seed in seed planter, pollinating and collecting various agronomic data from field trials, harvesting and analyzing data. Developed gene specific molecular markers to select alleles responsible for high amylose in maize kernels with better yield, which I validated their stability in trials conducted in multiple replications in different environments. Wrote annual USDA-ARS Germplasm Enhancement of Maize (GEM) report and presented at ASTA meeting in Chicago, Illinois 
 
-#### 2008-2012 Cafeteria student worker - Sodexo Inc. 
+#### 2008-2012 Cafeteria student worker - Sodexo Inc. , USA
 Served and stocked food as well as performed all the cleaning related activities in the cafeteria.
 
 #### 2011-2012 Comparative genomics researcher - Truman State University, USA
