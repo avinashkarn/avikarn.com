@@ -4,23 +4,23 @@ title: Resume
 meta-title: Avinash "Avi" Karn, Ph.D.
 subtitle: Quantitative Geneticist & Computational Biologist
 ---
-I am a plant quantitative geneticits and computational biologist, and digital agriculture and robotics enthusiast, and an amateur astronomer, painter, online blogging, photography and vivid cook. I have over ten years of research experience in the field of plant breeding, quantitative genetics and high-throughput phenotyping, including, I have developed statistical models to non-destructively phenotype various seed composition using near infrared reflectance spectroscopy (NIRS) and nuclear magnetic resonance (NMR) instruments. I have developed gene specific molecular markers for marker selection studies and prepared RAD Genotype-By-Sequencing libraries for NextGen sequencing, and called SNPs using TASSEL and Sentioen pipeline, and built genetic maps using SNP and haplotype based genetic maps, and conducted joint-linkage QTL mapping and genome wide association studies. I have strong knowledge and experience in conducting big data analysis and visualization especially on a large set of phenotypic and genotypic data in software such as MS Excel, TASSEL, R and SAS and CIRCOS (written in PERL).
+I am a passionate plant quantitative geneticits and computational biologist, however, have a greater interest in digital agriculture and robotics. My hobbies include astronomy, painting, online blogging, photography and cooking. I have over ten years of research experience in the field of plant breeding, quantitative genetics and high-throughput phenotyping, and possss a strong knowledge and experience in conducting big data analysis and visualization especially on a large set of phenotypic and genotypic data in software such as `MS Excel`, `TASSEL`, `R` and `SAS` and `CIRCOS` (written in `PERL`).
 
 ## Education
-
+<hr>
 #### 2012–2017 PhD - Plant Breeding, Genetics & Genomics — University of Missouri Columbia, USA
-•	Dissertation ***Evaluation of Teosinte Genetic Diversity for Agronomic and Domestication Traits in Maize***
-Received Dr. Marcus Zuber endowment fellowship
-Presented research at Maize genetics conference, Plant Animal Genetics conference and The Tri-Societies meeting (ASA, CSSA, SSSA)     International meetings
-Recipient of 2017 Research in Plant Biology Award (Monetary award $750) and 2017 MU Life Sciences Week Research Recognition award (Monetary award $275)
-Recipient of DPS and IPG travel awards
+<li>Dissertation ***Evaluation of Teosinte Genetic Diversity for Agronomic and Domestication Traits in Maize***</li>
+<li>Received Dr. Marcus Zuber endowment fellowship</li>
+<li>Presented research at Maize genetics conference, Plant Animal Genetics conference and The Tri-Societies meeting (ASA, CSSA, SSSA)     International meetings</li>
+<li>Recipient of 2017 Research in Plant Biology Award (Monetary award $750) and 2017 MU Life Sciences Week Research Recognition award (Monetary award $275)</li>
+<li>Recipient of DPS and IPG travel awards</li>
 
 #### 2008–2012 BSc Agricultural Sciences — Truman State University, USA
-•	Received President’s Honorary Scholarship and Dr. Max E. Bell Scholarship
-•	Presented research at student research conferences at Truman, Adair County extension center and annual Maize genetics conference
+<li>Received President’s Honorary Scholarship and Dr. Max E. Bell Scholarship</li>
+<li>Presented research at student research conferences at Truman, Adair County extension center and annual Maize genetics conference</li>
 
 ## Work Experience
-
+<hr>
 #### 2018–Present Computational biologist (Postdoc) — Cornell University, Geneva, NY
 Analyzed of large-scale genotyping data (from Genotyping-by-Sequencing, Amplicon Sequencing, Illumina resequencing, and/or PacBio de novo sequencing) such as SNP and Haplotype calling. Developed genetic markers for traits like powdery mildew disease resistance and fruit quality, to assist breeders with marker assisted selection; conducted statistical analysis of large-scale data sets from DNA sequencing and trait data from related and unrelated vines for genetic mapping in Lep-MAP3, QTL mapping in R, genome wide association studies in TASSEL/FarmCPU/GAPIT. Managed grapevine breeding database www.VitisBase.org , and led setting up trials and phenotype data collection on Field Book android application.
 
@@ -45,7 +45,7 @@ Analyzed retained homeologous paralog pairs from syntenic regions in Maize and S
 Designed gene specific molecular marker for a novel of starch branching enzyme Ia (SBE-1a) allele involved in high amylose starch in maize. Discovered novel recessive starch branching enzyme 1a (sbe1a) likely plays a significant role in the presence of the ae allele in elevating starch amylose from ~55% to >70% in the germplasm release 'GEMS-0067'. Conducted linkage based mapping studies to identify QTLs for high amylose starch in maize using SSR markers and QTL cartographer software. Sequenced starch branching enzyme allele (SBE1a) from high amylose maize line, GEMS-0067; Discovered 8bp insertion site at intron 9 resulting splicing mutation, which putatively resulted in truncated protein product post-translation.
 
 ## Publications
-
+<hr>
 #### A rhAmpSeq haplotype strategy targeting the collinear core genome improves marker transferability across a diverse genus
 Cheng Zou, **Avinash Karn**, Bruce Reisch, Allen Nguyen, Yongming Sun, Yun Bao, Michael S. Campbell, Deanna Church, Stephen Williams, Timothy P. L. Smith, Anne Fennell, Doreen Ware, Jason Londo, Qi Sun and Lance Cadle-Davidson
 (2018) (In review)
@@ -71,13 +71,13 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I.
 *Maize Genetics Conference Abstracts*
 
 ## Knowledge
-
+<hr>
 #### Programming languages
 
-R, SAS, PERL, HTML, MS Command prompt and Excel.
+`R`, `SAS`, `PERL`, `HTML`, `CSS`,`MS Command prompt` and `Excel`.
 
-#### Operating systems
-
+#### Operating systems 
+<hr>
 Linux and Windows.
 
 <div class="row">
@@ -98,10 +98,13 @@ Linux and Windows.
                 <p>LinkedIn</p>
             </a>
 </div>
+<div class="col-lg-2 col-lg-offset-1 text-center">
+            <a href="https://twitter.com/avi_karn/" target="_blank">
+                <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                <p>Tweet</p>
+            </a>
+</div>
             
-
-<p><script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=0rn8vq73z9x&amp;m=7&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=1" async="async"></script></p>
-
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359651-1"></script>
