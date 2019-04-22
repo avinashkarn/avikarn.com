@@ -31,13 +31,13 @@ $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -GBSSeqToTagDBPl
 ```
 In the above command, ApeKI = enzyme used in the library preparation; GBSV2.db = the name of the local database.
 
-<h2> Step 3. TagExportToFastqPlugin</h2>
+<h2> Step 3. TagExportToFastqPlugin </h2>
 In this step, `TagExportToFastqPlugin` is used to retrieve the distinct tags stored in the <strong>GBSV2.db</strong> database, and reformmated to the fastq tags, which can be read by the `Bowtie2` aligner program. The output is a `.sam` file.
 Command:
 ```bash
 $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -TagExportToFastqPlugin -db output/GBSV2.db -o output/tagsForAlign.fa.gz -c 1 -endPlugin  -runfork1
 ```
-<h2> Step 4. Run Alignment Program(s)</h2>
+<h2> Step 4. Run Alignment Program(s) </h2>
 __4.1__ Run `Bowtie2` software to create an index from the reference genome.
 Command:
 ```bash
@@ -60,7 +60,7 @@ $ bowtie2  -p 15 --very-sensitive -x referenceGenome/PN40024v2/PN40024v2 -U outp
 		86.34% overall alignment rate
 ```
 
-<h2> Step 5. SAMToGBSdbPlugin</h2>
+<h2> Step 5. SAMToGBSdbPlugin </h2>
 In this step, `SAMToGBSdbPlugin` reads the SAM file (output file from Bowtie alignment step) to identify the potential positions of the GBS tags against the reference genome.
 Command:
 ```bash
@@ -80,7 +80,7 @@ $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -SAMToGBSdbPlugi
 	Tags dropped due to minimum mapq value: 0
 ```
 
-<h2> Step 6. DiscoverySNPCallerPluginV2</h2>
+<h2> Step 6. DiscoverySNPCallerPluginV2 </h2>
 In this step, `DiscoverySNPCallerPluginV2` takes the files from the GBSV2.db database as an input and identifies SNPs from aligned tags. 
 Command:
 ```bash 
@@ -88,7 +88,7 @@ $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -DiscoverySNPCal
 ```
 <strong> Note:</strong> `sC` start chromsome and `eC` end chromosme. It is important to know how the chromosomes in the reference gneome are named. For example, in the above command, chromosome 1 is named as "Noirv2.chr1".
 
-<h2> Step 7. ProductionSNPCallerPluginV2</h2>
+<h2> Step 7. ProductionSNPCallerPluginV2 </h2>
 In this step, `ProductionSNPCallerPluginV2` converts the fastq and keyfile to genotypes, then its is added to a VCF file (default). 
 Command:
 ```bash
