@@ -373,8 +373,8 @@ footer .theme-by {
 }
 .post-image {
   float: right;
-  height: 192px;
-  width: 192px;
+  height: 300px;
+  width: 300px;
   margin-top: -13px;
   filter: grayscale(90%);
 }
