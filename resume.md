@@ -4,7 +4,7 @@ title: Resume
 meta-title: Avi Karn, Ph.D.
 subtitle: Quantitative Geneticist & Computational Biologist
 ---
-I am a passionate plant quantitative geneticits and computational biologist, however, have a greater interest in digital agriculture and robotics. My hobbies include astronomy, painting, online blogging, photography and cooking. I have over ten years of research experience in the field of plant breeding, quantitative genetics and high-throughput phenotyping, and possss a strong knowledge and experience in conducting big data analysis and visualization especially on a large set of phenotypic and genotypic data in software such as `MS Excel`, `TASSEL`, `R` and `SAS` and `CIRCOS` (written in `PERL`).
+I am a passionate plant quantitative geneticits and computational biologist. My hobbies include astronomy, painting, online blogging, photography, cooking, fixing things around my house :) and working on my car. I have over ten years of research experience in the field of plant breeding, quantitative genetics and high-throughput phenotyping, and possess a strong knowledge and experience in conducting big data analysis and visualization especially on a large scale phenotypic and genotypic data.
 <hr>
 <center> <h2> Education </h2> </center> 
 <hr>
