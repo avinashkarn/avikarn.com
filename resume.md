@@ -12,7 +12,8 @@ I am a passionate plant quantitative geneticits and computational biologist, how
 <li>Dissertation ***Evaluation of Teosinte Genetic Diversity for Agronomic and Domestication Traits in Maize***</li>
 <li>Received Dr. Marcus Zuber endowment fellowship</li>
 <li>Presented research at Maize genetics conference, Plant Animal Genetics conference and The Tri-Societies meeting (ASA, CSSA, SSSA)     International meetings</li>
-<li>Recipient of 2017 Research in Plant Biology Award (Monetary award $750) and 2017 MU Life Sciences Week Research Recognition award (Monetary award $275)</li>
+<li>Recipient of 2017 Research in Plant Biology Award (Monetary award $750) </li>
+<li>2017 MU Life Sciences Week Research Recognition award (Monetary award $275) </li>
 <li>Recipient of DPS and IPG travel awards</li>
 
 #### 2008–2012 BSc Agricultural Sciences — Truman State University, USA
