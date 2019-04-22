@@ -79,7 +79,7 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I.
 
 #### Operating systems 
 <hr>
-Linux and Windows.
+`Linux` and `Windows`.
 
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({
