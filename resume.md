@@ -80,32 +80,6 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I.
 <hr>
 Linux and Windows.
 
-<div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Let's Get In Touch!</h2>
-</div>
-            
-<div class="col-lg-2 col-lg-offset-1 text-center">
-            <a href="mailto:akarn@mail.missouri.edu">
-            <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p>Email</p>
-            </a>
-</div>           
-
-<div class="col-lg-2 col-lg-offset-1 text-center">
-            <a href="https://www.linkedin.com/in/avikarn/" target="_blank">
-                <i class="fa fa-linkedin fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p>LinkedIn</p>
-            </a>
-</div>
-<div class="col-lg-2 col-lg-offset-1 text-center">
-            <a href="https://twitter.com/avi_karn/" target="_blank">
-                <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p>Tweet</p>
-            </a>
-</div>
-            
-
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359651-1"></script>
 <script>
