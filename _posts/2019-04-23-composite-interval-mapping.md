@@ -1,12 +1,37 @@
 ---
 layout: post
-title: "Composite Interval Mapping (CIM) in R/Qtl"
+title: "Composite Interval Mapping (CIM) in R software"
 tags: [Composite Interval Mapping, QTL, R]
 image: /image/cim/scan.png
 share-img: /image/cim/scan.png
 ---
 
 __Coming soon__
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359651-1"></script>
