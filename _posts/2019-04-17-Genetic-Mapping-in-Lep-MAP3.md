@@ -6,14 +6,16 @@ image: /image/lepmap/cropped_nih_geneticmap.jpg
 share-img: /image/lepmap/cropped_nih_geneticmap.jpg
 ---
 
-__Building genetic maps__ can be challenging and sometimes quite stressful, especially, when dealing with thousands or even millions of markers. In this post, I am hoping to help anyone who would like to get started to build a decent genetic map in an open software <a href="https://sourceforge.net/projects/lep-map3/"> Lep-MAP3 </a>, and finally, the evaluating the accuarcy of the map and plotting it.
+__Building genetic maps__ can be challenging and sometimes quite stressful, especially, when dealing with thousands or even millions of markers. In this post, I am hoping to help anyone who would like to get started to build a decent genetic map in an open software 
+<a href="https://sourceforge.net/projects/lep-map3/"> Lep-MAP3 </a>, and finally, the evaluating the accuarcy of the map and plotting it.
 
 The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the flow chart below. 
 <center><img src="/image/lepmap/lepmap_flow.png"></center>
 
 <h3>Step 1.1. Installation and File Preparation</h3>
 <strong> Important - </strong> Correctly install the Lep-MAP3 software on your computer, and please make sure you have the latest version of the software. 
-There are two files that are needed as an input - (1) <strong> genotype file</strong> in a `VCF` format, and (2), `pedigree` file in `.txt` format. A snippet of the pedigree file showing relationship between all individuals in a family or population is shown below. It is important that the pedigree file is formatted exactly as shown in the below figure 
+There are two files that are needed as an input - (1) <strong> genotype file</strong> in a `VCF` format, and (2), `pedigree` file in `.txt` format. A snippet of the pedigree file showing relationship between all individuals in a family or population is shown below. 
+It is important that the pedigree file is formatted exactly as shown in the below figure 
 <center><img src="/image/lepmap/ped.png"></center>
 
 <h3>Step 1.2. Parent Call</h3>
