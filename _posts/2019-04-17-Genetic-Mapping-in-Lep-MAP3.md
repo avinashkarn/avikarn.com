@@ -12,10 +12,12 @@ __Building genetic maps__ can be challenging and sometimes quite stressful, espe
 The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the flow chart below. 
 <center><img src="/image/lepmap/lepmap_flow.png"></center>
 
+<h2> Running Lep-MAP3 </h2>
 <h3>Step 1.1. Installation and File Preparation</h3>
 <strong> Important - </strong> Correctly install the Lep-MAP3 software on your computer, and please make sure you have the latest version of the software. 
-There are two files that are needed as an input - (1) <strong> genotype file</strong> in a `VCF` format, and (2), `pedigree` file in `.txt` format. A snippet of the pedigree file showing relationship between all individuals in a family or population is shown below. 
-It is important that the pedigree file is formatted exactly as shown in the below figure 
+There are two files that are needed as an input 
+<li>(1) <strong> genotype file</strong> in a `VCF` format, and 
+<li>(2) `pedigree` file in `.txt` format. A snippet of the pedigree file showing relationship between all individuals in a family or population is shown below. It is important that the pedigree file is formatted exactly as shown in the below figure: 
 <center><img src="/image/lepmap/ped.png"></center>
 
 <h3>Step 1.2. Parent Call</h3>
@@ -33,14 +35,14 @@ One may use the `Filtering2` module to remove non-informative markers (Markers t
 ```
 Note: Use: `removeNonInformative` parameter to remove markers that are homozygous in both parent and `dataTolerance` to remove distorted markers at given p-value threshold.
 
-<h3>Step 1.3 Separate Chromosomes </h3>
+<h3>Step 1.4. Separate Chromosomes </h3>
 In this step, `SeparateChromosomes2` module is used to categorized markers into their linkage groups or chromosomes using the below command:
 
 ```bash
 $ java -cp /path/Lep-MAP3/bin  SeparateChromosomes2 data=p_fil.call lodLimit=10 > map.txt
 ```
 
-<h3>Step 1.4 Order Markers </h3>
+<h3>Step 1.5. Order Markers </h3>
 In this step, markers separated into their corresponding linkage groups are ordered using `OrderMarkers2` module using the below command:
 
 ```bash
