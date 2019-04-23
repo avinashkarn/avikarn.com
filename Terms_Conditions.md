@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<h1> General Website Terms </h1>
+<center> <h1> General Website Terms </h1> </center>
 
 <h2> 1. Terms </h2>
 By accessing the website at https://AviKarn.com, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. 
@@ -11,6 +11,7 @@ The materials contained in this website are protected by applicable copyright an
 
 <h2>2. Use License </h2>
 Permission is granted to temporarily download one copy of the materials (information or software) on https://AviKarn.com website for personal, non-commercial transitory viewing only.
+
 __You__ may not:
 
 <li>modify or copy the materials; </li>
