@@ -25,7 +25,7 @@ It makes no warranties, expressed or implied, and hereby disclaims and negates a
 Further, https://AviKarn.com website does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.
 
 <h2>4. Limitations </h2>
-In no event shall https://AviKarn.com website be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on https://AviKarn.com website, even if the owener of th https://AviKarn.com website has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
+In no event shall https://AviKarn.com website be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on https://AviKarn.com website, even if the owener of the https://AviKarn.com website has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
 
 <h2>5. Accuracy of materials </h2>
 The materials appearing on https://AviKarn.com website could include technical, typographical, or photographic errors. 
@@ -38,7 +38,7 @@ https://AviKarn.com website has not reviewed all of the sites linked to its webs
 The inclusion of any link does not imply endorsement by https://AviKarn.com website of the site. 
 Use of any such linked website is at the user’s own risk.
 
-<h2>. Modifications </h2>
+<h2>7. Modifications </h2>
 https://AviKarn.com website may revise these terms of service for its website at any time without notice. 
 By using this website you are agreeing to be bound by the then current version of these terms of service.
 
