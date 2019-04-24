@@ -6,7 +6,7 @@ image: /image/cim/scan.png
 share-img: /image/cim/scan.png
 ---
 
-In the __Quantitative Trait Locus (QTL)__ analysis, composite interval mapping (CIM) method  estimates the true positon of the QTL with higher accuracy and statistical significance by combining interval mapping with multiple regression. This method also affectively controls background noise resulting from genetic variations in other regions of the genome that affect the detection of the true QTL. In this post, my objective is describe step-by-setp how one can run the composite inteval mapping in R software. 
+In the __Quantitative Trait Locus (QTL)__ analysis, composite interval mapping (CIM) method  estimates the true positon of the QTL with higher accuracy and statistical significance by combining interval mapping with multiple regression. This method also affectively controls background noise resulting from genetic variations in other regions of the genome that affect the detection of the true QTL. In this post, my objective is describe step-by-setp how one can run the composite inteval mapping in R software. For further descriptive information on R/qtl, please read the paper by <strong> Karl Broman </strong> at this link: http://www.rqtl.org/
 
 <center> <h1> To get started</h1> </center>
 
@@ -26,7 +26,7 @@ In the __Quantitative Trait Locus (QTL)__ analysis, composite interval mapping (
 </ol>
 Both the `phenotype` and `genetic map` infomation can be put together in a single `.csv` file. 
 See below the screenshot to understand the formatting of the input file.
-<img src= >
+<img src="/image/cim/file.png">
 
 <h2> Step 3. Running CIM in R </h2>
 Please double check the formatting of the file is correct. Once ready, open `R studio` and type the following commands to get started. 
@@ -50,7 +50,7 @@ summary(phenoGeno)
 plot(phenoGeno)
 ```
 You should see a plot similiar to shown below:
-<img src=>
+<img src="/image/cim/summaryplot.png">
 
 <h3> Step 3.4. Calculating genotype probabilities </h3>
 In this step, `Hidden Markov model technology` is used to calculate the probabilities of the true underlying genotypes. 
@@ -85,7 +85,7 @@ summary(scan.cim, threshold = #value)
 ```html
 plot(scan.cim)
 ```
-<img src= >
+<img src="/image/cim/scan2.png" >
 
 <h3> Step 4.0 QTL effect plot</h3>
 Type the below command to plot the `effect plot` of the QTL on the phenotype.
@@ -93,6 +93,9 @@ Type the below command to plot the `effect plot` of the QTL on the phenotype.
 plotPXG(scan_cross, pheno.col = #value, marker = c("#value"))
 ```
 Provide phenotype colum number in `pheno.col` and marker name in `marker =`
+
+Output:
+<img src="/image/cim/effect.png">
 
 <h3> Step 5.0 Make QTL model with the significant marker</h3>
 ```html
@@ -132,7 +135,9 @@ Provide the `cM` to drop in the `drop =`
 
 __Thank you__ for reading this tutorial. I really hope this helpful in giving you the concept and technology behind AmpSeq and the data analysis. If you have any questions or comments, please let comment below or send me an email.
 
-
+##  Bibliography
+Broman KW, Wu H, Sen Ś, Churchill GA (2003) R/qtl: QTL mapping in experimental crosses. Bioinformatics 19:889-890 
+[PubMed | pdf (236k) | Screen pdf (288k)]
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359651-1"></script>
