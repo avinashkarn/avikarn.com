@@ -90,14 +90,8 @@ https://www.wur.nl/en/show/Mapchart.htm
 <center><img src="/image/lepmap/mapChart.png"></center>
 
 __Thank you__ for reading this tutorial. I really hope these steps will get you started in genetic map construction in Lep-MAP3. The key is to <strong> PRACTISE. </strong>. 
+
 If you have any comments or suggestions, please let comment below or send me an email. 
-
-Happy mapping !
-
-
-<h3> Bibliography </h3>
-P. Rastas. Lep-MAP3: Robust linkage mapping even for low-coverage whole genome sequencing data, Bioinformatics, to appear https://doi.org/10.1093/bioinformatics/btx494
-
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_donations" />
 <input type="hidden" name="business" value="8ZF7YRTZ42EKU" />
@@ -106,6 +100,14 @@ P. Rastas. Lep-MAP3: Robust linkage mapping even for low-coverage whole genome s
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
 <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
 </form>
+
+Happy mapping !
+
+
+<h3> Bibliography </h3>
+P. Rastas. Lep-MAP3: Robust linkage mapping even for low-coverage whole genome sequencing data, Bioinformatics, to appear https://doi.org/10.1093/bioinformatics/btx494
+
+
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359651-1"></script>
