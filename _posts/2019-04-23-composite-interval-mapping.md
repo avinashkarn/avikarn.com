@@ -113,7 +113,7 @@ lodint(results = scan.cim, chr = #value, drop = 1.8)
 ```
 Provide the `cM` to drop in the `drop =`
 
-<center><h2> --- End of Tutorial --- </center> </h2>
+<center><h2> --- End of Tutorial --- </h2> </center> 
 
 __Thank you__ for reading this tutorial. I really hope this helpful in giving you the concept and technology behind AmpSeq and the data analysis. If you have any questions or comments, please let comment below or send me an email.
 
