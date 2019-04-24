@@ -105,7 +105,22 @@ summary(fitqtl)
 <strong>Note</strong> In `#value` Add the signifincat marker's coordinates i.e. `chromosome` and `pos`.
 
 Below is the screenshot of the output:
-<img scr=>
+```html
+fitqtl summary
+
+Method: Haley-Knott regression 
+Model:  normal phenotype
+Number of observations : 93 
+
+Full model result
+----------------------------------  
+Model formula: y ~ Q1 
+
+      	df    SS   MS   LOD    %var 	Pvalue(Chi2) Pvalue(F)
+Model 	 2  13.07	6.53  30.4  77.8           0         0
+Error	 90  3.724093 0.04137881                                        
+Total	 92 16.795699 
+```
 
 <h3> Step 3.0 Identify QTL intervals</h3>
 ```html
