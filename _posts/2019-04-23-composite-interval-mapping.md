@@ -18,34 +18,102 @@ In the __Quantitative Trait Locus (QTL)__ analysis, composite interval mapping (
 <li> Finally, install the library <strong> qtl </strong> in R </li>
 </ol>
 
-<h2> Prepare the input files </h2>
+<h2> Step 2. Prepare the input files </h2>
 
+<ol>
+  <li> Phenotype data </li>
+  <li> Genetic map</li>
+</ol>
+Both the `phenotype` and `genetic map` infomation can be put together in a single `.csv` file. 
+See below the screenshot to understand the formatting of the input file.
+<img src= >
 
+<h2> Step 3. Running CIM in R </h2>
+Please double check the formatting of the file is correct. Once ready, open `R studio` and type the following commands to get started. 
 
+<h3> Step 3.1. Import <strong>qtl</strong> library </h3>
+```html
+library(qtl)
+```
 
+<h3> Step 3.2. Load the .csv file with the genotype and phenotype data </h3>
+```html
+phenoGeno <-read.cross(format = "csv", file = "file.csv",  
+                 na.strings= c('NA'), genotypes = c("A","B","H"))
+```
+In the above command, if your genetic data is formatted differently then specify the in `genotype' section. <strong> To execute </strong> the above command, highlight the command and press `CTRL` + `ENTER`. You should see output in the `terminal window`, and please check for any warnings or errors. 
 
+<h3> Step 3.3. Summary of the data file and plotting </h3>
+Type:
+```html
+summary(phenoGeno)
+plot(phenoGeno)
+```
+You should see a plot similiar to shown below:
+<img src=>
 
+<h3> Step 3.4. Calculating genotype probabilities </h3>
+In this step, `Hidden Markov model technology` is used to calculate the probabilities of the true underlying genotypes. 
+```html
+phenoGeno <- calc.genoprob(phenoGeno, step=0, off.end=0.0, error.prob=1.0e-4,stepwidth = "fixed", map.function="kosambi")
 
+phenoGeno_cross <- sim.geno(phenoGeno,  n.draws=32, step=0, off.end=0.0, error.prob=1.0e-4, stepwidth = "fixed", map.function="kosambi")
+```
+<strong>Important</strong> Make sure to rename `phenoGeno` to `phenoGeno_cross` in the second step of the above command.
 
+<h3> Step 3.5. running QTL scan using CIM method with permutations</h3>
+1. Type the below command in the console to run the qtl scan using `CIM` method.
+```html
+scan.cim = cim(phenoGeno_cross, pheno.col=2, map.function="kosambi")
+```
+<strong>Note</strong> In `#value` type the column number of the phenotype
 
+2. Run `permutation` test by typing the below command:
+```html
+scan.cim.perm = cim(phenoGeno_cross, pheno.col=2, map.function="kosambi", n.perm=1000)
+```
+It is recommended to run at 1,000 permutation test.
 
+3. check the LOD threshold after permutations and significant QTL above the threshold.
+```html
+summary(scan.cim.perm)
+summary(scan.cim, threshold = #value)
+```
+<strong>Note</strong> In `#value` Add the LOD score at desired `alpha` (0.05 0r 0.1) 
 
+4. Plot the QTL scan
+```html
+plot(scan.cim)
+```
+<img src= >
 
+<h3> Step 4.0 QTL effect plot</h3>
+Type the below command to plot the `effect plot` of the QTL on the phenotype.
+```html
+plotPXG(scan_cross, pheno.col = #value, marker = c("#value"))
+```
+Provide phenotype colum number in `pheno.col` and marker name in `marker =`
 
+<h3> Step 5.0 Make QTL model with the significant marker</h3>
+```html
+qtl <- makeqtl(scan_cross, chr=c(#value), pos=c(#value),what=c("prob")) 
+fitqtl <- fitqtl(don, pheno.col=c(#value), formula = y~Q1, qtl= qtl, method = "hk", get.ests = T)
+summary(fitqtl)
+```
+<strong>Note</strong> In `#value` Add the signifincat marker's coordinates i.e. `chromosome` and `pos`.
 
+Below is the screenshot of the output:
+<img scr=>
 
+<h3> Step 3.0 Identify QTL intervals</h3>
+```html
+lodint(results = scan.cim, chr = #value, drop = 1.8)
+```
+Provide the `cM` to drop in the `drop =`
 
+<center><h2> --- End of Tutorial --- </center> </h2>
 
-
-
-
-
-
-
-
-
-
-
+__Thank you__ for reading this tutorial. I really hope this helpful in giving you the concept and technology behind AmpSeq and the data analysis. If you have any questions or comments, please let comment below or send me an email.
 
 
 
