@@ -41,7 +41,7 @@ library(qtl)
 phenoGeno <-read.cross(format = "csv", file = "file.csv",  
                  na.strings= c('NA'), genotypes = c("A","B","H"))
 ```
-In the above command, if your genetic data is formatted differently then specify the in `genotype' section. <strong> To execute </strong> the above command, highlight the command and press `CTRL` + `ENTER`. You should see output in the `terminal window`, and please check for any warnings or errors. 
+In the above command, if your genetic data is formatted differently then specify the in `genotype` section. <strong> To execute </strong> the above command, highlight the command and press `CTRL` + `ENTER`. You should see output in the `terminal window`, and please check for any warnings or errors. 
 
 <h3> Step 3.3. Summary of the data file and plotting </h3>
 Type:
@@ -97,7 +97,9 @@ Provide phenotype colum number in `pheno.col` and marker name in `marker =`
 <h3> Step 5.0 Make QTL model with the significant marker</h3>
 ```html
 qtl <- makeqtl(scan_cross, chr=c(#value), pos=c(#value),what=c("prob")) 
+       
 fitqtl <- fitqtl(don, pheno.col=c(#value), formula = y~Q1, qtl= qtl, method = "hk", get.ests = T)
+
 summary(fitqtl)
 ```
 <strong>Note</strong> In `#value` Add the signifincat marker's coordinates i.e. `chromosome` and `pos`.
