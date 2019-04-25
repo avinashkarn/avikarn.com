@@ -44,7 +44,7 @@ I believe that some traits you are just born with. I know personally, I have had
 
 <p class="about-text">
 <span class="fa fa-envelope about-icon"></span>
-Let’s connect if you want to collaborate and or exchange ideas!Follow the social media links given below or drop a mail <a target="_blank" href="mailto:avi.karn6@gmail.com">here</a>.
+Let’s connect if you want to collaborate and or exchange ideas! Follow the social media links or drop a mail in the below form:
 </p>
 
 <hr>
