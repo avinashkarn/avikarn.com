@@ -47,12 +47,25 @@ I believe that some traits you are just born with. I know personally, I have had
 Let’s connect if you want to collaborate and or exchange ideas!Follow the social media links given below or drop a mail <a target="_blank" href="mailto:avi.karn6@gmail.com">here</a>.
 </p>
 
+<hr>
+<form action="https://formspree.io/akarn@mail.missouri.edu" method="POST" class="form" id="contact-form">
+  <p>You can also send me a quick message using the form below:</p>
+  <div class="row">
+    <div class="col-xs-6">
+      <input type="email" name="_replyto" class="form-control input-lg" placeholder="Email" title="Email">
+    </div>
+    <div class="col-xs-6">
+      <input type="text" name="name" class="form-control input-lg" placeholder="Name" title="Name">
+    </div>
+  </div>
+  <input type="hidden" name="_subject" value="New submission from AviKarn.com">
+  <textarea type="text" name="content" class="form-control input-lg" placeholder="Message" title="Message" required="required" rows="3"></textarea>
+  <input type="text" name="_gotcha" style="display:none">
+  <input type="hidden" name="_next" value="./aboutme?message=Your message was sent successfully, thanks!" />
+  <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+</form>
 
-<center>
-	<a href="https://twitter.com/avi_karn" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @avi_karn</a>
-	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-</center>
-<br>
+<hr>
 
 <p><script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=0rn8vq73z9x&amp;m=7&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=1" async="async"></script></p>
 
