@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Search avikarn.com"
+title: "Search"
 css: "/css/search.css"
 ---
 
