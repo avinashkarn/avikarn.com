@@ -42,14 +42,11 @@ I believe that some traits you are just born with. I know personally, I have had
 <li>2008-12 President’s Honorary Scholarship, Truman State University</li>
 </p>
 
-<p class="about-text">
-<span class="fa fa-envelope about-icon"></span>
-Let’s connect if you want to collaborate and or exchange ideas! Follow the social media links or drop a mail in the below form:
-</p>
+
 
 <hr>
 <form action="https://formspree.io/akarn@mail.missouri.edu" method="POST" class="form" id="contact-form">
-  <p>You can also send me a quick message using the form below:</p>
+  <span class="fa fa-envelope about-icon"></span> <p>You can also send me a quick message using the form below:</p>
   <div class="row">
     <div class="col-xs-6">
       <input type="email" name="_replyto" class="form-control input-lg" placeholder="Email" title="Email">
