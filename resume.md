@@ -85,7 +85,6 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I.
 `Linux` and `Windows`.
 
 <hr>
-<hr>
 <div id="contactme-section">
 <h1 id="contact">Contact</h1>
 
