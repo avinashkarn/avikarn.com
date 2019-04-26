@@ -9,7 +9,7 @@
 <h2>Cookies</h2>
 <div class="recipes">
 
-<div class="recipe">
+<div class="recipe" style="background-image: url(https://source.unsplash.com/qJ0zGkrE1Zg/1560x940)" data-cms-original-style="background-image: url('https://source.unsplash.com/qJ0zGkrE1Zg/1560x940')">
 <a href="/cookies/2017/01/05/gingernut-cookies/"><span>Gingernut Cookies</span></a>
 </div>
 
