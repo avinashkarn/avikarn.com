@@ -25,13 +25,13 @@
   navbar-links:
     About Me: "aboutme"
     #Tutorials: "books"
+    Food Blog:  "foodblog"
     Publications:
       - Google Scholar Profile: "https://scholar.google.com/citations?user=2XuofkoAAAAJ&hl=en"
       - ResearchGate Profile: "https://www.researchgate.net/profile/Avinash_Karn"
       - ORCID profile: "https://orcid.org/0000-0001-9730-8922"
       - Publons Profile: "https://publons.com/researcher/1700487/avinash-karn/"
     Resume: "resume"
-    Contact:  "contact"
   nav-search: "search"
 #  Tags: "tags"
 
