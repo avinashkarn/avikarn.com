@@ -43,7 +43,6 @@
 <body>
 
 <h2>Recepies</h2>
-<p>Hover over the image to see the effect.</p>
 
 <div class="container">
   <img src="/image/foodblog/biryani1.jpg" alt="Avatar" class="image">
