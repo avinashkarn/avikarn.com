@@ -49,15 +49,3 @@ div.desc {
   </a>
   <div class="desc">Add a description of the image here</div>
 </div>
-
-</body>
-</html>
-<h2>Recepies</h2>
-
-<div class="container">
-  <img src="/image/foodblog/biryani1.jpg" alt="Avatar" class="image">
-  <div class="overlay">
-    <div class="text">Red Chicken Biryani</div>
-  </div>
-</div>
-
