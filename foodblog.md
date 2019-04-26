@@ -39,7 +39,7 @@
   text-align: center;
 }
 </style>
-</head>
+
 <body>
 
 <h2>Recepies</h2>
