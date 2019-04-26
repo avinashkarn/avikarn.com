@@ -36,31 +36,6 @@
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
-<body>
-<nav>
-<a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml"><strong>&#9998;</strong> Edit navigation</a>
-
-
-
-
-<a href="/">Home</a>
-
-
-
-
-<a href="/about/">About</a>
-
-
-
-
-<a href="/recipes/" class=" active cc-active">Recipes</a>
-
-
-
-
-<a href="/contact/">Contact</a>
-
-</nav>
 
 <header>
 <a href="/">
