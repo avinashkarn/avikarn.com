@@ -31,9 +31,7 @@ I believe that some traits you are just born with. I know personally, I have had
 <hr>
 
 <h3>Awards </h3>
-<p class="about-text">
-<ul>
-	<span class="fa fa-award about-icon"></span>
+<span class="fa fa-award about-icon">Awards</span>
 	<li>2017 Research in Plant Biology Award, University of Missouri</li>
 	<li>2016 Life Sciences Week research recognition award, University of Missouri</li>
 	<li>2016/17 Division of Plant Sciences Travel Fund, University of Missouri</li>
@@ -41,10 +39,6 @@ I believe that some traits you are just born with. I know personally, I have had
 	<li>2012-17 Dr. Marcus Zuber Endowment Fellowship, University of Missouri</li>
 	<li>2010 Dr. Max E. Bell Scholarship, Truman State University</li>
 	<li>2008-12 President’s Honorary Scholarship, Truman State University</li>
-</u>
-</p>
-
-
 
 <hr>
 <div id="contactme-section">
