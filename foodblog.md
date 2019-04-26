@@ -10,7 +10,7 @@ title: Food Blog - From my wife and me
 </head>
 
 <div class="view">
-	<div class="my__suggestion"><center><h1><br>Books I Would Recommend</h1></center><div>
+	<div class="my__suggestion"><center><h1><br>Food blog - From me and my wife</h1></center><div>
 		<section class="grid">
 			<div class="product">
 				<div class="product__info">
