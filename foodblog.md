@@ -13,6 +13,7 @@
 <link rel="canonical" href="https://spring-bat.cloudvent.net//recipes/" />
 <meta property="og:url" content="https://spring-bat.cloudvent.net//recipes/" />
 <meta property="og:site_name" content="Treat Template" />
+
 <script type="application/ld+json">
 {"description":"Food blog template for Jekyll.","@type":"WebPage","url":"https://spring-bat.cloudvent.net//recipes/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://spring-bat.cloudvent.net//siteicon.png"}},"headline":"Recipes","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
