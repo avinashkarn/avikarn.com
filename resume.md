@@ -85,6 +85,14 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I.
 `Linux` and `Windows`.
 
 <hr>
+<hr>
+<div id="contactme-section">
+<h1 id="contact">Contact</h1>
+
+<p>You can <a href="mailto:akarn@mail.missouri.edu?subject=Hello from AviKarn.com">email me</a> or find me <a href="https://twitter.com/avi_karn">on Twitter</a> if you want to get in touch. I love meeting new people so don't hesitate to send a message!</p>
+<p>Let’s connect if you want to collaborate and or exchange ideas!</p>
+<p>If you'd like to set up a meeting with me, <a href="https://calendly.com/avikarn">click here to schedule a meeting</a> based on your availability.</p>
+
 <form action="https://formspree.io/akarn@mail.missouri.edu" method="POST" class="form" id="contact-form">
   <p>You can also send me a quick message using the form below:</p>
   <div class="row">
