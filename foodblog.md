@@ -3,38 +3,6 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Recipes | Treat Template</title>
-<meta name="generator" content="Jekyll v3.8.4" />
-<meta property="og:title" content="Recipes" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Food blog template for Jekyll." />
-<meta property="og:description" content="Food blog template for Jekyll." />
-<link rel="canonical" href="https://spring-bat.cloudvent.net//recipes/" />
-<meta property="og:url" content="https://spring-bat.cloudvent.net//recipes/" />
-<meta property="og:site_name" content="Treat Template" />
-
-<script type="application/ld+json">
-{"description":"Food blog template for Jekyll.","@type":"WebPage","url":"https://spring-bat.cloudvent.net//recipes/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://spring-bat.cloudvent.net//siteicon.png"}},"headline":"Recipes","@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-<link type="application/atom+xml" rel="alternate" href="https://spring-bat.cloudvent.net//feed.xml" title="Treat Template" />
-
-<link href="//fonts.googleapis.com/css?family=Antic+Slab|Fira+Sans" rel="stylesheet" />
-<link rel="stylesheet" media="screen" href="//d1qmdf3vop2l07.cloudfront.net/spring-bat.cloudvent.net/compressed/8693d5978ef483c08115cbbeac5f599a.css" data-cms-original-href="/css/screen.css" />
-
-<link rel="icon" type="image/png" href="//d1qmdf3vop2l07.cloudfront.net/spring-bat.cloudvent.net/compressed/8152639f5564982aa76830726ff3263e.png" data-cms-original-href="/images/favicon.png" />
-
-
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', '', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-</head>
-
 <div class="container main-content">
 <section class="content" data-cms-content-wrapper="/_layouts/default.html"><h1>Recipes</h1>
 
