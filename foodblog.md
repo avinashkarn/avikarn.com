@@ -3,8 +3,8 @@ layout: books
 title: Food Blog - From my wife and me
 ---
 <head>
-	<link rel="stylesheet" type="text/css" href="css/book_style.css" />
-	<link rel="stylesheet" type="text/css" href="css/books_component.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<!-- Modernizr is used for flexbox fallback -->
 	<script src="js/modernizr.custom.js"></script>
 </head>
