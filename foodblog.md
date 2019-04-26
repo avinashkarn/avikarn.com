@@ -37,11 +37,6 @@ ga('send', 'pageview');
 
 </head>
 
-<header>
-<a href="/">
-<img src="//d1qmdf3vop2l07.cloudfront.net/spring-bat.cloudvent.net/compressed/0901fb2d9ff1827c536cbd439b8f60ef.svg" width="180" alt="logo" data-cms-original-src="/images/logo.svg" />
-</a>
-</header>
 <div class="container main-content">
 <section class="content" data-cms-content-wrapper="/_layouts/default.html"><h1>Recipes</h1>
 
@@ -76,8 +71,3 @@ ga('send', 'pageview');
 
 </div>
 
-
-
-</div>
-</body>
-</html>
