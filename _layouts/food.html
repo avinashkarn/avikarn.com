@@ -1,45 +1,81 @@
-<!doctype html>
+    
+---
+layout: base
+---
+<!-- particles.js exclusion -->
+<style>
+  #particles-js{
+      display: none;
+  }
+</style>
 
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+{% include header.html type="food" %}
 
-	{% seo %}
-	
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      {% if page.gh-repo %}
+        {% assign gh_split =  page.gh-repo | split:'/'  %}
+        {% assign gh_user =  gh_split[0]  %}
+        {% assign gh_repo =  gh_split[1]  %}
+      
+        <div id="header-gh-btns">
+          {% if page.gh-badge.size > 0 %}
+            {% for badge in page.gh-badge %}
+              {% case badge %}
+                {% when 'star'%}
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                {% when 'watch'%}
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=watch&v=2&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                {% when 'fork'%}
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=fork&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>  
+                {% when 'follow'%}
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&type=follow&count=true" frameborder="0" scrolling="0" width="220px" height="20px"></iframe>
+              {% endcase %}
+            {% endfor %}
+          {% endif %}
+        </div>
+      {% endif %}
 
-	<link href="//fonts.googleapis.com/css?family=Antic+Slab|Fira+Sans" rel="stylesheet">
-	<link rel="stylesheet" media="screen" href="{{ site.baseurl }}/css/screen.css">
-	{% if page.print_stylesheet %}
-		<link rel="stylesheet" media="print" href="{{ site.baseurl }}/css/print.css">
-	{% endif %}
-	<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
+      <article role="main" class="food-post">
+        {{ content }}
+      </article>
 
-	{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
-		<script>
-			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-			ga('create', '{{ site.google_analytics_key }}', 'auto');
-			ga('send', 'pageview');
-		</script>
-		<script async src='https://www.google-analytics.com/analytics.js'></script>
-	{% endif %}
-</head>
-<body>
-	{% include navigation.html %}
-	<header>
-		<a href="{{site.baseurl }}/">
-			<img src="{{ site.baseurl }}/images/logo.svg" width="180" alt="logo">
-		</a>
-	</header>
-	<div class="container main-content">
-		<section class="content">{{ content }}</section>
-		{% include sidebar.html %}
-	</div>
-	<footer>
-		<div class="container">
-			<hr>
-			&copy; {{ site.title }} {{ site.time | date: "%Y" }}. All rights reserved.
-		</div>
-	</footer>
-</body>
-</html>
+      {% if page.tags.size > 0 %}
+        <div class="food-tags">
+          Tags:
+          {% if site.link-tags %}
+          {% for tag in page.tags %}
+            <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
+          {% endfor %}
+          {% else %}
+            {{ page.tags | join: ", " }}
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if page.social-share %}
+        {% include social-share.html %}
+      {% endif %}
+
+      <ul class="pager blog-pager">
+        {% if page.previous.url %}
+        <li class="previous">
+          <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+        </li>
+        {% endif %}
+        {% if page.next.url %}
+        <li class="next">
+          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+        </li>
+        {% endif %}
+      </ul>
+
+      {% if page.comments %}
+        <div class="disqus-comments">
+          {% include disqus.html %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
