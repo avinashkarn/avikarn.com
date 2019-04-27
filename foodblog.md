@@ -2,12 +2,12 @@
 layout: page
 title:  Food Blog
 bigimg: 
-    - "image/foodblog/briyani1.jpg" : "Red Chicken Briyani"
+  - "image/foodblog/briyani1.jpg" : "Red Chicken Briyani"
 ---
 
 
-  <!-- site body (untouched)--> 
-  <div class="posts-list">
+<!-- site body (untouched)--> 
+<div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
   <a href="{{ post.url | prepend: site.baseurl }}">
