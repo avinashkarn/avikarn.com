@@ -2,8 +2,7 @@
 layout: page
 title:  Food Blog
 bigimg: 
-  - "image/foodblog/biryani1.jpg" : "Red Chicken Briyani"
-  - "/image/frontpage/moon.jpg" : "Moon - Meade ETX 90C"
+  - "/image/foodblog/biryani1.jpg" : "Red Chicken Briyani"
 ---
 
 
