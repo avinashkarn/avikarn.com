@@ -1,5 +1,6 @@
 ---
 layout: page
+title:  Food Blog
 bigimg: 
     - "image/foodblog/briyani1.jpg" : "Red Chicken Briyani"
 ---
