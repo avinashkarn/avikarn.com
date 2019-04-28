@@ -113,9 +113,6 @@ div.desc {
 
 <div class="clearfix"></div>
 
-<div style="padding:6px;">
-  <p> Recepies coming soon...</p>
-</div>
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_donations" />
