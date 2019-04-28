@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title:  "Food Blog"
 bigimg: 
   - "/image/foodblog/biryani1.jpg" : "Red Chicken Briyani"
