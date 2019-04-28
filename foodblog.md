@@ -75,7 +75,7 @@ div.desc {
 <div class="responsive">
   <div class="gallery">
     <a href="/food/2019-04-27-Biryani">
-      <img src="/image/foodblog/biryani1.jpg" alt="Red Chicken Biryani" width="600" height="400">
+      <img border-radius: 50%; src="/image/foodblog/biryani1.jpg" alt="Red Chicken Biryani" width="600" height="400">
     </a>
     <div class="desc">Red Chicken Biryani <a href="/food/2019-04-27-Biryani"> </a></div>
   </div>
