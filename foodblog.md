@@ -1,5 +1,5 @@
 ---
-layout: bef_post
+layout: page
 title:  "Food Blog"
 bigimg: 
   - "/image/foodblog/biryani1.jpg" : "Red Chicken Briyani"
