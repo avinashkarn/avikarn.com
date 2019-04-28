@@ -1,6 +1,8 @@
 ---
 layout: page
 title:  "Food Blog"
+share-img: /image/foodblog/dinner1.jpg
+tags: [Food Blog]
 bigimg: 
   - "/image/foodblog/biryani1.jpg" : "Red Chicken Briyani"
   - "/image/foodblog/chicken2.jpg" : "Chicken Roast and Curry"
