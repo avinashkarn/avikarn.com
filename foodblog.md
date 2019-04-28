@@ -74,8 +74,8 @@ div.desc {
   
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="/image/foodblog/biryani1.jpg">
-      <img src="/_posts/2019-04-26-rhAmpSeq.md" alt="Red Chicken Biryani" width="600" height="400">
+    <a target="_blank" href="/_posts/2019-04-26-rhAmpSeq.md">
+      <img src="/image/foodblog/biryani1.jpg" alt="Red Chicken Biryani" width="600" height="400">
     </a>
     <div class="desc">Red Chicken Biryani</div>
   </div>
