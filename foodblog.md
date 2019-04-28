@@ -134,8 +134,6 @@ div.desc {
   clear: both;
 }
 </style>
-</head>
-<body>
 
 <center> <h2>Welcome to Our Food Blog</h2> </center>
 <p>In this section of the website, I will be sharing traditional Nepalese, Indian and American style cooking that from my mom, wife and myself.</p>
