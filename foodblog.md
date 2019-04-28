@@ -77,7 +77,7 @@ div.desc {
     <a href="/food/2019-04-27-Biryani">
       <img src="/image/foodblog/biryani1.jpg" alt="Red Chicken Biryani" width="600" height="400">
     </a>
-    <div class="desc">Red Chicken Biryani</div>
+    <div class="desc">Red Chicken Biryani <a href="/food/2019-04-27-Biryani"> </a></div>
   </div>
 </div>
 
