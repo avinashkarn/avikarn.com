@@ -111,6 +111,15 @@ div.desc {
   </div>
 </div>
 
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/friedchicken_salad.jpg">
+      <img src="/image/foodblog/friedchicken_salad.jpg" alt="Fried Chicken & Salad" width="600" height="400">
+    </a>
+    <div class="desc">Oven roasted chicken & green Salad</div>
+  </div>
+</div>
+
 <div class="clearfix"></div>
 
 <center>
