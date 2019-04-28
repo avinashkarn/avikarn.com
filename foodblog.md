@@ -15,32 +15,7 @@ bigimg:
   - "/image/foodblog/salad1.jpg" : "Salad"
   - "/image/foodblog/samosa1.jpg" : "SAMOSAA"
 ---
-<head>
-  <!-- Typed.js --> 
-<script src="/js/jquery-1.11.2.min.js"></script> <!-- Typed.js uses old jquery ver -->
-<script src="/js/typed.js" type="text/javascript"></script>
-<script>
-  $(function(){
-    $(".typed").typed({
-      strings: ["Bioinformatics.","Genetics.","Plants.","Science.","Art.","Cooking.","Astronomy."],
-      typeSpeed: 100,
-      loop: true,
-      backDelay: 1000
-    });
-  });
-</script>
 
-<hr>
-<p>
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="text-center">
-          <h3>I write about <span class="typed" style="color:#bb00cc";></span></h3>
-      </div>
-    </div>
-  </div>
-</p>
-</hr>
 
 <!-- site body (untouched)--> 
 <div class="posts-list">
@@ -209,4 +184,4 @@ div.desc {
 <div style="padding:6px;">
   <p> Recepies coming soon...</p>
 </div>
-</body>
+
