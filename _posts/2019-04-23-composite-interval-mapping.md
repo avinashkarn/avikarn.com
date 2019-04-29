@@ -108,7 +108,7 @@ summary(fitqtl)
 ```
 <strong>Note</strong> In `#value` Add the signifincat marker's coordinates i.e. `chromosome` and `pos`.
 
-Below is the screenshot of the output:
+Below is the screenshot of the output one might except to see in the R shell:
 ```html
 fitqtl summary
 
@@ -124,10 +124,18 @@ Model formula: y ~ Q1
 Model 	 2  13.07	6.53  30.4  77.8           0         0
 Error	 90  3.724093 0.04137881                                        
 Total	 92 16.795699 
-```
-<p> Note: `Additive effect` = (BB - AA)/2 and `Dominance effect` = AB - (AA + BB)/2 </p>
 
-<h3> Step 3.0 Identify QTL intervals</h3>
+Estimated effects:
+-----------------
+               est       SE      t
+Intercept  3.01835  0.09467 31.882
+9@2.5a    -0.22761  0.09566 -2.379
+9@2.5d    -1.41852  0.18935 -7.492
+
+```
+<p> Note: `Additive effect (a)` = (BB - AA)/2 and `Dominance effect (d)` = AB - (AA + BB)/2 </p>
+
+<h3> Step 6.0 Identify QTL intervals</h3>
 ```html
 lodint(results = scan.cim, chr = #value, drop = 1.8)
 ```
