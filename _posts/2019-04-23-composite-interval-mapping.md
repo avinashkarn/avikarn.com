@@ -6,15 +6,17 @@ image: /image/cim/scan.png
 share-img: /image/cim/scan.png
 ---
 
-In the __Quantitative Trait Locus (QTL)__ analysis, `composite interval mapping (CIM)` method  estimates the QTL positon with higher accuracy and statistical significance by combining interval mapping with multiple regression. This method also controls background noise resulting from genetic variations in other regions of the genome that affect the detection of the true QTL. In this post, my objective is describe and walk you through all the basic steps one might need run the composite inteval mapping in `R` software. For further descriptive information on R/qtl, please read the paper by <strong> Karl Broman </strong> at this link: http://www.rqtl.org/
+In the __Quantitative Trait Locus (QTL)__ analysis, `composite interval mapping (CIM)` method  estimates the QTL positon with higher accuracy and statistical significance by combining interval mapping with multiple regression. This method also controls background noise resulting from genetic variations in other regions of the genome that affect the detection of the true QTL. In this post, my objective is to describe and walk you through all the basic steps one might need run the composite inteval mapping in `R` software. For further descriptive information on R/qtl, please read the paper by <strong> Karl Broman </strong> at this link: http://www.rqtl.org/
 
 <center> <h1> To get started</h1> </center>
 
 <h2> Step 1. Download and install R software and R studio </h2>
 
 <ol>
-<li> Download and install the latest version of the <strong> R software </strong> from this link: https://cran.r-project.org/mirrors.html </li>
-<li> Download and install R studio from this link: https://www.rstudio.com/products/rstudio/download/ </li>
+<li> Download and install the latest version of the <strong> R software </strong> from this link: </li>
+  https://cran.r-project.org/mirrors.html
+<li> Download and install R studio from this link:</li>
+  https://www.rstudio.com/products/rstudio/download/
 <li> Finally, install the library <strong> qtl </strong> in R </li>
 </ol>
 
