@@ -7,7 +7,7 @@ bigimg:
   - "/image/foodblog/biryani1.jpg" : "Red Chicken Briyani"
   - "/image/foodblog/chicken2.jpg" : "Chicken Roast and Curry"
   - "/image/foodblog/dinner1.jpg" : "Food Feast"
-  - "/image/foodblog/khasi1.jpg" : "Goat Curry"
+  - "/vid/biryani_vid3.mp4" : "Biryani"
   - "/image/foodblog/khasta1.jpg" : "Khasta"
   - "/image/foodblog/lalmohan1.jpg" : "Gulab Jamun"
   - "/image/foodblog/momo1.jpg" : "Mo:Mo: Dumplings"
