@@ -72,7 +72,7 @@ div.desc {
 <p>In this section of the website, I will be sharing traditional Nepalese, Indian and American style cooking that from my mom, wife and myself.</p>
 
   <hr>
-<section>
+
 <div class="responsive">
   <div class="gallery">
     <a href="/food/2019-04-27-Biryani">
@@ -81,8 +81,6 @@ div.desc {
     <a href="/food/2019-04-27-Biryani"><div class="desc"> Red Chicken Biryani</div></a>
     </div>
 </div>
-
-
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/momo1.jpg">
@@ -109,9 +107,6 @@ div.desc {
     <div class="desc">Vegetarian cheese pizza</div>
   </div>
 </div>
-
-</section>
-
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/friedchicken_salad.jpg">
@@ -121,7 +116,27 @@ div.desc {
   </div>
 </div>
 
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/lalmohan1.jpg">
+      <img src="/image/foodblog/lalmohan1.jpg" alt="Gulab Jamun" width="600" height="400">
+    </a>
+    <div class="desc">Gulab Jamun</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/salad1.jpg">
+      <img src="/image/foodblog/salad1.jpg" alt="Salad" width="600" height="400">
+    </a>
+    <div class="desc">Cabbage and Orange Salad</div>
+  </div>
+</div>
+
 <div class="clearfix"></div>
+
+<hr>
 
 <center>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
