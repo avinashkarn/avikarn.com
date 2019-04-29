@@ -133,7 +133,7 @@ Intercept  3.01835  0.09467 31.882
 9@2.5d    -1.41852  0.18935 -7.492
 
 ```
-<p> Note: `Additive effect (a)` = (BB - AA)/2 and `Dominance effect (d)` = AB - (AA + BB)/2 </p>
+<p> Note: `Additive effect` (a) = (BB - AA)/2 and `Dominance effect` (d) = AB - (AA + BB)/2 </p>
 
 <h3> Step 6.0 Identify QTL intervals</h3>
 ```html
