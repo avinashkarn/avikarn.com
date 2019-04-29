@@ -8,10 +8,9 @@ css: "/css/search.css"
 
 ### Using the Amazing Google
 
-<div id="google-custom-search">
 <script>
   (function() {
-    var cx = '001667879288561868497:gexpgnc38qi';
+    var cx = '001667879288561868497:3jffrb10vgm';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
@@ -21,4 +20,3 @@ css: "/css/search.css"
   })();
 </script>
 <gcse:search></gcse:search>
-</div>
