@@ -72,7 +72,7 @@ div.desc {
 <p>In this section of the website, I will be sharing traditional Nepalese, Indian and American style cooking that from my mom, wife and myself.</p>
 
   <hr>
-
+<div class="row"> 
 <div class="responsive">
   <div class="gallery">
     <a href="/food/2019-04-27-Biryani">
@@ -107,6 +107,9 @@ div.desc {
     <div class="desc">Vegetarian cheese pizza</div>
   </div>
 </div>
+</div>
+
+<div class="row"> 
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/friedchicken_salad.jpg">
@@ -132,6 +135,7 @@ div.desc {
     </a>
     <div class="desc">Cabbage and Orange Salad</div>
   </div>
+</div>
 </div>
 
 <div class="clearfix"></div>
