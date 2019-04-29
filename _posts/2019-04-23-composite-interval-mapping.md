@@ -13,11 +13,9 @@ In the __Quantitative Trait Locus (QTL)__ analysis, `composite interval mapping 
 <h2> Step 1. Download and install R software and R studio </h2>
 
 <ol>
-<li> Download and install the latest version of the <strong> R software </strong> from this link: </li>
-  <p> https://cran.r-project.org/mirrors.html </p>
-<li> Download and install R studio from this link:</li>
-  <p> https://www.rstudio.com/products/rstudio/download/ </p>
-<li> Finally, install the library <strong> qtl </strong> in R </li>
+  <li> Download and install the latest version of the <strong> R software </strong> from this <a href="https://cran.r-                          project.org/mirrors.html"> link </a> </li>
+  <li> Download and install R studio from this <a href="https://www.rstudio.com/products/rstudio/download">link</a></li>
+  <li> Finally, install the library <strong> qtl </strong> in R </li>
 </ol>
 
 <h2> Step 2. Prepare the input files </h2>
@@ -126,6 +124,7 @@ Model 	 2  13.07	6.53  30.4  77.8           0         0
 Error	 90  3.724093 0.04137881                                        
 Total	 92 16.795699 
 ```
+<p> Note: `Additive effect` = (BB - AA)/2 and `Dominance effect` = AB - (AA + BB)/2 </p>
 
 <h3> Step 3.0 Identify QTL intervals</h3>
 ```html
