@@ -88,7 +88,7 @@ $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -DiscoverySNPCal
 ```
 <strong> Note:</strong> `sC` start chromsome and `eC` end chromosme. It is important to know how the chromosomes in the reference gneome are named. For example, in the above command, chromosome 1 is named as "Noirv2.chr1".
 
-<h2> Step 7. ProductionSNPCallerPluginV2 </h2>
+<h2>Step 7. ProductionSNPCallerPluginV2</h2>
 In this step, `ProductionSNPCallerPluginV2` converts the fastq and keyfile to genotypes, then its is added to a VCF file (default). 
 Command:
 ```bash
