@@ -72,7 +72,7 @@ div.desc {
 <p>In this section of the website, I will be sharing traditional Nepalese, Indian and American style cooking that from my mom, wife and myself.</p>
 
   <hr>
-  
+<section>
 <div class="responsive">
   <div class="gallery">
     <a href="/food/2019-04-27-Biryani">
@@ -109,6 +109,8 @@ div.desc {
     <div class="desc">Vegetarian cheese pizza</div>
   </div>
 </div>
+
+</section>
 
 <div class="responsive">
   <div class="gallery">
