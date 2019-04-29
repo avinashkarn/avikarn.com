@@ -80,7 +80,7 @@ Tags not mapped: 81305
 Tags dropped due to minimum mapq value: 0
 ```
 
-<h2> Step 6. DiscoverySNPCallerPluginV2 </h2>
+<h3> Step 6. DiscoverySNPCallerPluginV2 </h3>
 In this step, `DiscoverySNPCallerPluginV2` takes the files from the GBSV2.db database as an input and identifies SNPs from aligned tags. 
 Command:
 ```bash 
@@ -88,7 +88,7 @@ $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -DiscoverySNPCal
 ```
 <strong> Note:</strong> `sC` start chromsome and `eC` end chromosme. It is important to know how the chromosomes in the reference gneome are named. For example, in the above command, chromosome 1 is named as "Noirv2.chr1".
 
-<h2>Step 7. ProductionSNPCallerPluginV2</h2>
+<h3>Step 7. ProductionSNPCallerPluginV2</h3>
 In this step, `ProductionSNPCallerPluginV2` converts the fastq and keyfile to genotypes, then its is added to a VCF file (default). 
 Command:
 ```bash
