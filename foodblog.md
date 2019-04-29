@@ -83,10 +83,10 @@ div.desc {
 </div>
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="/image/foodblog/momo1.jpg">
-      <img src="/image/foodblog/momo1.jpg" alt="Forest" width="600" height="400">
+    <a href="/food/2019-04-29-MoMo">
+      <img src="/image/foodblog/momo1.jpg" alt="MoMo" width="600" height="400">
     </a>
-    <div class="desc">Nepalese Mo:Mo: dumplings</div>
+    <a href="/food/2019-04-29-MoMo"><div class="desc"> MoMo dumplings</div></a>
   </div>
 </div>
 
