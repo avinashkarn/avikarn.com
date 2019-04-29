@@ -105,7 +105,7 @@ Happy mapping !
 
 
 <h3> Bibliography </h3>
-P. Rastas. Lep-MAP3: Robust linkage mapping even for low-coverage whole genome sequencing data, Bioinformatics, to appear https://doi.org/10.1093/bioinformatics/btx494
+Rastas, Pasi. "Lep-MAP3: robust linkage mapping even for low-coverage whole genome sequencing data." Bioinformatics 33.23 (2017): 3726-3732.
 
 
 
