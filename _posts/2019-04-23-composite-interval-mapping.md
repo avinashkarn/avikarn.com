@@ -14,9 +14,9 @@ In the __Quantitative Trait Locus (QTL)__ analysis, `composite interval mapping 
 
 <ol>
 <li> Download and install the latest version of the <strong> R software </strong> from this link: </li>
-  https://cran.r-project.org/mirrors.html
+  <p> https://cran.r-project.org/mirrors.html </p>
 <li> Download and install R studio from this link:</li>
-  https://www.rstudio.com/products/rstudio/download/
+  <p> https://www.rstudio.com/products/rstudio/download/ </p>
 <li> Finally, install the library <strong> qtl </strong> in R </li>
 </ol>
 
