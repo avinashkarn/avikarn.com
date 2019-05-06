@@ -1,0 +1,302 @@
+---
+layout: post
+title: "How to use Multidimensional Scaling (MDS) to quality control your genetic data?"
+tags: [Multidimensional Scaling, MDS, Genetic data, QC]
+image: /image/mds/plotmds.png
+share-img: /image/mds/plotmds.png
+---
+
+__Multidimensional Scaling (MDS)__ statistical method can be effectively used to elucidate hidden population structure, and more importantly, as a quality control analysis of your genetic data, which i believe is crucial step before proceeding to any further data analysis. In my own research at Cornell, I work with tonnes of genetic data that are genetrated from the grape breeding programs, and religiously use MDS method to identify any possible pollen contamination (selfed or out-crossess), and or mislabled samples. In this tutorial, I would like show how you can use this method in your own data analysis in `TASSEL` software and visualize in `R` software. 
+
+<h3> What is MDS? </h3>
+It is also known as `prinicpal co-oridinate analysis (PCoA)`, and produces results that are very similar to `principal component analysis (PCA)` using `identity-by-state (IBS)` distance matrix of the samples included in the analysis.
+
+
+
+<center><img src="/image/ampseq/ampseq.png"></center>
+
+<center><h3> Flowchart of the steps involved in the AmpSeq process</h3></center>
+
+<center><img src="/image/ampseq/ampseq_process.png"></center>
+<center><img src="/image/ampseq/ampseq_data_flow.jpg"></center>
+
+<h2> Now your received your AmpSeq data, whats next?!? </h2>
+AmpSeq data analysis is a `semi-automated` computational pipeline. One may consult the Jonathan Fresendo's Github page for the pipeline scripts and commands used for `Primer Design`, `SNP calling`,  and `Haplotyping` at this link https://github.com/JFresnedo/AmpSeq
+
+<h1>Analyzing the AmpSeq data with analyze_amplicon.pl pipeline</h1>
+
+Now, I would like to introduce the pipeline <a href="https://github.com/avinashkarn/analyze_amplicon">analyze_amplicon.pl </a>
+used in the analysis of paired-end AmpSeq data. 
+This tutorial is divided into the following Steps:
+
+<strong>STEP 1.  </strong>Preparing `Key File` and`Sample file`
+<strong>STEP 2.  </strong>Running the script `analyze_amplicon.pl`
+<strong>STEP 3.  </strong>Output and data interpretation
+
+<h2> STEP 1. Preparing Key File, Sample file and Sample Read Files </h2>
+
+<h3> Key File </h3>
+A two-column, tab separated text file (`key_file.txt`) listing the primer names (ending `_F` and `_R` to indicate forward and reverse primer) and primer sequences. Creating this file is a straightforward, for which having the sequences of the primers is enough, however, it is important that one removes all forward and reverse `linker sequences` from individual primer sequences in the `key file`. The naming of primer sequences maybe somewhat arbitrary, but it is always better to use intuitive names for downstream analysis. The file is simple and should not have a header.
+
+Below is an example of the key file `key_file.txt`:
+```html
+Ren1_S13_20430245_F	TTAGGAGATAGGCCTGGACAAG
+Ren1_S13_20430245_R	TTTCCTTGCAGCCAAACAGACG
+Ren1_SC47_6_F	GATCAGCCACCAAAAGAGGA
+Ren1_SC47_6_R	GCTTTGTAGTCTGCCTACTTGATG
+Ren6_PN9_063_F	TCCTAAGACAAAGTTCCCTTCA
+Ren6_PN9_063_R	GTTACAGTTGAATCCTTGCACA
+Ren6_PN9_068_F	CCCCAATCTTAAATGGAACA
+Ren6_PN9_068_R	TAGTGGGACGTTGGACACTT
+Ren7_PN19_018_F	CAAAACAAGTCCATTGCGTTTA
+Ren7_PN19_018_R	TGTCCCATGACAGTTTATCCAG
+Ren7_VVin74_F	TTGGTTGAGGGAAAAAGGAAAG
+Ren7_VVin74_R	AAGAAATATGAGGTTGGGTGAG
+Ren7_VVIu09_F	TATCCTCTGTCACATTAGTTGT
+Ren7_VVIu09_R	GTGATATTTTCCCGTTGTTAGG
+Rpv12_UDV014_F	TGAAAGTCGATGGAATGTGC
+Rpv12_UDV014_R	TTGCATCTCCCTTCTCAATG
+Rpv12_UDV370_F	TGGTTGAGCACAGTTCTTGG
+Rpv12_UDV370_R	CAGAAAGCCCTGATCTCCTG
+Run1_CB3334_Haplo64_F	CCAAGGTGCAGATAATGAAAGAA
+Run1_CB3334_Haplo64_R	GGTAGTCTTTCGTGTGCATATTT
+```
+<h3> Sample file </h3>
+`Fastq` files from sequencing having epithets `R1` and `R2` indicates that __pair-ended sequencing__ was performed; At the Cornell University sequencing facility `read files` are named as in below example: 
+<img src="/image/ampseq/sample.JPG">
+
+The `sample file` is a `.txt` file. When you get the names directly from the sequencing files, it may be tricky to prepare the files, but if you are handy with `Excel` and know how to delimit separation, using `find` and `replace` function, and `concatenation`, the task is simple. To help you with that a good starting point is to have a list of the `fastq` files located in the directory tutorial, for that you use:
+
+```html
+ls *fastq.gz > genotypes.txt
+```
+
+And from that list you can develop `sample file` that looks like below:
+
+```html
+Parent1_B10	Parent1_B10_R1.fastq.gz	Parent1_B10_R2.fastq.gz
+Parent2_C12	Parent2_C12_R1.fastq.gz	Parent2_C12_R2.fastq.gz
+Progeny01_H01	Progeny01_H01_R1.fastq.gz	Progeny01_H01_R2.fastq.gz
+Progeny02_F02	Progeny02_F02_R1.fastq.gz	Progeny02_F02_R2.fastq.gz
+Progeny03_G02	Progeny03_G02_R1.fastq.gz	Progeny03_G02_R2.fastq.gz
+Progeny04_H02	Progeny04_H02_R1.fastq.gz	Progeny04_H02_R2.fastq.gz
+Progeny05_A03	Progeny05_A03_R1.fastq.gz	Progeny05_A03_R2.fastq.gz
+Progeny06_B03	Progeny06_B03_R1.fastq.gz	Progeny06_B03_R2.fastq.gz
+Progeny07_C03	Progeny07_C03_R1.fastq.gz	Progeny07_C03_R2.fastq.gz
+Progeny08_D03	Progeny08_D03_R1.fastq.gz	Progeny08_D03_R2.fastq.gz
+Progeny09_E03	Progeny09_E03_R1.fastq.gz	Progeny09_E03_R2.fastq.gz
+Progeny10_F03	Progeny10_F03_R1.fastq.gz	Progeny10_F03_R2.fastq.gz
+```
+
+In the `sample file`, column 1 contains the IDs can be specified by the user, but it is recommended that the names keep the coordinate of the well (e.g. H01, A03, D03) for quality control and particularly when genotypes (plants) are duplicated in the plate. Columns 2 and 3 are the names of the two fastq files retrieved from the sequencer, therefore, these names use the convention of naming by the Cornell sequencing facility (lane, plate, ID, well), and the names need to conserve at least `R1` or `R2.fasq.gz` . Finally, save the file as a text (.txt) file. 
+
+<h2> STEP 2. Running the script analyze_amplicon.pl </h2>
+Place the individual `fastq` files, the `key_file` and `sample_file` in a directory using `FileZilla` (instruction on how to transfer at this link https://wiki.filezilla-project.org/Using ).
+
+Note: Normally, it is strongly suggested to make copies all the original `fastq` files (sample read files) in a backup folder.
+
+Then, from the directory, one is able to run the script `analyze_amplicon.pl` by typing the following command line on the `Linux` console: 
+```bash	
+$analyze_amplicon.pl –i 8 –s sample_file.txt –k key_file.txt –o Output –m clustalo:clustal
+```
+
+To list all the parameters in the script `analyze_amplicon.pl` please type the following on your Linux command line console:
+```bash
+/programs/bin/perlscripts/analyze_amplicon.pl –h
+```
+Using the default parameters which includes skipping step 8, the processing of data depends on samples and number of markers. From your terminal you will see a lot of information according to the step being ran, for example:
+
+For __step 1:__ during this step the sequencing information is trimmed for the adaptors and keeping reads with a minimum quality. The trimming quality and the quality threshold of the reads may be defined by the use with the option `-d`.
+```html
+Step 1. Trimming adapter and low quality reads.
+  Trimming quality: 20; Minimum read length: 100
+
+Trimming Parent1_B10 ... Total 111425; Survived: 37693; Percent 33.83%
+Trimming Parent2_C12 ... Total 111862; Survived: 38246; Percent 34.19%
+Trimming Progeny01_H01 ... Total 133064; Survived: 37891; Percent 28.48%
+Trimming Progeny02_F02 ... Total 87129; Survived: 18887; Percent 21.68%
+Trimming Progeny03_G02 ... Total 135088; Survived: 43731; Percent 32.37%
+Trimming Progeny04_H02 ... Total 122080; Survived: 25971; Percent 21.27%
+Trimming Progeny05_A03 ... Total 131967; Survived: 41960; Percent 31.80%
+Trimming Progeny06_B03 ... Total 122834; Survived: 34413; Percent 28.02%
+Trimming Progeny07_C03 ... Total 104262; Survived: 25745; Percent 24.69%
+Trimming Progeny08_D03 ... Total 118236; Survived: 33469; Percent 28.31%
+Trimming Progeny09_E03 ... Total 120362; Survived: 33234; Percent 27.61%
+Trimming Progeny10_F03 ... Total 91115; Survived: 15923; Percent 17.48%
+Read trimming finished.
+```
+
+For __step 2:__ in this step a consolidation of the reads is performed and can be made in three different ways (modes). The definition of the mode to use may be entered through the option and -l.
+```html
+Step 2. Contiging (mode 1) the overlapping read pairs. Discard the non-overlapping reads.
+  Range of overlap: 20 bp - 250 bp; Mismatch rate: 0.03
+Contiging read pair for Parent1_B10 ... Total:  37693; Form contig: 98.83%
+Contiging read pair for Parent2_C12 ... Total:  38246; Form contig: 99.24%
+Contiging read pair for Progeny01_H01 ... Total:  37891; Form contig: 99.27%
+Contiging read pair for Progeny02_F02 ... Total:  18887; Form contig: 99.38%
+Contiging read pair for Progeny03_G02 ... Total:  43731; Form contig: 99.17%
+Contiging read pair for Progeny04_H02 ... Total:  25971; Form contig: 99.32%
+Contiging read pair for Progeny05_A03 ... Total:  41960; Form contig: 99.10%
+Contiging read pair for Progeny06_B03 ... Total:  34413; Form contig: 99.13%
+Contiging read pair for Progeny07_C03 ... Total:  25745; Form contig: 99.25%
+Contiging read pair for Progeny08_D03 ... Total:  33469; Form contig: 98.86%
+Contiging read pair for Progeny09_E03 ... Total:  33234; Form contig: 99.06%
+Contiging read pair for Progeny10_F03 ... Total:  15923; Form contig: 99.16%
+Read assembly/concatenate finished.
+```
+
+For __step 3:__ the reads identified in the sequence files are split based on the sequences of the forward primer (from `key_file.txt`). The length of the primer informs the minimum overlapping to consider and it may be modified by the use using the option `-b`. 
+```html
+Step 3. Splitting sequences files by locus using primer F.
+  Forward primer length:  20 to 23
+  Use shortest primer length  20 bp to split locus in  sequence file
+  Reverse primer length:  20 to 24
+  Use shortest primer length  20 bp to split locus in  sequence file
+Parent1_B10     Total: 37228    Unmatched_F: 15050      Unmatched_R: 966
+Parent2_C12     Total: 37945    Unmatched_F: 4311       Unmatched_R: 1451
+Progeny01_H01   Total: 37580    Unmatched_F: 5895       Unmatched_R: 1261
+Progeny02_F02   Total: 18744    Unmatched_F: 4929       Unmatched_R: 566
+Progeny03_G02   Total: 43336    Unmatched_F: 16116      Unmatched_R: 1086
+Progeny04_H02   Total: 25764    Unmatched_F: 3683       Unmatched_R: 873
+Progeny05_A03   Total: 41555    Unmatched_F: 18370      Unmatched_R: 915
+Progeny06_B03   Total: 34083    Unmatched_F: 13639      Unmatched_R: 876
+Progeny07_C03   Total: 25520    Unmatched_F: 4092       Unmatched_R: 838
+Progeny08_D03   Total: 33039    Unmatched_F: 9190       Unmatched_R: 984
+Progeny09_E03   Total: 32882    Unmatched_F: 13038      Unmatched_R: 830
+Progeny10_F03   Total: 15763    Unmatched_F: 2541       Unmatched_R: 536
+File splitting finished!
+```
+
+For __step 4:__ in this step the reads that are identical in sequences are grouped by sample (i.e. ID in the `sample_file.txt`).
+```html
+Step 4. Collapsing identical reads in each sample
+Collapsing reads for sample Parent1_B10 ...
+Collapsing reads for sample Parent2_C12 ...
+Collapsing reads for sample Progeny01_H01 ...
+Collapsing reads for sample Progeny02_F02 ...
+Collapsing reads for sample Progeny03_G02 ...
+Collapsing reads for sample Progeny04_H02 ...
+Collapsing reads for sample Progeny05_A03 ...
+Collapsing reads for sample Progeny06_B03 ...
+Collapsing reads for sample Progeny07_C03 ...
+Collapsing reads for sample Progeny08_D03 ...
+Collapsing reads for sample Progeny09_E03 ...
+Collapsing reads for sample Progeny10_F03 ...
+```
+
+For __step 5:__ in the step the grouped files are collapsed according to the names of the loci that one have provided in the `key_file.txt` thus, now it is possible to have read counts in by locus-sample bases.
+
+```html
+Step 5. Collapsing reads across all samples.
+Collapsing gene Ren1_S13_20430245 ...
+Collapsing gene Ren1_SC47_6 ...
+Collapsing gene Ren6_PN9_063 ...
+Collapsing gene Ren6_PN9_068 ...
+Collapsing gene Ren7_PN19_018 ...
+Collapsing gene Ren7_VVin74 ...
+Collapsing gene Ren7_VVIu09 ...
+Collapsing gene Rpv12_UDV014 ...
+Collapsing gene Rpv12_UDV370 ... 
+Collapsing gene Run1_CB3334_Haplo64 ...
+Collapsing identical sequences per locus finished.
+```
+
+For __step 6:__ In this step is the consolidation in by locus-sample bases of the information recovered in step 5 and which will be stored in different forms and formats for subsequent analyses.
+
+```html
+Step 6. Making haplotype-by-sample matrix for each locus.
+process gene Ren1_S13_20430245 ...
+Warning: Ren1_S13_20430245 file test/merged/Ren1_S13_20430245 is empty.
+process gene Ren1_SC47_6 ...
+process gene Ren6_PN9_063 ...
+process gene Ren6_PN9_068 ...
+process gene Ren7_PN19_018 ...
+process gene Ren7_VVin74 ...
+process gene Ren7_VVIu09 ...
+process gene Rpv12_UDV014 ...
+process gene Rpv12_UDV370 ...
+process gene Run1_CB3334_Haplo64 ...
+Warning: Run1_CB3334_Haplo64 file test/merged/Run1_CB3334_Haplo64 is empty.
+Making haplotype-by-sample table finished.
+```
+
+For __step 7:__ this step ends with a file called `hap_genotype`, which has the information of the two most repeated haplotypes (per locus) observed across the samples analyzed, the data is provided for every sample in a format similar to a `VCF` file. The number of haplotypes to report may be modified by the user by using the option `-c`. The options `-x` `-a` and `-m` are of relevance for this step too, and the user may play with these options to be more conservative or liberal about the determination of the top distinct haplotypes.
+
+```html
+Step 7. Identifying top 2 haplotypes from each sample.
+Identifying top 2 haplotypes finished.
+```
+
+And finally for __step 8:__ this step is not relevant for the current analysis. However, it may be really important for some applications. Particularly, if you know the exact sequence of the amplicon that you are analyzing, through this step one will be able to call SNPs within the amplicon sequence. Let’s say that you are going to analyze specific gene sequences for which SNPs or Indels will give you additional insights about the variants that are explaining particular phenotypes. In order to use this option you need to provide a fasta file having the sequences of the target amplicons and provide the name of the file in front of the option `-r`. The names of the sequences in the fasta file must match with the name of the primers used to amplify that sequence. If you do not know the sequence of the amplicon, the analysis of amplicons as in this example will help to unravel the sequences flanked for markers and which may be useful to determine target sequences for subsequent studies for the identification of variants.
+
+```html
+##Step 8. Calling SNP skipped!##
+```
+
+<h2>STEP 4. Output and data interpretation </h2>
+
+The output of this data processing is located in the directory `Output`, which has the following directories and files:
+
+```html
+cd ..
+ls -R
+.:
+assemble
+collapse
+hap_genotype
+haplotype2fasta
+haplotype2sample_raw
+merged
+runlog
+split
+stats
+tmp
+trimmed
+vcf
+```
+The directories and files are showed above: `runlog` corresponds to a file tacking all the procedures and output ran during the process (It is very important to check this file if the quality of the data is a concern). `hap_genotype` is one of the most relevant files from this analysis, and in a format similar to a `VCF` it shows the information about the two most important haplotypes (which can also be interpreted as alleles) of every amplicon in every ID sample. 
+
+For the purpose of this analysis, the most important file to check first is `gene_sample_read_count.txt` located in `Output/stats/` and which inform about the read counts per amplicon per sample. This file is easily handled using Excel, which allows to add phenotypic information available for the samples and thus to perform some routines to define the most relevant amplicons for the exhibition of the phenotype based on logistic regression.
+
+An excerpt of the file with phenotypic is shown below:
+<img src="/image/ampseq/readcount.JPG">
+
+A file that can be of interest for certain projects in which the knowledge of the genotypes (understood as diplotypes for the observed dominant haplotypes/alleles) per sample of certain amplicons is highly relevant, perhaps the most informative file is `hap_genotype` which shows the genotype for every individual based on the dominant haplotypes identified in the data process, the data retrieved looks like more or less like this:
+
+<center><img src="/image/ampseq/readcount.JPG"> </center>
+
+<center><h3> --- End of Tutorial --- </h3></center>
+
+__Thank you__ for reading this tutorial. I really hope this helpful in giving you the concept and technology behind <strong>AmpSeq </strong> and the data analysis. If you have any questions or comments, please let comment below or send me an email. 
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_donations" />
+<input type="hidden" name="business" value="8ZF7YRTZ42EKU" />
+<input type="hidden" name="item_name" value="To support education for all." />
+<input type="hidden" name="currency_code" value="USD" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+Happy AmpSeq-ing !
+
+
+<h3> Bibliography </h3>
+*Computational analysis of AmpSeq data for targeted, high-throughput genotyping of amplicons*
+Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, <strong>Avinash Karn</strong> , Bruce I. Reisch, Lance Cadle-Davidson (2018) (Accepted) Frontiers in Plant Sciences
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359651-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-123359651-1');
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5126027065024936",
+    enable_page_level_ads: true
+  });
+</script>
