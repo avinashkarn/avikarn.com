@@ -9,7 +9,7 @@ share-img: /image/mds/plotmds.png
 __Multidimensional Scaling (MDS)__ statistical method can be effectively used to elucidate hidden population structure, and more importantly, as a quality control analysis tool while working with genetic data. I strongly encourage anyone to QC their data (phenotype or genotype data) before proceeding to any further analysis. In my own research, I work with plethora of genetic data genetrated from the grape breeding programs, and I use MDS religiously to identify any possible pollen contamination (selfed or out-crossess), and or mislabled samples, and further to use it as a population structure covariate in GLM and MLM models in GWAS. In this tutorial, one can use the you through how you can use this method in your own data analysis in `TASSEL` software and visualize in `R` software. For detail information on MDS, please read this article at this <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-179">link</a>
 
 <h3> What is MDS? </h3>
-It is also known as `Prinicpal Co-ordinate Analysis (PCoA)`, and produces results that are very similar to `Principal Component Analysis (PCA)`. MD `Identity-By-State (IBS)` distance matrix of the samples included in the analysis. 
+MDS is also known as `Prinicpal Co-ordinate Analysis (PCoA)`, and produces results that are very similar to `Principal Component Analysis (PCA)`. A genome-wide pairwise `Identity-By-State (IBS)` distance matrix of the samples included in the analysis. 
 <iframe src="https://giphy.com/embed/ZEx6Jl0VnyX2TnYNxg" width="480" height="452" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ZEx6Jl0VnyX2TnYNxg">via GIPHY</a></p>
 
 
