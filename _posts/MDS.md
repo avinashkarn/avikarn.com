@@ -6,11 +6,11 @@ image: /image/mds/plotmds.png
 share-img: /image/mds/plotmds.png
 ---
 
-__Multidimensional Scaling (MDS)__ statistical method can be effectively used to elucidate hidden population structure, and more importantly, as a quality control analysis of your genetic data, which i believe is crucial step before proceeding to any further data analysis. In my own research at Cornell, I work with tonnes of genetic data that are genetrated from the grape breeding programs, and religiously use MDS method to identify any possible pollen contamination (selfed or out-crossess), and or mislabled samples. In this tutorial, I would like show how you can use this method in your own data analysis in `TASSEL` software and visualize in `R` software. 
+__Multidimensional Scaling (MDS)__ statistical method can be effectively used to elucidate hidden population structure, and more importantly, as a quality control analysis tool while working with genetic data. I strongly encourage anyone to QC their data (phenotype or genotype data) before proceeding to any further analysis. In my own research, I work with plethora of genetic data genetrated from the grape breeding programs, and I use MDS religiously to identify any possible pollen contamination (selfed or out-crossess), and or mislabled samples, and further to use it as a population structure covariate in GLM and MLM models in GWAS. In this tutorial, one can use the you through how you can use this method in your own data analysis in `TASSEL` software and visualize in `R` software. For detail information on MDS, please read this article at this <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-179">link</a>
 
 <h3> What is MDS? </h3>
-It is also known as `prinicpal co-oridinate analysis (PCoA)`, and produces results that are very similar to `principal component analysis (PCA)` using `identity-by-state (IBS)` distance matrix of the samples included in the analysis.
-
+It is also known as `Prinicpal Co-ordinate Analysis (PCoA)`, and produces results that are very similar to `Principal Component Analysis (PCA)`. MD `Identity-By-State (IBS)` distance matrix of the samples included in the analysis. 
+<iframe src="https://giphy.com/embed/ZEx6Jl0VnyX2TnYNxg" width="480" height="452" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ZEx6Jl0VnyX2TnYNxg">via GIPHY</a></p>
 
 
 <center><img src="/image/ampseq/ampseq.png"></center>
