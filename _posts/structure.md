@@ -1,0 +1,106 @@
+---
+layout: post
+title: "Structure software: To investigate genetic admixture and overall population structure"
+tags: [Structure software, Genetic Admixture, Genetic data, Population structure]
+image: /image/structure/
+share-img: /image/structure/
+---
+
+__Structure Software__ is a freely available software package that one may use to investigate admixed individuals, point of hybridization, migrants, and over all population structure using a commonly used genetic markers such as SNPs and SSRs. This software was developed by __Pritchard Lab__ at __Stanford University__
+
+I strongly encourage anyone to QC their data (phenotype or genotype data) before proceeding to any further data analysis. In my own research, I work with plethora of genetic data genetrated from the breeding programs, and I use MDS religiously to identify any possible pollen contamination (selfed or out-crossess), and or mislabled samples, and further, I use it as a population structure covariates in GLM and MLM in GWAS analysis. 
+
+In this tutorial, I will walk through how anyone can use __easily__ run MDS analysis on their data in `TASSEL` software and visualize in `R` software. For detail information on MDS, please read this article at this <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-179">link</a>
+
+<h2> What is MDS? </h2>
+MDS is also known as `Prinicpal Co-ordinate Analysis (PCoA)`, and produces results that are very similar to `Principal Component Analysis (PCA)`. A genome-wide pairwise `Identity-By-State (IBS)` distance matrix using the genotype data is first calculated, then following the MDS analysis. 
+
+<center><img src="/image/mds/mdsanimation1.gif" alt="3D MDS plot"></center>
+
+<center><h1> Calculating MDS </h1></center>
+In this tutorial, I will show how to calculate MDS in `TASSEL` software. If you are familiar with TASSEL or do not have it installed on your computer, then, please download and go through its documentation at this <a href="https://www.maizegenetics.net/tassel"> link </a>. 
+
+<h2> Step: 1 Import data in TASSEL</h2>
+
+<hr>
+<center><img src="/image/mds/tassel1.gif" alt="Import data"></center>
+
+<h2> Step: 2 Calculate distance matrix</h2>
+
+<hr>
+<center><img src="/image/mds/tassel2.gif" alt="Calculate distance matrix"></center>
+
+<h2> Step: 3 Calculate MDS</h2>
+
+<hr>
+<center><img src="/image/mds/tassel3.gif" alt="Calculate MDS"></center>
+
+<h2> Step: 4 Plot PCoAs in TASSEL</h2>
+
+<hr>
+<center><img src="/image/mds/tassel4.gif" alt="Plot MDS"></center>
+
+<h2> Optional step: Plotting in R using ggplot2 </h2>
+Export the `MDS` results as a `.txt` file and edit in `MS Excel` to add the below `header` and information to plot in `ggplot2`.
+
+<center><img src="/image/mds/mdsfile.JPG" alt="File"></center>
+
+Once the file has bee formatted, One may plot the PCoA results using `ggplot2` library in `R software` using the below commands:
+
+```html
+  #Library
+  library(ggplot2)
+
+  #import MDS data
+  MDS = read.table("MDS.txt", header = T)
+
+  head(MDS)
+
+  #Plot MDS
+  MDS_plot <- ggplot(MDS, aes(x=PC1,y=PC2,color=Type, cex=1, label=Sample))
+  MDS_plot <- MDS_plot + geom_point() + geom_text(aes(label=Sample),hjust=0, vjust=0)
+  MDS_plot
+```
+
+<h1> Output </h1>
+An example of an ouptut from the `R` command is shown below. In the figure below, the samples represent PCoA of samples from a F1 cross, and one may see that most of the F1 progenies cluster between the parent clusters on the left and right, whereas, there are a few samples (in circle) that cluster with one of the parents indicating that they were a self-pollinated.
+
+<center><img src="/image/mds/plotmds2.png" alt="MDS plot"></center>
+
+
+<center><h3> --- End of Tutorial --- </h3></center>
+
+__Thank you__ for reading this tutorial. If you have any questions or comments, please let me know in the comment section below or send me an email. 
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_donations" />
+<input type="hidden" name="business" value="8ZF7YRTZ42EKU" />
+<input type="hidden" name="item_name" value="To support education for all." />
+<input type="hidden" name="currency_code" value="USD" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+Happy QC-ing !
+
+
+<h3> Bibliography </h3>
+<p>Bradbury, Peter J., et al. "TASSEL: software for association mapping of complex traits in diverse samples." Bioinformatics 23.19 (2007): 2633-2635.</p>
+<p>Tzeng, Jengnan, Henry Horng-Shing Lu, and Wen-Hsiung Li. "Multidimensional scaling for large genomic data sets." BMC bioinformatics 9.1 (2008): 179. </p>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359651-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-123359651-1');
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5126027065024936",
+    enable_page_level_ads: true
+  });
+</script>
+
