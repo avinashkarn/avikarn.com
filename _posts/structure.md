@@ -6,21 +6,20 @@ image: /image/structure/
 share-img: /image/structure/
 ---
 
-__Structure Software__ is a freely available software package that one may use to investigate admixed individuals, point of hybridization, migrants, and over all population structure using a commonly used genetic markers such as SNPs and SSRs. This software was developed by __Pritchard Lab__ at __Stanford University__
+__Structure Software__ is a freely available software package that one may use for rigorous investigation of `admixed individuals`; identification `point of hybridization` and `migrants`; and over all `structure` of a population using a commonly used genetic markers such as `SNPs` and `SSRs`. This software was developed by __Pritchard Lab__ at __Stanford University__ and can downloaded at this <a href="https://web.stanford.edu/group/pritchardlab/structure.html"> link </a>.
 
-I strongly encourage anyone to QC their data (phenotype or genotype data) before proceeding to any further data analysis. In my own research, I work with plethora of genetic data genetrated from the breeding programs, and I use MDS religiously to identify any possible pollen contamination (selfed or out-crossess), and or mislabled samples, and further, I use it as a population structure covariates in GLM and MLM in GWAS analysis. 
+In this tutorial, I will show how to prepare `input` files and run the `Structure` software. For detail information, please read this article at this <a href="https://web.stanford.edu/group/pritchardlab/structure.html">link</a>
 
-In this tutorial, I will walk through how anyone can use __easily__ run MDS analysis on their data in `TASSEL` software and visualize in `R` software. For detail information on MDS, please read this article at this <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-179">link</a>
+<h1> Step 1: Preparing the Input file </h1>
+In this tutorial, I am using `numerical` SNP data as in `input` genotype file. One can convert their genotype data in numerical format in `TASSEL` software or any software package available as per ones convenience. The file needs to be foramtted properly as shown below in the image below and save it as `.txt` file.
 
-<h2> What is MDS? </h2>
-MDS is also known as `Prinicpal Co-ordinate Analysis (PCoA)`, and produces results that are very similar to `Principal Component Analysis (PCA)`. A genome-wide pairwise `Identity-By-State (IBS)` distance matrix using the genotype data is first calculated, then following the MDS analysis. 
+<center><img src="/image/structure/inputfile" alt="Input File.JPG"></center>
 
-<center><img src="/image/mds/mdsanimation1.gif" alt="3D MDS plot"></center>
+<hr>
+__Please Note__ Missing data is denoted as `-9` in the above image. 
+<hr>
 
-<center><h1> Calculating MDS </h1></center>
-In this tutorial, I will show how to calculate MDS in `TASSEL` software. If you are familiar with TASSEL or do not have it installed on your computer, then, please download and go through its documentation at this <a href="https://www.maizegenetics.net/tassel"> link </a>. 
-
-<h2> Step: 1 Import data in TASSEL</h2>
+<h1> Step 2: Importing file in Structure </h1>
 
 <hr>
 <center><img src="/image/mds/tassel1.gif" alt="Import data"></center>
