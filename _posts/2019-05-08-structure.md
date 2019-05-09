@@ -69,7 +69,7 @@ One your web browser search for `structure harvester`, and click the first the s
 <center><img src="/image/structure/deltaK.png"></center>
 
 __Therefore__ the correct bar plot with correct number of sub-population (k) is 3, which can be plotted by following the steps shown in __1.4__
-<center><img src="/image/structure/finalstructure.jpg"><center>
+<center><img src="/image/structure/finalstructure.jpg"></center>
   
   
 <center><h3> --- End of Tutorial --- </h3></center>
