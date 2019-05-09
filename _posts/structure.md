@@ -13,7 +13,7 @@ In this tutorial, I will show how to prepare `input` files and run the `Structur
 <h1> Step 1: Preparing the Input file </h1>
 In this tutorial, I am using `numerical` SNP data as in `input` genotype file. One can convert their genotype data in numerical format in `TASSEL` software or any software package available as per ones convenience. The file needs to be foramtted properly as shown below in the image below and save it as `.txt` file.
 
-<center><img src="/image/structure/inputfile.JPG" alt="Input File"></center>
+<center><img src="/image/structure/input.JPG" alt="Input File"></center>
 
 <hr>
 __Please Note__ Missing data is denoted as `-9` in the above image. 
