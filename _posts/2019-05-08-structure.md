@@ -61,11 +61,11 @@ One your web browser search for `structure harvester`, and click the first the s
 <center><img src="/image/structure/structure6.gif" alt="Running Structure Harvester"></center>
 <hr>
 
-<h2> 2.2 Interpreting the output </h1>
+<h2> 2.2 Interpreting the output </h2>
 `Evanno table` highlights the significant `k` value that is estimated for this genotype data (see below figure). For this tutorial data set, the estimated from `k` is 3 subpopulation which is also supported by the `Delta K` plot, where a clear peak is see at `K = 3` (see Delta K plot below).
 
 <center><img src="/image/structure/ktable.JPG"><center>
- <hr>
+<hr>
 <center><img src="/image/structure/deltaK.png"><center>
 
 __Therefore__ the correct bar plot with correct number of sub-population (k) is 3, which can be plotted by following the steps shown in __1.4__ .
