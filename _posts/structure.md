@@ -2,71 +2,76 @@
 layout: post
 title: "Structure software: To investigate genetic admixture and overall population structure"
 tags: [Structure software, Genetic Admixture, Genetic data, Population structure]
-image: /image/structure/
-share-img: /image/structure/
+image: /image/structure/finalstructure.jpg
+share-img: /image/structure/finalstructure.jpg
 ---
 
-__Structure Software__ is a freely available software package that one may use for rigorous investigation of `admixed individuals`; identification `point of hybridization` and `migrants`; and over all `structure` of a population using a commonly used genetic markers such as `SNPs` and `SSRs`. This software was developed by __Pritchard Lab__ at __Stanford University__ and can downloaded at this <a href="https://web.stanford.edu/group/pritchardlab/structure.html"> link </a>.
+__Structure Software__ is a freely available software package that one may use for rigorous investigation of `admixed individuals`; identification of `point of hybridization` and `migrants`; and estimate over all `structure` of a population using a commonly used genetic markers such as `SNPs` and `SSRs`. This software was developed by __Pritchard Lab__ at __Stanford University__ and can downloaded at this <a href="https://web.stanford.edu/group/pritchardlab/structure.html"> link </a>.
 
 In this tutorial, I will show how to prepare `input` files and run the `Structure` software. For detail information, please read this article at this <a href="https://web.stanford.edu/group/pritchardlab/structure.html">link</a>
 
 <h1> Step 1: Preparing the Input file </h1>
 In this tutorial, I am using `numerical` SNP data as in `input` genotype file. One can convert their genotype data in numerical format in `TASSEL` software or any software package available as per ones convenience. The file needs to be foramtted properly as shown below in the image below and save it as `.txt` file.
 
-<center><img src="/image/structure/inputfile" alt="Input File.JPG"></center>
+<center><img src="/image/structure/inputfile.JPG" alt="Input File"></center>
 
 <hr>
 __Please Note__ Missing data is denoted as `-9` in the above image. 
 <hr>
 
-<h1> Step 2: Importing file in Structure </h1>
+<center><h1> Step 2: Running the Structure software </h1></center>
+<hr>
+<h2> 1.1 Importing input file</h2>
+
+Once the input file with the correct header and format is ready, import the the file in `Structure` software using the steps shown in the below figure. The importing steps include __4__ steps, please make sure to select correct directory and file name. At __step 2 of 4__ make sure to correctly input `number of markers`, `samples/individual`, and `ploidy` (if genotypes are 'A' then enter 1 but if, it is 'AA' enter 2), and finally, enter how the `missing data` are indicated as in the file. In this tutorial, I denoting the missing data '-9'. 
 
 <hr>
-<center><img src="/image/mds/tassel1.gif" alt="Import data"></center>
+<center><img src="/image/structure/structure1.gif" alt="Import data"></center>
+<hr>
 
-<h2> Step: 2 Calculate distance matrix</h2>
+<h2> Step: 1.2 Set Parameter</h2>
+Follow the steps shown in the below figure to run this step. __Please remember__ One make custom add the `length of burning period` and `Number of MCMC Reps after burnin`.
 
 <hr>
-<center><img src="/image/mds/tassel2.gif" alt="Calculate distance matrix"></center>
+<center><img src="/image/structure/structure2.gif" alt="Set parameters"></center>
+<hr>
 
-<h2> Step: 3 Calculate MDS</h2>
+<h2> Step: 1.3 Running the project</h2>
+Follow the steps shown in the below figure to run this step. __Please remember__ to run at least 10 `number of iterations`. One see the job progress at the bottom black window of the shell.
 
 <hr>
-<center><img src="/image/mds/tassel3.gif" alt="Calculate MDS"></center>
-
-<h2> Step: 4 Plot PCoAs in TASSEL</h2>
-
+<center><img src="/image/structure/structure3.gif" alt="Running the project"></center>
 <hr>
-<center><img src="/image/mds/tassel4.gif" alt="Plot MDS"></center>
 
-<h2> Optional step: Plotting in R using ggplot2 </h2>
-Export the `MDS` results as a `.txt` file and edit in `MS Excel` to add the below `header` and information to plot in `ggplot2`.
+<h2> Step: 1.4 Viewing the results</h2>
+Follow the steps shown in the below figure to run this step. __Please remember__ under the `Results` folder there are several branches of the results with various `k` values, which indicates __number of sub-populations__ estimated from the given genetic data. It can tricky to pick the correct number of `k` for the data, and to solve this follow the next step to prepare files for a different software known as `Structure Harvester `.
+<hr>
+<center><img src="/image/structure/structure4.gif" alt="Viewing the results"></center>
+<hr>
 
-<center><img src="/image/mds/mdsfile.JPG" alt="File"></center>
+<h2> 2.1 Preparing Files for Structure Harvester </h2>
+`zip` all the result siles in the results folder.
+<hr>
+<center><img src="/image/structure/structure5.gif" alt="Viewing the results"></center>
+<hr>
 
-Once the file has bee formatted, One may plot the PCoA results using `ggplot2` library in `R software` using the below commands:
+<h2> 2.2 Running Structure Harvester </h2>
+One your web browser search for `structure harvester`, and click the first the search result. Next, upload the `results.zip` file, click `harvest` to run the Structure Harvester program. It can take about few mins to run, however, it definitely depends on your data. Once the job is completed, the program outputs the summary of the analysis, the key output to look at is `Delta K` plot and `Evanno table`. 
+<hr>
+<center><img src="/image/structure/structure6.gif" alt="Running Structure Harvester"></center>
+<hr>
 
-```html
-  #Library
-  library(ggplot2)
+<h2> 2.2 Interpreting the output </h1>
+`Evanno table` highlights the significant `k` value that is estimated for this genotype data (see below figure). For this tutorial data set, the estimated from `k` is 3 subpopulation which is also supported by the `Delta K` plot, where a clear peak is see at `K = 3` (see Delta K plot below).
 
-  #import MDS data
-  MDS = read.table("MDS.txt", header = T)
+<center><img src="/image/structure/ktable.JPG"><center>
+ <hr>
+<center><img src="/image/structure/deltaK.png"><center>
 
-  head(MDS)
-
-  #Plot MDS
-  MDS_plot <- ggplot(MDS, aes(x=PC1,y=PC2,color=Type, cex=1, label=Sample))
-  MDS_plot <- MDS_plot + geom_point() + geom_text(aes(label=Sample),hjust=0, vjust=0)
-  MDS_plot
-```
-
-<h1> Output </h1>
-An example of an ouptut from the `R` command is shown below. In the figure below, the samples represent PCoA of samples from a F1 cross, and one may see that most of the F1 progenies cluster between the parent clusters on the left and right, whereas, there are a few samples (in circle) that cluster with one of the parents indicating that they were a self-pollinated.
-
-<center><img src="/image/mds/plotmds2.png" alt="MDS plot"></center>
-
-
+__Therefore__ the correct bar plot with correct number of sub-population (k) is 3, which can be plotted by following the steps shown in __1.4__ .
+<center><img src="/image/structure/finalstructure.jpg"><center>
+  
+  
 <center><h3> --- End of Tutorial --- </h3></center>
 
 __Thank you__ for reading this tutorial. If you have any questions or comments, please let me know in the comment section below or send me an email. 
@@ -78,12 +83,12 @@ __Thank you__ for reading this tutorial. If you have any questions or comments, 
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
 <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
 </form>
-Happy QC-ing !
+Happy Structure-ing !
 
 
 <h3> Bibliography </h3>
-<p>Bradbury, Peter J., et al. "TASSEL: software for association mapping of complex traits in diverse samples." Bioinformatics 23.19 (2007): 2633-2635.</p>
-<p>Tzeng, Jengnan, Henry Horng-Shing Lu, and Wen-Hsiung Li. "Multidimensional scaling for large genomic data sets." BMC bioinformatics 9.1 (2008): 179. </p>
+<p>Pritchard, Jonathan K., William Wen, and Daniel Falush. "Documentation for STRUCTURE software: Version 2." (2003).</p>
+<p>Earl, Dent A. "STRUCTURE HARVESTER: a website and program for visualizing STRUCTURE output and implementing the Evanno method." Conservation genetics resources 4.2 (2012): 359-361. </p>
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
