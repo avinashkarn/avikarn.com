@@ -9,7 +9,7 @@ subtitle: “There is always a better way. Find it.” - Edison
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-  My name is Avinash Karn, I go by <strong>Avi</strong>, I am a plant quantitative geneticits and computational biologist, and digital agriculture and robotics enthusiast, and an amateur astronomer, painter, online blogging, photography and vivid cook.
+  My name is Avinash Karn, I go by <strong>Avi</strong>, I am a plant quantitative geneticist and computational biologist, and digital agriculture and robotics enthusiast, and an amateur astronomer, painter, online blogging, photography and vivid cook.
 </p>
 
 <p class="about-text">
