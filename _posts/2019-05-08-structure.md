@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Learn how to run Structure software to investigate genetic admixture and overall population structure"
+title: "Investigate genetic admixture using STRUCTURE software"
 tags: [Structure software, Genetic Admixture, Genetic data, Population structure]
 image: /image/structure/finalstructure.jpg
 share-img: /image/structure/finalstructure.jpg
