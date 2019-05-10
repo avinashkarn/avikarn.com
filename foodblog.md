@@ -92,10 +92,10 @@ div.desc {
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="/image/foodblog/samosa1.jpg">
-      <img src="/image/foodblog/samosa1.jpg" alt="Northern Lights" width="600" height="400">
+    <a href="/food/2019-05-09-samosa">
+      <img src="/image/foodblog/samosa1.jpg" alt="Samosas" width="600" height="400">
     </a>
-    <div class="desc">Samosa</div>
+    a href="/food/2019-05-09-samosa"><div class="desc"> Samosas</div></a>
   </div>
 </div>
 
