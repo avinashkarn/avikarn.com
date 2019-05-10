@@ -95,7 +95,7 @@ div.desc {
     <a href="/food/2019-05-09-samosa">
       <img src="/image/foodblog/samosa1.jpg" alt="Samosas" width="600" height="400">
     </a>
-    a href="/food/2019-05-09-samosa"><div class="desc"> Samosas</div></a>
+    <a href="/food/2019-05-09-samosa"><div class="desc"> Samosas</div></a>
   </div>
 </div>
 
