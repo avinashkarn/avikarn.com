@@ -754,7 +754,7 @@ td.gutter {
 }
 
 @media screen and (max-width: 600px) {
-   .mobile-js-hide {
+ .mobile-js-hide {
     visibility: hidden;
     clear: both;
     float: left;
