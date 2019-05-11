@@ -71,7 +71,8 @@ div.desc {
 <center> <h2>Welcome to Our Food Blog</h2> </center>
 <p>In this section of the website, I will be sharing traditional Nepalese, Indian and American style cooking that from my mom, wife and myself.</p>
 
-  <hr>
+<hr>
+
 <div class="row"> 
   
 <div class="responsive">
@@ -82,6 +83,7 @@ div.desc {
     <a href="/food/2019-04-27-Biryani"><div class="desc"> Red Chicken Biryani</div></a>
     </div>
 </div>
+
 <div class="responsive">
   <div class="gallery">
     <a href="/food/2019-04-29-MoMo">
@@ -105,13 +107,13 @@ div.desc {
     <a href="/food/2019-05-11-smoothie">
       <img src="/image/foodblog/yogurt2.png" alt="Banana & Apple Yogurt Smoothie" width="auto" height="400" class="img-thumbnail">
     </a>
-    <div class="desc"> Banana & Apple Smoothie</div>
+    <a href="/food/2019-05-11-smoothie"><div class="desc"> Banana & Apple Smoothie</div>
   </div>
-  
+  </div>
 </div>
 
-
 <div class="row"> 
+  
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/friedchicken_salad.jpg">
