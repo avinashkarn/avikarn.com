@@ -101,13 +101,16 @@ div.desc {
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="/image/foodblog/pizza1.jpg">
-      <img src="/image/foodblog/pizza1.jpg" alt="Mountains" width="auto" height="400" class="img-thumbnail">
+    <a target="_blank" href="/image/foodblog/yogurt2.png">
+      <img src="/image/foodblog/yogurt2.png" alt="Banana & Apple Yogurt Smoothie" width="auto" height="400" class="img-thumbnail">
     </a>
-    <div class="desc">Vegetarian cheese pizza</div>
+    <div class="desc"> Banana & Apple Smoothie</div>
   </div>
+  
 </div>
+
 </div>
+
 <div class="row"> 
 <div class="responsive">
   <div class="gallery">
@@ -135,6 +138,14 @@ div.desc {
     <div class="desc">Cabbage and Orange Salad</div>
   </div>
 </div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/pizza1.jpg">
+      <img src="/image/foodblog/pizza1.jpg" alt="Mountains" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Vegetarian cheese pizza</div>
+  </div>
 </div>
 
 <div class="clearfix"></div>
