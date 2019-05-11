@@ -84,7 +84,7 @@ div.desc {
 <div class="responsive">
   <div class="gallery">
     <a href="/food/2019-04-29-MoMo">
-      <img src="/image/foodblog/momo1.jpg" alt="MoMo" width="auto" height="400"class="img-thumbnail">
+      <img src="/image/foodblog/momo1.jpg" alt="MoMo" width="auto" height="400" class="img-thumbnail">
     </a>
     <a href="/food/2019-04-29-MoMo"><div class="desc"> MoMo dumplings</div></a>
   </div>
@@ -108,12 +108,11 @@ div.desc {
   </div>
 </div>
 </div>
-
 <div class="row"> 
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/friedchicken_salad.jpg">
-      <img src="/image/foodblog/friedchicken_salad.jpg" alt="Fried Chicken & Salad" width="600" height="400">
+      <img src="/image/foodblog/friedchicken_salad.jpg" alt="Fried Chicken & Salad" width="auto" height="400" class="img-thumbnail">
     </a>
     <div class="desc">Oven roasted chicken & green Salad</div>
   </div>
@@ -122,7 +121,7 @@ div.desc {
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/lalmohan1.jpg">
-      <img src="/image/foodblog/lalmohan1.jpg" alt="Gulab Jamun" width="600" height="400">
+      <img src="/image/foodblog/lalmohan1.jpg" alt="Gulab Jamun" width="auto" height="400" class="img-thumbnail">
     </a>
     <div class="desc">Gulab Jamun</div>
   </div>
@@ -131,7 +130,7 @@ div.desc {
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/salad1.jpg">
-      <img src="/image/foodblog/salad1.jpg" alt="Salad" width="600" height="400">
+      <img src="/image/foodblog/salad1.jpg" alt="Salad" width="auto" height="400" class="img-thumbnail">
     </a>
     <div class="desc">Cabbage and Orange Salad</div>
   </div>
