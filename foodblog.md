@@ -150,6 +150,8 @@ div.desc {
   </div>
 </div>
 
+</div>
+
 <div class="clearfix"></div>
 
 <hr>
