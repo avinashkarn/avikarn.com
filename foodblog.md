@@ -73,6 +73,7 @@ div.desc {
 
   <hr>
 <div class="row"> 
+  
 <div class="responsive">
   <div class="gallery">
     <a href="/food/2019-04-27-Biryani">
@@ -101,7 +102,7 @@ div.desc {
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="/image/foodblog/yogurt2.png">
+    <a href="/food/2019-05-11-smoothie">
       <img src="/image/foodblog/yogurt2.png" alt="Banana & Apple Yogurt Smoothie" width="auto" height="400" class="img-thumbnail">
     </a>
     <div class="desc"> Banana & Apple Smoothie</div>
@@ -109,7 +110,6 @@ div.desc {
   
 </div>
 
-</div>
 
 <div class="row"> 
 <div class="responsive">
