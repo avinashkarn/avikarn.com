@@ -74,14 +74,13 @@ div.desc {
 <hr>
 
 <div class="row"> 
-  
-<div class="responsive">
+  <div class="responsive">
   <div class="gallery">
     <a href="/food/2019-04-27-Biryani">
       <img src="/image/foodblog/biryani1.jpg" alt="Red Chicken Biryani" class="img-thumbnail" width="auto" height="400">
     </a>
     <a href="/food/2019-04-27-Biryani"><div class="desc"> Red Chicken Biryani</div></a>
-    </div>
+  </div>
 </div>
 
 <div class="responsive">
@@ -107,10 +106,11 @@ div.desc {
     <a href="/food/2019-05-11-smoothie">
       <img src="/image/foodblog/yogurt2.png" alt="Banana & Apple Yogurt Smoothie" width="auto" height="400" class="img-thumbnail">
     </a>
-    <a href="/food/2019-05-11-smoothie"><div class="desc"> Banana & Apple Smoothie</a>
+    <a href="/food/2019-05-11-smoothie"><div class="desc"> Banana & Apple Smoothie</a></div>
   </div>
 </div>
 
+</div>
 
 <div class="row"> 
   
