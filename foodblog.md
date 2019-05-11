@@ -109,7 +109,7 @@ div.desc {
     </a>
     <a href="/food/2019-05-11-smoothie"><div class="desc"> Banana & Apple Smoothie</div>
   </div>
-  </div>
+</div>
 
 
 <div class="row"> 
