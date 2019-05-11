@@ -113,7 +113,7 @@ div.desc {
 </div>
 
 <div class="row"> 
-  
+ 
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/friedchicken_salad.jpg">
