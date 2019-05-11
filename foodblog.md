@@ -76,7 +76,7 @@ div.desc {
 <div class="responsive">
   <div class="gallery">
     <a href="/food/2019-04-27-Biryani">
-      <img src="/image/foodblog/biryani1.jpg" alt="Red Chicken Biryani" width="600" height="400">
+      <img src="/image/foodblog/biryani1.jpg" alt="Red Chicken Biryani" class="img-thumbnail" width="auto" height="400">
     </a>
     <a href="/food/2019-04-27-Biryani"><div class="desc"> Red Chicken Biryani</div></a>
     </div>
@@ -84,7 +84,7 @@ div.desc {
 <div class="responsive">
   <div class="gallery">
     <a href="/food/2019-04-29-MoMo">
-      <img src="/image/foodblog/momo1.jpg" alt="MoMo" width="600" height="400">
+      <img src="/image/foodblog/momo1.jpg" alt="MoMo" width="auto" height="400"class="img-thumbnail">
     </a>
     <a href="/food/2019-04-29-MoMo"><div class="desc"> MoMo dumplings</div></a>
   </div>
@@ -93,7 +93,7 @@ div.desc {
 <div class="responsive">
   <div class="gallery">
     <a href="/food/2019-05-09-samosa">
-      <img src="/image/foodblog/samosa1.jpg" alt="Samosas" width="600" height="400">
+      <img src="/image/foodblog/samosa1.jpg" alt="Samosas" width="auto" height="400" class="img-thumbnail">
     </a>
     <a href="/food/2019-05-09-samosa"><div class="desc"> Samosas</div></a>
   </div>
@@ -102,7 +102,7 @@ div.desc {
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/pizza1.jpg">
-      <img src="/image/foodblog/pizza1.jpg" alt="Mountains" width="600" height="400">
+      <img src="/image/foodblog/pizza1.jpg" alt="Mountains" width="auto" height="400" class="img-thumbnail">
     </a>
     <div class="desc">Vegetarian cheese pizza</div>
   </div>
