@@ -112,6 +112,14 @@ div.desc {
 </div>
 
 <div class="row"> 
+<div class="responsive">
+  <div class="gallery">
+    <a href="/food/2019-05-12-gizzards">
+      <img src="/image/foodblog/gizzards2.png" alt="BBQ Gizzards" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <a href="/food/2019-05-12-gizzards"><div class="desc"> BBQ Chicken Gizzards</div></a>
+  </div>
+</div>
  
 <div class="responsive">
   <div class="gallery">
@@ -139,7 +147,9 @@ div.desc {
     <div class="desc">Cabbage and Orange Salad</div>
   </div>
 </div>
+</div>
 
+<div class="row"> 
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/pizza1.jpg">
