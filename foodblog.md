@@ -123,10 +123,10 @@ div.desc {
  
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="/image/foodblog/friedchicken_salad.jpg">
-      <img src="/image/foodblog/friedchicken_salad.jpg" alt="Fried Chicken & Salad" width="auto" height="400" class="img-thumbnail">
+    <a href="/food/2019-05-13-soup">
+      <img src="/image/foodblog/soup1.jpg" alt="Hearty Soup" width="auto" height="400" class="img-thumbnail">
     </a>
-    <div class="desc">Oven roasted chicken & green Salad</div>
+    <a href="/food/2019-05-13-soup"><div class="desc"> Hearty Soup - Mushroom, Tofu, Peas & Potato</div></a>
   </div>
 </div>
 
@@ -158,7 +158,15 @@ div.desc {
     <div class="desc">Vegetarian cheese pizza</div>
   </div>
 </div>
-
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/friedchicken_salad.jpg">
+      <img src="/image/foodblog/friedchicken_salad.jpg" alt="Fried Chicken & Salad" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Oven roasted chicken & green Salad</div>
+  </div>
+</div>
+  
 </div>
 
 <div class="clearfix"></div>
