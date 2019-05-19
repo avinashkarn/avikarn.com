@@ -11,7 +11,7 @@ share-img: /image/foodblog/grapefruit1.png
 <center> <img src="/image/foodblog/grapefruit1.png" width="auto" height="300"></center>
 
 __Grapefruit and Yogurt Dessert__ is a perfect dish if you are craving something sweet, that is full of anti-oxidants and probiotics! 
-This is a very simple dish that one can easily. Please give it a try :) 
+This is a very simple dish that one can easily prepare in less than no time! Please give it a try :) 
 <hr>
 
 <h3> Recipe: </h3>
