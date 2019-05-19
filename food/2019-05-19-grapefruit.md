@@ -10,8 +10,8 @@ share-img: /image/foodblog/grapefruit1.png
 <hr>
 <center> <img src="/image/foodblog/grapefruit1.png" width="auto" height="300"></center>
 
-__Grapefruit and Yogurt Dessert__ is a perfect dessert, if you are craving something sweet and looking something healthy. 
-This is a very simple dish that one can freshly and quickly prepare it. 
+__Grapefruit and Yogurt Dessert__ is a perfect dish if you are craving something sweet, that is full of anti-oxidants and probiotics! 
+This is a very simple dish that one can easily. Please give it a try :) 
 <hr>
 
 <h3> Recipe: </h3>
@@ -45,8 +45,8 @@ This is a very simple dish that one can freshly and quickly prepare it.
 
 <ol>
   <li>In a large bowl, peel grapefruit (also removing its skin)and cut it into small pieces  </li>
-  <li> Mash the Banana and add in the bowl. </li>
-  <li> Next add the Yogurt, Black salt, Chaat Masala, and mix well. </li>
+  <li> Mash the Banana and add into the bowl. </li>
+  <li> Next, add the Yogurt, Black salt, Chaat Masala, and mix well. </li>
   <li> Serve! </li>
 
 <p> Happy Cooking! And please let me know if you have any questions or comments.</p>
