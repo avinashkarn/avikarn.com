@@ -10,8 +10,6 @@ bigimg:
   - "/image/foodblog/khasta1.jpg" : "Khasta"
   - "/image/foodblog/lalmohan1.jpg" : "Gulab Jamun"
   - "/image/foodblog/momo1.jpg" : "Mo:Mo: Dumplings"
-  - "/image/foodblog/momo2.jpg" : "Mo:Mo: Dumplings"
-  - "/image/foodblog/momo3.jpg" : "Mo:Mo: Dumplings"
   - "/image/foodblog/pizza1.jpg" : "Homemade Pizzzza"
   - "/image/foodblog/salad1.jpg" : "Salad"
   - "/image/foodblog/samosa1.jpg" : "SAMOSAA"
@@ -112,6 +110,7 @@ div.desc {
 </div>
 
 <div class="row"> 
+  
 <div class="responsive">
   <div class="gallery">
     <a href="/food/2019-05-12-gizzards">
@@ -129,13 +128,12 @@ div.desc {
     <a href="/food/2019-05-13-soup"><div class="desc"> Hearty Soup - Mushroom, Tofu, Peas & Potato</div></a>
   </div>
 </div>
-
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="/image/foodblog/lalmohan1.jpg">
-      <img src="/image/foodblog/lalmohan1.jpg" alt="Gulab Jamun" width="auto" height="400" class="img-thumbnail">
+    <a href="/food/2019-05-19-grapefruit">
+      <img src="/image/foodblog/grapefruit1.png" alt="Grapefruite & Yogurt Dessert" width="auto" height="200" class="img-thumbnail">
     </a>
-    <div class="desc">Gulab Jamun</div>
+    <a href="/food/2019-05-19-grapefruit"><div class="desc"> Grapefruite & Yogurt Dessert</div></a>
   </div>
 </div>
 
@@ -150,6 +148,7 @@ div.desc {
 </div>
 
 <div class="row"> 
+  
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/pizza1.jpg">
@@ -166,7 +165,14 @@ div.desc {
     <div class="desc">Oven roasted chicken & green Salad</div>
   </div>
 </div>
-  
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/lalmohan1.jpg">
+      <img src="/image/foodblog/lalmohan1.jpg" alt="Gulab Jamun" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Gulab Jamun</div>
+  </div>
+</div>
 </div>
 
 <div class="clearfix"></div>
