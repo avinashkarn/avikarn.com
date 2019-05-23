@@ -8,6 +8,10 @@ share-img: /image/GBS/GBS.png
 
 __Genotype-by-Sequencing (GBS)__ is reduced representation of a genome, which utilizes restriction enzymes (e.g. *ApeKI*) and NextGen sequencing to identify biallelic markers and presence/absence markers. __In this post__, my attempt is to consisely present the GBS SNP calling process in *7 steps* using the TASSEL GBSv2 pipeline. Pleae note:, <strong>Buckler et al. </strong> provides descriptive documentation on this SNP calling at this <a href="https://www.maizegenetics.net/tassel"> Link </a>
 
+<center>
+<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=warehouse&banner=1TWJ5AN61PASAJA07KR2&f=ifr&lc=pf4&linkID=4cb1fa7316d2295de542556070f2e450&t=aviamazon6-20&tracking_id=aviamazon6-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+</center>
+
 <center> <h2> Flowchart of the GBSv2 SNP calling pipeline </h2></center>
 <center><img style="max-width:95%" src="/image/GBS/gbsv2pipeline.png" width="auto" height="auto"></center>
 
