@@ -7,7 +7,9 @@ share-img: /image/cim/scan.png
 ---
 
 In the __Quantitative Trait Locus (QTL)__ analysis, `composite interval mapping (CIM)` method  estimates the QTL positon with higher accuracy and statistical significance by combining interval mapping with multiple regression. This method also controls background noise resulting from genetic variations in other regions of the genome that affect the detection of the true QTL. In this post, my objective is to describe and walk you through all the basic steps one might need run the composite inteval mapping in `R` software. For further descriptive information on R/qtl, please read the paper by <strong> Karl Broman </strong> at this link: http://www.rqtl.org/
-
+<center>
+<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=warehouse&banner=1ER1MDBDMZ0DPV03XWR2&f=ifr&lc=pf4&linkID=55d9573b62d1088d7092fea4c25c0153&t=aviamazon6-20&tracking_id=aviamazon6-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+</center>
 <center> <h1> To get started</h1> </center>
 
 <h2> Step 1. Download and install R software and R studio </h2>
