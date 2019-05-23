@@ -9,6 +9,10 @@ share-img: /image/lepmap/cropped_nih_geneticmap.jpg
 __Building genetic maps__ can be challenging and sometimes quite stressful, especially, when dealing with thousands or even millions of markers. In this post, I am hoping to help anyone who would like to get started to build a decent genetic map in an open software 
 <a href="https://sourceforge.net/projects/lep-map3/"> Lep-MAP3 </a>, and finally, the evaluating the accuarcy of the map and plotting it.
 
+<center>
+<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=warehouse&banner=0WH1TBABMW4R4HN14382&f=ifr&lc=pf4&linkID=bf7e3cafc429907f960b82f0c57d6707&t=aviamazon6-20&tracking_id=aviamazon6-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+</center>
+
 The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the flow chart below. 
 
 <center><img src="/image/lepmap/lepmap_flow.png"></center>
