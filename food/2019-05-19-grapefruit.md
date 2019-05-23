@@ -14,6 +14,10 @@ __Grapefruit and Yogurt Dessert__ is a perfect dish if you are craving something
 This is a very simple dish that one can easily prepare in less than no time! Please give it a try :) 
 <hr>
 
+<center>
+<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=warehouse&banner=1VC7A5T2EQ71CE2VJG82&f=ifr&linkID=7347bfb54bbdb065ee780a61d0bc8471&t=aviamazon6-20&tracking_id=aviamazon6-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+</center>
+
 <h3> Recipe: </h3>
 
 <ul>
