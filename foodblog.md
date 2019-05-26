@@ -15,23 +15,7 @@ bigimg:
   - "/image/foodblog/samosa1.jpg" : "SAMOSAA"
 ---
 <center>
-<div class="alignleft">
-     <script type="text/javascript">
-       	amzn_assoc_ad_type = "banner";
-	amzn_assoc_marketplace = "amazon";
-	amzn_assoc_region = "US";
-	amzn_assoc_placement = "assoc_banner_placement_default";
-	amzn_assoc_campaigns = "warehouse";
-	amzn_assoc_banner_type = "promotions";
-	amzn_assoc_p = "12";
-	amzn_assoc_banner_id = "1VC7A5T2EQ71CE2VJG82";
-	amzn_assoc_width = "300";
-	amzn_assoc_height = "250";
-	amzn_assoc_tracking_id = "aviamazon6-20";
-	amzn_assoc_linkid = "760a2c99520c0670fe50db8aa5fcbaca";
-     </script>
-     <script src="//z-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1"></script>
-</div>
+<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=cuisinart&banner=05VPVC4Z3JCP1ASW2MG2&f=ifr&lc=pf4&linkID=996b6133d1868102420922fd7ba9c174&t=aviamazon6-20&tracking_id=aviamazon6-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 </center>
 
 <style>
