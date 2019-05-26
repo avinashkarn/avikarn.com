@@ -15,7 +15,7 @@ This is a very simple dish that one can easily prepare in less than no time! Ple
 <hr>
 
 <center>
-<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=warehouse&banner=1VC7A5T2EQ71CE2VJG82&f=ifr&linkID=7347bfb54bbdb065ee780a61d0bc8471&t=aviamazon6-20&tracking_id=aviamazon6-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=cuisinart&banner=05VPVC4Z3JCP1ASW2MG2&f=ifr&lc=pf4&linkID=996b6133d1868102420922fd7ba9c174&t=aviamazon6-20&tracking_id=aviamazon6-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 </center>
 
 <h3> Recipe: </h3>
@@ -42,6 +42,8 @@ This is a very simple dish that one can easily prepare in less than no time! Ple
     <li> Black Salt</li>
     <li> Sugar (optional)</li>
 </ul>
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=aviamazon6-20&marketplace=amazon&region=US&placement=B07G9N5JRH&asins=B07G9N5JRH&linkId=22b486416314f7324158ac6e2476684e&show_border=true&link_opens_in_new_window=true"></iframe>
 
 <hr>
 
