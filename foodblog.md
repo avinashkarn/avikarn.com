@@ -15,8 +15,9 @@ bigimg:
   - "/image/foodblog/samosa1.jpg" : "SAMOSAA"
 ---
 <center>
-<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=warehouse&banner=1VC7A5T2EQ71CE2VJG82&f=ifr&linkID=7347bfb54bbdb065ee780a61d0bc8471&t=aviamazon6-20&tracking_id=aviamazon6-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=warehouse&banner=1VC7A5T2EQ71CE2VJG82&f=ifr&lc=pf4&linkID=11ace77a1a17975b82ed5e0560c33b12&t=aviamazon6-20&tracking_id=aviamazon6-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 </center>
+
 <style>
 div.gallery {
   border: 1px solid #ccc;
