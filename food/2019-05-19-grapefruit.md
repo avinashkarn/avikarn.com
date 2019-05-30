@@ -14,10 +14,6 @@ __Grapefruit and Yogurt Dessert__ is a perfect dish if you are craving something
 This is a very simple dish that one can easily prepare in less than no time! Please give it a try :) 
 <hr>
 
-<center>
-<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=cuisinart&banner=05VPVC4Z3JCP1ASW2MG2&f=ifr&lc=pf4&linkID=996b6133d1868102420922fd7ba9c174&t=aviamazon6-20&tracking_id=aviamazon6-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
-</center>
-
 <h3> Recipe: </h3>
 
 <ul>
@@ -43,7 +39,21 @@ This is a very simple dish that one can easily prepare in less than no time! Ple
     <li> Sugar (optional)</li>
 </ul>
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=aviamazon6-20&marketplace=amazon&region=US&placement=B07G9N5JRH&asins=B07G9N5JRH&linkId=22b486416314f7324158ac6e2476684e&show_border=true&link_opens_in_new_window=true"></iframe>
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_tracking_id = "aviamazon6-20";
+amzn_assoc_ad_mode = "search";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_default_search_phrase = "glassware";
+amzn_assoc_default_category = "All";
+amzn_assoc_linkid = "56ea1dc16000814cec969f38e515eaf3";
+amzn_assoc_search_bar = "true";
+amzn_assoc_search_bar_position = "top";
+amzn_assoc_title = "Shop Related Products";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
 
 <hr>
 
