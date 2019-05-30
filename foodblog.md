@@ -14,7 +14,7 @@ bigimg:
   - "/image/foodblog/salad1.jpg" : "Salad"
   - "/image/foodblog/samosa1.jpg" : "SAMOSAA"
 ---
-<center>
+
 <script type="text/javascript">
 amzn_assoc_placement = "adunit0";
 amzn_assoc_tracking_id = "aviamazon6-20";
@@ -30,7 +30,7 @@ amzn_assoc_search_bar_position = "top";
 amzn_assoc_title = "Shop Related Products";
 </script>
 <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
-</center>
+
 
 <style>
 div.gallery {
@@ -195,6 +195,27 @@ div.desc {
 <div class="clearfix"></div>
 
 <hr>
+
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_tracking_id = "aviamazon6-20";
+amzn_assoc_ad_mode = "search";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_default_search_phrase = "kitchen appliances";
+amzn_assoc_default_category = "All";
+amzn_assoc_linkid = "56ea1dc16000814cec969f38e515eaf3";
+amzn_assoc_search_bar = "true";
+amzn_assoc_search_bar_position = "top";
+amzn_assoc_title = "Shop Related Products";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+
+
+
+
 
 <center>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
