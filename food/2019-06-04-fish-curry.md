@@ -8,7 +8,7 @@ share-img: /image/foodblog/fish.png
 
 <center><h1> Fish Curry - SPICY version! </h1> </center>
 <hr>
-*Spicy* __Fish "माछा " Curry__ is a delicious dish that can be easliy be prepared in a short amount time. It is full of falvors and is commonly  cooked in southern part of Nepal and northern India, and is served with plain white rice. Please give it a try :)
+*Spicy* __Fish "माछा " Curry__ is a delicious dish that can be easliy be prepared in a short amount time. It is full of falvors, and is commonly served with plain white rice. Please give it a try :)
 
 <center>
 <video width="auto" height="200" autoplay loop muted playsinline>
