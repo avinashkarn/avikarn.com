@@ -8,21 +8,20 @@ share-img: /image/foodblog/fish.png
 
 <center><h1> Fish Curry - SPICY version! </h1> </center>
 <hr>
-Spicy __Fish Curry__ is a delicious dish that can be easliy be prepared in a short amount time. This is a special fish curry dish that is commonly seen being prepared and eaten in southern part of Nepal and northern India, and is commonly eaten with plain white rice.
+Spicy __Fish Curry__ is a delicious dish that can be easliy be prepared in a short amount time. This is a special fish curry dish that is fully of falvors and is commonly seen being cooked in southern part of Nepal and northern India, and is served with plain white rice.
 
-<center> 
-<img src="/image/foodblog/momo4.gif"  width="auto" height="400">
-</center>
-
-<center><h2> What to serve with MoMos?</h2> </center>
-One can use different kinds of sauce or soup to eat their momos with. In this post, I have shared instructions for an easy recipe to prepare `tomato chutny` that goes quite well with this dish.
-<hr>
+  <center>
+  <video width="auto" height="400" autoplay loop muted playsinline>
+  <source src="/vid/fish6.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+  </center>
 
 <center>
 <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=cuisinart&banner=05VPVC4Z3JCP1ASW2MG2&f=ifr&lc=pf4&linkID=996b6133d1868102420922fd7ba9c174&t=aviamazon6-20&tracking_id=aviamazon6-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 </center>
 
-<center><h2> How do you make MoMos?</h2></center>
+<center><h2> How to make the fish curry?</h2></center>
 
 <hr>
 
@@ -30,19 +29,57 @@ One can use different kinds of sauce or soup to eat their momos with. In this po
 
 <ul>
   <li> Yield: 4 people </li>
-  <li> Prep Time: about 30 mins </li>
+  <li> Prep Time: about 15-20 mins </li>
   <li> Cook Time: 15-18 mins </li>
   <li> Total Time:  about 45 mins to an 1 hr</li>
-  <li> Course:  Snack or Main</li>
-  <li> Cuisine: Nepalese  </li>
-  <li> Author: My wife (Anita KC) </li>
+  <li> Course:  Main </li>
+  <li> Cuisine: Nepalese/Indian  </li>
+  <li> Author: Myself </li>
 </ul>
 <hr>
 
 <h3> Cooking Utensil </h3>
 <ul>
-    <li> Steamer </li>
+    <li> Frying pan (preferably a cast iron pan) </li>
 </ul>
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_search_bar = "true";
+amzn_assoc_tracking_id = "aviamazon6-20";
+amzn_assoc_search_bar_position = "bottom";
+amzn_assoc_ad_mode = "search";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_title = "Shop Related Products";
+amzn_assoc_default_search_phrase = "cast iron";
+amzn_assoc_default_category = "All";
+amzn_assoc_linkid = "433089ce2c93b964e4c989e3e9d01bc2";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+<h2> 1. Ingredients : </h3>
+
+<ul>
+    <li> 2 lb Fish (Tila pia or any fresh water fish) </li>
+    <li> 1 large finely chopped Onion </li>
+    <li> 6 cloves minced Garlic</li>
+    <li> ~2 inch finely chopped Ginger </li>
+    <li> 1/2 cup chopped Tomatoes </li>
+    <li> 1/3 cup chopped Cilantro </li>
+    <li> 1 Tbsp ground Mustard powder </li>
+    <li> 1 Tsp of hot Cayenne pepper powder </li>
+    <li> 2 Bay leaves </li>
+    <li> 2 Dry red peppers </li>
+    <li> 1 Tsp Cumin seeds </li>
+    <li> 1/2 Tsp Fenugreek seeds </li>
+    <li> 1 Tbsp each of Paparika powder; Turmeric powder; and Corriander powder </li>
+    <li> 1 Tsp of Garam masala powder </li>
+    <li> 1 cup whole purpose flour </li>
+    <li> Salt to taste </li>
+    <li> Oil to fry </li>
+</ul>
+
 <script type="text/javascript">
 amzn_assoc_placement = "adunit0";
 amzn_assoc_tracking_id = "aviamazon6-20";
@@ -50,97 +87,60 @@ amzn_assoc_ad_mode = "search";
 amzn_assoc_ad_type = "smart";
 amzn_assoc_marketplace = "amazon";
 amzn_assoc_region = "US";
-amzn_assoc_default_search_phrase = "cooking steamer";
+amzn_assoc_default_search_phrase = "spices";
 amzn_assoc_default_category = "All";
-amzn_assoc_linkid = "56ea1dc16000814cec969f38e515eaf3";
+amzn_assoc_linkid = "433089ce2c93b964e4c989e3e9d01bc2";
 amzn_assoc_search_bar = "true";
 amzn_assoc_search_bar_position = "top";
 amzn_assoc_title = "Shop Related Products";
 </script>
 <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
-    
-<h3> 1.1. Ingredients for Chicken stuffing: </h3>
-
-<ul>
-    <li> 1.5 lb ground chicken </li>
-    <li> 1 large finely chopped Onion </li>
-    <li> 6 cloves minced Garlic</li>
-    <li> About 2 inch finely chopped Ginger </li>
-    <li> 1 Tbsp each of Paparika powder; Turmeric powder; and Corriander powder </li>
-    <li> Half cup chopped Cilantro </li>
-    <li> 1 Tsp of Garam masala powder </li>
-    <li> Salt to taste </li>
-    <li> 2 Tbsp of Soysauce</li>
-    <li> One Egg </li>
-    <li> 2 Tbp of grated Butter </li>
-</ul>
 
 <hr>
 
-<h3> 1.2 Ingredients for Tomato Chutny: </h3>
+<center>
+<h2> Preparing the curry </hr>
+</center>
+
+<h3> Step: 2.1 Frying the Fish</h3>
 
 <ul>
-    <li> 2 large chopped tomatoes </li>
-    <li> 1 large finely chopped Onion </li>
-    <li> 2 cloves minced Garlic</li>
-    <li> 1 inch of finely chopped Ginger </li>
-    <li> 1/4 cup chopped Cilantro </li>
-    <li> 1/4 cup chopped Green Onions </li>
-    <li> 2 Tbp of Vegetable Oil </li>
-    <li> 1/2 Tbsp Corn Starch</li>
-    <li> Salt to taste </li>
-
+  <li> Cut and wash the fish </li>
+   <hr>
+        <center><img src="/image/foodblog/fish1.png" width="auto" height="200"></center>
+  <hr> 
+  <li> In a large bowl, add all the whole purpose flour, salt, cayenne pepper, tumeric, paparilka powder and mix well.</li>
+  <hr>
+        <center><img src="/image/foodblog/fish2.png" width="auto" height="200"></center>
+  <hr> 
+  <li> Coat the cut fish in the above mix one at a time </li>
+  <li> In hot a pan and add about 1 cup oil </li>
+  <li> Fry the fish until golden brown <li>
+    <hr>
+        <center><img src="/image/foodblog/fish3.png" width="auto" height="200"></center>
+    <hr>
+  <li> Keep the fried fish aside in a different container </li>
+    <hr>
+        <center><img src="/image/foodblog/fish4.png" width="auto" height="200"></center>
+    <hr>
 </ul>
 
-<hr>
-
-<h3> Instructions for preparing MoMo filing recipe:</h3>
-
-<ul>
-  <li> In a large bowl, add all the ingredients from instructions step 1.1. and mix well with your hand. </li>
-</ul>
-
-<h3> Instructions for preparing Tomato Chutney:</h3>
+<h3> Step: 2.2 Preparing the gravy</h3>
   <ol>
-    <li> In a hot pan, add 1 tbsp  oil. Next, add the chopped onions, garlic and ginger, and cook until light brown in color. </li>
-    <li> Add chopped tomatoes, and salt to taste. Let it simmer for 2-3 mins. </li>
-    <li> Add some corn starch mixed in 300 mL water, and let it simmer for another 5 mins in low heat </li>
-    <li> Finally, add some chopped cilantro and chopped green onions. Done. </li>
+    <li> In a hot pan, add 1 tbsp  oil. Next, add Bay leaves, Cumin seeds, Fenugreek seeds, and dry red chilli peppers;and fry well </li>
+    <li> Next, add the chopped onions, garlic and ginger; and fry until golden brown </li>
+    <li> Add mustard powder, paparika, cayenne, turmeric, and coriander powder, and cook for a couple of mins </li>
+  <li> Add chopped tomatoes, and cook very well until dark brown in color </li>
+  <li> Add garam masala </li>
+  <li> Add about 2 cups of water, and bring it boil </li>
+  <li> Finally, add the fried fish and bring it boil, and add the cilantro. </li>
+  <li> Serve with white rice </li>
+      <hr>
+        <center><img src="/image/foodblog/fish6.png" width="auto" height="200"></center>
+    <hr>
   </ol>
   
-<h3> Instructions filing the MoMo stuffing in the wrappers</h3>
-  <ol>
-    <li> One can make their own momo wrappers using dough prepared from whole purpose flour. However, there is an option to buy a ready-      made wrappers from an Asian market. </li>
-    <li> To add the filing in the wrapper, please see the below video  </li>
-      <center>
-      <video width="auto" height="400" controls>
-      <source src="/vid/momo6.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
-      </center>
-    <li> While you are filing the MoMo stuffing in the wrappers; place steamer on your stove and get it ready </li>
-    <hr>
-        <center><img src="/image/foodblog/momo3.jpg" width="auto" height="200"></center>
-    <hr>
-    <li> Fill the MoMos and keep it a side until the steamer is ready</li>
-    <hr>
-    <center><img src="/image/foodblog/momo2.jpg" width="auto" height="200"></center>
-    <hr>
-    <li> Add the MoMo in the steamer and let it cook for about 18 mins </li>
-      <hr>
-      <center>
-      <video width="auto" height="400" controls>
-      <source src="/vid/momo4.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
-      </center>
-    <hr>
-    <li> Serve while hot!!  </li>
-    <hr>
-    <center> <img src="/image/foodblog/momo5.jpg" width="auto" height="200">    </center>
-  <hr>
-</ol>
-<hr>
+
 
 <p> Happy Cooking! And please let me know if you have any questions or comments.</p>
 <hr>
