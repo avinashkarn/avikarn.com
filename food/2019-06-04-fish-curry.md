@@ -10,12 +10,12 @@ share-img: /image/foodblog/fish.png
 <hr>
 Spicy __Fish Curry__ is a delicious dish that can be easliy be prepared in a short amount time. This is a special fish curry dish that is fully of falvors and is commonly seen being cooked in southern part of Nepal and northern India, and is served with plain white rice.
 
-  <center>
-  <video width="auto" height="400" autoplay loop muted playsinline>
-  <source src="/vid/fish6.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-  </video>
-  </center>
+<center>
+<video width="auto" height="400" autoplay loop muted playsinline>
+<source src="/vid/fish6.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</center>
 
 <center>
 <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=cuisinart&banner=05VPVC4Z3JCP1ASW2MG2&f=ifr&lc=pf4&linkID=996b6133d1868102420922fd7ba9c174&t=aviamazon6-20&tracking_id=aviamazon6-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
@@ -136,7 +136,7 @@ amzn_assoc_title = "Shop Related Products";
   <li> Finally, add the fried fish and bring it boil, and add the cilantro. </li>
   <li> Serve with white rice </li>
       <hr>
-        <center><img src="/image/foodblog/fish6.png" width="auto" height="200"></center>
+        <center><img src="/image/foodblog/fish5.png" width="auto" height="200"></center>
     <hr>
   </ol>
   
