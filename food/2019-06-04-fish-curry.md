@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fish Curry"
+title: "Fish माछा Curry"
 tags: [Fish Curry, Spicy]
 image: /image/foodblog/fish.png
 share-img: /image/foodblog/fish.png
@@ -8,7 +8,7 @@ share-img: /image/foodblog/fish.png
 
 <center><h1> Fish Curry - SPICY version! </h1> </center>
 <hr>
-*Spicy* __Fish Curry__ is a delicious dish that can be easliy be prepared in a short amount time. It is full of falvors and is commonly  cooked in southern part of Nepal and northern India, and is served with plain white rice. Please give it a try :)
+*Spicy* __Fish "माछा " Curry__ is a delicious dish that can be easliy be prepared in a short amount time. It is full of falvors and is commonly  cooked in southern part of Nepal and northern India, and is served with plain white rice. Please give it a try :)
 
 <center>
 <video width="auto" height="400" autoplay loop muted playsinline>
@@ -98,8 +98,7 @@ amzn_assoc_title = "Shop Related Products";
 
 <hr>
 
-
-<h2> Preparing the curry </h2>
+<center><h2> Preparing the curry </h2> </center>
 
 
 <h3> Step: 2.1 Frying the Fish </h3>
