@@ -5,10 +5,6 @@ share-img: /image/foodblog/dinner1.jpg
 tags: [Food Blog]
 bigimg: 
   - "/image/foodblog/biryani1.jpg" : "Red Chicken Briyani"
-  - "/image/foodblog/chicken2.jpg" : "Chicken Roast and Curry"
-  - "/image/foodblog/dinner1.jpg" : "Food Feast"
-  - "/image/foodblog/khasta1.jpg" : "Khasta"
-  - "/image/foodblog/lalmohan1.jpg" : "Gulab Jamun"
   - "/image/foodblog/momo1.jpg" : "Mo:Mo: Dumplings"
   - "/image/foodblog/pizza1.jpg" : "Homemade Pizzzza"
   - "/image/foodblog/salad1.jpg" : "Salad"
