@@ -139,15 +139,24 @@ div.desc {
 
 <div class="responsive">
   <div class="gallery">
+    <a href="/food/2019-06-04-fish-curry">
+      <img src="/image/foodblog/fish.png" alt="Spicy Fish Currry" width="auto" height="200" class="img-thumbnail">
+    </a>
+    <a href="/food/2019-06-04-fish-curry"><div class="desc"> Spicy Fish Curry</div></a>
+  </div>
+</div>
+
+</div>
+
+<div class="row"> 
+<div class="responsive">
+  <div class="gallery">
     <a target="_blank" href="/image/foodblog/salad1.jpg">
       <img src="/image/foodblog/salad1.jpg" alt="Salad" width="auto" height="400" class="img-thumbnail">
     </a>
     <div class="desc">Cabbage and Orange Salad</div>
   </div>
 </div>
-</div>
-
-<div class="row"> 
   
 <div class="responsive">
   <div class="gallery">
