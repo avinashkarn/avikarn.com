@@ -98,9 +98,9 @@ amzn_assoc_title = "Shop Related Products";
 
 <hr>
 
-<center>
-<h2> Preparing the curry </hr>
-</center>
+
+<h2> Preparing the curry </h2>
+
 
 <h3> Step: 2.1 Frying the Fish </h3>
 
