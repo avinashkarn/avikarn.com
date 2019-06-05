@@ -106,40 +106,30 @@ amzn_assoc_title = "Shop Related Products";
 
 <ul>
   <li> Cut and wash the fish </li>
-   <hr>
-        <center><img src="/image/foodblog/fish1.png" width="auto" height="200"></center>
-  <hr> 
+  <center><img src="/image/foodblog/fish1.png" width="auto" height="200"></center>
   <li> In a large bowl, add all the whole purpose flour, salt, cayenne pepper, tumeric, paparilka powder and mix well.</li>
-  <hr>
-        <center><img src="/image/foodblog/fish2.png" width="auto" height="200"></center>
-  <hr> 
+  <center><img src="/image/foodblog/fish2.png" width="auto" height="200"></center>
   <li> Coat the cut fish in the above mix one at a time </li>
   <li> In hot a pan and add about 1 cup oil </li>
   <li> Fry the fish until golden brown <li>
-    <hr>
-        <center><img src="/image/foodblog/fish3.png" width="auto" height="200"></center>
-    <hr>
+  <center><img src="/image/foodblog/fish3.png" width="auto" height="200"></center>
   <li> Keep the fried fish aside in a different container </li>
-    <hr>
-        <center><img src="/image/foodblog/fish4.png" width="auto" height="200"></center>
-    <hr>
+  <center><img src="/image/foodblog/fish4.png" width="auto" height="200"></center>
 </ul>
 
 <h3> Step: 2.2 Preparing the gravy</h3>
-  <ol>
-    <li> In a hot pan, add 1 tbsp  oil. Next, add Bay leaves, Cumin seeds, Fenugreek seeds, and dry red chilli peppers;and fry well </li>
-    <li> Next, add the chopped onions, garlic and ginger; and fry until golden brown </li>
-    <li> Add mustard powder, paparika, cayenne, turmeric, and coriander powder, and cook for a couple of mins </li>
+<ol>
+  <li> In a hot pan, add 1 tbsp  oil. Next, add Bay leaves, Cumin seeds, Fenugreek seeds, and dry red chilli peppers;and fry well </li>
+  <li> Next, add the chopped onions, garlic and ginger; and fry until golden brown </li>
+  <li> Add mustard powder, paparika, cayenne, turmeric, and coriander powder, and cook for a couple of mins </li>
   <li> Add chopped tomatoes, and cook very well until dark brown in color </li>
   <li> Add garam masala </li>
   <li> Add about 2 cups of water, and bring it boil </li>
   <li> Finally, add the fried fish and bring it boil, and add the cilantro. </li>
   <li> Serve with white rice </li>
-      <hr>
-        <center><img src="/image/foodblog/fish5.png" width="auto" height="200"></center>
-    <hr>
-  </ol>
-  
+  <center><img src="/image/foodblog/fish5.png" width="auto" height="200"></center>
+</ol>
+
 
 
 <p> Happy Cooking! And please let me know if you have any questions or comments.</p>
