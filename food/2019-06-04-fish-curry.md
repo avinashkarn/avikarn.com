@@ -98,7 +98,7 @@ amzn_assoc_title = "Shop Related Products";
 
 
 <h3> Step: 2.1 Frying the Fish </h3>
-
+<ul>
   <li> Cut and wash the fish </li>
     <center><img src="/image/foodblog/fish1.png" width="auto" height="200"></center>
   <li> In a large bowl, add all the whole purpose flour, salt, cayenne pepper, tumeric, paparilka powder and mix well.</li>
@@ -109,7 +109,7 @@ amzn_assoc_title = "Shop Related Products";
   <center><img src="/image/foodblog/fish3.png" width="auto" height="200"></center>
   <li> Keep the fried fish aside in a different container </li>
     <center><img src="/image/foodblog/fish4.png" width="auto" height="200"></center>
-
+</ul>
 
 <h3> Step: 2.2 Preparing the gravy</h3>
 <ol>
