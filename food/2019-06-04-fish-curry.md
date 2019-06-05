@@ -8,7 +8,7 @@ share-img: /image/foodblog/fish.png
 
 <center><h1> Fish Curry - SPICY version! </h1> </center>
 <hr>
-Spicy __Fish Curry__ is a delicious dish that can be easliy be prepared in a short amount time. This is a special fish curry dish that is fully of falvors and is commonly seen being cooked in southern part of Nepal and northern India, and is served with plain white rice.
+*Spicy* __Fish Curry__ is a delicious dish that can be easliy be prepared in a short amount time. It is full of falvors and is commonly  cooked in southern part of Nepal and northern India, and is served with plain white rice. Please give it a try :)
 
 <center>
 <video width="auto" height="400" autoplay loop muted playsinline>
@@ -58,7 +58,7 @@ amzn_assoc_linkid = "433089ce2c93b964e4c989e3e9d01bc2";
 </script>
 <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
 
-<h2> 1. Ingredients : </h3>
+<h2> 1. Ingredients : </h2>
 
 <ul>
     <li> 2 lb Fish (Tila pia or any fresh water fish) </li>
@@ -102,7 +102,7 @@ amzn_assoc_title = "Shop Related Products";
 <h2> Preparing the curry </hr>
 </center>
 
-<h3> Step: 2.1 Frying the Fish</h3>
+<h3> Step: 2.1 Frying the Fish </h3>
 
 <ul>
   <li> Cut and wash the fish </li>
