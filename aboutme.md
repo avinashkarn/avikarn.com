@@ -9,17 +9,17 @@ subtitle: “There is always a better way. Find it.” - Edison
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-  My name is Avinash Karn, I go by <strong>Avi</strong>, I am a plant quantitative geneticist and computational biologist, and digital agriculture and robotics enthusiast, and an amateur astronomer, painter, online blogging, photography and vivid cook.
+  My name is Avinash Karn, I go by <strong>Avi</strong>, I am a plant quantitative geneticist and computational biologist, and digital agriculture and robotics enthusiast; and an amateur astronomer, painter, online blogger, photographer and vivid cook. :)
 </p>
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
-I went obtained my secondary and higher secondary education in my hometown <a target="_blank" href="https://goo.gl/maps/vtMmZcXFWy32"> Birgunj, Nepal. </a> Next, I came to the United States to earn my Bachelor of Science degree in Agricultural Sciences, specializing in plant genetics at <strong>Truman State University</strong>, and finally, earned my PhD at the <strong> University of Missouri Columbia </strong> specializing in plant breeding, genetics and genomics.
+I obtained my secondary and higher secondary education in my hometown <a target="_blank" href="https://goo.gl/maps/vtMmZcXFWy32"> Birgunj, Nepal. </a> Next, I came to the United States to earn my Bachelor of Science degree in Agricultural Sciences, specializing in plant genetics at <strong>Truman State University</strong>, and finally, earned my PhD at the <strong> University of Missouri Columbia </strong> specializing in plant breeding, genetics and genomics.
 </p>
 
 <p class="about-text">
 <span class="fa fa-glasses about-icon"></span>
-I specialize in plant breeding, statistical genetics and computational biology, and have an excellent knowledge and experience in conducting big data analysis. Currently, I am a post-doctoral computational biologist at <strong> Cornell University </strong> in Geneva, New York. I intend to use my education and training in pursuing a career in a research organization that is involved to improve human nutrition, health and environment for both developed and developing communities.
+I specialize in plant breeding, statistical genetics and computational biology. Currently, I am a post-doctoral computational biologist at <strong> Cornell University </strong> in Geneva, New York. I intend to use my education and training in pursuing a career in a research organization that is involved to improve human nutrition, health and environment for both developed and developing communities.
 </p>
 
 <p class="about-text">
