@@ -21,6 +21,10 @@ In the __Quantitative Trait Locus (QTL)__ analysis, `composite interval mapping 
   <li> Finally, install the library <strong> qtl </strong> in R </li>
 </ol>
 
+<h2> Step 1.1 - Install qtl library in R following the below steps: </h2>
+<img src="/image/cim/installlibrary.gif">
+<hr>
+
 <h2> Step 2. Prepare the input files </h2>
 
 <ol>
