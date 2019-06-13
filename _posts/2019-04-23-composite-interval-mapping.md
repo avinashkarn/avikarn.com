@@ -150,15 +150,6 @@ Provide the `cM` to drop in the `drop =`
 <center><h2> --- End of Tutorial --- </h2> </center> 
 
 __Thank you__ for reading this tutorial. I really hope this helpful in giving you the concept and technology behind AmpSeq and the data analysis. If you have any questions or comments, please let comment below or send me an email.
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_donations" />
-<input type="hidden" name="business" value="8ZF7YRTZ42EKU" />
-<input type="hidden" name="item_name" value="To support education for all." />
-<input type="hidden" name="currency_code" value="USD" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form>
-
 
 ##  Bibliography
 Broman KW, Wu H, Sen Ś, Churchill GA (2003) R/qtl: QTL mapping in experimental crosses. Bioinformatics 19:889-890 
