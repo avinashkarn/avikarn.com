@@ -35,6 +35,10 @@ Both the `phenotype` and `genetic map` infomation can be put together in a singl
 See below the screenshot to understand the formatting of the input file.
 <img src="/image/cim/file.png">
 
+<h2> Step 2.1 - Setup working directory following the below steps: </h2>
+<img src="/image/cim/setupdir.gif">
+<hr>
+
 <h2> Step 3. Running CIM in R </h2>
 Please double check the formatting of the file is correct. Once ready, open `R studio` and type the following commands to get started. 
 
