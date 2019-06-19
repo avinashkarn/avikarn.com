@@ -8,10 +8,11 @@ share-img: /image/ampseq/keepdiscard.png
 
 In this tutorial video, I talk about using the AmpSeq data in __Marker Assisted Selection__ . To understand the basic concept and technology behind AmpSeq please read one of my previous blog post on it at this link: https://avikarn.com/2019-04-21-AmpSeq/  
 
-<iframe width="420" height="315"
-src="https://youtu.be/qt8cGyexXPI">
-</iframe>
- 
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qt8cGyexXPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+<hr>
 <center><h3> --- End of Tutorial --- </h3></center>
 
 __Thank you__ for watching this tutorial. If you have any questions or comments, please let me know in the comment section below or send me an email. 
