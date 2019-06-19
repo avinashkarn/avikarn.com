@@ -27,7 +27,11 @@ For general information on technology behind AmpSeq please read one of my previo
 
 <hr>
 
-<center><h3> --- End of Tutorial --- </h3></center>
+<center>
+<img src="/image/ampseq/keepdiscard.png">
+</center>
+
+<hr>
 
 __Thank you__ for watching this tutorial. If you have any questions or comments, please let me know.
 
