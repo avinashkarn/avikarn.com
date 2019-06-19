@@ -15,7 +15,7 @@ For general information on technology behind AmpSeq please read one of my previo
 
 <hr>
 
-<h3>A few suggestions on while analyzing your AmpSeq data for MAS:</h3>
+<h3>A few suggestions before you analyze your AmpSeq data for MAS:</h3>
 
 <ul>
   <li> Remove markers with unknown, uninformative or with a lot of missing data. </li>
