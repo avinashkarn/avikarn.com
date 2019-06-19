@@ -2,8 +2,8 @@
 layout: post
 title: "Marker Assisted Selection using AmpSeq data"
 tags: [Marker Assisted Selection, AmpSeq, Amplicon Sequencing]
-image: /image/mapchart/mapchart.JPG
-share-img: /image/mapchart/mapchart.JPG
+image: /image/ampseq/keepdiscard.png
+share-img: /image/ampseq/keepdiscard.png
 ---
 
 In this tutorial video, I talk about using the AmpSeq data in __Marker Assisted Selection__ . To understand the basic concept and technology behind AmpSeq please read one of my previous blog post on it at this link: https://avikarn.com/2019-04-21-AmpSeq/  
