@@ -9,10 +9,6 @@ share-img: /image/lepmap/cropped_nih_geneticmap.jpg
 __Building genetic maps__ can be challenging and sometimes quite stressful, especially, when dealing with thousands or even millions of markers. In this post, I am hoping to help anyone who would like to get started to build a decent genetic map in an open software 
 <a href="https://sourceforge.net/projects/lep-map3/"> Lep-MAP3 </a>, and finally, the evaluating the accuarcy of the map and plotting it.
 
-<center>
-<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=warehouse&banner=0WH1TBABMW4R4HN14382&f=ifr&lc=pf4&linkID=bf7e3cafc429907f960b82f0c57d6707&t=aviamazon6-20&tracking_id=aviamazon6-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
-</center>
-
 The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the flow chart below. 
 
 <center><img src="/image/lepmap/lepmap_flow.png"></center>
@@ -96,22 +92,27 @@ https://www.wur.nl/en/show/Mapchart.htm
 __Thank you__ for reading this tutorial. I really hope these steps will get you started in genetic map construction in Lep-MAP3. The key is to <strong> PRACTISE. </strong>. 
 
 If you have any comments or suggestions, please let comment below or send me an email. 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_donations" />
-<input type="hidden" name="business" value="8ZF7YRTZ42EKU" />
-<input type="hidden" name="item_name" value="To support the education for all." />
-<input type="hidden" name="currency_code" value="USD" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form>
 
 Happy mapping !
-
 
 <h3> Bibliography </h3>
 Rastas, Pasi. "Lep-MAP3: robust linkage mapping even for low-coverage whole genome sequencing data." Bioinformatics 33.23 (2017): 3726-3732.
 
-
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_tracking_id = "avikarn-20";
+amzn_assoc_ad_mode = "search";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_default_search_phrase = "apple";
+amzn_assoc_default_category = "All";
+amzn_assoc_linkid = "a9d162ae78ea5145f84b9bf17eaa5de9";
+amzn_assoc_search_bar = "true";
+amzn_assoc_search_bar_position = "top";
+amzn_assoc_title = "Apple products on sale";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359651-1"></script>
