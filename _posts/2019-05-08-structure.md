@@ -8,10 +8,6 @@ share-img: /image/structure/finalstructure.jpg
 
 __Structure Software__ is a freely available software package that one may use for rigorous investigation of `admixed individuals`; identification of `point of hybridization` and `migrants`; and estimate over all `structure` of a population using a commonly used genetic markers such as `SNPs` and `SSRs`. This software was developed by __Pritchard Lab__ at __Stanford University__ and can downloaded at this <a href="https://web.stanford.edu/group/pritchardlab/structure.html"> link </a>.
 
-<center>
-<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=warehouse&banner=1ER1MDBDMZ0DPV03XWR2&f=ifr&lc=pf4&linkID=55d9573b62d1088d7092fea4c25c0153&t=aviamazon6-20&tracking_id=aviamazon6-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
-</center>
-
 In this tutorial, I will show how to prepare `input` files and run the `Structure` software. For detail information, please read this article at this <a href="https://web.stanford.edu/group/pritchardlab/structure.html">link</a>
 
 <h1> Step 1: Preparing the Input file </h1>
@@ -79,21 +75,28 @@ __Therefore__ the correct bar plot with correct number of sub-population (k) is 
 <center><h3> --- End of Tutorial --- </h3></center>
 
 __Thank you__ for reading this tutorial. If you have any questions or comments, please let me know in the comment section below or send me an email. 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_donations" />
-<input type="hidden" name="business" value="8ZF7YRTZ42EKU" />
-<input type="hidden" name="item_name" value="To support education for all." />
-<input type="hidden" name="currency_code" value="USD" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form>
-Happy Structure-ing !
 
+Happy Structure-ing !
 
 <h3> Bibliography </h3>
 <p>Pritchard, Jonathan K., William Wen, and Daniel Falush. "Documentation for STRUCTURE software: Version 2." (2003).</p>
 <p>Earl, Dent A. "STRUCTURE HARVESTER: a website and program for visualizing STRUCTURE output and implementing the Evanno method." Conservation genetics resources 4.2 (2012): 359-361. </p>
 
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_tracking_id = "avikarn-20";
+amzn_assoc_ad_mode = "search";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_default_search_phrase = "Dell laptop on sale";
+amzn_assoc_default_category = "All";
+amzn_assoc_linkid = "a9d162ae78ea5145f84b9bf17eaa5de9";
+amzn_assoc_search_bar = "true";
+amzn_assoc_search_bar_position = "top";
+amzn_assoc_title = "Dell laptop on sale";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359651-1"></script>
