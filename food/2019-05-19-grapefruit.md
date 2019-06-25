@@ -41,20 +41,19 @@ This is a very simple dish that one can easily prepare in less than no time! Ple
 
 <script type="text/javascript">
 amzn_assoc_placement = "adunit0";
-amzn_assoc_tracking_id = "aviamazon6-20";
+amzn_assoc_search_bar = "true";
+amzn_assoc_tracking_id = "avikarn-20";
+amzn_assoc_search_bar_position = "bottom";
 amzn_assoc_ad_mode = "search";
 amzn_assoc_ad_type = "smart";
 amzn_assoc_marketplace = "amazon";
 amzn_assoc_region = "US";
+amzn_assoc_title = "Kitchen Items on sale";
 amzn_assoc_default_search_phrase = "glassware";
 amzn_assoc_default_category = "All";
-amzn_assoc_linkid = "56ea1dc16000814cec969f38e515eaf3";
-amzn_assoc_search_bar = "true";
-amzn_assoc_search_bar_position = "top";
-amzn_assoc_title = "Shop Related Products";
+amzn_assoc_linkid = "e02c3bbb2e6fd54f0993fbc9b4ac8d05";
 </script>
 <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
-
 <hr>
 
 <h3> Instructions to prepare the dessert:</h3>
