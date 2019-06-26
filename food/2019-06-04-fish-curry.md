@@ -38,21 +38,6 @@ Your browser does not support the video tag.
 <ul>
     <li> Frying pan (preferably a cast iron pan) </li>
 </ul>
-<script type="text/javascript">
-amzn_assoc_placement = "adunit0";
-amzn_assoc_search_bar = "true";
-amzn_assoc_tracking_id = "aviamazon6-20";
-amzn_assoc_search_bar_position = "bottom";
-amzn_assoc_ad_mode = "search";
-amzn_assoc_ad_type = "smart";
-amzn_assoc_marketplace = "amazon";
-amzn_assoc_region = "US";
-amzn_assoc_title = "Shop Related Products";
-amzn_assoc_default_search_phrase = "cast iron";
-amzn_assoc_default_category = "All";
-amzn_assoc_linkid = "433089ce2c93b964e4c989e3e9d01bc2";
-</script>
-<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
 
 <h2> 1. Ingredients : </h2>
 
