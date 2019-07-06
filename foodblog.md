@@ -198,10 +198,6 @@ div.desc {
 
 <hr>
 
-<code>
-    <ins class="epn-placement" data-config-id="5d1c1b573b11ab5f8b750af4"></ins>
-</code>
-
 <hr>
 <!--- Sharing ----------------------------------->
 <section id = "social-share-section">
