@@ -119,7 +119,7 @@ div.desc {
 <div class="responsive">
   <div class="gallery">
     <a href="/food/2019-05-13-soup">
-      <img src="/image/foodblog/soup1.jpg" alt="Hearty Soup" width="auto" height="200" class="img-thumbnail">
+      <img src="/image/foodblog/soup1.jpg" alt="Hearty Soup" width="auto" height="100" class="img-thumbnail">
     </a>
     <a href="/food/2019-05-13-soup"><div class="desc"> Hearty Soup - Mushroom, Tofu, Peas & Potato</div></a>
   </div>
