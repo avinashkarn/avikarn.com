@@ -148,7 +148,7 @@ div.desc {
 <div class="row"> 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="/food/2019-07-02-Aloo">
+    <a href="/food/2019-07-02-Aloo">
       <img src="/image/foodblog/aloo1.png" alt="Potato Salad" width="auto" height="400" class="img-thumbnail">
     </a>
     <div class="desc">Spicy Potato Salad</div>
