@@ -146,6 +146,7 @@ div.desc {
 
 
 <div class="row"> 
+  
 <div class="responsive">
   <div class="gallery">
     <a href="/food/2019-07-02-Aloo">
