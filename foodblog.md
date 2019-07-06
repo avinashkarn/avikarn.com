@@ -152,7 +152,7 @@ div.desc {
     <a href="/food/2019-07-02-Aloo">
       <img src="/image/foodblog/aloo1.png" alt="Potato Salad" width="auto" height="400" class="img-thumbnail">
     </a>
-    <div class="desc">Spicy Potato Salad</div>
+    <a href="/food/2019-07-02-Aloo"><div class="desc"> Spicy Potato Salad</div></a>
   </div>
 </div>
 
