@@ -87,11 +87,18 @@ The phased data from OrderMarkers2 step can be converted to fully informative "g
 
 Snippet of the `map2gentypes.awk` output:
 
-<center><img src="/image/lepmap/orderOutput.png"></center>
+<center><img src="/image/lepmap/orderOutput.png">
+<a href="https://click.linksynergy.com/fs-bin/click?id=iVSc/qZ7CV4&offerid=660525.52&subid=0&type=4" rel="nofollow"><IMG border="0"   alt="Real Ketones" src="https://ad.linksynergy.com/fs-bin/show?id=iVSc/qZ7CV4&bids=660525.52&subid=0&type=4&gridnum=16"></a>
+</center>
+<hr>
 
 One may convert the genotypes in <strong> 1 1 => A, 2 2 => B, 1 2 or 2 1 => H format </strong> (See below figure) in MS Excel using find/Replace function, which can be then loaded in `R/Qtl` for QTL mapping.
 
-<center><img src="/image/lepmap/rqtlFormat.png"></center>
+<center><img src="/image/lepmap/rqtlFormat.png">
+<a href="https://click.linksynergy.com/fs-bin/click?id=iVSc/qZ7CV4&offerid=645454.33&type=4&subid=0" rel="nofollow"><IMG alt="Lawn & Gardening Tools by Life and Home" border="0" src="https://lifeanddothomedotblog.files.wordpress.com/2019/07/lifeandhome-gardening-tools-banner.png"></a><IMG border="0" width="1" height="1" src="https://ad.linksynergy.com/fs-bin/show?id=iVSc/qZ7CV4&bids=645454.33&type=4&subid=0">
+</center>
+<hr>
+
 
 <h2> 4.0 Validate the genetic map by conducting QTL analysis on well studied phenotype </h2>
 
@@ -108,13 +115,11 @@ https://www.wur.nl/en/show/Mapchart.htm
 <center><img src="/image/lepmap/mapChart.png"></center>
 <a href="https://click.linksynergy.com/fs-bin/click?id=876kEArXFCo&offerid=551783.18&subid=0&type=4" rel="nofollow"><IMG border="0"   alt="Qatar Airways" src="https://ad.linksynergy.com/fs-bin/show?id=876kEArXFCo&bids=551783.18&subid=0&type=4&gridnum=16"></a>
 
-__Thank you__ for reading this tutorial. I really hope these steps will get you started in genetic map construction in Lep-MAP3. The key is to <strong> PRACTISE. </strong>. 
-<center><a href="https://click.linksynergy.com/fs-bin/click?id=iVSc/qZ7CV4&offerid=682323.10&subid=0&type=4" rel="nofollow"><IMG border="0"   alt="Gelato Pique - New Arrivals" src="https://ad.linksynergy.com/fs-bin/show?id=iVSc/qZ7CV4&bids=682323.10&subid=0&type=4&gridnum=13"></a>
-</center>
-
-If you have any comments or suggestions, please let comment below or send me an email. 
+__Thank you__ for reading this tutorial. I really hope these steps will get you started in genetic map construction in Lep-MAP3. The key is to <strong> PRACTISE. </strong>. If you have any comments or suggestions, please let comment below or send me an email. 
 
 Happy mapping !
+<center><a href="https://click.linksynergy.com/fs-bin/click?id=iVSc/qZ7CV4&offerid=682323.10&subid=0&type=4" rel="nofollow"><IMG border="0"   alt="Gelato Pique - New Arrivals" src="https://ad.linksynergy.com/fs-bin/show?id=iVSc/qZ7CV4&bids=682323.10&subid=0&type=4&gridnum=13"></a>
+</center>
 
 <h3> Bibliography </h3>
 Rastas, Pasi. "Lep-MAP3: robust linkage mapping even for low-coverage whole genome sequencing data." Bioinformatics 33.23 (2017): 3726-3732.
