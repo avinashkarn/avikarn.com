@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Genetic map construction in LepMap3?"
+title: "Genetic map construction in LepMap3"
 tags: [Lep-MAP3, Genetic Mapping, Mapchart]
 image: /image/lepmap/cropped_nih_geneticmap.jpg
 share-img: /image/lepmap/cropped_nih_geneticmap.jpg
