@@ -35,7 +35,7 @@ The parental genotypes are called using the `ParentCall2` module, using the belo
 $ java -cp /path/Lep-MAP3/bin ParentCall2 data = pedigree.txt  vcfFile = File.vcf > p.call
 ```
 <hr>
-<center><img src="/image/lepmap/runlepmap.gif.png"></center>
+<center><img src="/image/lepmap/runlepmap.gif"></center>
 <a href="https://click.linksynergy.com/fs-bin/click?id=876kEArXFCo&offerid=320088.10000210&type=4&subid=0" rel="nofollow"><IMG alt="Bake Me  A Wish" border="0" src="https://www.bakemeawish.com/banner/Newsletter/febaff/jumbobday_728x90.jpg"></a><IMG border="0" width="1" height="1" src="https://ad.linksynergy.com/fs-bin/show?id=876kEArXFCo&bids=320088.10000210&type=4&subid=0">
 <hr>
 
