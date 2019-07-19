@@ -9,7 +9,7 @@ share-img: /image/foodblog/tofurice.png
 <center><h1> Pesto Tofu & Rice Pilaf </h1> </center>
 <hr>
 
-<center><img src="/image/foodblog/tofurice.png" width="auto" height="200"></center>
+<center><img src="/image/foodblog/tofurice.png" width="auto" height="auto"></center>
 
 <hr>
 
