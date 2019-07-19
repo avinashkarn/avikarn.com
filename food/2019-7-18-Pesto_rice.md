@@ -68,7 +68,7 @@ share-img: /image/foodblog/tofurice.png
 <h3> Steps: </h3>
 <ul>
   <li> In the hot pan add some butter, cook the cubed Tofu for 5 mins and add soysauce and cook for another 2 mins. Finally, add Ketchup and toss it well, and remove it from the pan in a plate</li>
-  <li> Next, add 1 Tbsp of butter in the pan, add Celery, Carrots, and Peas cook for 2 mins on high heat until they don't have crunchy texture. Add the raisins some salt </li>
+  <li> Next, add 1 Tbsp of butter in the pan, add Celery, Carrots, and Peas cook for 2 mins on high heat until they don't have crunchy texture. Add the raisins and some salt, mix well</li>
   <li> In the same pan, add cooked Basmati rice, pesto sauce, Roasted Peanuts, Tofu, Paparika powder, Coriander powder and finally some heavy milk; cook it for another 3 mins on a low heat until all the indgredients are mixed well </li>
   <li> Finally, generously add Parmesan cheese on it, and let it rest for 1-2 mins </li>
   <li> Serve! </li>
