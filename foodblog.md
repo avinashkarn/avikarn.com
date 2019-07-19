@@ -156,6 +156,15 @@ div.desc {
   </div>
 </div>
 
+<div class="responsive">
+  <div class="gallery">
+    <a href="/food/2019-7-18-Pesto_rice">
+      <img src="/image/foodblog/tofurice.png" alt="Tofu Rice Pilaf" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <a href="/food/2019-7-18-Pesto_rice"><div class="desc"> Pesto Tofu & Rice pilaf</div></a>
+  </div>
+</div>
+
 </div>
 
 <div class="row"> 
