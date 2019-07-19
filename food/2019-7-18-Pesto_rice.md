@@ -32,6 +32,8 @@ share-img: /image/foodblog/tofurice.png
 <ul>
     <li> Non-Stick Frying pan </li>
 </ul>
+<ins class="epn-placement" data-config-id="5d1c1b573b11ab5f8b750af4"></ins>
+
 
 <a href="https://click.linksynergy.com/fs-bin/click?id=876kEArXFCo&offerid=666413.8&subid=0&type=4" rel="nofollow"><IMG border="0"   alt="Urban Stems" src="https://ad.linksynergy.com/fs-bin/show?id=876kEArXFCo&bids=666413.8&subid=0&type=4&gridnum=16"></a>
 
