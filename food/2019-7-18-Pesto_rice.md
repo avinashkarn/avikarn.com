@@ -83,6 +83,7 @@ share-img: /image/foodblog/tofurice.png
 </center>
 <hr>
 
+<a href="https://click.linksynergy.com/fs-bin/click?id=876kEArXFCo&offerid=635768.409&subid=0&type=4" rel="nofollow"><IMG border="0"   alt="Rakuten Kobo U.S" src="https://ad.linksynergy.com/fs-bin/show?id=876kEArXFCo&bids=635768.409&subid=0&type=4&gridnum=0"></a>
 
 
 <!--- Sharing ----------------------------------->
