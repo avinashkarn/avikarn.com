@@ -47,7 +47,7 @@ share-img: /image/foodblog/tofurice.png
     <li> 1 Tbsp each of Paparika powder and Corriander powder </li>
     <li> 1/4 cup Raisins </li>
     <li> 2 Tbsp Ketchup </li>
-    <li> 2 Tsp Soy sauce <li>
+    <li> 2 Tsp Soy sauce </li>
     <li> Salt to taste </li>
     <li> 2 Tbsp Pesto sauce </li>
     <li> 1/2 cup heavy Milk </li>
