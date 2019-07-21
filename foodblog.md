@@ -4,7 +4,11 @@ title:  "Food Blog"
 share-img: /image/foodblog/dinner1.jpg
 tags: [Food Blog]
 bigimg: 
-  - "/image/foodblog/20190720_142605.mp4" : "welcome to our food blog"
+  - "/image/foodblog/biryani1.jpg" : "Red Chicken Briyani"
+  - "/image/foodblog/momo1.jpg" : "Mo:Mo: Dumplings"
+  - "/image/foodblog/pizza1.jpg" : "Homemade Pizzzza"
+  - "/image/foodblog/salad1.jpg" : "Salad"
+  - "/image/foodblog/samosa1.jpg" : "SAMOSAA"
 ---
 
 <style>
