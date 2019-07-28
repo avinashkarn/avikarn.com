@@ -164,6 +164,14 @@ div.desc {
     <a href="/food/2019-7-18-Pesto_rice"><div class="desc"> Pesto Tofu & Rice pilaf</div></a>
   </div>
 </div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="/food/2019-07-27-ramen">
+      <img src="/image/foodblog/ramen.png" alt="Ramen Pad Thai" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <a href="/food/2019-07-27-ramen"><div class="desc">Egg Ramen Pad Thai</div></a>
+  </div>
+</div>
 
 </div>
 
