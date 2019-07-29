@@ -27,7 +27,7 @@ I am a passionate `plant quantitative geneticist` and `computational biologist`.
 
 <ul>
   
-<li>Analyzed large-scale genotyping data (from Genotyping-by-Sequencing, Amplicon Sequencing, Whole genome sequencing data) for SNP and haplotype calling, genome alignment, genome assembly and genomic selection and prediction. </li>
+<li>Analyzed large-scale genotyping data from Genotyping-by-Sequencing, Amplicon Sequencing, Whole genome sequencing for SNP and haplotype calling, genome alignment, genome assembly and genomic selection and prediction. </li>
 
 <li>Co-Lead the development of a rhAmpSeq (RNase H2 enzyme-dependent amplicon sequencing) haplotype strategy targeting the collinear core genome to improve marker transferability across a diverse genus.</li>
 
@@ -35,7 +35,7 @@ I am a passionate `plant quantitative geneticist` and `computational biologist`.
 
 <li>Built genetic maps (in Lep-Map3) of various Vitis populations, and performed quality control (QC) analysis, interval mapping and genome-wide association (GLM, MLM, FarmCPU).</li>
 
-<li>Managed grapevine breeding database www.VitisBase.org in collaboration with Boyce Thomposon, Breeding Insight; and led setting up trials and high-throughput phenotype data collection on FieldBook android application.</li>
+<li>Managed grapevine breeding database www.VitisBase.org in collaboration with Boyce Thompson Institute (BTI) and Breeding Insight project (USDA); and led setting up trials and high-throughput phenotype data collection on FieldBook android application.</li>
 
 <li>Big data visualization in R software using packages such as ggPlot; and CIRCOS (written in PERL)</li>
 
