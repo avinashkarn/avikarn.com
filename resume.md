@@ -39,6 +39,8 @@ I am a passionate `plant quantitative geneticist` and `computational biologist`.
 
 <li>Big data visualization in R software using packages such as ggPlot; and CIRCOS (written in PERL)</li>
 
+</ul>
+
 #### 2017 May–2017 Dec Quantitative Geneticist (Postdoc) — University of Illinois - Urbana-Champaign, IL
 
 Led and managed undergraduate students and technicians in the installation of over 2,000 `minirhizotron` tubes in field to image and study maize roots with `Bartz imaging systems`; and collections of minirhizotron images, moisture data, flowering, above ground biomass and yield harvest. Identified genetics basis for maize root structure and control of plant nutrient relations in Illinois Protein Strain Recombinant Inbred (IPSRI) lines of maize
