@@ -25,7 +25,19 @@ I am a passionate `plant quantitative geneticist` and `computational biologist`.
 
 #### 2018–Present Computational biologist (Postdoc) — Cornell University, Geneva, NY
 
-Analyzed large-scale genotyping data such as `Genotyping-by-Sequencing`, `Amplicon Sequencing`, `Illumina resequencing`, and/or `PacBio de novo sequencing`) such as `SNP` and `Haplotype calling`. Developed `genetic markers` for traits like powdery mildew disease resistance and fruit quality, to assist breeders with `marker assisted selection`; conducted statistical analysis of large-scale data sets from DNA sequencing and trait data from related and unrelated vines for `genetic mapping` in Lep-MAP3, `QTL mapping` in R, `genome wide association studies` in TASSEL/FarmCPU/GAPIT. Managed grapevine breeding database www.VitisBase.org , and led setting up trials and phenotype data collection on `Field Book` android application.
+<ul>
+  
+<li>Analyzed large-scale genotyping data (from Genotyping-by-Sequencing, Amplicon Sequencing, Whole genome sequencing data) for SNP and haplotype calling, genome alignment, genome assembly and genomic selection and prediction. </li>
+
+<li>Co-Lead the development of a rhAmpSeq (RNase H2 enzyme-dependent amplicon sequencing) haplotype strategy targeting the collinear core genome to improve marker transferability across a diverse genus.</li>
+
+<li>Worked with nation-wide grape breeders to apply amplicon sequencing (AmpSeq) marker data for accelerated marker-assisted breeding.</li>
+
+<li>Built genetic maps (in Lep-Map3) of various Vitis populations, and performed quality control (QC) analysis, interval mapping and genome-wide association (GLM, MLM, FarmCPU).</li>
+
+<li>Managed grapevine breeding database www.VitisBase.org in collaboration with Boyce Thomposon, Breeding Insight; and led setting up trials and high-throughput phenotype data collection on FieldBook android application.</li>
+
+<li>Big data visualization in R software using packages such as ggPlot; and CIRCOS (written in PERL)</li>
 
 #### 2017 May–2017 Dec Quantitative Geneticist (Postdoc) — University of Illinois - Urbana-Champaign, IL
 
