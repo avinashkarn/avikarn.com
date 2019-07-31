@@ -57,7 +57,7 @@ So far I have supervised three undergraduate research summer scholars from diffe
 <div id="contactme-section">
 <h1 id="contact">Contact</h1>
 
-<p>You can <a href="mailto:akarn@mail.missouri.edu?subject=Hello from AviKarn.com">email me</a> or find me <a href="https://twitter.com/avi_karn">on Twitter</a> if you want to get in touch. I love meeting new people so don't hesitate to send a message!</p>
+<p>You can <a href="mailto:avi.karn6@gmail.com?subject=Hello from AviKarn.com">email me</a> or find me <a href="https://twitter.com/avi_karn">on Twitter</a> if you want to get in touch. I love meeting new people so don't hesitate to send a message!</p>
 <p>Let’s connect if you want to collaborate and or exchange ideas!</p>
 <p>If you'd like to set up a meeting with me, <a href="https://calendly.com/avikarn">click here to schedule a meeting</a> based on your availability.</p>
 
