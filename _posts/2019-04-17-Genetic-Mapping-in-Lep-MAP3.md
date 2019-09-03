@@ -7,7 +7,7 @@ share-img: /image/lepmap/cropped_nih_geneticmap.jpg
 ---
 
 __Building genetic maps__ can be challenging and sometimes quite stressful, especially, when dealing with thousands or even millions of markers. In this post, I am hoping to help anyone who would like to get started to build a decent genetic map in an open software 
-<a href="https://sourceforge.net/projects/lep-map3/"> Lep-MAP3 </a>, and finally, the evaluating the accuarcy of the map and plotting it.
+<a href="https://sourceforge.net/projects/lep-map3/"> Lep-MAP3 </a>, and finally, evaluating the accuarcy of the map and plotting it.
 
 The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the flow chart below. 
 
@@ -19,10 +19,15 @@ The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the f
 <h2> Running Lep-MAP3 </h2>
 
 <h3>Step 1.1. Installation and File Preparation</h3>
-<strong> Important - </strong> Correctly install the Lep-MAP3 software on your computer, and please make sure you have the latest version of the software. 
+<strong> Important - </strong> Correctly install the Lep-MAP3 software on your computer, and please make sure its the latest version. 
 There are two files that are needed as an input 
 <li>(1) <strong> genotype file</strong> in a <strong>VCF</strong> format, and </li>
+<a href="/image/lepmap/sample_Genotype3.vcf" target="_blank">Download sample genotype file (VCF) here.</a>
+
 <li>(2) <strong> pedigree</strong> file in <strong>.txt</strong> format. A snippet of the pedigree file showing relationship between all individuals in a family or population is shown below. It is important that the pedigree file is formatted exactly as shown in the below figure: </li>
+
+<a href="/image/lepmap/sample_Pedigree.txt" target="_blank">Download sample Pedigree file (.txt) here.</a>
+<br>
 <center><img src="/image/lepmap/ped.png"></center>
 <a href="https://click.linksynergy.com/fs-bin/click?id=876kEArXFCo&offerid=672566.7&subid=0&type=4" rel="nofollow"><IMG border="0"   alt="Aporro" src="https://ad.linksynergy.com/fs-bin/show?id=876kEArXFCo&bids=672566.7&subid=0&type=4&gridnum=16"></a>
 <hr>
@@ -41,21 +46,23 @@ $ java -cp /path/Lep-MAP3/bin ParentCall2 data = pedigree.txt  vcfFile = File.vc
 
 <h3>Step 1.3. Filtering </h3>
 
-One may use the `Filtering2` module to remove non-informative markers (Markers that are monomorphic or homozygous in both parents), and similarly, to remove distorted markers the below command line can be used to run the module:
+One may use the `Filtering2` module to remove `non-informative markers` (Markers that are monomorphic or homozygous in both parents), and similarly, to remove `distorted markers` (markers segregating in a non-Mendelian fashion) using the below command line:
 
 ```bash
  $ java -cp /path/Lep-MAP3/bin Filtering2 data=p.call  removeNonInformative=1 dataTolerance=0.001  > p_fil.call
 ```
 
-Note: Use: `removeNonInformative` parameter to remove markers that are homozygous in both parent and `dataTolerance` to remove distorted markers at given p-value threshold.
+__Note__: Use: the parameter `removeNonInformative` to remove markers that are homozygous/monomorphic, and `dataTolerance` to remove distorted markers at given p-value threshold.
 
 <h3>Step 1.4. Separate Chromosomes </h3>
 
-In this step, `SeparateChromosomes2` module is used to categorized markers into their linkage groups or chromosomes using the below command:
+In this step, `SeparateChromosomes2` module is used to categorize markers into linkage groups (LGs) using the below command:
 
 ```bash
 $ java -cp /path/Lep-MAP3/bin  SeparateChromosomes2 data=p_fil.call lodLimit=10 > map.txt
 ```
+
+__Note__: Use the parameter `lodLimit` to split the linkage groups. 
 
 <h3>Step 1.5. Order Markers </h3>
 
@@ -72,7 +79,8 @@ One may use the parameter `sexAveraged`  to calculate sex-averaged map distances
 
 <h2> 2.0 Checking the accuracy of the marker order </h2>
 
-If the physical positons of the markers in the genetic map curation are known, then, it is a good thing to use that information to evaluate the markers order especially markers that <strong> inflat </strong> the chromosome length, by making a correlation plot of the genetic and physical positions of the markers by chromosome. <strong>Note:</strong> It is quite common to see that the marker orders are flipped. There is nothing to panic about, one may fix it by manually sorting it.
+If the physical positons of the markers in the genetic map curation are known, then, one may use that information to evaluate the quality of marker order, especially markers that <strong> inflate </strong> the chromosome length, by making a correlation plot of the genetic and physical positions of the markers by individual chromosomes or linkage groups. 
+<strong>Note:</strong> It is quite common to see that the marker orders are flipped. There is nothing to panic about, one may fix it by manually sorting it.
 
 <center><img src="/image/lepmap/corr_geneticmap.png"></center>
 <a href="https://click.linksynergy.com/fs-bin/click?id=876kEArXFCo&offerid=666413.39&subid=0&type=4" rel="nofollow"><IMG border="0"   alt="UrbanStems" src="https://ad.linksynergy.com/fs-bin/show?id=876kEArXFCo&bids=666413.39&subid=0&type=4&gridnum=16"></a>
@@ -80,7 +88,7 @@ If the physical positons of the markers in the genetic map curation are known, t
 
 <h2> 3.0 Converting phased output data from OrderMarkers2 to genotypes </h2>
 
-The phased data from OrderMarkers2 step can be converted to fully informative "genotype" data by using `map2gentypes.awk` script and command below: 
+The phased data from `OrderMarkers2` step can be converted to fully informative "genotype" data by using `map2gentypes.awk` script and command below: 
 ```bash
 	$ awk -vfullData=1 -f map2genotypes.awk order.txt > genotypes.txt
 ```
@@ -100,7 +108,7 @@ One may convert the genotypes in <strong> 1 1 => A, 2 2 => B, 1 2 or 2 1 => H fo
 <hr>
 
 
-<h2> 4.0 Validate the genetic map by conducting QTL analysis on well studied phenotype </h2>
+<h2> 4.0 Validate the genetic map by conducting QTL analysis </h2>
 
 <center><img src="/image/lepmap/qtl.png"></center>
 <a href="https://click.linksynergy.com/fs-bin/click?id=876kEArXFCo&offerid=675514.47&subid=0&type=4" rel="nofollow"><IMG border="0"   alt="TW Steel UK" src="https://ad.linksynergy.com/fs-bin/show?id=876kEArXFCo&bids=675514.47&subid=0&type=4&gridnum=16"></a>
