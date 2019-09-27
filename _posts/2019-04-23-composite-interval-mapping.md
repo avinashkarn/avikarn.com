@@ -143,12 +143,21 @@ Intercept  3.01835  0.09467 31.882
 ```
 <strong>Note: </strong>`Additive effect` (a) = (BB - AA)/2 and `Dominance effect` (d) = AB - (AA + BB)/2.
 
-<h3> Step 6.0 Identify QTL intervals</h3>
+<h3> Step 6.0 Identify QTL intervals using LOD drop </h3>
 ```html
 lodint(results = scan.cim, chr = #value, drop = 1.8)
 ```
-Provide the `cM` to drop in the `drop =`
+Provide the `cM` to drop in the `drop =` and the `chr` 
 
+An example output is show below: 
+```html
+>   lodint(scan.cim, chr=2, drop=1.8)
+           chr    pos      lod
+2_14850509   3 45.290 11.44917
+2_15846197   3 48.827 14.43254
+2_19297395   3 50.312 12.45010
+```
+<hr>
 <center><h2> --- End of Tutorial --- </h2> </center> 
 
 __Thank you__ for reading this tutorial. I really hope this helpful in giving you the concept and technology behind AmpSeq and the data analysis. If you have any questions or comments, please let comment below or send me an email.
