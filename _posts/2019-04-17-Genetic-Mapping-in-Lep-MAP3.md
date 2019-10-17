@@ -85,9 +85,13 @@ If the physical positons of the markers in the genetic map curation are known, t
 <h2> 3.0 Converting phased output data from OrderMarkers2 to genotypes </h2>
 
 The phased data from `OrderMarkers2` step can be converted to fully informative "genotype" data by using `map2gentypes.awk` script and command below: 
+<a href="/image/lepmap/map2genotypes.awk" target="_blank">Download the map2gentypes.awk script here.</a>
+<br>
+
 ```bash
 	$ awk -vfullData=1 -f map2genotypes.awk order.txt > genotypes.txt
 ```
+
 
 Snippet of the `map2gentypes.awk` output:
 
