@@ -88,10 +88,10 @@ The phased data from `OrderMarkers2` step can be converted to fully informative 
 <a href="/image/lepmap/map2genotypes.awk" target="_blank">Download the map2gentypes.awk script here.</a>
 <br>
 
+Next, run the map2genotypes.awk script by following the command shown below.
 ```bash
 	$ awk -vfullData=1 -f map2genotypes.awk order.txt > genotypes.txt
 ```
-
 
 Snippet of the `map2gentypes.awk` output:
 
