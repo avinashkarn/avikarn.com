@@ -24,7 +24,20 @@
 # List of links in the navigation bar
   navbar-links:
     About Me: "aboutme"
-    #Tutorials: "books"
+    Tutorials:
+      - Genetic Mapping LepMap3: "https://avikarn.com/2019-04-17-Genetic-Mapping-in-Lep-MAP3/"    
+      - AmpSeq Concept: "https://avikarn.com/2019-04-21-AmpSeq/"
+      - GBS SNP calling: "https://avikarn.com/2019-04-20-GBS-SNP-calling-tutorial/"      
+      - QTL in R: "https://avikarn.com/2019-04-23-composite-interval-mapping/"      
+      - SSR in TASSEL: "https://avikarn.com/2019-08-22-ssr/"
+      - Check Mendelian errors: "https://avikarn.com/2019-08-04-Mendel/"
+      - Prune Markers: "https://avikarn.com/2019-07-30-prunning/"
+      - GWAS in TASSEL: "https://avikarn.com/2019-07-22-GWAS/"
+      - ANOVA in R: "https://avikarn.com/2019-07-09-ANOVA/"
+      - AmpSeq MAS: "https://avikarn.com/2019-06-19-MAS_AmpSeq/"
+      - Plot Genetic Map: "https://avikarn.com/2019-05-19-mapchart/"
+      - STRUCTURE software: "https://avikarn.com/2019-05-08-structure/"
+      - MDS analysis: "https://avikarn.com/2019-05-06-MDS/"    
     Food Blog:  "foodblog"
     Publications:
       - Google Scholar Profile: "https://scholar.google.com/citations?user=2XuofkoAAAAJ&hl=en"
