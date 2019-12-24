@@ -99,7 +99,7 @@ plot(scan.cim)
 <h3> Step 4.0 QTL effect plot</h3>
 Type the below command to plot the `effect plot` of the QTL on the phenotype.
 ```html
-plotPXG(scan_cross, pheno.col = #value, marker = c("#value"))
+plotPXG(phenoGeno_cross, pheno.col = #value, marker = c("#value"))
 ```
 Provide phenotype colum number in `pheno.col` and marker name in `marker =`
 
