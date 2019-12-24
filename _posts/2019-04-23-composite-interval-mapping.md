@@ -108,7 +108,7 @@ Output:
 
 <h3> Step 5.0 Make QTL model with the significant marker</h3>
 ```html
-qtl <- makeqtl(scan_cross, chr=c(#value), pos=c(#value),what=c("prob")) 
+qtl <- makeqtl(phenoGeno_cross, chr=c(#value), pos=c(#value),what=c("prob")) 
        
 fitqtl <- fitqtl(don, pheno.col=c(#value), formula = y~Q1, qtl= qtl, method = "hk", get.ests = T)
 
