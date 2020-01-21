@@ -6,7 +6,7 @@ image: /image/rhAmpSeq/circos.png
 share-img: /image/rhAmpSeq/circos.png
 ---
 
-##Abstract:
+<h2>Abstract:</h2>
 <p>Transferable DNA markers are essential for breeding and genetics. Grapevine (Vitis) breeders utilize disease resistance alleles from congeneric species ~20 million years divergent, but existing Vitis marker platforms have cross-species transfer rates as low as 2%. Here, we apply a marker strategy targeting the inferred Vitis core genome. Incorporating seven linked-read de novo assemblies and three existing assemblies, the Vitis collinear core genome is estimated to converge at 39.8 Mb (8.67% of the genome). Adding shotgun genome sequences from 40 accessions enables identification of conserved core PCR primer binding sites flanking polymorphic haplotypes with high information content. From these target regions, we develop 2,000 rhAmpSeq markers as a PCR multiplex and validate the panel in four biparental populations spanning the diversity of the Vitis genus, showing transferability increases to 91.9%. This marker development strategy should be widely applicable for genetic studies in many taxa, particularly those ~20 million years divergent.
 </p>
 
@@ -19,14 +19,6 @@ share-img: /image/rhAmpSeq/circos.png
 </div>
 
 If you have any comments or suggestions, please let comment below or send me an email. 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_donations" />
-<input type="hidden" name="business" value="8ZF7YRTZ42EKU" />
-<input type="hidden" name="item_name" value="To support the education for all." />
-<input type="hidden" name="currency_code" value="USD" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359651-1"></script>
