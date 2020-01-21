@@ -2,8 +2,8 @@
 layout: post
 title: "Publication: Haplotyping the Vitis collinear core genome with rhAmpSeq improves marker transferability in a diverse genus"
 tags: [rhAmpSeq,Vitis, Universal Marker, Genetic diversiy, Amplicon sequencing]
-image: /image/circos.png
-share-img: /image/circos.png
+image: /image/rhAmpSeq/circos.png
+share-img: /image/rhAmpSeq/circos.png
 ---
 
 ##Abstract:
@@ -12,7 +12,7 @@ share-img: /image/circos.png
 
 <div id="seed">
 <script src="/js/PDFObject.js"></script>
-<script>PDFObject.embed("/KernelComp_TeoNIL.pdf", "#seed");</script>
+<script>PDFObject.embed("/image/rhAmpSeq/published_012120_NatureComm_rhAmpSeq_s41467-019-14280-1.pdf", "#seed");</script>
 <style>
 .pdfobject-container { height: 85rem; border: 1rem solid rgba(0,0,0,.1); }
 </style>
