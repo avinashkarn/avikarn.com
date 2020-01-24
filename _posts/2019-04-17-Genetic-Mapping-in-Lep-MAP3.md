@@ -59,7 +59,7 @@ $ java -cp /path/Lep-MAP3/bin ParentCall2 data = pedigree.txt  vcfFile = File.vc
 This an optional step - However, One may use the `Filtering2` module to remove `non-informative markers` (Markers that are monomorphic or homozygous in both parents), and similarly, to remove `distorted markers` (markers segregating in a non-Mendelian fashion) using the below command line:
 
 ```bash
- $ java -cp /path/Lep-MAP3/bin Filtering2 data=p.call  removeNonInformative=1 dataTolerance=0.001  > p_fil.call
+ $ java -cp /path/Lep-MAP3/bin Filtering2 data=p.call  removeNonInformative=1 dataTolerance=0.0000001  > p_fil.call
 ```
 
 __Note__: Use: the parameter `removeNonInformative` to remove markers that are homozygous/monomorphic, and `dataTolerance` to remove distorted markers at __given__ p-value threshold.
