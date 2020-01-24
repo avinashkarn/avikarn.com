@@ -13,7 +13,7 @@ __Note__ If you have an amplicon sequencing (`AmpSeq` or `rhAmpSeq`) haplotype d
 
 <h1> Quality control analysis </h1>
 Prior to building genetic maps - I strongly advise to perform QC analysis on your genetic data.
-There are two QC tests that i usually perform: 1) `Multidimensional scaling (MDS)` and 2) `Check fo Mendelian Error`
+There are two QC tests that i usually perform: 1) `Multidimensional scaling (MDS)` and 2) `Check for Mendelian Error`
 
 <p><a href="https://avikarn.com/2019-05-06-MDS/">Click here</a> for Multidimensional scaling (MDS) tutorial.</p>
 <p><a href="https://avikarn.com/2019-08-04-Mendel/">Click here</a> for Mendelian Error Check tutorial. </p>
