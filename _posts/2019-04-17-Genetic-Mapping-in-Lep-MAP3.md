@@ -23,11 +23,11 @@ The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the f
 <strong> Important - </strong> Correctly install the Lep-MAP3 software on your computer, and please make sure its the latest version. 
 There are two files that are required as input files: 
 <li>(1) <strong> genotype file</strong> in a <strong>VCF</strong> format, and </li>
-<a href="/image/lepmap/sample_Genotype3.vcf" target="_blank">Download sample genotype file (VCF) here.</a>
+<a href="/image/lepmap/sample_VCF.vcf" target="_blank">Download sample genotype file (VCF) here.</a>
 
 <li>(2) <strong> pedigree</strong> file in <strong>.txt</strong> format. A snippet of the pedigree file showing relationship between all individuals in a family or population is shown below. It is important that the pedigree file is formatted exactly as shown in the below figure: </li>
 
-<a href="/image/lepmap/sample_Pedigree.txt" target="_blank">Download sample Pedigree file (.txt) here.</a>
+<a href="/image/lepmap/sample_pedigree.txt" target="_blank">Download sample Pedigree file (.txt) here.</a>
 <br>
 <center><img src="/image/lepmap/ped.png"></center>
 <hr>
