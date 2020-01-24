@@ -9,13 +9,21 @@ share-img: /image/lepmap/cropped_nih_geneticmap.jpg
 __Building genetic maps__ can be challenging and sometimes quite stressful, especially, when dealing with thousands or even millions of markers. In this post, I am hoping to help anyone who would like to get started to build a decent genetic map in an open software 
 <a href="https://sourceforge.net/projects/lep-map3/"> Lep-MAP3 </a>, and finally, evaluating the accuarcy of the map and plotting it.
 
+<h1> Quality control analysis </h1>
+Prior to building genetic maps - I strongly advise to perform QC analysis on your genetic data.
+There are two QC tests that i usually perform: 1) `Multidimensional scaling (MDS)` and 2) `Check fo Mendelian Error`
+
+<a href="https://avikarn.com/2019-05-06-MDS/">Click here</a> for Multidimensional scaling (MDS) tutorial.
+<a href="https://avikarn.com/2019-08-04-Mendel/">Click here</a> for Multidimensional scaling (MDS) tutorial.
+
+<br>
+
+<h2> Running Lep-MAP3 </h2>
 The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the flow chart below. 
 
 <center><img src="/image/lepmap/lepmap_flow.png"></center>
+
 <hr>
-
-
-<h2> Running Lep-MAP3 </h2>
 
 <h3>Step 1.1. Installation and File Preparation</h3>
 <strong>The Lep-MAP3 software is built in Linux and one has to have some experience in working in  command-line environment.</strong>
