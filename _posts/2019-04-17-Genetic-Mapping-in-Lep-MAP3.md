@@ -110,7 +110,7 @@ One may convert the genotypes in <strong> 1 1 => A, 2 2 => B, 1 2 or 2 1 => H fo
 
 
 <h2> 4.0 Validate the genetic map by conducting QTL analysis </h2>
-<p>It is a good QC step to perform a QTL analysis of a well studied trait to check if expected QTL region is observed in the with the cur 
+<p>It is a good QC step to perform a QTL analysis of a well studied trait to check if expected QTL region is observed in the curated genetic mmap </p> 
 <center><img src="/image/lepmap/qtl.png"></center>
 
 <hr>	
