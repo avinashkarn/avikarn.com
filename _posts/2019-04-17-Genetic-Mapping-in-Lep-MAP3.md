@@ -99,7 +99,7 @@ The phased data from `OrderMarkers2` step can be converted to fully informative 
 <a href="/image/lepmap/map2genotypes.awk" target="_blank">Download the map2gentypes.awk script here.</a>
 <br>
 
-Next, run the map2genotypes.awk script by following the command shown below.
+Next, run the `map2genotypes.awk` script by following the command shown below.
 ```bash
 	$ awk -vfullData=1 -f map2genotypes.awk order.txt > genotypes.txt
 ```
@@ -109,7 +109,7 @@ Snippet of the `map2gentypes.awk` output:
 <center><img src="/image/lepmap/orderOutput.png"></center>
 <hr>
 
-One may convert the genotypes in <strong> 1 1 => A, 2 2 => B, 1 2 or 2 1 => H format </strong> (See below figure) in MS Excel using `Find` and `Replace` function, which can be then be loaded in `R/Qtl` for QTL mapping.
+One may convert the genotypes in <strong> 1 1 => A, 2 2 => B, 1 2 or 2 1 => H format </strong> (See below figure) in `MS Excel` using `Find` and `Replace` function, which can be then be loaded in `R/Qtl` for QTL mapping.
 
 <center><img src="/image/lepmap/rqtlFormat.png">
 
@@ -119,6 +119,9 @@ One may convert the genotypes in <strong> 1 1 => A, 2 2 => B, 1 2 or 2 1 => H fo
 
 <h2> 4.0 Validate the genetic map by conducting QTL analysis </h2>
 <p>It is a good QC step to perform a QTL analysis of a well studied trait to check if expected QTL region is observed in the curated genetic mmap </p> 
+
+<p><a href="https://avikarn.com/2019-04-23-composite-interval-mapping/">Click here</a> for QTL mapping tutorial.</p>
+
 <center><img src="/image/lepmap/qtl.png"></center>
 
 <hr>	
@@ -128,6 +131,8 @@ One may convert the genotypes in <strong> 1 1 => A, 2 2 => B, 1 2 or 2 1 => H fo
 
 Software Mapchart can be downloaded from below link.
 https://www.wur.nl/en/show/Mapchart.htm
+
+<p><a href="https://avikarn.com/2019-05-19-mapchart/">Click here</a> for Mapchart tutorial.</p>
 
 <center><img src="/image/lepmap/mapChart.png"></center>
 
