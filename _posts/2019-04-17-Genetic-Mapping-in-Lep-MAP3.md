@@ -18,8 +18,10 @@ The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the f
 <h2> Running Lep-MAP3 </h2>
 
 <h3>Step 1.1. Installation and File Preparation</h3>
+<p> <strong>The Lep-MAP3 software is built in `Linux` and one has to have some experience in working in  command-line environment.</strong></p>
+
 <strong> Important - </strong> Correctly install the Lep-MAP3 software on your computer, and please make sure its the latest version. 
-There are two files that are needed as an input 
+There are two files that are required as input files: 
 <li>(1) <strong> genotype file</strong> in a <strong>VCF</strong> format, and </li>
 <a href="/image/lepmap/sample_Genotype3.vcf" target="_blank">Download sample genotype file (VCF) here.</a>
 
@@ -43,24 +45,24 @@ $ java -cp /path/Lep-MAP3/bin ParentCall2 data = pedigree.txt  vcfFile = File.vc
 <hr>
 
 <h3>Step 1.3. Filtering </h3>
-
-One may use the `Filtering2` module to remove `non-informative markers` (Markers that are monomorphic or homozygous in both parents), and similarly, to remove `distorted markers` (markers segregating in a non-Mendelian fashion) using the below command line:
-
+<p>
+This an optional step - However, One may use the `Filtering2` module to remove `non-informative markers` (Markers that are monomorphic or homozygous in both parents), and similarly, to remove `distorted markers` (markers segregating in a non-Mendelian fashion) using the below command line:
+</p>
 ```bash
  $ java -cp /path/Lep-MAP3/bin Filtering2 data=p.call  removeNonInformative=1 dataTolerance=0.001  > p_fil.call
 ```
 
-__Note__: Use: the parameter `removeNonInformative` to remove markers that are homozygous/monomorphic, and `dataTolerance` to remove distorted markers at given p-value threshold.
+__Note__: Use: the parameter `removeNonInformative` to remove markers that are homozygous/monomorphic, and `dataTolerance` to remove distorted markers at __given__ p-value threshold.
 
 <h3>Step 1.4. Separate Chromosomes </h3>
 
 In this step, `SeparateChromosomes2` module is used to categorize markers into linkage groups (LGs) using the below command:
 
 ```bash
-$ java -cp /path/Lep-MAP3/bin  SeparateChromosomes2 data=p_fil.call lodLimit=10 > map.txt
+$ java -cp /path/Lep-MAP3/bin  SeparateChromosomes2 data=p_fil.call > map.txt
 ```
 
-__Note__: Use the parameter `lodLimit` to split the linkage groups. 
+__Note__: One can use parameters such as `lodLimit` and `theta` to split the linkage groups. 
 
 <h3>Step 1.5. Order Markers </h3>
 
@@ -71,12 +73,13 @@ $ java -cp /path/Lep-MAP3/bin  OrderMarkers2 data=p_fil.call map=map.txt > order
 ```
 
 	
-One may use the parameter `sexAveraged`  to calculate sex-averaged map distances ( by default male and female genetic maps are curated separately), also `numMergeIterations` paramteres are used to adjust number of iterations (by deafault its is 6 iterations per linkage group). 
+One may use the parameter `sexAveraged`  to calculate sex-averaged map distances ( by default male and female genetic maps are curated), also `numMergeIterations` parameteres can be used to adjust number of iterations (by deafault its is 6 iterations per linkage group). 
 
 <h2> 2.0 Checking the accuracy of the marker order </h2>
 
-If the physical positons of the markers in the genetic map curation are known, then, one may use that information to evaluate the quality of marker order, especially markers that <strong> inflate </strong> the chromosome length, by making a correlation plot of the genetic and physical positions of the markers by individual chromosomes or linkage groups. 
-<strong>Note:</strong> It is quite common to see that the marker orders are flipped. There is nothing to panic about, one may fix it by manually sorting it.
+If the physical positons of the markers in the curated genetic map curation are known, then one may use that information to evaluate the quality of the marker order in the genetic map, especially markers that <strong> inflate </strong> the chromosome length, by making a correlation plot of the genetic and physical positions of the markers for each chromosome or linkage group. 
+
+<strong>Note:</strong> It is a common scenario to see the marker orders are flipped relative to their physical positions. There is nothing to panic about, one may fix it by manually sorting it.
 
 <center><img src="/image/lepmap/corr_geneticmap.png"></center>
 
@@ -98,7 +101,7 @@ Snippet of the `map2gentypes.awk` output:
 <center><img src="/image/lepmap/orderOutput.png"></center>
 <hr>
 
-One may convert the genotypes in <strong> 1 1 => A, 2 2 => B, 1 2 or 2 1 => H format </strong> (See below figure) in MS Excel using find/Replace function, which can be then loaded in `R/Qtl` for QTL mapping.
+One may convert the genotypes in <strong> 1 1 => A, 2 2 => B, 1 2 or 2 1 => H format </strong> (See below figure) in MS Excel using `Find` and `Replace` function, which can be then be loaded in `R/Qtl` for QTL mapping.
 
 <center><img src="/image/lepmap/rqtlFormat.png">
 
@@ -107,7 +110,7 @@ One may convert the genotypes in <strong> 1 1 => A, 2 2 => B, 1 2 or 2 1 => H fo
 
 
 <h2> 4.0 Validate the genetic map by conducting QTL analysis </h2>
-
+<p>It is a good QC step to perform a QTL analysis of a well studied trait to check if expected QTL region is observed in the with the cur 
 <center><img src="/image/lepmap/qtl.png"></center>
 
 <hr>	
