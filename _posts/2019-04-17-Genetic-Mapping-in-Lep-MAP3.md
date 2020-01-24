@@ -18,7 +18,7 @@ The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the f
 <h2> Running Lep-MAP3 </h2>
 
 <h3>Step 1.1. Installation and File Preparation</h3>
-<p> <strong>The Lep-MAP3 software is built in `Linux` and one has to have some experience in working in  command-line environment.</strong></p>
+<strong>The Lep-MAP3 software is built in Linux and one has to have some experience in working in  command-line environment.</strong>
 
 <strong> Important - </strong> Correctly install the Lep-MAP3 software on your computer, and please make sure its the latest version. 
 There are two files that are required as input files: 
@@ -45,9 +45,8 @@ $ java -cp /path/Lep-MAP3/bin ParentCall2 data = pedigree.txt  vcfFile = File.vc
 <hr>
 
 <h3>Step 1.3. Filtering </h3>
-<p>
 This an optional step - However, One may use the `Filtering2` module to remove `non-informative markers` (Markers that are monomorphic or homozygous in both parents), and similarly, to remove `distorted markers` (markers segregating in a non-Mendelian fashion) using the below command line:
-</p>
+
 ```bash
  $ java -cp /path/Lep-MAP3/bin Filtering2 data=p.call  removeNonInformative=1 dataTolerance=0.001  > p_fil.call
 ```
