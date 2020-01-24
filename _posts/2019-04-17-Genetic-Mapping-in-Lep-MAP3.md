@@ -9,7 +9,7 @@ share-img: /image/lepmap/cropped_nih_geneticmap.jpg
 __Building genetic maps__ can be challenging and sometimes quite stressful, especially, when dealing with thousands or even millions of markers. In this post, I am hoping to help anyone who would like to get started to build a decent genetic map in an open software 
 <a href="https://sourceforge.net/projects/lep-map3/"> Lep-MAP3 </a>, and finally, evaluating the accuarcy of the map and plotting it.
 
-__Note__ If you have a amplicon sequencing (AmpSeq or rhAmpSeq) haplotype data, you can convert the data into a psuedo VCF file using <a href="https://github.com/avinashkarn/analyze_amplicon/blob/master/haplotype_to_VCF.pl"> Haplotype to VCF </a> PERL script.
+__Note__ If you have an amplicon sequencing (`AmpSeq` or `rhAmpSeq`) haplotype data, you can convert the data into a psuedo VCF file using <a href="https://github.com/avinashkarn/analyze_amplicon/blob/master/haplotype_to_VCF.pl"> Haplotype to VCF </a> PERL script.
 
 <h1> Quality control analysis </h1>
 Prior to building genetic maps - I strongly advise to perform QC analysis on your genetic data.
@@ -43,13 +43,13 @@ There are two files that are required as input files:
 <center><img src="/image/lepmap/ped.png"></center>
 <hr>
 
-
 <h3>Step 1.2. Parent Call</h3>
 The parental genotypes are called using the `ParentCall2` module, using the below command:
 
 ```bash
 $ java -cp /path/Lep-MAP3/bin ParentCall2 data = pedigree.txt  vcfFile = File.vcf > p.call
 ```
+
 <hr>
 <center><img src="/image/lepmap/runlepmap3.gif"></center>
 
