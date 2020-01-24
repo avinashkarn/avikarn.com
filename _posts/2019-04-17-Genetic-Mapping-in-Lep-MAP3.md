@@ -9,6 +9,8 @@ share-img: /image/lepmap/cropped_nih_geneticmap.jpg
 __Building genetic maps__ can be challenging and sometimes quite stressful, especially, when dealing with thousands or even millions of markers. In this post, I am hoping to help anyone who would like to get started to build a decent genetic map in an open software 
 <a href="https://sourceforge.net/projects/lep-map3/"> Lep-MAP3 </a>, and finally, evaluating the accuarcy of the map and plotting it.
 
+__Note__ If you have a amplicon sequencing (AmpSeq or rhAmpSeq) haplotype data, you can convert the data into a psuedo VCF file using <a href="https://github.com/avinashkarn/analyze_amplicon/blob/master/haplotype_to_VCF.pl"> Haplotype to VCF </a> PERL script.
+
 <h1> Quality control analysis </h1>
 Prior to building genetic maps - I strongly advise to perform QC analysis on your genetic data.
 There are two QC tests that i usually perform: 1) `Multidimensional scaling (MDS)` and 2) `Check fo Mendelian Error`
