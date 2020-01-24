@@ -69,7 +69,7 @@ __Note__: Use: the parameter `removeNonInformative` to remove markers that are h
 In this step, `SeparateChromosomes2` module is used to categorize markers into linkage groups (LGs) using the below command:
 
 ```bash
-$ java -cp /path/Lep-MAP3/bin  SeparateChromosomes2 data=p_fil.call > map.txt
+$ java -cp /path/Lep-MAP3/bin  SeparateChromosomes2 data=p_fil.call lodLimit=5 > map.txt
 ```
 
 __Note__: One can use parameters such as `lodLimit` and `theta` to split the linkage groups. 
