@@ -7,7 +7,7 @@ share-img: /image/lepmap/cropped_nih_geneticmap.jpg
 ---
 
 __Building genetic maps__ can be challenging and sometimes quite stressful, especially, when dealing with thousands or even millions of markers. In this post, I am hoping to help anyone who would like to get started to build a decent genetic map in an open software 
-<a href="https://sourceforge.net/projects/lep-map3/"> Lep-MAP3 </a>, and finally, evaluating the accuarcy of the map and plotting it.
+<a href="https://sourceforge.net/projects/lep-map3/"> Lep-MAP3 </a>, and finally, evaluating the accuarcy of the genetic map and plotting it.
 
 __Note__ If you have an amplicon sequencing (`AmpSeq` or `rhAmpSeq`) haplotype data, you can convert the data into a psuedo VCF file using <a href="https://github.com/avinashkarn/analyze_amplicon/blob/master/haplotype_to_VCF.pl"> Haplotype to VCF </a> PERL script.
 
@@ -29,7 +29,7 @@ The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the f
 <hr>
 
 <h3>Step 1.1. Installation and File Preparation</h3>
-<strong>The Lep-MAP3 software is built in Linux and one has to have some experience in working in  command-line environment.</strong>
+<strong>The Lep-MAP3 software is built in Linux and one has to have some experience in working in command-line environment.</strong>
 
 <strong> Important - </strong> Correctly install the Lep-MAP3 software on your computer, and please make sure its the latest version. 
 There are two files that are required as input files: 
@@ -56,13 +56,13 @@ $ java -cp /path/Lep-MAP3/bin ParentCall2 data = pedigree.txt  vcfFile = File.vc
 <hr>
 
 <h3>Step 1.3. Filtering </h3>
-This an optional step - However, One may use the `Filtering2` module to remove `non-informative markers` (Markers that are monomorphic or homozygous in both parents), and similarly, to remove `distorted markers` (markers segregating in a non-Mendelian fashion) using the below command line:
+This an optional step - However, One may use the `Filtering2` module to remove `non-informative markers` (Markers that are monomorphic or homozygous in both parents), and `distorted markers` (markers segregating in a non-Mendelian fashion) using the below command line:
 
 ```bash
  $ java -cp /path/Lep-MAP3/bin Filtering2 data=p.call  removeNonInformative=1 dataTolerance=0.0000001  > p_fil.call
 ```
 
-__Note__: Use: the parameter `removeNonInformative` to remove markers that are homozygous/monomorphic, and `dataTolerance` to remove distorted markers at __given__ p-value threshold.
+__Note__: Use the parameter `removeNonInformative` to remove markers that are homozygous/monomorphic, and `dataTolerance` to remove distorted markers at __given__ p-value threshold.
 
 <h3>Step 1.4. Separate Chromosomes </h3>
 
@@ -83,7 +83,7 @@ $ java -cp /path/Lep-MAP3/bin  OrderMarkers2 data=p_fil.call map=map.txt > order
 ```
 
 	
-One may use the parameter `sexAveraged`  to calculate sex-averaged map distances ( by default male and female genetic maps are curated), also `numMergeIterations` parameteres can be used to adjust number of iterations (by deafault its is 6 iterations per linkage group). 
+One may use the parameter `sexAveraged`  to calculate sex-averaged map distances (by default male and female genetic maps are curated), also `numMergeIterations` parameter can be used to adjust number of iterations (by deafault its 6 iterations per linkage group). 
 
 <h2> 2.0 Checking the accuracy of the marker order </h2>
 
