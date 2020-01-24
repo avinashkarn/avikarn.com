@@ -13,12 +13,13 @@ __Building genetic maps__ can be challenging and sometimes quite stressful, espe
 Prior to building genetic maps - I strongly advise to perform QC analysis on your genetic data.
 There are two QC tests that i usually perform: 1) `Multidimensional scaling (MDS)` and 2) `Check fo Mendelian Error`
 
-<a href="https://avikarn.com/2019-05-06-MDS/">Click here</a> for Multidimensional scaling (MDS) tutorial.
-<a href="https://avikarn.com/2019-08-04-Mendel/">Click here</a> for Multidimensional scaling (MDS) tutorial.
+<p><a href="https://avikarn.com/2019-05-06-MDS/">Click here</a> for Multidimensional scaling (MDS) tutorial.</p>
+<p><a href="https://avikarn.com/2019-08-04-Mendel/">Click here</a> for Multidimensional scaling (MDS) tutorial. </p>
 
 <br>
 
-<h2> Running Lep-MAP3 </h2>
+<center><h2> Running Lep-MAP3 </h2></center>
+
 The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the flow chart below. 
 
 <center><img src="/image/lepmap/lepmap_flow.png"></center>
