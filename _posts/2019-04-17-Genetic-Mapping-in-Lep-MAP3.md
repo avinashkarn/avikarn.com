@@ -47,8 +47,9 @@ There are two files that are required as input files:
 The parental genotypes are called using the `ParentCall2` module, using the below command:
 
 ```bash
-$ java -cp /path/Lep-MAP3/bin ParentCall2 data = pedigree.txt  vcfFile = File.vcf > p.call
+$ java -cp [path]/Lep-MAP3/bin ParentCall2 data = pedigree.txt  vcfFile = File.vcf > p.call
 ```
+__Note__ `path` is the directory where Lep-MAP3 is located on your computer.
 
 <hr>
 <center><img src="/image/lepmap/runlepmap3.gif"></center>
