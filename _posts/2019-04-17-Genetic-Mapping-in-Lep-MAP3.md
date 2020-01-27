@@ -23,7 +23,7 @@ There are two QC tests that i usually perform: 1) `Multidimensional scaling (MDS
 <h2>How to transfer files using FileZilla </h2>
 Please watch below video to: download , install and configure `FileZilla`. It will show you how to upload files and folders to your server.
 
-<iframe width="100%" height="300" src="https://www.youtube.com/watch?v=adxmlHDim6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/adxmlHDim6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 
