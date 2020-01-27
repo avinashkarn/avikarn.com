@@ -126,6 +126,8 @@ Snippet of the `map2gentypes.awk` output:
 
 One may convert the genotypes in <strong> 1 1 => A, 2 2 => B, 1 2 or 2 1 => H format </strong> (See below figure) in `MS Excel` using `Find` and `Replace` function, which can be then be loaded in `R/Qtl` for QTL mapping.
 
+LepMap3 imputes and phase the genotype calls, therefore, A and B allele represent major and minor allele frequencies and it will change from parent/phase. They do not represent one specific parent and information depends on the parent and the phase of the marker. 
+
 <center><img src="/image/lepmap/rqtlFormat.png">
 
 </center>
