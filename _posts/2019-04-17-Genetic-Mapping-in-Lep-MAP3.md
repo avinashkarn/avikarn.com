@@ -105,6 +105,14 @@ If the physical positons of the markers in the curated genetic map curation are 
 
 <strong>Note:</strong> It is a common scenario to see the marker orders are flipped relative to their physical positions. There is nothing to panic about, one may fix it by manually sorting it.
 
+Commad to obtain the marker information using `cut`:
+
+```bash
+cut -f1,2 p.call > cut_pcall.txt
+
+```
+__Please make sure to use the p.call file that you used in the ordering step__
+
 Follow the below steps to perform the correlation analysis:
 
 <center><img src="/image/lepmap/order_correlation.gif"></center>
