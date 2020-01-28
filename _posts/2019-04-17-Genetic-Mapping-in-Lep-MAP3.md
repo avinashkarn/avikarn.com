@@ -11,7 +11,7 @@ __Building genetic maps__ can be challenging and sometimes quite stressful, espe
 
 __Note__ If you have an amplicon sequencing (`AmpSeq` or `rhAmpSeq`) haplotype data, you can convert the data into a psuedo VCF file using <a href="https://github.com/avinashkarn/analyze_amplicon/blob/master/haplotype_to_VCF.pl"> Haplotype to VCF </a> PERL script.
 
-<h1> Quality control analysis </h1>
+<h2> Quality control analysis </h2>
 Prior to building genetic maps - I strongly advise to perform QC analysis on your genetic data.
 There are two QC tests that i usually perform: 1) `Multidimensional scaling (MDS)` and 2) `Check for Mendelian Error`
 
@@ -26,6 +26,13 @@ Please watch below video to: download , install and configure `FileZilla`. It wi
 <iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/adxmlHDim6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+
+<center><h2> Installing Lep-MAP3 </h2></center>
+
+Downloand and install Lep-Map3 on your computer following below steps:
+
+<center><img src="/image/lepmap/install_lepmap.gif"></center>
+
 
 <center><h2> Running Lep-MAP3 </h2></center>
 
