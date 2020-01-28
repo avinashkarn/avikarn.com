@@ -28,6 +28,7 @@ Please watch below video to: download , install and configure `FileZilla`. It wi
 <br>
 
 <center><h2> Installing Lep-MAP3 </h2></center>
+<strong>The Lep-MAP3 software is built in Linux and one has to have some experience in working in command-line environment.</strong>
 
 Downloand and install Lep-Map3 on your computer following below steps:
 
@@ -42,9 +43,7 @@ The steps invloved in the genetic mapping process in Lep-MAP3 are shown in the f
 
 <hr>
 
-<h3>Step 1.1. Installation and File Preparation</h3>
-<strong>The Lep-MAP3 software is built in Linux and one has to have some experience in working in command-line environment.</strong>
-
+<h3>Step 1.1. File Preparation</h3>
 <strong> Important - </strong> Correctly install the Lep-MAP3 software on your computer, and please make sure its the latest version. 
 There are two files that are required as input files: 
 <li>(1) <strong> genotype file</strong> in a <strong>VCF</strong> format, and </li>
