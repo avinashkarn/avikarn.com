@@ -65,7 +65,7 @@ Designed gene specific molecular marker for a novel of starch branching enzyme I
 <hr>
 
 <a href="https://www.nature.com/articles/s41467-019-14280-1"> A rhAmpSeq haplotype strategy targeting the collinear core genome improves marker transferability across a diverse genus</a>
-Cheng Zou, **Avinash Karn**, Bruce Reisch, Allen Nguyen, Yongming Sun, Yun Bao, Michael S. Campbell, Deanna Church, Stephen Williams, Timothy P. L. Smith, Anne Fennell, Doreen Ware, Jason Londo, Qi Sun and Lance Cadle-Davidson
+Cheng Zou*, __Avinash Karn*__, Bruce Reisch, Allen Nguyen, Yongming Sun, Yun Bao, Michael S. Campbell, Deanna Church, Stephen Williams, Timothy P. L. Smith, Anne Fennell, Doreen Ware, Jason Londo, Qi Sun and Lance Cadle-Davidson
 (2020) *Nature Communications*
 
 <a href="https://www.frontiersin.org/articles/10.3389/fpls.2019.00599/full">Computational analysis of AmpSeq data for targeted, high-throughput genotyping of amplicons</a>
