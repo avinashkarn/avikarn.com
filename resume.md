@@ -35,7 +35,7 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I.
 <center> <h2> Education </h2> </center> 
 <hr>
 #### 2012–2017 PhD - Plant Breeding, Genetics & Genomics — University of Missouri Columbia, USA
-<li>Dissertation *Evaluation of Teosinte Genetic Diversity for Agronomic and Domestication Traits in Maize* </li>
+<li>Dissertation <a href="https://mospace.umsystem.edu/xmlui/handle/10355/61937">Evaluation of Teosinte Genetic Diversity for Agronomic and Domestication Traits in Maize</a> </li>
 <li>Received Dr. Marcus Zuber endowment fellowship</li>
 <li>Presented research at Maize genetics conference, Plant Animal Genetics conference and The Tri-Societies meeting (ASA, CSSA, SSSA)     International meetings</li>
 <li>Recipient of 2017 Research in Plant Biology Award (Monetary award $750) </li>
