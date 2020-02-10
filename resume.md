@@ -21,6 +21,7 @@ I obtained my secondary and higher secondary education in my hometown <a target=
 Currently, I am a post-doctoral computational biologist/Quantitative geneticist at <strong> Cornell University </strong> in Geneva, New York. I intend to use my education and training in pursuing a career in an organization that is involved to improve human nutrition, health and environment for both developed and developing communities.
 </p>
 
+</div>
 
 <hr>
 <center> <h2> Publications </h2> </center> 
