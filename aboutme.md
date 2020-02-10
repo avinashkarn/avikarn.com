@@ -9,7 +9,7 @@ subtitle: “SHARE YOUR KNOWLEDGE. IT IS A WAY TO ACHIEVE IMMORTALITY.” -DALAI
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-  My name is Avinash Karn, I go by <strong>Avi</strong>, I am a plat quantitative geneticist; and an amateur astronomer, painter, online blogger, photographer and vivid cook. :)
+  My name is Avinash Karn, I go by <strong>Avi</strong>, I am a plant quantitative geneticist; and an amateur astronomer, painter, online blogger, photographer and vivid cook. :)
 </p>
 
 <p class="about-text">
