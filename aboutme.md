@@ -22,25 +22,91 @@ I obtained my secondary and higher secondary education in my hometown <a target=
 Currently, I am a post-doctoral computational biologist/Quantitative geneticist at <strong> Cornell University </strong> in Geneva, New York. I intend to use my education and training in pursuing a career in an organization that is involved to improve human nutrition, health and environment for both developed and developing communities.
 </p>
 
-<p class="about-text">
-<span class="fa fa-leaf about-icon"></span>
-
-I was first introduced in the field of plant breeding and genetics in my freshmen year in college, and was involved in plowing field with a tractor, planting seeds with hand, pollinating and collecting agronomic data from field trials, harvesting and statistically analyzing data. While still pursuing my undergraduate career, I worked with diverse panel of maize germplasms, and developed gene specific markers to aid in the development of high amylose maize lines. Carrying my passion in plant genetics and big data analysis to my graduate school, I was involved in the development of two novel populations: near isogenic (NIL) and synthetic lines derived from domesticated corn and its wild relative, teosinte to elucidate the teosinte genetic diversity for agronomic and domestication traits in maize. While still in graduate school, I developed statistical models to non-destructively estimate seed composition traits (total starch, protein, oil and individual fatty acids) traits in intact maize kernels and soybean seeds using near infrared reflectance spectroscopy (NIRS) and nuclear magnetic resonance (NMR) instruments. The key findings from my PhD dissertation research were that the teosinte bears novel alleles for several plant and kernel architecture and fitness related traits, which can be utilized for the improvement modern maize germplasm, and in addition can provide unique source of variations to breeders and geneticist in further QTL and molecular studies, accelerating the development of future elite maize germplasm.
-
-Currently, as a computation biologist/Quantitative Geneticist in VitisGen2 project at Cornell, I am involved in the analyzing large-scale genotyping data from various platforms such as Simple Sequence Repeats (SSR), Genotyping-by-Sequencing (GBS), Amplicon Sequencing (AmpSeq), Whole genome sequencing (WGS) for variant and haplotype calling, genome alignment, assembly and genomic selection and prediction. I have also co-lead in the development of a <a href="https://www.nature.com/articles/s41467-019-14280-1">rhAmpSeq (RNase H2 enzyme-dependent amplicon sequencing) haplotype strategy targeting the collinear core genome to improve marker transferability across a diverse genus</a>. I also work with nation-wide grape breeders to apply AmpSeq/rhAmpSeq marker data for accelerated marker-assisted breeding. I build genetic maps (in Lep-Map3) of inter- and intraspecific Vitis populations; performed quality control (QC) analysis, interval mapping (in R/QTL) and genome-wide association (GLM, MLM, FarmCPU); and big data visualization. In addition, I have been also involved in managing grapevine breeding database www.VitisBase.org in collaboration with Boyce Thompson Institute and Breeding Insight project (USDA); as well as led setting up trials and high-throughput phenotype data collection on Field Book® android application. 
-
-So far I have supervised three undergraduate research summer scholars from different parts of the country as well as assisted graduate students (both national and international) in genetic and statistical analyses. In my spare time, I do write tutorials on my blog https://AviKarn.com 
+<hr>
+<center> <h2> Publications </h2> </center> 
 <hr>
 
-<h3>Awards </h3>
-<span class="fa fa-award about-icon"></span>
-	<li>2017 Research in Plant Biology Award, University of Missouri</li>
-	<li>2016 Life Sciences Week research recognition award, University of Missouri</li>
-	<li>2016/17 Division of Plant Sciences Travel Fund, University of Missouri</li>
-	<li>2013 Interdisciplinary Plant Group Travel Grant, University of Missouri</li>
-	<li>2012-17 Dr. Marcus Zuber Endowment Fellowship, University of Missouri</li>
-	<li>2010 Dr. Max E. Bell Scholarship, Truman State University</li>
-	<li>2008-12 President’s Honorary Scholarship, Truman State University</li>
+<a href="https://www.nature.com/articles/s41467-019-14280-1"> A rhAmpSeq haplotype strategy targeting the collinear core genome improves marker transferability across a diverse genus</a>
+Cheng Zou, __Avinash Karn__, Bruce Reisch, Allen Nguyen, Yongming Sun, Yun Bao, Michael S. Campbell, Deanna Church, Stephen Williams, Timothy P. L. Smith, Anne Fennell, Doreen Ware, Jason Londo, Qi Sun and Lance Cadle-Davidson
+(2020) *Nature Communications*
+
+<a href="https://www.frontiersin.org/articles/10.3389/fpls.2019.00599/full">Computational analysis of AmpSeq data for targeted, high-throughput genotyping of amplicons</a>
+Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I. Reisch, Lance Cadle-Davidson (2019)
+*Frontiers in Plant Sciences*
+
+<a href="https://link.springer.com/chapter/10.1007/978-3-030-20728-1_6">Genome Wide Association Study (GWAS) on Disease Resistance in Maize. </a> Shrestha, Vivek, Mani Awale, and **Avinash Karn**. *In Disease Resistance in Crop Plants* Springer, Cham, 2019.
+
+<a href="https://www.g3journal.org/content/7/4/1157.abstract"> Genetic Analysis of Teosinte Alleles for Kernel Composition Traits in Maize</a> **Karn, Avinash**, Gillman, J. D., & Flint-Garcia, S. A. (2017) 
+*G3: Genes, Genomes, Genetics*
+
+<a href="https://link.springer.com/article/10.1007/s11746-016-2916-4"> Development of Rigorous Fatty Acid Near-Infrared Spectroscopy Quantitation Methods in Support of Soybean Oil Improvement.</a>
+**Karn, Avinash**, Heim, C., Flint-Garcia, S., Bilyeu, K., & Gillman, J. (2016)
+*Journal of the American Oil Chemists*
+
+<a href="https://www.ars.usda.gov/research/publications/publication/?seqNo115=263955">Breeding Specialty Starch Maize Using Exotic Genetic Resources for Gene Discovery of Novel Alleles and Modifiers with Materials Generated from the USDA-ARS GEM Project</a>  (2011)
+**Karn, Avinash**, Brent Buckner, Diane Janick-Buckner, Mark Campbell, Michael Blanco, Marvin Scott, and Adrienne Moran Lauter .
+*Maize Genetics Conference Abstracts*
+
+<hr>
+<center> <h2> Education </h2> </center> 
+<hr>
+#### 2012–2017 PhD - Plant Breeding, Genetics & Genomics — University of Missouri Columbia, USA
+<li>Dissertation <a href="https://mospace.umsystem.edu/xmlui/handle/10355/61937">Evaluation of Teosinte Genetic Diversity for Agronomic and Domestication Traits in Maize</a> </li>
+<li>Received Dr. Marcus Zuber endowment fellowship</li>
+<li>Presented research at Maize genetics conference, Plant Animal Genetics conference and The Tri-Societies meeting (ASA, CSSA, SSSA)     International meetings</li>
+<li>Recipient of 2017 Research in Plant Biology Award (Monetary award $750) </li>
+<li>2017 MU Life Sciences Week Research Recognition award (Monetary award $275) </li>
+<li>Recipient of DPS and IPG travel awards</li>
+
+#### 2008–2012 BSc Agricultural Sciences — Truman State University, USA
+<li>Received President’s Honorary Scholarship and Dr. Max E. Bell Scholarship</li>
+<li>Presented research at student research conferences at Truman, Adair County extension center and annual Maize genetics conference</li>
+
+<center> <h2> Work Experience </h2> </center>
+<hr>
+
+#### 2018–Present Computational biologist (Postdoc) — Cornell University, Cornell AgriTech, Geneva, NY
+
+<ul>
+  
+<li>Analyzed large-scale genotyping data from Genotyping-by-Sequencing, Amplicon Sequencing, Whole genome sequencing for SNP and haplotype calling, genome alignment, genome assembly and genomic selection and prediction. </li>
+
+<li>Co-Lead the development of a rhAmpSeq (RNase H2 enzyme-dependent amplicon sequencing) haplotype strategy targeting the collinear core genome to improve marker transferability across a diverse genus.</li>
+
+<li>Worked with nation-wide grape breeders to apply amplicon sequencing (AmpSeq) marker data for accelerated marker-assisted breeding.</li>
+
+<li>Built genetic maps (in Lep-Map3) of various Vitis populations, and performed quality control (QC) analysis, interval mapping and genome-wide association (GLM, MLM, FarmCPU).</li>
+
+<li>Managed grapevine breeding database www.VitisBase.org in collaboration with Boyce Thompson Institute (BTI) and Breeding Insight project (USDA); and led setting up trials and high-throughput phenotype data collection on FieldBook android application.</li>
+
+<li>Big data visualization in R software using packages such as ggPlot; and CIRCOS (written in PERL)</li>
+
+</ul>
+
+#### 2017 May–2017 Dec Quantitative Geneticist (Postdoc) — University of Illinois - Urbana-Champaign, IL
+
+Led and managed undergraduate students and technicians in the installation of over 2,000 `minirhizotron` tubes in field to image and study maize roots with `Bartz imaging systems`; and collections of minirhizotron images, moisture data, flowering, above ground biomass and yield harvest. Identified genetics basis for maize root structure and control of plant nutrient relations in Illinois Protein Strain Recombinant Inbred (IPSRI) lines of maize
+
+#### 2012—2017 Graduate Research Assistant (PhD) - University of Missouri Columbia, USA
+
+Involved in the development of novel genetic resource and mapping populations such as near isogenic and synthetic lines derived from domesticated corn and its wild relative, Teosinte. Conducted `Joint linkage QTL analysis` and Genome wide association study to elucidate several aspects of genetic diversity in maize; genetic basis of various agronomic, fitness and yield related traits such as seed quality and composition in trials conducted with multiple replications in different environment and year. Investigated gene by gene epistatic interactions for various adaptation and domestication related traits in trials with multiple replications and environment.
+
+#### 2009-2012 Undergraduate Research Assistant (BSc) - Truman State University, USA
+Conducted molecular genetic analysis to exploit the biodiversity of exotic inbred lines from Central and South America to develop high amylose corn using SSR markers and gel electrophoresis. Assisted in preparing summer maize nurseries such as plowing field with a tractor, planting seeds with hand and dumping seed in seed planter, pollinating and collecting various agronomic data from field trials, harvesting and analyzing data. Developed gene specific molecular markers to select alleles responsible for high amylose in maize kernels with better yield, which I validated their stability in trials conducted in multiple replications in different environments. Wrote annual USDA-ARS Germplasm Enhancement of Maize (GEM) report and presented at ASTA meeting in Chicago, Illinois. 
+
+#### 2008-2012 Cafeteria student worker - Sodexo Inc. , USA
+Served and stocked food as well as performed all the cleaning related activities in the cafeteria.
+
+#### 2011-2012 Comparative genomics researcher - Truman State University, USA
+Analyzed retained homeologous paralog pairs from syntenic regions in Maize and Sorghum. Visualized genomic data of approximately 1Mb in size in `CIRCOS`, and conducted comparative genetic study in online tools such as `GeVo function in CoGe`, Annotated genes using `InterProScan` and expression analysis data from `Plexdb.org`
+
+#### Summer 2009 & 2012 NSF TruScholars Research Program - Truman State University, USA
+Designed gene specific molecular marker for a novel of starch branching enzyme Ia (SBE-1a) allele involved in high amylose starch in maize. Discovered novel recessive starch branching enzyme 1a (sbe1a) likely plays a significant role in the presence of the ae allele in elevating starch amylose from ~55% to >70% in the germplasm release 'GEMS-0067'. Conducted linkage based mapping studies to identify QTLs for high amylose starch in maize using SSR markers and `QTL cartographer` software. Sequenced starch branching enzyme allele (SBE1a) from high amylose maize line, GEMS-0067; Discovered 8bp insertion site at intron 9 resulting splicing mutation, which putatively resulted in truncated protein product post-translation.
+
+<hr>
+#### Programming languages
+
+`Linux`, `R`, `SAS`, `PERL`, `HTML`, `CSS`,`MS Command prompt` and `Excel`.
 
 <hr>
 <div id="contactme-section">
