@@ -4,7 +4,23 @@ title: Resume
 meta-title: Avi Karn, Ph.D.
 subtitle: Quantitative Geneticist
 ---
-I am a passionate `plant quantitative geneticist`. My hobbies include astronomy, painting, online blogging, photography, cooking, fixing things around my house :) and working on my car. I have over ten years of research experience in the field of plant breeding, quantitative genetics and high-throughput phenotyping, and possess a strong knowledge and experience in conducting `big data analysis` and `visualization`.
+<div id="aboutme-section">
+
+<p class="about-text">
+<span class="fa fa-briefcase about-icon"></span>
+  My name is Avinash Karn, I go by <strong>Avi</strong>, I am a plant quantitative geneticist; and an amateur astronomer, painter, online blogger, photographer and vivid cook. :)
+</p>
+
+<p class="about-text">
+<span class="fa fa-graduation-cap about-icon"></span>
+I obtained my secondary and higher secondary education in my hometown <a target="_blank" href="https://goo.gl/maps/vtMmZcXFWy32"> Birgunj, Nepal. </a> Next, I came to the United States to earn my Bachelor of Science degree in Agricultural Sciences, specializing in plant genetics at <strong>Truman State University</strong>, and finally, earned my PhD at the <strong> University of Missouri Columbia </strong> specializing in plant breeding, genetics and genomics.
+</p>
+
+<p class="about-text">
+<span class="fa fa-glasses about-icon"></span>
+Currently, I am a post-doctoral computational biologist/Quantitative geneticist at <strong> Cornell University </strong> in Geneva, New York. I intend to use my education and training in pursuing a career in an organization that is involved to improve human nutrition, health and environment for both developed and developing communities.
+</p>
+
 
 <hr>
 <center> <h2> Publications </h2> </center> 
