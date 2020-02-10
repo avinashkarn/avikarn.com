@@ -2,9 +2,9 @@
 layout: page
 title: Resume
 meta-title: Avi Karn, Ph.D.
-subtitle: Quantitative Geneticist & Computational Biologist
+subtitle: Quantitative Geneticist
 ---
-I am a passionate `plant quantitative geneticist` and `computational biologist`. My hobbies include astronomy, painting, online blogging, photography, cooking, fixing things around my house :) and working on my car. I have over ten years of research experience in the field of plant breeding, quantitative genetics and high-throughput phenotyping, and possess a strong knowledge and experience in conducting `big data analysis` and visualization especially on a large scale phenotypic and genotypic data.
+I am a passionate `plant quantitative geneticist`. My hobbies include astronomy, painting, online blogging, photography, cooking, fixing things around my house :) and working on my car. I have over ten years of research experience in the field of plant breeding, quantitative genetics and high-throughput phenotyping, and possess a strong knowledge and experience in conducting `big data analysis` and `visualization`.
 <hr>
 <center> <h2> Education </h2> </center> 
 <hr>
@@ -23,7 +23,7 @@ I am a passionate `plant quantitative geneticist` and `computational biologist`.
 <center> <h2> Work Experience </h2> </center>
 <hr>
 
-#### 2018–Present Computational biologist (Postdoc) — Cornell University, Geneva, NY
+#### 2018–Present Computational biologist (Postdoc) — Cornell University, Cornell AgriTech, Geneva, NY
 
 <ul>
   
@@ -64,27 +64,24 @@ Designed gene specific molecular marker for a novel of starch branching enzyme I
 <center> <h2> Publications </h2> </center> 
 <hr>
 
-#### A rhAmpSeq haplotype strategy targeting the collinear core genome improves marker transferability across a diverse genus
+<a href="https://www.nature.com/articles/s41467-019-14280-1"> A rhAmpSeq haplotype strategy targeting the collinear core genome improves marker transferability across a diverse genus</a>
 Cheng Zou, **Avinash Karn**, Bruce Reisch, Allen Nguyen, Yongming Sun, Yun Bao, Michael S. Campbell, Deanna Church, Stephen Williams, Timothy P. L. Smith, Anne Fennell, Doreen Ware, Jason Londo, Qi Sun and Lance Cadle-Davidson
-(2018) (In review)
-*Nature Biotechnology*
+(2020) *Nature Communications*
 
-#### Computational analysis of AmpSeq data for targeted, high-throughput genotyping of amplicons 
-Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I. Reisch, Lance Cadle-Davidson (2018) (Accepted)
+<a href="https://www.frontiersin.org/articles/10.3389/fpls.2019.00599/full">Computational analysis of AmpSeq data for targeted, high-throughput genotyping of amplicons</a>
+Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I. Reisch, Lance Cadle-Davidson (2019)
 *Frontiers in Plant Sciences*
 
-#### Genome-Wide Association Study (GWAS) and Linkage Mapping Reveal a Major QTL Underlying Acylated Anthocyanin Levels in Grapevine Hybrid Families
-**Avinash Karn**, Shanshan Yang, Cheng Zou, Fred Gouker, Jonathan Fresnedo-Ramírez, Qi Sun, Jason Londo, Bruce I. Reisch, Gavin Sacks, and Lance Cadle-Davidson  (In preparation)
+<a href="https://link.springer.com/chapter/10.1007/978-3-030-20728-1_6">Genome Wide Association Study (GWAS) on Disease Resistance in Maize. </a> Shrestha, Vivek, Mani Awale, and **Avinash Karn**. *In Disease Resistance in Crop Plants* Springer, Cham, 2019.
 
-#### Genetic Analysis of Teosinte Alleles for Kernel Composition Traits in Maize 
-**Karn, Avinash**, Gillman, J. D., & Flint-Garcia, S. A. (2017) 
+<a href="https://www.g3journal.org/content/7/4/1157.abstract"> Genetic Analysis of Teosinte Alleles for Kernel Composition Traits in Maize</a> **Karn, Avinash**, Gillman, J. D., & Flint-Garcia, S. A. (2017) 
 *G3: Genes, Genomes, Genetics*
 
-#### Development of Rigorous Fatty Acid Near-Infrared Spectroscopy Quantitation Methods in Support of Soybean Oil Improvement.
+<a href="https://link.springer.com/article/10.1007/s11746-016-2916-4"> Development of Rigorous Fatty Acid Near-Infrared Spectroscopy Quantitation Methods in Support of Soybean Oil Improvement.</a>
 **Karn, Avinash**, Heim, C., Flint-Garcia, S., Bilyeu, K., & Gillman, J. (2016)
 *Journal of the American Oil Chemists*
 
-#### Breeding Specialty Starch Maize Using Exotic Genetic Resources for Gene Discovery of Novel Alleles and Modifiers with Materials Generated from the USDA-ARS GEM Project  (2011)
+<a href="https://www.ars.usda.gov/research/publications/publication/?seqNo115=263955">Breeding Specialty Starch Maize Using Exotic Genetic Resources for Gene Discovery of Novel Alleles and Modifiers with Materials Generated from the USDA-ARS GEM Project</a>  (2011)
 **Karn, Avinash**, Brent Buckner, Diane Janick-Buckner, Mark Campbell, Michael Blanco, Marvin Scott, and Adrienne Moran Lauter .
 *Maize Genetics Conference Abstracts*
 
@@ -92,11 +89,7 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I.
 <hr>
 #### Programming languages
 
-`R`, `SAS`, `PERL`, `HTML`, `CSS`,`MS Command prompt` and `Excel`.
-
-#### Operating systems 
-<hr>
-`Linux` and `Windows`.
+`R`, `SAS`, `PERL`, `HTML`, `CSS`,`MS Command prompt` and `Excel`,  and `Linux`.
 
 <hr>
 <div id="contactme-section">
