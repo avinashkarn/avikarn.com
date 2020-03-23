@@ -88,6 +88,12 @@ $ java -cp /path/Lep-MAP3/bin  SeparateChromosomes2 data=p_fil.call lodLimit=5 >
 
 __Note__: One can use parameters such as `lodLimit` and `theta` to split the linkage groups. 
 
+One can check the number of markers in the in `map` file using the below command:
+```bash
+$ sort map.txt|uniq -c|sort -n 
+```
+<br>
+
 <h3>Step 1.5. Order Markers </h3>
 
 In this step, markers separated into their corresponding linkage groups are ordered using `OrderMarkers2` module using the below command:
