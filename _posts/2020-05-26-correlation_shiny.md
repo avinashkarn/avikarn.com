@@ -17,6 +17,6 @@ This is a simple R `Shiny` app, where a user can upload their own data in .csv o
 - User can download "Iris.csv" file to genetration the correlation plot
 
 <iframe src="https://avinashkarn.shinyapps.io/correlation_shinyR_1/" 
-        style="border: 2px solid red; width: 100%; height: 800px;">
+        style="border: 2px solid red; width: 100%; height: 750px;">
 It looks like your browser doesn't support iframes.
 </iframe>
