@@ -14,7 +14,7 @@ R Shiny statistical output visualization app, where a user can upload their own 
 - Define what separators (comma, semicolon and tab) are used in the data
 - Define if the data has quotes or no quotes
 - Custom pick columns to display on the correlation matrix
-- User can download "Iris.csv" file to genetration the correlation plot
+- User can download "Iris.csv" file to genetrate the correlation plot
 
 <iframe src="https://avinashkarn.shinyapps.io/correlation_shinyR_1/" 
         style="border: 2px solid red; width: 100%; height: 750px;">
