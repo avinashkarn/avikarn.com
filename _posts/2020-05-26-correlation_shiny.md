@@ -2,8 +2,8 @@
 layout: post
 title: "Correlation analysis using R Shiny Application"
 tags: [R, Shiny, Shinyapps, Data products, Correlation]
-image: /image/shiny/plot_corr.png
-share-img: /image/shiny/plot_corr.png
+image: /image/shiny/plot_corr.PNG
+share-img: /image/shiny/plot_corr.PNG
 ---
 This is a simple R `Shiny` app, where a user can upload their own data in .csv or .txt formats, and generate a correlation matrix plots that also contains density plots and coefficient of correlation values. 
 
@@ -17,6 +17,6 @@ This is a simple R `Shiny` app, where a user can upload their own data in .csv o
 - User can download "Iris.csv" file to genetration the correlation plot
 
 <iframe src="https://avinashkarn.shinyapps.io/correlation_shinyR_1/" 
-        style="border: 2px solid red; width: 100%; height: 500px;">
+        style="border: 2px solid red; width: 100%; height: 800px;">
 It looks like your browser doesn't support iframes.
 </iframe>
