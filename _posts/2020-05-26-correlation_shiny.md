@@ -5,7 +5,7 @@ tags: [R, Shiny, Shinyapps, Data products, Correlation]
 image: /image/shiny/plot_corr.png
 share-img: /image/shiny/plot_corr.png
 ---
-I developed a simple R Shiny statistical output visualization app, where a user can upload their own numeric data in .csv or .txt formats, and generate a correlation matrix plots that also contains density plots and printed coefficient of correlation values. Please check it out by uploading your own data below.
+R Shiny statistical output visualization app, where a user can upload their own numeric data in .csv or .txt formats, and generate a correlation matrix plots that also contains density plots and printed coefficient of correlation values. Please check it out by uploading your own data below.
 
 ## Application Overview
 
