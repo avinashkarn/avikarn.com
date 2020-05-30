@@ -156,12 +156,13 @@ LepMap3 imputes and phase the genotype calls, therefore, A and B allele represen
 <h2> Covnvert genotype data into 4-way cross RQtl input data </h2>
 In case both parents are heterozygotes, the cross is a 4way cross, also know as `AB x CD` phased output data from OrderMarkers2 __(1 1, 12, 21, 22)__ into Rqtl 4way code that __1, 2, 3 and 4__ as shown in the below table.  Also, please remember, in LepMap pedigree file: `male parent = 1 , female parent  = 2`,  and first digit of the phased genotypes is inherited from paternal parent and the second from maternal parent.
 
+```{html}
 LepMap	RQtl-4way-code	RQtl genotype
 1 1	1	AC
 1 2	2	BC
 2 1	3	AD
 2 2	4	BD
-
+```
 Finally import the converted the 4-waycross genetic map in RQTL using the below command: 
  ```
  GenoData = read.cross(format = "csv", file = "geneticMap.csv", genotypes=NULL,
