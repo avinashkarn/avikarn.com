@@ -95,7 +95,7 @@
 # Select which links to show in the footer
   footer-links-active:
     rss: false
-    facebook: false
+    facebook: true
     email: true
     twitter: true
     google-plus: false
