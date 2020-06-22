@@ -1,16 +1,12 @@
 ---
 layout: page
-title: Contact me
+title: Let’s connect!
 ---
 
 <div id="contactme-section">
 <h1 id="contact">Contact</h1>
 
-<p>Let’s connect!</p>
-
-<p>You can <a href="mailto:akarn@mail.missouri.edu?subject=Hello from AviKarn.com">email me</a> or find me on <a href="https://www.linkedin.com/in/avikarn/">LinkedIn</a> 
-  
-<p>If you'd like to set up a meeting with me, <a href="https://calendly.com/avikarn">click here to schedule a meeting</a> based on your availability.</p>
+<p>You can <a href="mailto:akarn@mail.missouri.edu?subject=Hello from AviKarn.com">email me</a> or find me on <a href="https://www.linkedin.com/in/avikarn/">LinkedIn</a> . Or else, <p>If you'd like to set up a meeting with me, <a href="https://calendly.com/avikarn">click here to schedule a meeting</a> based on your availability.</p>
 
 <form action="https://formspree.io/akarn@mail.missouri.edu" method="POST" class="form" id="contact-form">
   <p>Or, Send me a quick message using the form below:</p>
