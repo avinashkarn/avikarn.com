@@ -106,7 +106,7 @@ Designed gene specific molecular marker for a novel of starch branching enzyme I
 <hr>
 #### Programming languages
 
-`Linux`, `R`, `SAS`, `PERL`, `HTML`, `CSS`,`MS Command prompt` and `Excel`.
+ `R`, `Linux`, `SAS`, `PERL`, `HTML`, `CSS`,`MS Command prompt` and `Excel`.
 
 <hr>
 <div id="contactme-section">
@@ -132,19 +132,6 @@ Designed gene specific molecular marker for a novel of starch branching enzyme I
   <input type="hidden" name="_next" value="./aboutme?message=Your message was sent successfully, thanks!" />
   <button type="submit" class="btn btn-lg btn-primary">Submit</button>
 </form>
-
-<center>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_donations" />
-<input type="hidden" name="business" value="8ZF7YRTZ42EKU" />
-<input type="hidden" name="item_name" value="To support education for all." />
-<input type="hidden" name="currency_code" value="USD" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form>
-</center>
-
-<hr>
 
 <p><script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=0rn8vq73z9x&amp;m=7&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=1" async="async"></script></p>
 
