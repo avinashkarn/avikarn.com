@@ -44,6 +44,11 @@
       - ResearchGate Profile: "https://www.researchgate.net/profile/Avinash_Karn"
       - ORCID profile: "https://orcid.org/0000-0001-9730-8922"
       - Publons Profile: "https://publons.com/researcher/1700487/avinash-karn/"
+    Contact:
+      - email: true
+      - twitter: true
+      - github: true
+      - linkedin: true
     #Resume: "resume"
     #Shop: "https://dealecommerce.com"
 #  Tags: "tags"
