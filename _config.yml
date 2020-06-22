@@ -100,7 +100,7 @@
     email: true
     twitter: true
     google-plus: false
-    github: true
+    github: false
     linkedin: true
     stackoverflow: false
     instagram: false
