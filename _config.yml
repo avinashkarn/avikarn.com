@@ -45,7 +45,7 @@
       - ORCID profile: "https://orcid.org/0000-0001-9730-8922"
       - Publons Profile: "https://publons.com/researcher/1700487/avinash-karn/"
     Contact:
-      - email: "mailto:akarn@mail.missouri.edu"
+      - email: mailto:akarn@mail.missouri.edu
       - linkedin: "https://www.linkedin.com/in/avikarn/"
       - twitter: "https://twitter.com/avi_karn"
     #Resume: "resume"
