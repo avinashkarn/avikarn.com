@@ -6,10 +6,10 @@ title: Let’s connect!
 <div id="contactme-section">
 <h1 id="contact">Let's Connect!</h1>
 
-<p>You can <a href="mailto:akarn@mail.missouri.edu?subject=Hello from AviKarn.com">email me</a> or find me on <a href="https://www.linkedin.com/in/avikarn/">LinkedIn</a> . Or else, <p>If you'd like to set up a meeting with me, <a href="https://calendly.com/avikarn">click here to schedule a meeting</a> based on your availability.</p>
+<p>Click <a href="mailto:akarn@mail.missouri.edu?subject=Hello from AviKarn.com"> here to email me</a> or find me on <a href="https://www.linkedin.com/in/avikarn/">LinkedIn</a> . <p> Or else, If you'd like to set up a meeting with me, <a href="https://calendly.com/avikarn">click here to schedule a meeting</a> based on your availability.</p>
 
 <form action="https://formspree.io/akarn@mail.missouri.edu" method="POST" class="form" id="contact-form">
-  <p>Or, Send me a quick message using the form below:</p>
+  <p>Or, Simply send me a quick message using the form below:</p>
   <div class="row">
     <div class="col-xs-6">
       <input type="email" name="_replyto" class="form-control input-lg" placeholder="Email" title="Email">
