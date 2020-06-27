@@ -7,9 +7,9 @@ image: /image/mlr_rf/plot11.JPG
 share-img: /image/mlr_rf/plot11.JPG
 ---
 
-In this tutorial, I used two popular machine learning algorithms: `Random Forest` and `GLMnet` for `Genomic Prediction` of a quantitative trait. There are several machine learning R packages available, however, in this tutorial i used `caret` package. The objective was to develop two models: `Random forest` and `glmnet` using real data sets consisting genetic markers, that were used as `predictors` to predict a quantitative trait (names of the vairables were disguised in this tutorial), and finally, comparing the performance of the two models by testing them on a validation set. 
+In this tutorial, I used two popular machine learning algorithms: `Random Forest` and `GLMnet` for `Genomic Prediction` of a quantitative trait. There are several machine learning R packages available, however, in this tutorial i used `caret` package. The objective was to develop two models: `Random forest` and `glmnet` using real data sets consisting genetic markers, that were used as `predictors` to predict a quantitative trait (names of the variables were disguised in this tutorial), and finally, comparing the performance of the two models by testing them on a validation set. 
 
-
+# Data preparation
 
 ## Step 1. libraries and set seed
 
@@ -97,12 +97,12 @@ par(mfrow=c(1,1))
 
 <hr>
 
-## Random forest - rf function
+# Random forest - rf function
 
-The name `Random forest` is a popular name in the area of machine learning, and also is a cool name! This alogrithm is often acurrate than other algorithms, easier to tune, require less little preprocessing, and capture threshold effects and variale interactions, however, it is less interpretable and often quite slow.
+The name `Random forest` is a popular name in the area of machine learning. This alogrithm is often acurrate than other algorithms, easier to tune, require less little preprocessing, and capture threshold effects and variale interactions, however, it is less interpretable and often quite slow.
 
-### TrainControl object
-Before creating and running the models, its a good idea to create a `trainControl` object to tuning parameters and further control how models are created.
+## TrainControl object
+Before creating and running the models, its a good idea to create a `trainControl` object to tune parameters and further control how models are created.
 
 ```{r}
 myTrainingControl <- trainControl(method = "cv", 
@@ -112,7 +112,7 @@ myTrainingControl <- trainControl(method = "cv",
                               verboseIter = TRUE)
 ```
 
-### Random forest model
+## Creating the model
 
 Markers in the column from 2:1942 were used as predictors (`x`) and the `phenotype` column as the `y` variable. Similarly, the performance of the model was evaluated using root mean square error (`RMSE`) (One can choose other method such as `ROC`, `AUC` etc as well), and finally choosing random forest `rf` as the method in the model.
 
@@ -151,7 +151,7 @@ plot(varImp(randomForestFit), top = 20)
 
 After building the supevised random forest learning model, The top 20 predictors can be ranked by their importance, and from the above plot, we tell that the `marker703` was the most important variable.
 
-### Validation of Random Forest model
+## Validation of Random Forest model
 
 Now we can test the robustness of the model by testing it on `test_set` data set, and regressing the predicted and measured values.
 
@@ -176,14 +176,14 @@ rmse_rf
 
 
 
-## Glmnet model - glmnet function
+# Glmnet model - glmnet function
 
 This is another popular machine learning algorithm, which has some benefits over the Random forest model. It is a extension of `glm` models with a built-in variable selection that also help in dealing with `collinearity` and small sizes. The `glmnet` has two primary froms: 1) `LASSO` regression, which penalizes number of non-zero coefficients, and 2) `Ridge` regression, which penalizes absolute magnitude of coefficients. It also attempts to find a parsimonious aka simple model and pairs well with random forest models.
 
 
 First, we create the glmnet models, which is a combination of lasso and ridge regression, and we can fit the mix of the two models by selecting the values for `alpha` and `lambda`, as shown in the below code snippet. 
 
-### glmnet model
+## glmnet model
 
 ```{r}
 glmnetFit = train(x = train_set[2:1942], 
@@ -200,12 +200,12 @@ glmnetFit = train(x = train_set[2:1942],
 print(glmnetFit)
 ```
 
-<center><img src="/image/mlr_rf/plot9.png"></center>
+<center><img src="/image/mlr_rf/plot9.JPG"></center>
 
 From the above output of the model, we see that alpha = 1, indicating lasso regression was performed, where, the size of the penalty was 0.7 
 
 
-### Comparing models: Ridge vs LASSO
+## Comparing models: Ridge vs LASSO
 
 ```{r}
 plot(glmnetFit, main = "Glmnet")
@@ -215,7 +215,7 @@ plot(glmnetFit, main = "Glmnet")
 
 From the above comparison model, we can say that the lamda of 0.9 has lowest RMSE.
 
-### Full regularization path
+## Full regularization path
 ```{r}
 plot(glmnetFit$finalModel)
 ```
@@ -235,7 +235,7 @@ plot(varImp(glmnetFit), top = 20)
 
 `marker703` was calculated as the most important variable by glmnet model, which is consistent with random forest model. However, the glmnet has very few variables listed in comparison to rf.
 
-### Validation of glmnet model
+## Validation of glmnet model
 
 Now we can test the robustness of the glmnet model by testing it on `test_set` data set, and regressing the predicted and measured values.
 
@@ -304,6 +304,6 @@ dotplot(resamples, metric = "RMSE")
 
 ## Conclusion:
 
-In this tutorial, real marker and phenotype data were used in machine learning models: random forest and glmnet(lasso and ridge regression). Marker data were converted into numeric format and numerically imputed, prior to performing the supervised machine learning. Both models had a very close performance for this data set, but random forest did perform slightly better in comparison to glmet, and most importantly both models listed `marker703` as the most important variable, which is astoudingly consistent with my `QTL` analysis, that is the peak QTL marker was in LD with `marker703` explaining highest phenotypic variance.
+In this tutorial, real genetic markers and phenotype data were used in machine learning models: random forest and glmnet(lasso and ridge regression). Marker data were converted into numeric format and numerically imputed, prior to performing the supervised machine learning. Both models had a very close performance for this data set, but random forest did perform slightly better in comparison to glmet, and most importantly both models listed `marker703` as the most important variable, which is astoudingly consistent with my `QTL` analysis, that is the peak QTL marker was in LD with `marker703` explaining highest phenotypic variance.
 
 
