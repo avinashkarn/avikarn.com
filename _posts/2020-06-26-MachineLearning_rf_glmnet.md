@@ -220,7 +220,7 @@ From the above comparison model, we can say that the lamda of 0.9 has lowest RMS
 plot(glmnetFit$finalModel)
 ```
 
-<center><img src="/image/mlr_rf/plot11.png"></center>
+<center><img src="/image/mlr_rf/plot11.JPG"></center>
 
 Next, we can plot the important predictors in this model based on their calculated importance scores using `varImp` function.
 
