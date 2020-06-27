@@ -47,6 +47,7 @@ tail(phenoGeno)
 ```{r}
 hist(phenoGeno$phenotype)
 ```
+<center><img src="/image/mlr_rf/plot2.png"></center>
 
 The phenotype data is normally distributed, and no preprocessing was performed. However, I do suggest transforming the data if required.
 
@@ -64,6 +65,7 @@ phenoGeno <- phenoGeno[rows, ]
 
 head(phenoGeno)
 ```
+<center><img src="/image/mlr_rf/plot3.JPG"></center>
 
 ### Step 3.3 Find the rows to split
 
@@ -91,6 +93,9 @@ hist(train_set$phenotype)
 hist(test_set$phenotype)
 par(mfrow=c(1,1))
 ```
+<center><img src="/image/mlr_rf/plot4.png"></center>
+
+<hr>
 
 ## Random forest - rf function
 
@@ -125,13 +130,15 @@ randomForestFit = train(x = train_set[2:1942],
 # print the model output 
 randomForestFit
 ```
-
+<center><img src="/image/mlr_rf/plot5.JPG"></center>
 
 Plotting the `randomForetFit` model. 
 
 ```{r}
 plot(randomForestFit, main = "Random Forest")
 ```
+
+<center><img src="/image/mlr_rf/plot6.png"></center>
 
 The best mtry with lowest RMSE for this model was 10. 
 
@@ -140,6 +147,7 @@ Next, we can plot the important predictors based on their calculated importance 
 ```{r}
 plot(varImp(randomForestFit), top = 20)
 ```
+<center><img src="/image/mlr_rf/plot7.png"></center>
 
 After building the supevised random forest learning model, The top 20 predictors can be ranked by their importance, and from the above plot, we tell that the `marker703` was the most important variable.
 
@@ -156,6 +164,7 @@ abline(lm(prediction_rf~test_set$phenotype))
 
 
 ```
+<center><img src="/image/mlr_rf/plot8.png"></center>
 
 And we can also calculate the `RMSE` between the predicted and measured values.
 
@@ -191,6 +200,8 @@ glmnetFit = train(x = train_set[2:1942],
 print(glmnetFit)
 ```
 
+<center><img src="/image/mlr_rf/plot9.png"></center>
+
 From the above output of the model, we see that alpha = 1, indicating lasso regression was performed, where, the size of the penalty was 0.7 
 
 
@@ -200,6 +211,7 @@ From the above output of the model, we see that alpha = 1, indicating lasso regr
 plot(glmnetFit, main = "Glmnet")
 
 ```
+<center><img src="/image/mlr_rf/plot10.png"></center>
 
 From the above comparison model, we can say that the lamda of 0.9 has lowest RMSE.
 
@@ -208,6 +220,7 @@ From the above comparison model, we can say that the lamda of 0.9 has lowest RMS
 plot(glmnetFit$finalModel)
 ```
 
+<center><img src="/image/mlr_rf/plot11.png"></center>
 
 Next, we can plot the important predictors in this model based on their calculated importance scores using `varImp` function.
 
@@ -216,6 +229,9 @@ Next, we can plot the important predictors in this model based on their calculat
 plot(varImp(glmnetFit), top = 20)
 
 ```
+
+<center><img src="/image/mlr_rf/plot12.png"></center>
+
 
 `marker703` was calculated as the most important variable by glmnet model, which is consistent with random forest model. However, the glmnet has very few variables listed in comparison to rf.
 
@@ -231,6 +247,7 @@ plot(test_set$phenotype, prediction_glmnet,
 abline(lm(prediction_glmnet~test_set$phenotype))
 
 ```
+<center><img src="/image/mlr_rf/plot13.png"></center>
 
 From the above plot, we see that the most important variables only classify the high and low phenotypic scores as categorical variables, which is not the nature of this phenotype data used in this tutorial.
 
@@ -253,6 +270,7 @@ legend(14,9, legend=c("GLMnet", "Random Forest"),
        col=c("red", "blue"), lty=1, cex=0.8)
 ```
 
+<center><img src="/image/mlr_rf/plot14.png"></center>
 
 ## Comparing the Random Forest and Glmnet models
 We can compare the performance of the models by studying their MAE, RMSE and R-squared values side-by-side, making it very convenient.
@@ -269,10 +287,12 @@ resamples
 summary(resamples)
 ```
 
+<center><img src="/image/mlr_rf/plot15.png"></center>
+
 From above table, we can tell that the random forest model appears to be better model incoparison to glmnet.
 
 
-## plot models by RMSE
+## plot models by MAE, R-squrared and RMSE
 
 Similarly, we can visually inspect the models accuracies.
 ```{r}
@@ -280,6 +300,7 @@ Similarly, we can visually inspect the models accuracies.
 bwplot(resamples, metric = "RMSE")
 dotplot(resamples, metric = "RMSE")
 ```
+<center><img src="/image/mlr_rf/plot16.png"></center>
 
 ## Conclusion:
 
