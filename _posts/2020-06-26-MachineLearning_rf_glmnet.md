@@ -37,9 +37,8 @@ phenoGeno <- read.table("rhGeno_numericImpu_malateBlues_HI.txt", header = T, na.
 head(phenoGeno)
 tail(phenoGeno)
 
-dim(phenoGeno)
-
 ```
+<center><img src="/image/mlr_rf/plot1.JPG"></center>
 
 
 
@@ -285,12 +284,5 @@ dotplot(resamples, metric = "RMSE")
 ## Conclusion:
 
 In this tutorial, real marker and phenotype data were used in machine learning models: random forest and glmnet(lasso and ridge regression). Marker data were converted into numeric format and numerically imputed, prior to performing the supervised machine learning. Both models had a very close performance for this data set, but random forest did perform slightly better in comparison to glmet, and most importantly both models listed `marker703` as the most important variable, which is astoudingly consistent with my `QTL` analysis, that is the peak QTL marker was in LD with `marker703` explaining highest phenotypic variance.
-
-
-
-```{r}
-sessionInfo()
-```
-
 
 
