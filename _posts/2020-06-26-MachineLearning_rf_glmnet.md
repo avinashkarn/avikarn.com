@@ -28,7 +28,7 @@ set.seed(06252020)
 
 The genetic marker data was converted into numeric format. One can use `TASSEL` software to convert their data into numeric format, as well as numerically impute any sites with missing data. Please remember, its curicial to impute the data or else it will result an error while executing the model and or result biased model output. Additionally, I removed any missing phenotypic values from the data set. 
 
-<p>Download the dataset i used in this tutorial here at this link: <a href="https://avikarn.com/image/ML_rf/rhGeno_numericImpu_malateBlues_HI.txt">Click here</a></p>
+<p>Download the dataset i used in this tutorial here at this link: <a href="https://avikarn.com/image/mlr_rf/rhGeno_numericImpu_malateBlues_HI.txt">Click here</a></p>
 
 ```{r}
 phenoGeno <- read.table("rhGeno_numericImpu_malateBlues_HI.txt", header = T, na.strings = "NA")
