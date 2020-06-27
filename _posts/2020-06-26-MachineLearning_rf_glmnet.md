@@ -230,7 +230,7 @@ plot(varImp(glmnetFit), top = 20)
 
 ```
 
-<center><img src="/image/mlr_rf/plot12.png"></center>
+<center><img src="/image/mlr_rf/plot12.JPG"></center>
 
 
 `marker703` was calculated as the most important variable by glmnet model, which is consistent with random forest model. However, the glmnet has very few variables listed in comparison to rf.
@@ -247,7 +247,7 @@ plot(test_set$phenotype, prediction_glmnet,
 abline(lm(prediction_glmnet~test_set$phenotype))
 
 ```
-<center><img src="/image/mlr_rf/plot13.png"></center>
+<center><img src="/image/mlr_rf/plot13.JPG"></center>
 
 From the above plot, we see that the most important variables only classify the high and low phenotypic scores as categorical variables, which is not the nature of this phenotype data used in this tutorial.
 
@@ -270,7 +270,7 @@ legend(14,9, legend=c("GLMnet", "Random Forest"),
        col=c("red", "blue"), lty=1, cex=0.8)
 ```
 
-<center><img src="/image/mlr_rf/plot14.png"></center>
+<center><img src="/image/mlr_rf/plot14.JPG"></center>
 
 ## Comparing the Random Forest and Glmnet models
 We can compare the performance of the models by studying their MAE, RMSE and R-squared values side-by-side, making it very convenient.
@@ -287,7 +287,7 @@ resamples
 summary(resamples)
 ```
 
-<center><img src="/image/mlr_rf/plot15.png"></center>
+<center><img src="/image/mlr_rf/plot15.JPG"></center>
 
 From above table, we can tell that the random forest model appears to be better model incoparison to glmnet.
 
@@ -300,7 +300,7 @@ Similarly, we can visually inspect the models accuracies.
 bwplot(resamples, metric = "RMSE")
 dotplot(resamples, metric = "RMSE")
 ```
-<center><img src="/image/mlr_rf/plot16.png"></center>
+<center><img src="/image/mlr_rf/plot16.JPG"></center>
 
 ## Conclusion:
 
