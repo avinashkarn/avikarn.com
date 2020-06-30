@@ -5,6 +5,10 @@ tags: [R, Shiny, Shinyapps, Data products, Correlation]
 image: /image/shiny/plot_corr.png
 share-img: /image/shiny/plot_corr.png
 ---
+
+<h1>Correlation analysis using R Shiny Application </h1>
+<hr>
+
 R Shiny statistical output visualization app, where a user can upload their own numeric data in .csv or .txt formats, and generate a correlation matrix plots that also contains density plots and printed coefficient of correlation values. Please check it out by uploading your own data below.
 
 ## Application Overview
