@@ -6,6 +6,10 @@ image: /image/structure/finalstructure.jpg
 share-img: /image/structure/finalstructure.jpg
 ---
 
+<h1>Investigate genetic admixture using STRUCTURE software</h1>
+<hr>
+
+
 __Structure Software__ is a freely available software package that one may use for rigorous investigation of `admixed individuals`; identification of `point of hybridization` and `migrants`; and estimate over all `structure` of a population using a commonly used genetic markers such as `SNPs` and `SSRs`. This software was developed by __Pritchard Lab__ at __Stanford University__ and can downloaded at this <a href="https://web.stanford.edu/group/pritchardlab/structure.html"> link </a>.
 
 In this tutorial, I will show how to prepare `input` files and run the `Structure` software. For detail information, please read this article at this <a href="https://web.stanford.edu/group/pritchardlab/structure.html">link</a>
