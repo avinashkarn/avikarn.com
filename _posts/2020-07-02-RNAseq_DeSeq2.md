@@ -18,8 +18,8 @@ In this tutorial, negative binomial was used to perform differential gene expres
 The dataset used in the tutorial is from the published <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2877581/">Hammer et al 2010 </a> study. The `read count matrix` and the `meta data` was obatined from the <a href="http://bowtie-bio.sourceforge.net/recount/"> Recount project website </a> Briefly, the Hammer experiment studied the effect of a spinal nerve ligation (SNL) versus control (normal) samples in rats at two weeks and after two months. In this turoial, we explore the differential gene expression at first and second time point and the difference in the fold change between the two time points.
 
 Download the slightly modified dataset at the below links: 
- - Meta data
- - Read count data
+ - <a href="https://github.com/avinashkarn/avi.github.io/blob/master/image/rna/hammer_count_table.txt"> Read Count data </a>
+ - <a href="https://github.com/avinashkarn/avi.github.io/blob/master/image/rna/hammer_phenodata.txt"> Meta data </a>
  
  
 # Step 1.0 Loading data Gene count and Metadata in R
