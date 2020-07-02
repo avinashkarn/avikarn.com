@@ -40,6 +40,7 @@ head(read_Count)
 dim(read_Count)
 ```
 
+<center><img src="/image/rna/Capture2.PNG"></center>
 
 ### Import the metadata 
 
@@ -53,6 +54,8 @@ metadata <- read.table("hammer_phenodata.txt", header = T)
 
 head(metadata)
 ```
+
+<center><img src="/image/rna/Capture1.PNG"></center>
 
 ## Step 1.1 Preparing the data for DESeq2 object
 
@@ -128,12 +131,16 @@ dds <- estimateSizeFactors(dds)
 sizeFactors(dds)
 ```
 
+<center><img src="/image/rna/Capture3.PNG"></center>
+
 Plot column sums according to size factor
 
 ```{r}
 plot(sizeFactors(dds), colSums(counts(dds)))
 abline(lm(colSums(counts(dds)) ~ sizeFactors(dds) + 0))
 ```
+
+<center><img src="/image/rna/Capture4.PNG"></center>
 
 ## Step 2.2 Exploratory data analysis
 
@@ -147,6 +154,8 @@ normlzd_dds <- counts(dds, normalized=T)
 head(normlzd_dds)
 ```
 
+<center><img src="/image/rna/Capture5.PNG"></center>
+
 ### Hierarchical clustering
 
 
@@ -156,6 +165,7 @@ Hierarchical clustering by `protocol`
 plot(hclust(dist(t(normlzd_dds))), labels=colData(dds)$protocol)
 ```
 
+<center><img src="/image/rna/Capture6.PNG"></center>
 
 Hierarchical clustering by `time`
 
@@ -163,6 +173,8 @@ Hierarchical clustering by `time`
 plot(hclust(dist(t(normlzd_dds))), labels=colData(dds)$Time)
 
 ```
+
+<center><img src="/image/rna/Capture7.PNG"></center>
 
 We can see from the above plots that samples are cluster more by `protocol` than by `Time`.
 
@@ -174,6 +186,9 @@ From the below plot we can see that there is an extra variance at the lower read
 plot(log(normlzd_dds[,1])+1, log(normlzd_dds[,2])+1, cex =.1)
 
 ```
+
+<center><img src="/image/rna/Capture8.PNG"></center>
+
 
 # Step 3.1 Variance Stablizing transformation 
 
@@ -194,6 +209,8 @@ vsd_cor
 
 ```
 
+<center><img src="/image/rna/Capture9.PNG"></center>
+
 ## Step 3.2 Compute correlation values between samples using heatmap
 
 ```{r}
@@ -202,6 +219,7 @@ pheatmap(vsd_cor)
 
 ```
 
+<center><img src="/image/rna/Capture10.PNG"></center>
 
 
 ## Step 3.3 Principal Component Analysis(PCA)
@@ -213,6 +231,8 @@ We perform PCA to check to see how samples cluster and if it meets the experimen
 plotPCA(vsd, intgroup = "protocol")
 
 ```
+
+<center><img src="/image/rna/Capture11.PNG"></center>
 
 We can see from the above PCA plot that the samples from separate in two groups as expected and PC1 explain the highest variance in the data.
 
@@ -252,7 +272,7 @@ ggplot(df) +
 
 ```
 
-
+<center><img src="/image/rna/Capture12.PNG"></center>
 
 # Step 4.1 Differential gene expression
 
@@ -280,6 +300,8 @@ res <-results(dds)
 summary(res)
 ```
 
+<center><img src="/image/rna/Capture13.PNG"></center>
+
 Summary of the above output provides the percentage of genes (both up and down regulated) that are differentially expressed.
 
 
@@ -293,6 +315,8 @@ We can plot the fold change over the average expression level of all samples usi
 plotMA(res, ylim=c(-5,5) )
 ```
 
+<center><img src="/image/rna/Capture14.PNG"></center>
+
 In the above plot, highlighted in red are genes which has an adjusted p-values less than 0.1
 
 However, we can also specify/highlight genes which have a log 2 fold change greater in absolute value than 1 using the below code.
@@ -303,6 +327,7 @@ plotMA(resBigFC, ylim=c(-5,5))
 abline(h=c(-1,1),lwd=5)
 ```
 
+<center><img src="/image/rna/Capture15.PNG"></center>
 
 ## Step 4.4 Fit curve to gene-wise dspersion estimates
 
@@ -314,6 +339,8 @@ __Note__ genes with extremly high dispersion values (blue circles) are not shrun
 plotDispEsts(dds)
 
 ```
+
+<center><img src="/image/rna/Capture16.PNG"></center>
 
 In the above plot, the curve is displayed as a red line, that also has the estimate for the expected dispersion value for genes of a given expression value.
 
@@ -348,6 +375,8 @@ head(rownames(dds))
 
 ```
 
+
+
 ## The first 20 genes according to the lowest p-value
 ```{r}
 
@@ -360,7 +389,7 @@ geneinfo <- select(org.Rn.eg.db, keys=rownames(resSort)[1:20],
 geneinfo
 ```
 
-
+<center><img src="/image/rna/Capture17.PNG"></center>
 
 
 # Step 6 visualizing results of the DF genes
@@ -391,6 +420,8 @@ pheatmap(res_sig,
 
 ```
 
+<center><img src="/image/rna/Capture18.PNG"></center>
+
 From the above plot, we can see the both types of samples tend to cluster into their corresponding protocol type, and have variation in the gene expression profile. 
 
 ## Expression plot of the top 20 genes
@@ -417,6 +448,8 @@ ggplot(top_20) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
+
+<center><img src="/image/rna/Capture19.PNG"></center>
 
 
 ## References
