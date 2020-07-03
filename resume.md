@@ -1,8 +1,8 @@
 ---
-layout: page
-title: Resume
+layout: post
+title: About me
 meta-title: Avi Karn, Ph.D.
-subtitle: Quantitative Geneticist
+subtitle: Quantitative & Computational Geneticist
 ---
 <div id="aboutme-section">
 
