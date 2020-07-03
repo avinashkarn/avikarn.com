@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: About me
 meta-title: Avi Karn, Ph.D.
 subtitle: Quantitative & Computational Geneticist
@@ -7,8 +7,7 @@ subtitle: Quantitative & Computational Geneticist
 <div id="aboutme-section">
 
 <p class="about-text">
-<span class="fa fa-briefcase about-icon"></span>
-  My name is Avinash Karn, I go by <strong>Avi</strong>, I am a plant quantitative geneticist; and an amateur astronomer, painter, online blogger, photographer and vivid cook. :)
+<span class="fa fa-briefcase about-icon"></span> My name is Avinash Karn, I go by <strong>Avi</strong>, I am a plant quantitative geneticist; and an amateur astronomer, painter, online blogger, photographer and vivid cook. :)
 </p>
 
 <p class="about-text">
@@ -76,11 +75,11 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I.
 
 <li>Worked with nation-wide grape breeders to apply amplicon sequencing (AmpSeq) marker data for accelerated marker-assisted breeding.</li>
 
-<li>Built genetic maps (in Lep-Map3) of various Vitis populations, and performed quality control (QC) analysis, interval mapping and genome-wide association (GLM, MLM, FarmCPU).</li>
+<li>Built genetic maps (in Lep-Map3) of various Vitis populations, and performed quality control (QC) analysis, interval mapping and genome-wide association (GLM, MLM, FarmCPU). Build machine learning model for genomic prediction of quantitative traits</li>
 
 <li>Managed grapevine breeding database www.VitisBase.org in collaboration with Boyce Thompson Institute (BTI) and Breeding Insight project (USDA); and led setting up trials and high-throughput phenotype data collection on FieldBook android application.</li>
 
-<li>Big data visualization in R software using packages such as ggPlot; and CIRCOS (written in PERL)</li>
+<li>Big data visualization </li>
 
 </ul>
 
