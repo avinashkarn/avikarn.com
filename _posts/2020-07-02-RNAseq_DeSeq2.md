@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "RNA-Seq data analysis - Differential gene expression analysis in R"
+title: "RNA-Seq data analysis in R - Investigate differentially expressed genes in your data! "
 tags: [RNA-Seq, Differential Expression, DESeq, Data analysis]
 image: /image/rna/Capture14.PNG
 share-img: /image/rna/Capture14.PNG
 ---
 
-<h1> RNA-Seq data analysis in R </h1>
+<h1> RNA-Seq data analysis in R - Investigate differentially expressed genes in your data! </h1>
 <hr>
 
 In this tutorial, negative binomial was used to perform differential gene expression analyis in R using `DESeq2`, `pheatmap` and `tidyverse` packages. The workflow for the RNA-Seq data is:
