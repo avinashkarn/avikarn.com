@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Avi Karn
+title: "Avi Karn - Quantitative & Computational Geneticist"
 meta-title: About me
 subtitle: “SHARE YOUR KNOWLEDGE. IT IS A WAY TO ACHIEVE IMMORTALITY.” -DALAI LAMA
 ---
@@ -9,12 +9,12 @@ subtitle: “SHARE YOUR KNOWLEDGE. IT IS A WAY TO ACHIEVE IMMORTALITY.” -DALAI
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-  My name is Avinash Karn, I go by <strong>Avi</strong>, I am a plant quantitative geneticist; and an amateur astronomer, painter, online blogger, photographer and vivid cook. :)
+  Hi! My name is Avinash Karn, I go by <strong>Avi</strong>, I am a plant quantitative geneticist; some of hobbies are astronomy, painting, online blogging/writing, photography and cooking!
 </p>
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
-I obtained my secondary and higher secondary education in my hometown <a target="_blank" href="https://goo.gl/maps/vtMmZcXFWy32"> Birgunj, Nepal. </a> Next, I came to the United States to earn my Bachelor of Science degree in Agricultural Sciences, specializing in plant genetics at <strong>Truman State University</strong>, and finally, earned my PhD at the <strong> University of Missouri Columbia </strong> specializing in plant breeding, genetics and genomics.
+I obtained my secondary and higher secondary education in my hometown <a target="_blank" href="https://goo.gl/maps/vtMmZcXFWy32"> Birgunj, Nepal. </a> I came to the United States to earn my Bachelor of Science degree in Agricultural Sciences, specializing in plant genetics at <strong>Truman State University</strong>, and earned my PhD at the <strong> University of Missouri Columbia </strong> specializing in plant breeding, genetics and genomics.
 </p>
 
 <p class="about-text">
@@ -75,11 +75,11 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I.
 
 <li>Worked with nation-wide grape breeders to apply amplicon sequencing (AmpSeq) marker data for accelerated marker-assisted breeding.</li>
 
-<li>Built genetic maps (in Lep-Map3) of various Vitis populations, and performed quality control (QC) analysis, interval mapping and genome-wide association (GLM, MLM, FarmCPU).</li>
+<li>Built genetic maps (in Lep-Map3) of various Vitis populations, and performed quality control (QC) analysis, interval mapping and genome-wide association (GLM, MLM, FarmCPU); build machine learning models for genomic prediction and selection</li>
 
 <li>Managed grapevine breeding database www.VitisBase.org in collaboration with Boyce Thompson Institute (BTI) and Breeding Insight project (USDA); and led setting up trials and high-throughput phenotype data collection on FieldBook android application.</li>
 
-<li>Big data visualization in R software using packages such as ggPlot; and CIRCOS (written in PERL)</li>
+<li>Big data visualization </li>
 
 </ul>
 
@@ -106,7 +106,7 @@ Designed gene specific molecular marker for a novel of starch branching enzyme I
 <hr>
 #### Programming languages
 
- `R`, `Linux`, `SAS`, `PERL`, `HTML`, `CSS`,`MS Command prompt` and `Excel`.
+ `R`, 'BASH`, `Linux`, `SAS`, `PERL`, `HTML`, `CSS`,`MS Command prompt` and `Excel`.
 
 <hr>
 <div id="contactme-section">
