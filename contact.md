@@ -6,6 +6,8 @@ title: Let’s connect!
 <div id="contactme-section">
 <h1 id="contact">Let's Connect!</h1>
 
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
 <p>Click <a href="mailto:akarn@mail.missouri.edu?subject=Hello from AviKarn.com"> here to email me</a> or find me on <a href="https://www.linkedin.com/in/avikarn/">LinkedIn</a> . <p> Or else, If you'd like to set up a meeting with me, <a href="https://calendly.com/avikarn">click here to schedule a meeting</a> based on your availability.</p>
 
 <form action="https://formspree.io/akarn@mail.missouri.edu" method="POST" class="form" id="contact-form">
