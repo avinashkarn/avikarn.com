@@ -6,6 +6,10 @@ subtitle: Quantitative & Computational Geneticist
 ---
 <div id="aboutme-section">
 
+<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="avikarn"><a class="LI-simple-link" href='https://www.linkedin.com/in/avikarn?trk=profile-badge'>Avi Karn, PhD</a></div>
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span> My name is Avinash Karn, I go by <strong>Avi</strong>, I am a plant quantitative geneticist; and an amateur astronomer, painter, online blogger, photographer and vivid cook. :)
 </p>
