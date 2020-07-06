@@ -5,13 +5,11 @@ title: Let’s connect!
 
 <div id="contactme-section">
 
-<center>
-<h1 id="contact">Let's Connect!</h1>  
-</center>
 
-<center>
+<h1 id="contact">Let's Connect!</h1>  
+
 <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="avikarn"><a class="LI-simple-link" href='https://www.linkedin.com/in/avikarn?trk=profile-badge'>Avi Karn, PhD</a></div>
-</center>
+
  
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
