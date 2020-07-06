@@ -12,6 +12,8 @@ share-img: /image/structure/finalstructure.jpg
 
 __Structure Software__ is a freely available software package that one may use for rigorous investigation of `admixed individuals`; identification of `point of hybridization` and `migrants`; and estimate over all `structure` of a population using a commonly used genetic markers such as `SNPs` and `SSRs`. This software was developed by __Pritchard Lab__ at __Stanford University__ and can downloaded at this <a href="https://web.stanford.edu/group/pritchardlab/structure.html"> link </a>.
 
+Download sample data set: <a href="https://avikarn.com/image/structure/data_test_1.txt">Click here</a>
+
 In this tutorial, I will show how to prepare `input` files and run the `Structure` software. For detail information, please read this article at this <a href="https://web.stanford.edu/group/pritchardlab/structure.html">link</a>
 
 <h1> Step 1: Preparing the Input file </h1>
