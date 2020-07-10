@@ -23,7 +23,6 @@
 
 # List of links in the navigation bar
   navbar-links:
-    About Me: "resume"
     Tutorials:
       - Machine Learning 1: "https://avikarn.com/2020-06-26-MachineLearning_rf_glmnet/"
       - RNA-seq DF: "https://avikarn.com/2020-07-02-RNAseq_DeSeq2/"
@@ -38,12 +37,13 @@
       - ANOVA in R: "https://avikarn.com/2019-07-09-ANOVA/"
       - Plot Genetic Map: "https://avikarn.com/2019-05-19-mapchart/"
       - STRUCTURE software: "https://avikarn.com/2019-05-08-structure/"
-      - MDS analysis: "https://avikarn.com/2019-05-06-MDS/"    
+      - MDS analysis: "https://avikarn.com/2019-05-06-MDS/"
     Publications:
       - Google Scholar Profile: "https://scholar.google.com/citations?user=2XuofkoAAAAJ&hl=en"
       - ResearchGate Profile: "https://www.researchgate.net/profile/Avinash_Karn"
       - ORCID profile: "https://orcid.org/0000-0001-9730-8922"
       - Publons Profile: "https://publons.com/researcher/1700487/avinash-karn/"
+    About Me: "resume"
     Contact:  "contact"
     Food Blog:  "foodblog"
     #Resume: "resume"
