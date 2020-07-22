@@ -6,9 +6,6 @@ image: /image/ampseq/Keep2.jpg
 share-img: /image/ampseq/Keep2.jpg
 ---
 
-<h1>Marker Assisted Selection using AmpSeq data </h1>
-<hr>
-
 This tutorial video is my attempt to introduce the basics of the AmpSeq data analyis in __Marker Assisted Selection__ . 
 For general information on technology behind AmpSeq please read one of my previous blog post on it at this link: https://avikarn.com/2019-04-21-AmpSeq/  
 
