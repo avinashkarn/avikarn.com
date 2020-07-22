@@ -7,7 +7,6 @@ image: /image/mlr_rf/plot11.JPG
 share-img: /image/mlr_rf/plot11.JPG
 ---
 
-<h1> Utilizing Machine Learning algorithms (GLMnet and Random Forest models) for Genomic Prediction of a Quantitative trait </h1>
 
 In this tutorial, I used two popular machine learning algorithms: `Random Forest` and `GLMnet` for `Genomic Prediction` of a quantitative trait. There are several machine learning R packages available, however, in this tutorial i used `caret` package. The objective was to develop two models: `Random forest` and `glmnet` using real data sets consisting genetic markers, that were used as `predictors` to predict a quantitative trait (names of the variables were disguised in this tutorial), and finally, comparing the performance of the two models by testing them on a validation set. 
 
