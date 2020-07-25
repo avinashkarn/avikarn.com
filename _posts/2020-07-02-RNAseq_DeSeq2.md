@@ -12,9 +12,10 @@ In this tutorial, negative binomial was used to perform differential gene expres
  - Assess the `quality` of the sequencing reads
  - Perform `genome alignment` to identify the origination of the reads
  - Generate the `count matrix` of the aligned reads i.e. the number of reads aligning to the exons of each gene.
- 
-The dataset used in the tutorial is from the published <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2877581/">Hammer et al 2010 </a> study. The `read count matrix` and the `meta data` was obatined from the <a href="http://bowtie-bio.sourceforge.net/recount/"> Recount project website </a> Briefly, the Hammer experiment studied the effect of a spinal nerve ligation (SNL) versus control (normal) samples in rats at two weeks and after two months. In this tutorial, we explore the differential gene expression at first and second time point and the difference in the fold change between the two time points.
 
+<p> 
+The dataset used in the tutorial is from the published <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2877581/">Hammer et al 2010 </a> study. The `read count matrix` and the `meta data` was obatined from the <a href="http://bowtie-bio.sourceforge.net/recount/"> Recount project website </a> Briefly, the Hammer experiment studied the effect of a spinal nerve ligation (SNL) versus control (normal) samples in rats at two weeks and after two months. In this tutorial, we explore the differential gene expression at first and second time point and the difference in the fold change between the two time points.
+</p>
 Download the slightly modified dataset at the below links: 
  - <a href="https://avikarn.com/image/rna/hammer_count_table.txt"> Read Count data </a>
  - <a href="https://avikarn.com/image/rna/hammer_phenodata.txt"> Meta data </a>
@@ -452,19 +453,27 @@ ggplot(top_20) +
 
 ## References
 <p>
-Hammer P, Banck MS, Amberg R, Wang C, Petznick G, Luo S, Khrebtukova I, Schroth GP, Beyerlein P, Beutler AS. “mRNA-seq with agnostic splice site discovery for nervous system transcriptomics tested in chronic pain.” Genome Res. 2010 http://www.ncbi.nlm.nih.gov/pubmed?term=20452967
+Hammer P, Banck MS, Amberg R, Wang C, Petznick G, Luo S, Khrebtukova I, Schroth GP, Beyerlein P, Beutler AS.
+“mRNA-seq with agnostic splice site discovery for nervous system transcriptomics tested in chronic pain.” 
+Genome Res. 2010 http://www.ncbi.nlm.nih.gov/pubmed?term=20452967
 </p>
 
 <p>
-Simon Anders and Wolfgang Huber, “Differential expression analysis for sequence count data”, Genome Biology 2010. http://genomebiology.com/2010/11/10/r106
+Simon Anders and Wolfgang Huber, 
+“Differential expression analysis for sequence count data”, Genome Biology 2010. 
+http://genomebiology.com/2010/11/10/r106
 </p>
 
 <p>
-Mortazavi A, Williams BA, McCue K, Schaeffer L, Wold B., “Mapping and quantifying mammalian transcriptomes by RNA-Seq”, Nat Methods. 2008. http://www.nature.com/nmeth/journal/v5/n7/full/nmeth.1226.html
+Mortazavi A, Williams BA, McCue K, Schaeffer L, Wold B.,
+ “Mapping and quantifying mammalian transcriptomes by RNA-Seq”, Nat Methods. 2008. 
+http://www.nature.com/nmeth/journal/v5/n7/full/nmeth.1226.html
 </p>
 
 <p>
-John C. Marioni, Christopher E. Mason, Shrikant M. Mane, Matthew Stephens, and Yoav Gilad, “RNA-seq: An assessment of technical reproducibility and comparison with gene expression arrays” Genome Res. 2008. http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2527709/
+John C. Marioni, Christopher E. Mason, Shrikant M. Mane, Matthew Stephens, and Yoav Gilad,
+“RNA-seq: An assessment of technical reproducibility and comparison with gene expression arrays” 
+Genome Res. 2008. http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2527709/
 </p>
 
 
