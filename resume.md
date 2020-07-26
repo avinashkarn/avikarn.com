@@ -7,7 +7,27 @@ subtitle: Quantitative & Computational Geneticist
 <div id="aboutme-section">
 
 <p class="about-text">
-<span class="fa fa-briefcase about-icon"></span> My name is Avinash Karn, I go by <strong>Avi</strong>, I am a plant quantitative geneticist; and an amateur astronomer, painter, online blogger, photographer and vivid cook. :)
+
+<div id="aboutme-section">
+
+<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="avikarn"><a class="LI-simple-link" href='https://www.linkedin.com/in/avikarn?trk=profile-badge'>Avi Karn, PhD</a></div>
+
+ 
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+<p class="about-text">
+<span class="fa fa-briefcase about-icon"></span>
+  Hi! My name is Avinash Karn, I go by <strong>Avi</strong>. I am very passionate about plants and cutting-edge technology. I have in-depth knowledge and a rigorous hands on experience in the field of plant breeding, quantitative genetics, computational biology and high-throughput phenotyping for over 10 years now, which I earned during my research work with plant breeders/geneticists, bioinformaticists, pathologist in my undergraduate, graduate and my postdoctoral career here in the United States. I am a creative project leader and cross-functional collaborator with an ability to excel in multifaceted fast-paced teams as evident from collaborations with different breeding teams 5 published manuscripts in high impact scientific journals and 9 in preparation, 10+ oral presentations. I intend to use my education and training in pursuing a career in an organization that is involved to improve human nutrition, health and environment for both developed and developing communities. Finally, Some of my hobbies include astronomy, painting, stamp collecting, online blogging/writing, photography and cooking!
+</p>
+
+<hr>
+<center>Skills & interests</center>
+</hr>
+- Skills: R, Python, Statistics, Machine Learning, Genetics, Genomics, Plant Breeding, Molecular Biology, Quantitative Genetics, Data Processing in Shell, Bioinformatics, UNIX/LINUX, BASH, HPC cluster, PERL, CSS, HTML, SQL, and GitHub
+-	Lab Skills: DNA extraction, PCR, Gel Electrophoresis, Microscopy
+-	Farming Skills: Plowing Field with Tractor, Seed Planting, Pollination
+-	Language Skills: Fluent in English, Nepali, Hindi, Maithali, Bhojpuri, and Basic Spanish skills
+-	Interests: Astronomy, Painting (watercolor), Cooking (American, Indian, Spanish), Robotics, Bird watching, Fish keeping, Gardening
 </p>
 
 <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="avikarn"><a class="LI-simple-link" href='https://www.linkedin.com/in/avikarn?trk=profile-badge'>Avi Karn, PhD</a></div>
@@ -106,11 +126,6 @@ Analyzed retained homeologous paralog pairs from syntenic regions in Maize and S
 
 #### Summer 2009 & 2012 NSF TruScholars Research Program - Truman State University, USA
 Designed gene specific molecular marker for a novel of starch branching enzyme Ia (SBE-1a) allele involved in high amylose starch in maize. Discovered novel recessive starch branching enzyme 1a (sbe1a) likely plays a significant role in the presence of the ae allele in elevating starch amylose from ~55% to >70% in the germplasm release 'GEMS-0067'. Conducted linkage based mapping studies to identify QTLs for high amylose starch in maize using SSR markers and `QTL cartographer` software. Sequenced starch branching enzyme allele (SBE1a) from high amylose maize line, GEMS-0067; Discovered 8bp insertion site at intron 9 resulting splicing mutation, which putatively resulted in truncated protein product post-translation.
-
-<hr>
-#### Programming languages
-
-`Linux`, `R`, `SAS`, `PERL`, `HTML`, `CSS`,`MS Command prompt` and `Excel`.
 
 <hr>
 <div id="contactme-section">
