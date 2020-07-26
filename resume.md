@@ -17,7 +17,7 @@ subtitle: Quantitative & Computational Geneticist
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-  Hi! My name is Avinash Karn, I go by <strong>Avi</strong>. I am very passionate about plants and cutting-edge technology. I have in-depth knowledge and a rigorous hands on experience in the field of plant breeding, quantitative genetics, computational biology and high-throughput phenotyping for over 10 years now, which I earned during my research work with plant breeders/geneticists, bioinformaticists, pathologist in my undergraduate, graduate and my postdoctoral career here in the United States. I am a creative project leader and cross-functional collaborator with an ability to excel in multifaceted fast-paced teams as evident from collaborations with different breeding teams 5 published manuscripts in high impact scientific journals and 9 in preparation, 10+ oral presentations. I intend to use my education and training in pursuing a career in an organization that is involved to improve human nutrition, health and environment for both developed and developing communities. Finally, Some of my hobbies include astronomy, painting, stamp collecting, online blogging/writing, photography and cooking!
+  Hi! My name is Avinash Karn, I go by <strong>Avi</strong>. I am very passionate about plants and cutting-edge technology. I have in-depth knowledge and a rigorous hands on experience in the field of plant breeding, quantitative genetics, computational biology and high-throughput phenotyping for over 10 years now, which I earned during my research work with plant breeders/geneticists, bioinformaticists, pathologist in my undergraduate, graduate and my postdoctoral career here in the United States. I am a creative project leader and cross-functional collaborator with an ability to excel in multifaceted fast-paced teams as evident from collaborations with different breeding teams 5 published manuscripts in high impact scientific journals and 9 in preparation, 10+ oral presentations. I intend to use my education and training in pursuing a career in an organization that is involved to improve human nutrition, health and environment for both developed and developing communities. Finally, Some of my hobbies include astronomy, painting, stamp collecting, online blogging/writing, photography and cooking! 😉
 </p>
 
 <hr>
@@ -30,19 +30,10 @@ subtitle: Quantitative & Computational Geneticist
 -	Interests: Astronomy, Painting (watercolor), Cooking (American, Indian, Spanish), Robotics, Bird watching, Fish keeping, Gardening
 </p>
 
-<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="avikarn"><a class="LI-simple-link" href='https://www.linkedin.com/in/avikarn?trk=profile-badge'>Avi Karn, PhD</a></div>
+<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="avikarn"><a class="LI-simple-link" href='https://www.linkedin.com/in/avikarn?trk=profile-badge'>Avi Karn, PhD</a>
+</div>
 
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
-<p class="about-text">
-<span class="fa fa-graduation-cap about-icon"></span>
-I obtained my secondary and higher secondary education in my hometown <a target="_blank" href="https://goo.gl/maps/vtMmZcXFWy32"> Birgunj, Nepal. </a> Next, I came to the United States to earn my Bachelor of Science degree in Agricultural Sciences, specializing in plant genetics at <strong>Truman State University</strong>, and finally, earned my PhD at the <strong> University of Missouri Columbia </strong> specializing in plant breeding, genetics and genomics.
-</p>
-
-<p class="about-text">
-<span class="fa fa-glasses about-icon"></span>
-Currently, I am a post-doctoral computational biologist/Quantitative geneticist at <strong> Cornell University </strong> in Geneva, New York. I intend to use my education and training in pursuing a career in an organization that is involved to improve human nutrition, health and environment for both developed and developing communities.
-</p>
 
 </div>
 
