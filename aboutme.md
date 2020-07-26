@@ -20,7 +20,7 @@ subtitle: “SHARE YOUR KNOWLEDGE. IT IS A WAY TO ACHIEVE IMMORTALITY.” -DALAI
 <hr>
 <center>Skills & interests</center>
 </hr>
--Skills: R, Python, Statistics, Machine Learning, Genetics, Genomics, Plant Breeding, Molecular Biology, Quantitative Genetics, Data Processing in Shell, Bioinformatics, UNIX/LINUX, BASH, HPC cluster, PERL, CSS, HTML, SQL, and GitHub
+- Skills: R, Python, Statistics, Machine Learning, Genetics, Genomics, Plant Breeding, Molecular Biology, Quantitative Genetics, Data Processing in Shell, Bioinformatics, UNIX/LINUX, BASH, HPC cluster, PERL, CSS, HTML, SQL, and GitHub
 -	Lab Skills: DNA extraction, PCR, Gel Electrophoresis, Microscopy
 -	Farming Skills: Plowing Field with Tractor, Seed Planting, Pollination
 -	Language Skills: Fluent in English, Nepali, Hindi, Maithali, Bhojpuri, and Basic Spanish skills
