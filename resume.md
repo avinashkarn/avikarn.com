@@ -4,32 +4,58 @@ title: About me
 meta-title: Avi Karn, Ph.D.
 subtitle: Quantitative & Computational Geneticist
 ---
+
 <div id="aboutme-section">
 
-<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="avikarn"><a class="LI-simple-link" href='https://www.linkedin.com/in/avikarn?trk=profile-badge'>Avi Karn, PhD</a>
-</div>
+<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="avikarn"><a class="LI-simple-link" href='https://www.linkedin.com/in/avikarn?trk=profile-badge'>Avi Karn, PhD</a></div>
 
  
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-  Hi! My name is Avinash Karn, I go by <strong>Avi</strong>. I am very passionate about plants and cutting-edge technology. I have in-depth knowledge and a rigorous hands on experience in the field of plant breeding, quantitative genetics, computational biology and high-throughput phenotyping for over 10 years now, which I earned during my research work with plant breeders/geneticists, bioinformaticists, pathologist in my undergraduate, graduate and my postdoctoral career here in the United States. I am a creative project leader and cross-functional collaborator with an ability to excel in multifaceted fast-paced teams as evident from collaborations with different breeding teams 5 published manuscripts in high impact scientific journals and 9 in preparation, 10+ oral presentations. I intend to use my education and training in pursuing a career in an organization that is involved to improve human nutrition, health and environment for both developed and developing communities. Finally, Some of my hobbies include astronomy, painting, stamp collecting, online blogging/writing, photography and cooking! 😉
+Hi! My name is Avinash Karn, I go by <strong>Avi</strong>. I am very passionate about plants and cutting-edge technology. I have in-depth knowledge and a rigorous hands on experience in the field of plant breeding, quantitative genetics, computational biology and high-throughput phenotyping for over 10 years now, which I earned during my research work with plant breeders/geneticists, bioinformaticists, pathologist in my undergraduate, graduate and my postdoctoral career here in the United States. I am a creative project leader and cross-functional collaborator with an ability to excel in multifaceted fast-paced teams as evident from collaborations with different breeding teams 5 published manuscripts in high impact scientific journals and 9 in preparation, 10+ oral presentations. 
 </p>
 
-<hr>
-<center>Skills & interests</center>
-</hr>
+<p class="about-text">
+<span class="fa fa-heart about-icon"></span>
+"Share knowledge. Its one way to immportality" - Dalai Lama. 
+I strongly believe in this saying, and I intend to use my education and training in pursuing a career in an organization that is involved to improve human nutrition, health and environment for both developed and developing communities.
+</p>
 
-- Computational Skills: R, Python, Statistics, Machine Learning, Genetics, Genomics, Plant Breeding, Molecular Biology, Quantitative Genetics, Data Processing in Shell, Bioinformatics, UNIX/LINUX, BASH, HPC cluster, PERL, CSS, HTML, SQL, and GitHub
+<p class="about-text">
+<span class="fa fa-briefcase about-icon"></span>
+Since 2018 Jan, I have been a Computational biologist/Molecular breeding data scientist postdoc in <a href="http://www.vitisgen2.org/"> VitisGen2 (USDA NIFA funded) project</a> at Cornell AgriTech, Cornell University in Geneva, NY
+</p>
+ 
+<p class="about-text">
+<span class="fa fa-graduation-cap about-icon"></span>
+### 2012–2017 PhD - Plant Breeding, Genetics & Genomics — University of Missouri Columbia, USA
+- Dissertation <a href="https://mospace.umsystem.edu/xmlui/handle/10355/61937">Evaluation of Teosinte Genetic Diversity for Agronomic and Domestication Traits in Maize</a>
+- Received Dr. Marcus Zuber endowment fellowship
+- Presented research at Maize genetics conference, Plant Animal Genetics conference and The Tri-Societies meeting (ASA, CSSA, SSSA) International meetings
+- Recipient of 2017 Research in Plant Biology Award (Monetary award $750)
+- 2017 MU Life Sciences Week Research Recognition award (Monetary award $275)
+- Recipient of DPS and IPG travel awards
 
--	Lab Skills: DNA/RNA extraction, Primer design, PCR, Gel Electrophoresis, Microscopy
+### 2008–2012 BSc Agricultural Sciences — Truman State University, USA
+- Received President’s Honorary Scholarship and Dr. Max E. Bell Scholarship
+- Presented research at student research conferences at Truman, Adair County extension center and annual Maize genetics conference
+</p>
 
--	Farming Skills: Plowing Field with Tractor, Seed Planting, Pollination (Corn, Soybean and Grapes)
-
+<p>
+<span class="fa fa-code about-icon"></span>
+- Technical Skills: R, Python, Statistics, Machine Learning, Genetics, Genomics, Plant Breeding, Molecular Biology, Quantitative Genetics, Data Processing in Shell, Bioinformatics, UNIX/LINUX, BASH, HPC cluster, PERL, CSS, HTML, SQL, and GitHub
+-	Lab Skills: DNA extraction, PCR, Gel Electrophoresis, Microscopy
+-	Farming Skills: Plowing Field with Tractor, Seed Planting, Pollination
 -	Language Skills: Fluent in English, Nepali, Hindi, Maithali, Bhojpuri, and Basic Spanish skills
-
 -	Interests: Astronomy, Painting (watercolor), Cooking (American, Indian, Spanish), Robotics, Bird watching, Fish keeping, Gardening
+</p>
+
+<p class="about-text">
+<span class="fa fa-globe about-icon"></span>
+Grew up in <i>Birgunj, Nepal</i>; moved to <i>the United States</i> to obtain my undergraduate degree and have been living here since then.
+</p>
 
 <hr>
 <center> <h2> Publications </h2> </center> 
@@ -56,21 +82,6 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I.
 **Karn, Avinash**, Brent Buckner, Diane Janick-Buckner, Mark Campbell, Michael Blanco, Marvin Scott, and Adrienne Moran Lauter .
 *Maize Genetics Conference Abstracts*
 
-<hr>
-<center> <h2> Education </h2> </center> 
-<hr/>
-
-### 2012–2017 PhD - Plant Breeding, Genetics & Genomics — University of Missouri Columbia, USA
-- Dissertation <a href="https://mospace.umsystem.edu/xmlui/handle/10355/61937">Evaluation of Teosinte Genetic Diversity for Agronomic and Domestication Traits in Maize</a>
-- Received Dr. Marcus Zuber endowment fellowship
-- Presented research at Maize genetics conference, Plant Animal Genetics conference and The Tri-Societies meeting (ASA, CSSA, SSSA) International meetings
-- Recipient of 2017 Research in Plant Biology Award (Monetary award $750)
-- 2017 MU Life Sciences Week Research Recognition award (Monetary award $275)
-- Recipient of DPS and IPG travel awards
-
-### 2008–2012 BSc Agricultural Sciences — Truman State University, USA
-- Received President’s Honorary Scholarship and Dr. Max E. Bell Scholarship
-- Presented research at student research conferences at Truman, Adair County extension center and annual Maize genetics conference
 
 <hr>
 <center> <h2> Work Experience </h2> </center>
@@ -111,6 +122,7 @@ Bioinformatic analysis of the intra-genomic evolution of retained homeologous pa
 ### Summer 2009 & 2012 NSF TruScholars Research Program - Truman State University, USA
 Designed gene specific molecular marker for a novel of starch branching enzyme Ia (SBE-1a) allele involved in high amylose starch in maize. Discovered novel recessive starch branching enzyme 1a (sbe1a) likely plays a significant role in the presence of the ae allele in elevating starch amylose from ~55% to >70% in the germplasm release 'GEMS-0067'. Conducted linkage based mapping studies to identify QTLs for high amylose starch in maize using SSR markers and `QTL cartographer` software. Sequenced starch branching enzyme allele (SBE1a) from high amylose maize line, GEMS-0067; Discovered 8bp insertion site at intron 9 resulting splicing mutation, which putatively resulted in truncated protein product post-translation.
 
+</div>
 
 <!--- Google--->
 <script>
