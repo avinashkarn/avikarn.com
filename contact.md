@@ -3,6 +3,14 @@ layout: page
 title: Let’s connect!
 ---
 
+<!-- particles.js exclusion -->
+<style>
+  #particles-js{
+      display: none;
+  }
+  
+</style>
+
 <div id="contactme-section">
 
 
