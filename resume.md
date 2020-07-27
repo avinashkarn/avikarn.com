@@ -4,6 +4,13 @@ title: About me
 meta-title: Avi Karn, Ph.D.
 subtitle: Quantitative & Computational Geneticist
 ---
+<!-- particles.js exclusion -->
+<style>
+  #particles-js{
+      display: none;
+  }
+  
+</style>
 
 <div id="aboutme-section">
 
