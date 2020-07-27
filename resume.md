@@ -30,14 +30,6 @@ subtitle: Quantitative & Computational Geneticist
 -	Language Skills: Fluent in English, Nepali, Hindi, Maithali, Bhojpuri, and Basic Spanish skills
 -	Interests: Astronomy, Painting (watercolor), Cooking (American, Indian, Spanish), Robotics, Bird watching, Fish keeping, Gardening
 
-
-<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="avikarn"><a class="LI-simple-link" href='https://www.linkedin.com/in/avikarn?trk=profile-badge'>Avi Karn, PhD</a>
-</div>
-
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
-</div>
-
 <hr>
 <center> <h2> Publications </h2> </center> 
 <hr>
