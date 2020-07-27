@@ -18,7 +18,7 @@ Hi! My name is Avinash Karn, I go by <strong>Avi</strong>. I am very passionate 
 
 <p class="about-text">
 <span class="fa fa-heart about-icon"></span>
-"Share knowledge. Its one way to immportality" - Dalai Lama. 
+"Share knowledge. Its one way to immortality" - Dalai Lama. 
 I strongly believe in this saying, and I intend to use my education and training in pursuing a career in an organization that is involved to improve human nutrition, health and environment for both developed and developing communities.
 </p>
 
