@@ -38,11 +38,13 @@ Since 2018 Jan, I have been a Computational biologist/Molecular breeding data sc
 
 <p>
 <span class="fa fa-code about-icon"></span>
-- Technical Skills: R, Python, Statistics, Machine Learning, Genetics, Genomics, Plant Breeding, Molecular Biology, Quantitative Genetics, Data Processing in Shell, Bioinformatics, UNIX/LINUX, BASH, HPC cluster, PERL, CSS, HTML, SQL, and GitHub
--	Lab Skills: DNA extraction, PCR, Gel Electrophoresis, Microscopy
--	Farming Skills: Plowing Field with Tractor, Seed Planting, Pollination
--	Language Skills: Fluent in English, Nepali, Hindi, Maithali, Bhojpuri, and Basic Spanish skills
--	Interests: Astronomy, Painting (watercolor), Cooking (American, Indian, Spanish), Robotics, Bird watching, Fish keeping, Gardening
+<ul>
+<li>Technical Skills: R, Python, Statistics, Machine Learning, Genetics, Genomics, Plant Breeding, Molecular Biology, Quantitative Genetics, Data Processing in Shell, Bioinformatics, UNIX/LINUX, BASH, HPC cluster, PERL, CSS, HTML, SQL, and GitHub</li>
+ <li>Lab Skills: DNA extraction, PCR, Gel Electrophoresis, Microscopy </li>
+ <li>Farming Skills: Plowing Field with Tractor, Seed Planting, Pollination</li>
+<li>Language Skills: Fluent in English, Nepali, Hindi, Maithali, Bhojpuri, and Basic Spanish skills </li> 
+<li>Interests: Astronomy, Painting (watercolor), Cooking (American, Indian, Spanish), Stamp Collecting, Robotics, Bird watching, Fish keeping, Gardening </li>
+</ul>
 </p>
 
 <p class="about-text">
