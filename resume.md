@@ -24,15 +24,19 @@ subtitle: Quantitative & Computational Geneticist
 <center>Skills & interests</center>
 </hr>
 
-- Skills: R, Python, Statistics, Machine Learning, Genetics, Genomics, Plant Breeding, Molecular Biology, Quantitative Genetics, Data Processing in Shell, Bioinformatics, UNIX/LINUX, BASH, HPC cluster, PERL, CSS, HTML, SQL, and GitHub
+- Computational Skills: R, Python, Statistics, Machine Learning, Genetics, Genomics, Plant Breeding, Molecular Biology, Quantitative Genetics, Data Processing in Shell, Bioinformatics, UNIX/LINUX, BASH, HPC cluster, PERL, CSS, HTML, SQL, and GitHub
+
 -	Lab Skills: DNA extraction, PCR, Gel Electrophoresis, Microscopy
--	Farming Skills: Plowing Field with Tractor, Seed Planting, Pollination
+
+-	Farming Skills: Plowing Field with Tractor, Seed Planting, Pollination (Corn, Soybean and Grapes)
+
 -	Language Skills: Fluent in English, Nepali, Hindi, Maithali, Bhojpuri, and Basic Spanish skills
+
 -	Interests: Astronomy, Painting (watercolor), Cooking (American, Indian, Spanish), Robotics, Bird watching, Fish keeping, Gardening
 
 <hr>
 <center> <h2> Publications </h2> </center> 
-<hr>
+</hr>
 
 <a href="https://www.nature.com/articles/s41467-019-14280-1"> A rhAmpSeq haplotype strategy targeting the collinear core genome improves marker transferability across a diverse genus</a>
 Cheng Zou, __Avinash Karn__, Bruce Reisch, Allen Nguyen, Yongming Sun, Yun Bao, Michael S. Campbell, Deanna Church, Stephen Williams, Timothy P. L. Smith, Anne Fennell, Doreen Ware, Jason Londo, Qi Sun and Lance Cadle-Davidson
