@@ -14,7 +14,7 @@ subtitle: Quantitative & Computational Geneticist
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-Hi! My name is Avinash Karn, I go by <strong>Avi</strong>. I am very passionate about plants and cutting-edge technology. I have in-depth knowledge and a rigorous hands on experience in the field of plant breeding, quantitative genetics, computational biology and high-throughput phenotyping for over 10 years now, which I earned during my research work with plant breeders/geneticists, bioinformaticists, pathologist in my undergraduate, graduate and my postdoctoral career here in the United States. I am a creative project leader and cross-functional collaborator with an ability to excel in multifaceted fast-paced teams as evident from collaborations with different breeding teams 5 published manuscripts in high impact scientific journals and 9 in preparation, 10+ oral presentations. 
+Hi! My name is Avinash Karn, I go by <strong>Avi</strong>. I am very passionate about plants and cutting-edge technology. I have in-depth knowledge and a rigorous hands on experience in the field of plant breeding, quantitative genetics, computational biology and high-throughput phenotyping for over 10 years now, which I earned during my research work with plant breeders/geneticists, bioinformaticists, pathologist in my undergraduate, graduate and my postdoctoral career here in the United States.
 </p>
 
 <p class="about-text">
@@ -52,9 +52,7 @@ Since 2018 Jan, I have been a Computational biologist/Molecular breeding data sc
 Grew up in <i>Birgunj, Nepal</i>; moved to <i>the United States</i> to obtain my undergraduate degree and have been living here since then.
 </p>
 
-<hr>
 <center> <h2> Publications </h2> </center> 
-</hr>
 
 <a href="https://www.nature.com/articles/s41467-019-14280-1"> A rhAmpSeq haplotype strategy targeting the collinear core genome improves marker transferability across a diverse genus</a>
 Cheng Zou, __Avinash Karn__, Bruce Reisch, Allen Nguyen, Yongming Sun, Yun Bao, Michael S. Campbell, Deanna Church, Stephen Williams, Timothy P. L. Smith, Anne Fennell, Doreen Ware, Jason Londo, Qi Sun and Lance Cadle-Davidson
@@ -77,10 +75,8 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I.
 **Karn, Avinash**, Brent Buckner, Diane Janick-Buckner, Mark Campbell, Michael Blanco, Marvin Scott, and Adrienne Moran Lauter .
 *Maize Genetics Conference Abstracts*
 
-
-<hr>
 <center> <h2> Work Experience </h2> </center>
-</hr>
+
 
 ### 2018–Present Computational biologist (Postdoc) VitisGen2 project — Cornell University, Cornell AgriTech, Geneva, NY
 
