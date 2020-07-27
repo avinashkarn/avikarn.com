@@ -111,7 +111,7 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I.
 
 <h3>  2012—2017 Graduate Research Assistant (PhD) - University of Missouri Columbia, USA </h3>
 <p>
-Involved in the development of novel genetic resource and mapping populations such as near isogenic and synthetic lines derived from domesticated corn and its wild relative, Teosinte. Conducted `Joint linkage QTL analysis` and Genome wide association study to elucidate several aspects of genetic diversity in maize; genetic basis of various agronomic, fitness and yield related traits such as seed quality and composition in trials conducted with multiple replications in different environment and year. Investigated gene by gene epistatic interactions for various adaptation and domestication related traits in trials with multiple replications and environment.
+Involved in the development of novel genetic resource and mapping populations such as near isogenic and synthetic lines derived from domesticated corn and its wild relative, Teosinte. Conducted Joint linkage QTL analysis and Genome wide association study to elucidate several aspects of genetic diversity in maize; genetic basis of various agronomic, fitness and yield related traits such as seed quality and composition in trials conducted with multiple replications in different environment and year. Investigated gene by gene epistatic interactions for various adaptation and domestication related traits in trials with multiple replications and environment.
 </p>
 
 <h3>  2009-2012 Undergraduate Research Assistant (BSc) - Truman State University, USA </h3>
