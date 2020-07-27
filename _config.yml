@@ -158,7 +158,7 @@
   markdown: kramdown
   highlighter: rouge
   permalink: /:year-:month-:day-:title/
-  paginate: 15
+  paginate: 20
 
   kramdown:
     input: GFM
