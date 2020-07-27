@@ -23,12 +23,13 @@ subtitle: Quantitative & Computational Geneticist
 <hr>
 <center>Skills & interests</center>
 </hr>
+
 - Skills: R, Python, Statistics, Machine Learning, Genetics, Genomics, Plant Breeding, Molecular Biology, Quantitative Genetics, Data Processing in Shell, Bioinformatics, UNIX/LINUX, BASH, HPC cluster, PERL, CSS, HTML, SQL, and GitHub
 -	Lab Skills: DNA extraction, PCR, Gel Electrophoresis, Microscopy
 -	Farming Skills: Plowing Field with Tractor, Seed Planting, Pollination
 -	Language Skills: Fluent in English, Nepali, Hindi, Maithali, Bhojpuri, and Basic Spanish skills
 -	Interests: Astronomy, Painting (watercolor), Cooking (American, Indian, Spanish), Robotics, Bird watching, Fish keeping, Gardening
-</p>
+
 
 <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="avikarn"><a class="LI-simple-link" href='https://www.linkedin.com/in/avikarn?trk=profile-badge'>Avi Karn, PhD</a>
 </div>
