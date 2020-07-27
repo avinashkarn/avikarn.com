@@ -26,7 +26,7 @@ subtitle: Quantitative & Computational Geneticist
 
 - Computational Skills: R, Python, Statistics, Machine Learning, Genetics, Genomics, Plant Breeding, Molecular Biology, Quantitative Genetics, Data Processing in Shell, Bioinformatics, UNIX/LINUX, BASH, HPC cluster, PERL, CSS, HTML, SQL, and GitHub
 
--	Lab Skills: DNA extraction, PCR, Gel Electrophoresis, Microscopy
+-	Lab Skills: DNA/RNA extraction, Primer design, PCR, Gel Electrophoresis, Microscopy
 
 -	Farming Skills: Plowing Field with Tractor, Seed Planting, Pollination (Corn, Soybean and Grapes)
 
