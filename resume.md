@@ -6,11 +6,8 @@ subtitle: Quantitative & Computational Geneticist
 ---
 <div id="aboutme-section">
 
-<p class="about-text">
-
-<div id="aboutme-section">
-
-<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="avikarn"><a class="LI-simple-link" href='https://www.linkedin.com/in/avikarn?trk=profile-badge'>Avi Karn, PhD</a></div>
+<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="avikarn"><a class="LI-simple-link" href='https://www.linkedin.com/in/avikarn?trk=profile-badge'>Avi Karn, PhD</a>
+</div>
 
  
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
@@ -61,85 +58,59 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, **Avinash Karn** , Bruce I.
 
 <hr>
 <center> <h2> Education </h2> </center> 
+<hr/>
+
+### 2012–2017 PhD - Plant Breeding, Genetics & Genomics — University of Missouri Columbia, USA
+- Dissertation <a href="https://mospace.umsystem.edu/xmlui/handle/10355/61937">Evaluation of Teosinte Genetic Diversity for Agronomic and Domestication Traits in Maize</a>
+- Received Dr. Marcus Zuber endowment fellowship
+- Presented research at Maize genetics conference, Plant Animal Genetics conference and The Tri-Societies meeting (ASA, CSSA, SSSA) International meetings
+- Recipient of 2017 Research in Plant Biology Award (Monetary award $750)
+- 2017 MU Life Sciences Week Research Recognition award (Monetary award $275)
+- Recipient of DPS and IPG travel awards
+
+### 2008–2012 BSc Agricultural Sciences — Truman State University, USA
+- Received President’s Honorary Scholarship and Dr. Max E. Bell Scholarship
+- Presented research at student research conferences at Truman, Adair County extension center and annual Maize genetics conference
+
 <hr>
-#### 2012–2017 PhD - Plant Breeding, Genetics & Genomics — University of Missouri Columbia, USA
-<li>Dissertation <a href="https://mospace.umsystem.edu/xmlui/handle/10355/61937">Evaluation of Teosinte Genetic Diversity for Agronomic and Domestication Traits in Maize</a> </li>
-<li>Received Dr. Marcus Zuber endowment fellowship</li>
-<li>Presented research at Maize genetics conference, Plant Animal Genetics conference and The Tri-Societies meeting (ASA, CSSA, SSSA)     International meetings</li>
-<li>Recipient of 2017 Research in Plant Biology Award (Monetary award $750) </li>
-<li>2017 MU Life Sciences Week Research Recognition award (Monetary award $275) </li>
-<li>Recipient of DPS and IPG travel awards</li>
-
-#### 2008–2012 BSc Agricultural Sciences — Truman State University, USA
-<li>Received President’s Honorary Scholarship and Dr. Max E. Bell Scholarship</li>
-<li>Presented research at student research conferences at Truman, Adair County extension center and annual Maize genetics conference</li>
-
 <center> <h2> Work Experience </h2> </center>
-<hr>
+</hr>
 
-#### 2018–Present Computational biologist (Postdoc) — Cornell University, Cornell AgriTech, Geneva, NY
+### 2018–Present Computational biologist (Postdoc) VitisGen2 project — Cornell University, Cornell AgriTech, Geneva, NY
 
-<ul>
-  
-<li>Analyzed large-scale genotyping data from Genotyping-by-Sequencing, Amplicon Sequencing, Whole genome sequencing for SNP and haplotype calling, genome alignment, genome assembly and genomic selection and prediction. </li>
+ - Analyzed large-scale genotyping data from Genotyping-by-Sequencing, Amplicon Sequencing, Whole genome sequencing for SNP and haplotype calling, genome alignment, genome assembly and genomic selection and prediction
 
-<li>Co-Lead the development of a rhAmpSeq (RNase H2 enzyme-dependent amplicon sequencing) haplotype strategy targeting the collinear core genome to improve marker transferability across a diverse genus.</li>
+- Co-Lead the development of a rhAmpSeq (RNase H2 enzyme-dependent amplicon sequencing) haplotype strategy targeting the collinear core genome to improve marker transferability across a diverse genus
 
-<li>Worked with nation-wide grape breeders to apply amplicon sequencing (AmpSeq) marker data for accelerated marker-assisted breeding.</li>
+- Worked with nation-wide grape breeders to apply amplicon sequencing (AmpSeq) marker data for accelerated marker-assisted breeding
 
-<li>Built genetic maps (in Lep-Map3) of various Vitis populations, and performed quality control (QC) analysis, interval mapping and genome-wide association (GLM, MLM, FarmCPU). Build machine learning model for genomic prediction of quantitative traits</li>
+- Built genetic maps (in Lep-Map3) of various Vitis populations, and performed quality control (QC) analysis, interval mapping and genome-wide association (GLM, MLM, FarmCPU). Build machine learning model for genomic prediction of quantitative traits
 
-<li>Managed grapevine breeding database www.VitisBase.org in collaboration with Boyce Thompson Institute (BTI) and Breeding Insight project (USDA); and led setting up trials and high-throughput phenotype data collection on FieldBook android application.</li>
+- Managed grapevine breeding database www.VitisBase.org in collaboration with Boyce Thompson Institute (BTI) and Breeding Insight project (USDA); and led setting up trials and high-throughput phenotype data collection on FieldBook android application
 
-<li>Big data visualization </li>
+- Big data visualization in R, Python, PERL
 
-</ul>
+### 2017 May–2017 Dec Quantitative Geneticist (Postdoc) — University of Illinois - Urbana-Champaign, IL
 
-#### 2017 May–2017 Dec Quantitative Geneticist (Postdoc) — University of Illinois - Urbana-Champaign, IL
+- Led the genetics basis of maize roots project in Illinois Protein Strain Recombinant Inbred (IPSRI) lines of maize; the objective of this project was to elucidate influence of overall maize root genetic architecture by evaluating them in two environments with and without application of nitrogen
+- Managed the installation of over 2,000 minirhizotron tubes in maize field to image and quantify root traits, and perform genome wide association study
 
-Led and managed undergraduate students and technicians in the installation of over 2,000 `minirhizotron` tubes in field to image and study maize roots with `Bartz imaging systems`; and collections of minirhizotron images, moisture data, flowering, above ground biomass and yield harvest. Identified genetics basis for maize root structure and control of plant nutrient relations in Illinois Protein Strain Recombinant Inbred (IPSRI) lines of maize
-
-#### 2012—2017 Graduate Research Assistant (PhD) - University of Missouri Columbia, USA
+### 2012—2017 Graduate Research Assistant (PhD) - University of Missouri Columbia, USA
 
 Involved in the development of novel genetic resource and mapping populations such as near isogenic and synthetic lines derived from domesticated corn and its wild relative, Teosinte. Conducted `Joint linkage QTL analysis` and Genome wide association study to elucidate several aspects of genetic diversity in maize; genetic basis of various agronomic, fitness and yield related traits such as seed quality and composition in trials conducted with multiple replications in different environment and year. Investigated gene by gene epistatic interactions for various adaptation and domestication related traits in trials with multiple replications and environment.
 
-#### 2009-2012 Undergraduate Research Assistant (BSc) - Truman State University, USA
+### 2009-2012 Undergraduate Research Assistant (BSc) - Truman State University, USA
 Conducted molecular genetic analysis to exploit the biodiversity of exotic inbred lines from Central and South America to develop high amylose corn using SSR markers and gel electrophoresis. Assisted in preparing summer maize nurseries such as plowing field with a tractor, planting seeds with hand and dumping seed in seed planter, pollinating and collecting various agronomic data from field trials, harvesting and analyzing data. Developed gene specific molecular markers to select alleles responsible for high amylose in maize kernels with better yield, which I validated their stability in trials conducted in multiple replications in different environments. Wrote annual USDA-ARS Germplasm Enhancement of Maize (GEM) report and presented at ASTA meeting in Chicago, Illinois. 
 
-#### 2008-2012 Cafeteria student worker - Sodexo Inc. , USA
+### 2008-2012 Cafeteria student worker - Sodexo Inc. , USA
 Served and stocked food as well as performed all the cleaning related activities in the cafeteria.
 
-#### 2011-2012 Comparative genomics researcher - Truman State University, USA
-Analyzed retained homeologous paralog pairs from syntenic regions in Maize and Sorghum. Visualized genomic data of approximately 1Mb in size in `CIRCOS`, and conducted comparative genetic study in online tools such as `GeVo function in CoGe`, Annotated genes using `InterProScan` and expression analysis data from `Plexdb.org`
+### 2011-2012 Comparative genomics researcher - Truman State University, USA
+Bioinformatic analysis of the intra-genomic evolution of retained homeologous paralogs in maize. This project attempted to create a model undergraduate genome annotation community. An examination of approximately eight million base pairs of the maize genome was conducted using bioinformatic tools including: genome browsers (MaizeGDB and MaizeSequence.org), gene expression databases (PlexDB), protein functional prediction software (InterProScan. FGENESH) and comparative genome platforms (CoGe). Also, the consistency of the functional annotations with the balanced gene drive model and exhibition of subgenome bias in the retention/decay, gene density, and expression patterns of homeologous paralog pairs were also evaluated in the study.
 
-#### Summer 2009 & 2012 NSF TruScholars Research Program - Truman State University, USA
+### Summer 2009 & 2012 NSF TruScholars Research Program - Truman State University, USA
 Designed gene specific molecular marker for a novel of starch branching enzyme Ia (SBE-1a) allele involved in high amylose starch in maize. Discovered novel recessive starch branching enzyme 1a (sbe1a) likely plays a significant role in the presence of the ae allele in elevating starch amylose from ~55% to >70% in the germplasm release 'GEMS-0067'. Conducted linkage based mapping studies to identify QTLs for high amylose starch in maize using SSR markers and `QTL cartographer` software. Sequenced starch branching enzyme allele (SBE1a) from high amylose maize line, GEMS-0067; Discovered 8bp insertion site at intron 9 resulting splicing mutation, which putatively resulted in truncated protein product post-translation.
 
-<hr>
-<div id="contactme-section">
-<h1 id="contact">Contact</h1>
-
-<p>You can <a href="mailto:akarn@mail.missouri.edu?subject=Hello from AviKarn.com">email me</a> or find me <a href="https://twitter.com/avi_karn">on Twitter</a> if you want to get in touch. I love meeting new people so don't hesitate to send a message!</p>
-<p>Let’s connect if you want to collaborate and or exchange ideas!</p>
-<p>If you'd like to set up a meeting with me, <a href="https://calendly.com/avikarn">click here to schedule a meeting</a> based on your availability.</p>
-
-<form action="https://formspree.io/akarn@mail.missouri.edu" method="POST" class="form" id="contact-form">
-  <p>You can also send me a quick message using the form below:</p>
-  <div class="row">
-    <div class="col-xs-6">
-      <input type="email" name="_replyto" class="form-control input-lg" placeholder="Email" title="Email">
-    </div>
-    <div class="col-xs-6">
-      <input type="text" name="name" class="form-control input-lg" placeholder="Name" title="Name">
-    </div>
-  </div>
-  <input type="hidden" name="_subject" value="New submission from AviKarn.com">
-  <textarea type="text" name="content" class="form-control input-lg" placeholder="Message" title="Message" required="required" rows="3"></textarea>
-  <input type="text" name="_gotcha" style="display:none">
-  <input type="hidden" name="_next" value="./aboutme?message=Your message was sent successfully, thanks!" />
-  <button type="submit" class="btn btn-lg btn-primary">Submit</button>
-</form>
-<hr>
 
 <!--- Google--->
 <script>
