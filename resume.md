@@ -30,7 +30,7 @@ Since 2018 Jan, I have been a Computational biologist/Molecular breeding data sc
  
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
-### 2012–2017 PhD - Plant Breeding, Genetics & Genomics — University of Missouri Columbia, USA
+2012–2017 PhD - Plant Breeding, Genetics & Genomics — University of Missouri Columbia, USA
 - Dissertation <a href="https://mospace.umsystem.edu/xmlui/handle/10355/61937">Evaluation of Teosinte Genetic Diversity for Agronomic and Domestication Traits in Maize</a>
 - Received Dr. Marcus Zuber endowment fellowship
 - Presented research at Maize genetics conference, Plant Animal Genetics conference and The Tri-Societies meeting (ASA, CSSA, SSSA) International meetings
@@ -38,7 +38,7 @@ Since 2018 Jan, I have been a Computational biologist/Molecular breeding data sc
 - 2017 MU Life Sciences Week Research Recognition award (Monetary award $275)
 - Recipient of DPS and IPG travel awards
 
-### 2008–2012 BSc Agricultural Sciences — Truman State University, USA
+2008–2012 BSc Agricultural Sciences — Truman State University, USA
 - Received President’s Honorary Scholarship and Dr. Max E. Bell Scholarship
 - Presented research at student research conferences at Truman, Adair County extension center and annual Maize genetics conference
 </p>
