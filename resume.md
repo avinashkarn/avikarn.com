@@ -104,11 +104,12 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, <strong>Avinash Karn</stron
 *Maize Genetics Conference Abstracts*
 </p>
 
-<div id="contactme-section">
+<hr>
 
 
 <h1 id="contact">Let's Connect!</h1>  
 
+<br>
 <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="avikarn"><a class="LI-simple-link" href='https://www.linkedin.com/in/avikarn?trk=profile-badge'>Avi Karn, PhD</a></div>
 
  
@@ -135,21 +136,3 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, <strong>Avinash Karn</stron
 
 
 </div>
-
-<!--- Google--->
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-5126027065024936",
-          enable_page_level_ads: true
-     });
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359651-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-123359651-1');
-</script>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
