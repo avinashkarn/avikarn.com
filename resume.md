@@ -108,6 +108,34 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, <strong>Avinash Karn</stron
 *Maize Genetics Conference Abstracts*
 </p>
 
+<div id="contactme-section">
+
+
+<h1 id="contact">Let's Connect!</h1>  
+
+<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="avikarn"><a class="LI-simple-link" href='https://www.linkedin.com/in/avikarn?trk=profile-badge'>Avi Karn, PhD</a></div>
+
+ 
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+<p>Click <a href="mailto:akarn@mail.missouri.edu?subject=Hello from AviKarn.com"> here to email me</a> or find me on <a href="https://www.linkedin.com/in/avikarn/">LinkedIn</a> . <p> Or else, If you'd like to set up a meeting with me, <a href="https://calendly.com/avikarn">click here to schedule a meeting</a> based on your availability.</p>
+
+<form action="https://formspree.io/akarn@mail.missouri.edu" method="POST" class="form" id="contact-form">
+  <p>Or, Simply send me a quick message using the form below:</p>
+  <div class="row">
+    <div class="col-xs-6">
+      <input type="email" name="_replyto" class="form-control input-lg" placeholder="Email" title="Email">
+    </div>
+    <div class="col-xs-6">
+      <input type="text" name="name" class="form-control input-lg" placeholder="Name" title="Name">
+    </div>
+  </div>
+  <input type="hidden" name="_subject" value="New submission from AviKarn.com">
+  <textarea type="text" name="content" class="form-control input-lg" placeholder="Message" title="Message" required="required" rows="3"></textarea>
+  <input type="text" name="_gotcha" style="display:none">
+  <input type="hidden" name="_next" value="./aboutme?message=Your message was sent successfully, thanks!" />
+  <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+</form>
 
 
 </div>
