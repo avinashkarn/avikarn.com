@@ -133,6 +133,3 @@ Jonathan Fresnedo-Ramírez , Shanshan Yang , Qi Sun, <strong>Avinash Karn</stron
   <input type="hidden" name="_next" value="./aboutme?message=Your message was sent successfully, thanks!" />
   <button type="submit" class="btn btn-lg btn-primary">Submit</button>
 </form>
-
-
-</div>
