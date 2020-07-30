@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "RNA-Seq data analysis in R - Investigate differentially expressed genes in your data! "
+subtitle: RNA expression data analysis using Bio-conductor
+cover-img: /image/rna/Capture14.PNG
 tags: [RNA-Seq, Differential Expression, DESeq, Data analysis]
 image: /image/rna/Capture14.PNG
 share-img: /image/rna/Capture14.PNG
