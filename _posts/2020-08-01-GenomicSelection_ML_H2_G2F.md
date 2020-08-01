@@ -754,7 +754,7 @@ In the above plot, we see that glmnet model pollen predicting the phenotype cons
 
 The `RMSE` and `R-Sq` between the predicted and measured values are below:
 
-```{r }
+```{r}
 error_glm_pollen <- prediction_glmnet_pollen - test_set$PollenDAP_BLUPs
 rmse_glm_pollen <- sqrt(mean(error_glm_pollen^2))
 
@@ -780,7 +780,7 @@ This alogrithm is often acurrate than other algorithms, easier to tune, require 
 
 Markers in the column from 2:1942 were used as predictors (`x`) and the `phenotype` column as the `y` variable. Similarly, the performance of the model was evaluated using root mean square error (`RMSE`) (One can choose other method such as `ROC`, `AUC` etc as well), and finally choosing random forest `rf` as the method in the model.
 
-```{r }
+```{r}
 # Create tunegrid for mtry to tune the model. 
 tunegrid <- data.frame(.mtry=c(2,4,6, 10, 15, 20, 100))
 
@@ -836,7 +836,6 @@ pollen_rf_bind <- cbind(df_pollen_mes_rf, df_pollen_pred_rf)
 ggplot(pollen_rf_bind, aes(x=test_set.PollenDAP_BLUPs, y=prediction_pollen_rf)) +
   geom_point(color="red") + ggtitle("Test set - Random Forest - Pollen DAP") +
   geom_smooth(method="lm", se=TRUE, fullrange=FALSE, level=0.95)
-
 
 ```
 
@@ -916,7 +915,7 @@ myControl <- trainControl(
 
 fitting the model for grain yield using the glmnet model
 
-```{r }
+```{r}
 
 glmnetFit_yield = train(x = train_set[7:28601], 
             y = train_set$yield_BLUPs, 
@@ -937,7 +936,7 @@ print(glmnetFit_yield)
 
 ### Comparing models: Ridge vs LASSO
 
-```{r }
+```{r}
 plot(glmnetFit_yield, main = "GlmnetFit Grain Yield")
 
 ```
@@ -1014,7 +1013,7 @@ cat("R-squared of Glmnet model for Grain yield is", Rsq_grain_glmnet)
 ## Random forest model
 
 
-```{r }
+```{r}
 # Create tunegrid for mtry to tune the model. 
 tunegrid <- data.frame(.mtry=c(2,4,6, 10, 15, 20, 100))
 
