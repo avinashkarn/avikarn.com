@@ -1163,9 +1163,9 @@ From above table, we can tell that the random forest model appears to be slighlt
 
 | Trait | Model | Set | RMSE| R-Squared |
 |-------|-------|-----|-----|-----------|
-|Pollen DAP | Glmnet| Training set | 2.005194 | 0.54 |
+|Pollen DAP | Glmnet| Training set | 2.01 | 0.54 |
 | | | Test set | 2.285449 | 0.39 |
-| |Random forest | Training set |  2.047774 | 0.50|
+| |Random forest | Training set |  2.04 | 0.50|
 | | | Test set | 2.37 | 0.40|
 |Grain yield | Glmnet | Training set| 10.3 | 0.25 |
 | | | Test set | 10.75 | 0.16 |
