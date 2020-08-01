@@ -53,6 +53,7 @@ View(pheno_2016)
 glimpse(pheno_2017)
 #View(pheno_2017)
 ```
+<center><img src="/image/g2f_GS/Capture1.JPG"></center>
 
 Select five traits from the imported .csv data set from 2016 and 2017, and merging both data sets.
 
@@ -79,6 +80,7 @@ tail(merged_pheno)
 
 #View(merged_pheno)
 ```
+<center><img src="/image/g2f_GS/Capture2.JPG"></center>
 
 
 ## Summary statistics table of the selected phenotpe data across years and locations
@@ -107,6 +109,9 @@ df_mergePheno.summary.tidy <- df_mergePheno.summary %>% gather(stat, val) %>%
 print(df_mergePheno.summary.tidy)
 ```
 
+<center><img src="/image/g2f_GS/Capture3.JPG"></center>
+
+
 From the above table, `Plant height` and `grain yield` has the highest variance, while `flowering time data` has the lowest variance.
 
 ## Data visualization 
@@ -133,6 +138,10 @@ geom_boxplot(alpha=0.6)  + facet_wrap(~Field.Location) +
 
 ```
 
+<center><img src="/image/g2f_GS/Capture4.JPG"></center>
+<center><img src="/image/g2f_GS/Capture5.JPG"></center>
+
+
 From the above plot, both flowering time data are consistent among two years and across years, however, with a couple of exceptions such as data from ONH2 (Canada), which appears to early flowering in 2017 and late in 2016, possibly due to difference in the weather conditions. Similarly, there are locations were no data were collected and or with only single year data.
 
 
@@ -154,6 +163,10 @@ geom_boxplot(alpha=0.6)  + facet_wrap(~Field.Location) +
 
 ```
 
+<center><img src="/image/g2f_GS/Capture6.JPG"></center>
+<center><img src="/image/g2f_GS/Capture7.JPG"></center>
+
+
 Both plant and ear height data across years and location are considerably consisent, with few outliers in the data set.
 
 ### Grain Yield
@@ -166,6 +179,7 @@ geom_boxplot(alpha=0.6)  + facet_wrap(~Field.Location) +
   ggtitle("Grain Yield (bu/Acre)")
 
 ```
+<center><img src="/image/g2f_GS/Capture8.JPG"></center>
 
 The grain yield that appears to fairly consistent between two years however, this data set has a high number of outliers in comparison to other traits.
 
@@ -214,6 +228,8 @@ H2_pollen = 10.47035 /(10.47035 + 0.05196/34 + 0.13156/2 + 20.16058/36)
 
 cat("Heritabilty of Pollen DAP days is", H2_pollen, "\n")
 ```
+
+<center><img src="/image/g2f_GS/Capture9.JPG"></center>
 
 
 ### Silk DAP data
@@ -401,6 +417,7 @@ par(mfrow=c(1,1))
 
 ```
 
+<center><img src="/image/g2f_GS/Capture10.JPG"></center>
 
 
 # Genotypic data 
@@ -421,6 +438,8 @@ library(ggplot2);library(reshape2)
 rawdata<- melt(df_rawMF)
 ggplot(rawdata, aes(x=value, fill=variable)) + geom_histogram(bins = 100) + ggtitle("Raw genotype allele freq.")
 ```
+
+<center><img src="/image/g2f_GS/Capture11.JPG"></center>
 
 Minor allele frequency in the raw data is extremely high (<5e+05), indicating presence of rare variants in disproportionate number, and therefore needs to be filtered prior to any downstream analysis to avoid any bias in the result.
 
@@ -508,6 +527,8 @@ data<- melt(x)
 ggplot(data,aes(x=value, fill=variable)) + geom_histogram(alpha=0.5, bins = 100) + ggtitle("Thinned genotype allele freq.")
 ```
 
+<center><img src="/image/g2f_GS/Capture12.JPG"></center>
+
 MAF post-filtering and thinning has removed most of the rare variants in the data set.
 
 ## Plot Multidimenisonal Scaling (MDS) to explore genetic structure of the genotypes 
@@ -522,6 +543,7 @@ ggplot(mds, aes(x=PC1, y=PC2, color = PC1))+
   ggtitle("MDS plot")
 ```
 
+<center><img src="/image/g2f_GS/Capture13.JPG"></center>
 
 
 ## Converting thinned genotype data into numerical format and imputing for Machine Learning
@@ -625,6 +647,8 @@ hist(test_set$yield_BLUPs, main = "Test set - Grain Yield", xlab = "Grain Yield 
 par(mfrow=c(1,1))
 ```
 
+<center><img src="/image/g2f_GS/Capture15.JPG"></center>
+
 As needed, the distribution of training and testing set is about the same, which is import to prevent any bias in the result.
 
 # Pollen DAP BLUPs
@@ -669,6 +693,8 @@ print(glmnetFit_pollen)
 
 ```
 
+<center><img src="/image/g2f_GS/Capture16.JPG"></center>
+
 From the above output of the model, we see that alpha = 0, indicating ridge regression was performed in the final model.
 
 
@@ -679,17 +705,23 @@ plot(glmnetFit_pollen, main = "GlmnetFit Pollen DAP")
 
 ```
 
+<center><img src="/image/g2f_GS/Capture17.JPG"></center>
+
 
 ### Full regularization path
 ```{r}
 plot(glmnetFit_pollen$finalModel)
 ```
 
+<center><img src="/image/g2f_GS/Capture18.JPG"></center>
+
 ### Plot top 20 important variables for Pollen DAP
 ```{r}
 plot(varImp(glmnetFit_pollen), top = 20)
 
 ```
+
+<center><img src="/image/g2f_GS/Capture19.JPG"></center>
 
 Marker `S7_161300485` on chromosome 7 was calculated to be the most important variable by glmnet model for Pollen DAP, which coinsides with one of the major QTL for flowering time in NAM population, that is responsible to vegtative growth and transition from vegitative to reproductive stage. 
 
@@ -717,6 +749,8 @@ ggplot(pollen_glmnet_bind, aes(x=test_set.PollenDAP_BLUPs, y=prediction_glmnet_p
 
 
 ```
+
+<center><img src="/image/g2f_GS/Capture20.JPG"></center>
 
 In the above plot, we see that glmnet model pollen predicting the phenotype considerably well. 
 
@@ -763,6 +797,7 @@ randomForestFit_pollen = train(x = train_set[7:28601],
 randomForestFit_pollen
 ```
 
+<center><img src="/image/g2f_GS/Capture21.JPG"></center>
 
 
 Plotting the `randomForestFit` for Pollen BLUPs model. 
@@ -771,6 +806,8 @@ Plotting the `randomForestFit` for Pollen BLUPs model.
 plot(randomForestFit_pollen, main = "Pollen DAP - Random Forest")
 ```
 
+<center><img src="/image/g2f_GS/Capture22.JPG"></center>
+
 The best mtry with lowest RMSE for this model was 6. 
 
 Next, plotting the important predictors based on their calculated importance scores using `varImp` function.
@@ -778,6 +815,8 @@ Next, plotting the important predictors based on their calculated importance sco
 ```{r}
 plot(varImp(randomForestFit_pollen), top = 20)
 ```
+
+<center><img src="/image/g2f_GS/Capture23.JPG"></center>
 
 After building the supevised random forest learning model, The top 20 predictors can be ranked by their importance, and from the above plot, we tell that the marker S2_53055530, along with other 6 markers contributing in expalining the variance of the phenotype.
 
@@ -802,6 +841,9 @@ ggplot(pollen_rf_bind, aes(x=test_set.PollenDAP_BLUPs, y=prediction_pollen_rf)) 
 
 
 ```
+
+<center><img src="/image/g2f_GS/Capture24.JPG"></center>
+
 
 And we can also calculate the `RMSE` between the predicted and measured values.
 
@@ -839,6 +881,8 @@ resamples_pollen
 summary(resamples_pollen)
 ```
 
+<center><img src="/image/g2f_GS/Capture25.JPG"></center>
+
 
 ## plot both GS models by RMSE
 
@@ -849,6 +893,9 @@ bwplot(resamples_pollen, metric = "RMSE")
 dotplot(resamples_pollen, metric = "RMSE")
 par(mfrow=c(1,1))
 ```
+
+<center><img src="/image/g2f_GS/Capture26.JPG"></center>
+<center><img src="/image/g2f_GS/Capture27.JPG"></center>
 
 From above table, we can tell that the glmnet model appears to be better model for GS selection of pollen DAP data.
 
@@ -887,6 +934,8 @@ print(glmnetFit_yield)
 
 ```
 
+<center><img src="/image/g2f_GS/Capture28.JPG"></center>
+
 
 ### Comparing models: Ridge vs LASSO
 
@@ -895,18 +944,23 @@ plot(glmnetFit_yield, main = "GlmnetFit Grain Yield")
 
 ```
 
+<center><img src="/image/g2f_GS/Capture29.JPG"></center>
+
 From the above comparison model, we can tell that the alpha and lamda of 1 has lowest RMSE.
 
 ### Full regularization path
 ```{r}
 plot(glmnetFit_yield$finalModel)
 ```
+<center><img src="/image/g2f_GS/Capture30.JPG"></center>
 
-
+### Top predictors
 ```{r}
 plot(varImp(glmnetFit_yield), top = 20)
 
 ```
+
+<center><img src="/image/g2f_GS/Capture31.JPG"></center>
 
 Markers `S3_210537524` was calculated as the most important variable by glmnet model.
 
@@ -930,6 +984,8 @@ ggplot(yield_glmnet_bind, aes(x=test_set.yield_BLUPs, y=prediction_glmnet_yield)
   geom_smooth(method="lm", se=TRUE, fullrange=FALSE, level=0.95)
 
 ```
+
+<center><img src="/image/g2f_GS/Capture32.JPG"></center>
 
 From the above plot, we see poor correlation between the predicted and observed values for grain yield data set.
 
@@ -975,6 +1031,7 @@ randomForestFit_yield = train(x = train_set[7:28601],
 randomForestFit_yield
 ```
 
+<center><img src="/image/g2f_GS/Capture33.JPG"></center>
 
 
 Plotting the `randomForetFit` model. 
@@ -983,6 +1040,8 @@ Plotting the `randomForetFit` model.
 plot(randomForestFit_yield, main = "Grain yield - Random Forest")
 ```
 
+<center><img src="/image/g2f_GS/Capture34.JPG"></center>
+
 The best mtry with lowest RMSE for this model was 2. 
 
 Next, we can plot the important predictors based on their calculated importance scores using `varImp` function.
@@ -990,6 +1049,8 @@ Next, we can plot the important predictors based on their calculated importance 
 ```{r}
 plot(varImp(randomForestFit_yield), top = 20)
 ```
+
+<center><img src="/image/g2f_GS/Capture35.JPG"></center>
 
 From the above plot, we tell that the `S6_153099472` was the most important variable, whch is different from the glmnet model for grain yield.
 
@@ -1013,6 +1074,9 @@ ggplot(yield_rf_bind, aes(x=test_set.yield_BLUPs, y=prediction_yield_rf)) +
   geom_smooth(method="lm", se=TRUE, fullrange=FALSE, level=0.95)
 
 ```
+
+<center><img src="/image/g2f_GS/Capture36.JPG"></center>
+
 
 Similar to glmnet model, random forest fail to predict the grain yield.
 
@@ -1053,6 +1117,8 @@ resamples_yield
 summary(resamples_yield)
 ```
 
+<center><img src="/image/g2f_GS/Capture37.JPG"></center>
+
 ## plot both GS models by RMSE
 
 Similarly, we can visually inspect the models accuracies.
@@ -1062,6 +1128,10 @@ bwplot(resamples_yield, metric = "RMSE")
 dotplot(resamples_yield, metric = "RMSE")
 par(mfrow=c(1,1))
 ```
+
+<center><img src="/image/g2f_GS/Capture38.JPG"></center>
+<center><img src="/image/g2f_GS/Capture39.JPG"></center>
+
 
 From above table, we can tell that the random forest model appears to be slighlty better model incoparison to glmnet for grain yield.
 
