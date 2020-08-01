@@ -17,7 +17,7 @@ From the data set, five important agronomic traits were selected: `Days to Anthe
 # Phenotypic data assessment 
 
 ## Download G2F phenotypic data from year 2016 and 2017
-```{r, eval=FALSE}
+```{r}
 #install.packages("RCurl")
 library(RCurl)
 
@@ -82,7 +82,7 @@ tail(merged_pheno)
 
 
 ## Summary statistics table of the selected phenotpe data across years and locations
-```{r, message=FALSE}
+```{r}
 
 library(dplyr)
 library(tidyr)
@@ -210,7 +210,7 @@ GRAIN_YLD = as.numeric(Grain.Yield..bu.A.)
 
 ### Pollen DAP data
 
-```{r, message=FALSE}
+```{r}
 library(lme4)
 
 ## Model variance component analysis
@@ -714,6 +714,7 @@ plot(glmnetFit_pollen$finalModel)
 <center><img src="/image/g2f_GS/Capture18.JPG"></center>
 
 ### Plot top 20 important variables for Pollen DAP
+
 ```{r}
 plot(varImp(glmnetFit_pollen), top = 20)
 
