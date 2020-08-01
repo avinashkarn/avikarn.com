@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Evaluating performance of Machine Learning algiorithms for Genomic Selection of quantitative traits with varying heritability"
+title: "Machine Learning algiorithms for Genomic Selection of Quantitative Traits with varying Heritabilities"
 tags: [Genomic Selection, Machine Learning, Random Forest, GLMnet, Heritability, Quantitative Trait]
 image: /image/g2f_GS/Capture20.JPG
 share-img: /image/g2f_GS/Capture20.JPG
