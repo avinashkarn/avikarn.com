@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Machine Learning algiorithms for Genomic Selection of Quantitative Traits with varying Heritabilities"
+title: "Machine Learning algorithms for Genomic Selection of Quantitative Traits with varying Heritabilities"
 tags: [Genomic Selection, Machine Learning, Random Forest, GLMnet, Heritability, Quantitative Trait]
 image: /image/g2f_GS/Capture20.JPG
 share-img: /image/g2f_GS/Capture20.JPG
 ---
 
-Two `Quantitative traits` were evaluated with varying heritabilties to study how the inheritance of a trait affect the genomic prediction and selection accuracy. `Random Forest` and `GLMnet: Lasso and Elastic-Net Regularized Generalized Linear Models` were deployed as `Genomic selection` algorithms using the publicly available dataset from the <a href="https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-020-4922-8"> Maize genomes to fields (G2F) </a> initiative. In the analysis, data from <a href="https://www.genomes2fields.org/resources/"> 40 maize hybrid experiments across 34 unique locations in 19 states in the U.S. and one Canadian province from years 2016 and 2017 experiments </a> were evaluated. 
+Multiple `Quantitative traits` were evaluated with varying heritabilties to study how the inheritance of a trait affect the performance of genomic selection and prediction models. Machine learning algorithms `Random Forest` and `GLMnet: Lasso and Elastic-Net Regularized Generalized Linear Models` were deployed to develop `Genomic selection` models using the publicly available dataset from the <a href="https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-020-4922-8"> Maize genomes to fields (G2F) </a> initiative. In the analysis, data from <a href="https://www.genomes2fields.org/resources/"> 40 maize hybrid experiments across 34 unique locations in 19 states in the U.S. and one Canadian province from years 2016 and 2017 experiments </a> were evaluated. 
 
 From the data set, five important agronomic traits were selected: `Days to Anthesis`, `Days to Silking`, `Plant height`, `Ear height` and `Grain yield`, and exploratory data analysis of each trait by each year and across locations were explored as well as their `heritability` and `BLUPs` were calculated. Further, `genotype-by-sequencing (GBS)` for each hybrid in the dataset were filtered, thinned and imputed in `command line TASSEL v5`, prior to using them as predictors of the two quantitative traits. The two data sets: phenotype and genotype data were intersected by taxa and partioned into training and testing sets, and finally, training GS models were cross-validated on testing data set and  evaluated by comparing the `RMSE` and `R-Squared`. 
 
