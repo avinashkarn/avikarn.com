@@ -14,7 +14,7 @@ From the data set, five important agronomic traits were selected: `Days to Anthe
 
 
 
-# Phenotypic data assessment 
+# 1.0 Phenotypic data assessment 
 
 ## Download G2F phenotypic data from year 2016 and 2017
 ```{r}
@@ -418,7 +418,7 @@ par(mfrow=c(1,1))
 <center><img src="/image/g2f_GS/Capture10.JPG"></center>
 
 
-# Genotypic data 
+# 2.0 Genotypic data 
 
 The imputed genotpe data was downloaded from `G2F_Planting_Season_2017_v1`, with filename: `g2f_2017_ZeaGBSv27_Imputed_AGPv4.h5` and analyzed on Cornell University BioHPC Cluster in Linux OS using command line version of `TASSEL v5`. 
 
@@ -589,7 +589,7 @@ dim(intrsct_phenoGeno)
 ```
 
 
-# Genomic selection algorithms
+# 3.0 Genomic selection algorithms
 
 In the GS analysis, BLUPs only two traits -- Pollen DAP (high H2) and Grain yield (low H2) were evaluated, to evaluated the performance of GS alogrithms (Random Forest and Glmnet) on traits with significantly different heritability. 
 
@@ -1134,7 +1134,7 @@ par(mfrow=c(1,1))
 From above table, we can tell that the random forest model appears to be slighlty better model incoparison to glmnet for grain yield.
 
 
-# Summary of genomic selection algorithms on selected traits
+# 4.0 Summary of genomic selection algorithms on selected traits
 
 | Trait | Model | Set | RMSE| R-Squared |
 |-------|-------|-----|-----|-----------|
