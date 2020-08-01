@@ -3,7 +3,7 @@ layout: post
 title: "Evaluating performance of Machine Learning algiorithms for Genomic Selection of quantitative traits with varying heritability"
 tags: [Genomic Selection, Machine Learning, Random Forest, GLMnet, Heritability, Quantitative Trait]
 image: /image/g2f_GS/Capture8.JPG
-share-img: /image/g2f_GS/Capture8.JPG
+share-img: /image/g2f_GS/main.png
 ---
 
 Two `Quantitative traits` were evaluated with varying heritabilty were analyze to study how the iheritance of a trait affect the genomic prediction and selection efficiency. `Random Forest` and `GLMnet: Lasso and Elastic-Net Regularized Generalized Linear Models` were deployed as `Genomic selection` algorithms using the publicly available dataset from the `Genomes To Fields` (G2F) initiative. In the analysis, data from 40 maize hybrid experiments across 34 unique locations in 19 states in the U.S. and one Canadian province from years 2016 and 2017 experiments were evaluated. 
