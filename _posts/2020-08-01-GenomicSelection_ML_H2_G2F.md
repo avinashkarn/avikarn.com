@@ -1,15 +1,9 @@
 ---
-title: "Evaluating performance of Machine Learning Algiorithms for Genomic Selection of Quantitative Traits with varying Heritability"
-author: "Avi Karn"
-date: "July 20, 2020"
-output:
-  pdf_document:
-    toc: yes
-    toc_depth: 4
-  html_document:
-    highlight: tango
-    number_sections: yes
-    theme: united
+layout: post
+title: "Evaluating performance of Machine Learning algiorithms for Genomic Selection of quantitative traits with varying heritability"
+tags: [Genomic Selection, Machine Learning, Random Forest, GLMnet, Heritability, Quantitative Trait]
+image: /image/rna/Capture14.PNG
+share-img: /image/rna/Capture14.PNG
 ---
 
 # Background
