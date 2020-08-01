@@ -190,6 +190,17 @@ plot(log(normlzd_dds[,1])+1, log(normlzd_dds[,2])+1, cex =.1)
 
 <center><img src="/image/rna/Capture8.PNG"></center>
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside_web_post -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5126027065024936"
+     data-ad-slot="2632452569"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Step 3.1 Variance Stablizing transformation 
 
@@ -280,6 +291,19 @@ ggplot(df) +
 Its crucial to identify the major sources of variation in the data set, and one can control for them in the DESeq statistical model using the `design` formula, which tells the software sources of variation to control as well as the factor of interest to test in the differential expression analysis. 
 
 In this data, we have identified that the covariate `protocol` is the major sources of variation, however, we want to know contr=oling the covariate `Time`, what genes diffe according to the protocol, therefore, we incorporate this information in the `design` parameter.
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside_web_post -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5126027065024936"
+     data-ad-slot="2632452569"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Step 4.2 Run DESeq2 pipeline
 
@@ -376,6 +400,17 @@ head(rownames(dds))
 
 ```
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside_web_post -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5126027065024936"
+     data-ad-slot="2632452569"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 
 ## The first 20 genes according to the lowest p-value
@@ -424,6 +459,19 @@ pheatmap(res_sig,
 <center><img src="/image/rna/Capture18.PNG"></center>
 
 From the above plot, we can see the both types of samples tend to cluster into their corresponding protocol type, and have variation in the gene expression profile. 
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside_web_post -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5126027065024936"
+     data-ad-slot="2632452569"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Expression plot of the top 20 genes
 
