@@ -6,7 +6,7 @@ image: /image/g2f_GS/Capture20.JPG
 share-img: /image/g2f_GS/Capture20.JPG
 ---
 
-Two `Quantitative traits` were evaluated with varying heritabilty were analyze to study how the iheritance of a trait affect the genomic prediction and selection efficiency. `Random Forest` and `GLMnet: Lasso and Elastic-Net Regularized Generalized Linear Models` were deployed as `Genomic selection` algorithms using the publicly available dataset from the `Genomes To Fields` (G2F) initiative. In the analysis, data from 40 maize hybrid experiments across 34 unique locations in 19 states in the U.S. and one Canadian province from years 2016 and 2017 experiments were evaluated. 
+Two `Quantitative traits` were evaluated with varying heritabilty were analyze to study how the iheritance of a trait affect the genomic prediction and selection efficiency. `Random Forest` and `GLMnet: Lasso and Elastic-Net Regularized Generalized Linear Models` were deployed as `Genomic selection` algorithms using the publicly available dataset from the <a href="https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-020-4922-8"> Maize genomes to fields (G2F) </a> initiative. In the analysis, data from <a href="https://www.genomes2fields.org/resources/"> 40 maize hybrid experiments across 34 unique locations in 19 states in the U.S. and one Canadian province from years 2016 and 2017 experiments </a> were evaluated. 
 
 From the data set, five important agronomic traits were selected: `Days to Anthesis`, `Days to Silking`, `Plant height`, `Ear height` and `Grain yield`, and exploratory data analysis of each trait by each year and across locations were explored as well as their heritability and BLUPs were calculated. Further, `genotype-by-sequencing (GBS)` for each hybrid in the data set were filtered, thinned and imputed in `command line TASSEL v5`, and finally using them as predictors of the two traits. The phenotype and genotype data were intersected and partioned into training and testing sets, and finally, training models were cross-validated and the `RMSE` and `R-Squared` were compared to evaluate the performance of the GS model. 
 
@@ -180,6 +180,18 @@ geom_boxplot(alpha=0.6)  + facet_wrap(~Field.Location) +
 <center><img src="/image/g2f_GS/Capture8.JPG"></center>
 
 The grain yield that appears to fairly consistent between two years however, this data set has a high number of outliers in comparison to other traits.
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside_web_post -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5126027065024936"
+     data-ad-slot="2632452569"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Heritability 
 
@@ -416,6 +428,19 @@ par(mfrow=c(1,1))
 ```
 
 <center><img src="/image/g2f_GS/Capture10.JPG"></center>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- inside_web_post -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5126027065024936"
+     data-ad-slot="2632452569"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 
 # 2.0 Genotypic data 
@@ -1150,8 +1175,7 @@ From above table, we can tell that the random forest model appears to be slighlt
 
 In summary, Pollen DAP trait had a high heritability, and both GS models had a relatively statisfactory prediction accuracy in both training and test data sets. In contrast, grain yield had moderate heriatblity indicating significant influence of genetic and environmental componets on this trait, and both GS models built with only genomic markers failed, which tells us that heritability of a trait is an important characteristics as so are the environmental components. Therefore, its strongly advised to calculate the heritability of trait of interest prior to building any GS model, so that one has idea of what to expect from the GS model performance. 
 
+# References
 
+McFarland, B.A., AlKhalifah, N., Bohn, M., Bubert, J., Buckler, E.S., Ciampitti, I., Edwards, J., Ertl, D., Gage, J.L., Falcon, C.M. and Flint-Garcia, S., 2020. <a href="https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-020-4922-8"> Maize genomes to fields (G2F) </a>: 2014–2017 field seasons: genotype, phenotype, climatic, soil, and inbred ear image datasets. BMC Research Notes, 13(1), pp.1-6.
 
-```{r}
-sessionInfo()
-```
