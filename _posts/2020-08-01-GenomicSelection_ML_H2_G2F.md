@@ -10,25 +10,11 @@ Multiple `Quantitative traits` were evaluated with varying heritabilties to stud
 
 From the data set, five important agronomic traits were selected: `Days to Anthesis`, `Days to Silking`, `Plant height`, `Ear height` and `Grain yield`, and exploratory data analysis of each trait by each year and across locations were explored as well as their `heritability` and `BLUPs` were calculated. Further, `genotype-by-sequencing (GBS)` for each hybrid in the dataset were filtered, thinned and imputed in `command line TASSEL v5`, prior to using them as predictors of the two quantitative traits. The two data sets: phenotype and genotype data were intersected by taxa and partioned into training and testing sets, and finally, training GS models were cross-validated on testing data set and  evaluated by comparing the `RMSE` and `R-Squared`. 
 
-<div id="toc_container">
-<p class="toc_title">Contents</p>
-<ul class="toc_list">
-  <li><a href="#1.0 Phenotypic data assessment">1.0 Phenotypic data assessment</a>
-  <li><a href="#2.0 Genotypic data">2.0 Genotypic data</a></li>
-  <li><a href="#3.0_Genomic_selection_algorithms">3.0 Genomic selection algorithms</a></li>
-  <li><a href="#4.0_Summary_of_genomic_selection_algorithms_on_selected_traits"> 4.0 Summary of genomic selection algorithms on selected traits</a></li>
-</ul>
-</div>
 
-- [1.0 Phenotypic data assessment](#1.0%20Phenotypic%20data%20assessment)
-  * [Sub-heading](#sub-heading)
-    + [Sub-sub-heading](#sub-sub-heading)
-- [Heading](#heading-1)
-  * [Sub-heading](#sub-heading-1)
-    + [Sub-sub-heading](#sub-sub-heading-1)
-- [Heading](#heading-2)
-  * [Sub-heading](#sub-heading-2)
-    + [Sub-sub-heading](#sub-sub-heading-2)
+- [1.0 Phenotypic data assessment](#1.0-Phenotypic-data-assessment)
+- [2.0 Genotypic data](#1.0-Phenotypic-data-assessment)
+- [3.0_Genomic_selection_algorithms](#1.0-Phenotypic-data-assessment)
+- [4.0 Summary of genomic selection algorithms on selected traits](#1.0-Phenotypic-data-assessment)
 
 
 
