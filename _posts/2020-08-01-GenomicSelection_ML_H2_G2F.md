@@ -10,6 +10,7 @@ Multiple `Quantitative traits` were evaluated with varying heritabilties to stud
 
 From the data set, five important agronomic traits were selected: `Days to Anthesis`, `Days to Silking`, `Plant height`, `Ear height` and `Grain yield`, and exploratory data analysis of each trait by each year and across locations were explored as well as their `heritability` and `BLUPs` were calculated. Further, `genotype-by-sequencing (GBS)` for each hybrid in the dataset were filtered, thinned and imputed in `command line TASSEL v5`, prior to using them as predictors of the two quantitative traits. The two data sets: phenotype and genotype data were intersected by taxa and partioned into training and testing sets, and finally, training GS models were cross-validated on testing data set and  evaluated by comparing the `RMSE` and `R-Squared`. 
 
+<h1> Table of contents </h1>
 - [1.0 Phenotypic data assessment ](#10-phenotypic-data-assessment-)
   - [Summary statistics table of the selected phenotpe data across years and locations](#summary-statistics-table-of-the-selected-phenotpe-data-across-years-and-locations)
   - [Data visualization ](#data-visualization)
