@@ -11,9 +11,20 @@ Multiple `Quantitative traits` were evaluated with varying heritabilties to stud
 From the data set, five important agronomic traits were selected: `Days to Anthesis`, `Days to Silking`, `Plant height`, `Ear height` and `Grain yield`, and exploratory data analysis of each trait by each year and across locations were explored as well as their `heritability` and `BLUPs` were calculated. Further, `genotype-by-sequencing (GBS)` for each hybrid in the dataset were filtered, thinned and imputed in `command line TASSEL v5`, prior to using them as predictors of the two quantitative traits. The two data sets: phenotype and genotype data were intersected by taxa and partioned into training and testing sets, and finally, training GS models were cross-validated on testing data set and  evaluated by comparing the `RMSE` and `R-Squared`. 
 
 
+## Table of Contents
 - [1.0 Phenotypic data assessment](#10-phenotypic-data-assessment)
+  -[Data visualization](#data-visualization)
+  -[Heritability](#heritability)
+  -[Summary of H2 for each trait](#summary-table-of-the-heritablity-of-each-trait)
+  -[BLUPs](#estimating-best-linear-unbiased-predictors-blup-for-each-line-by-trait)
 - [2.0 Genotypic data](#20-genotypic-data)
+  -[Minor and Major Allele Freq](#plot-minor-and-major-allele-frequency-raw-marker-data)
+  -[Marker Summary post filtering and thinning](#summary-of-the-markers-after-thinning-them)
+  -[Multidimesnional Scaling](#plot-multidimenisonal-scaling-mds-to-explore-genetic-structure-of-the-genotypes)
 - [3.0 Genomic selection algorithms](#30-genomic-selection-algorithms)
+  -[Randomizing Data for Training and Test Set](#randomizing-and-partitioning-the-dataset-to-build-training-and-testing-sets)
+  -[GS models for Pollen DAP](#pollen-dap-blups)
+  -[GS models for Grain Yield](#grain-yield-blups)
 - [4.0 Summary of genomic selection algorithms on selected traits](#40-summary-of-genomic-selection-algorithms-on-selected-traits)
 
 
@@ -490,7 +501,7 @@ $ ./tassel-5-standalone/run_pipeline.pl -Xmx20g -importGuess genotype_imputed_20
 
 ```
 
-## Summary of the genotypic data after filteration of markers and taxa
+Summary of the 2017 genotypic data after filteration of markers and taxa
 
 |Stat Type |	Value|
 |----------|-------|
@@ -520,7 +531,7 @@ Even after stringent filtering, there are about 10% missing data in filtered dat
 $ ./tassel-5-standalone/run_pipeline.pl -log log_thinMarkers.txt -Xmx20g -importGuess genotype_imputed_2017_filteredMAF01min1000.vcf -ThinSitesByPositionPlugin -o thinned10k_geno_2017.vcf -minDist 10000 -endPlugin
 ```
 
-## Summary of the markers after thinning them: 
+Summary of the markers after thinning them: 
 
 |Stat Type	| Value|
 |-----------|------|
