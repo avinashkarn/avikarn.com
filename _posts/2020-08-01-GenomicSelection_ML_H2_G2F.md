@@ -20,7 +20,7 @@ From the data set, five important agronomic traits were selected: `Days to Anthe
 - [2.0 Genotypic data](#20-genotypic-data)
   * [Minor and Major Allele Freq](#plot-minor-and-major-allele-frequency-raw-marker-data)
   * [Marker Summary post filtering and thinning](#summary-of-the-markers-after-thinning-them)
-  * [Multidimesnional Scaling](#plot-multidimenisonal-scaling-mds-to-explore-genetic-structure-of-the-genotypes)
+  * [Multidimensional Scaling](#plot-multidimenisonal-scaling-mds-to-explore-genetic-structure-of-the-genotypes)
 - [3.0 Genomic selection algorithms](#30-genomic-selection-algorithms)
   * [Randomizing Data for Training and Test Set](#randomizing-and-partitioning-the-dataset-to-build-training-and-testing-sets)
   * [GS models for Pollen DAP](#pollen-dap-blups)
@@ -1177,7 +1177,7 @@ From above table, we can tell that the random forest model appears to be slighlt
 
 # 4.0 Summary of genomic selection algorithms on selected traits
 
-| Trait | Model | Set | RMSE| R-Squared |
+| Trait | Model | Set | RMSE| R-Sq |
 |-------|-------|-----|-----|-----------|
 |Pollen DAP | Glmnet| Training set | 2.01 | 0.54 |
 | | | Test set | 2.28 | 0.39 |
