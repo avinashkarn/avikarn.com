@@ -12,10 +12,10 @@ From the data set, five important agronomic traits were selected: `Days to Anthe
 
 - [1.0 Phenotypic data assessment ](#10-phenotypic-data-assessment-)
   - [Summary statistics table of the selected phenotpe data across years and locations](#summary-statistics-table-of-the-selected-phenotpe-data-across-years-and-locations)
-  - [Data visualization ](#data-visualization-)
-  - [Heritability ](#heritability-)
+  - [Data visualization ](#data-visualization)
+  - [Heritability ](#heritability)
   - [Model variance component analysis](#model-variance-component-analysis)
-  - [estimate BLUPS](#estimate-blups)
+  - [estimate BLUPS](#Estimating-Best-Linear-UnBiased-Predictors-(BLUP)-for-each-Line-by-trait)
     - [Histograms of the BLUPs for each trait](#histograms-of-the-blups-for-each-trait)
 - [2.0 Genotypic data ](#20-genotypic-data-)
   - [Plot Minor and Major Allele Frequency raw marker data:](#plot-minor-and-major-allele-frequency-raw-marker-data)
