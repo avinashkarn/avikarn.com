@@ -10,6 +10,7 @@ __Building genetic maps__ can be challenging and sometimes quite stressful, espe
 <a href="https://sourceforge.net/projects/lep-map3/"> Lep-MAP3 </a>, and finally, evaluating the accuarcy of the genetic map and plotting it.
 
 <h1> Table of contents</h1>
+
 - [QC analysis](#-quality-control-analysis-)
 - [Install LepMap3](#-installing-lep-map3-)
 - [Running LepMap modules](#-running-lep-map3-)
