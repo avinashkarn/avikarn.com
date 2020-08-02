@@ -10,42 +10,21 @@ Multiple `Quantitative traits` were evaluated with varying heritabilties to stud
 
 From the data set, five important agronomic traits were selected: `Days to Anthesis`, `Days to Silking`, `Plant height`, `Ear height` and `Grain yield`, and exploratory data analysis of each trait by each year and across locations were explored as well as their `heritability` and `BLUPs` were calculated. Further, `genotype-by-sequencing (GBS)` for each hybrid in the dataset were filtered, thinned and imputed in `command line TASSEL v5`, prior to using them as predictors of the two quantitative traits. The two data sets: phenotype and genotype data were intersected by taxa and partioned into training and testing sets, and finally, training GS models were cross-validated on testing data set and  evaluated by comparing the `RMSE` and `R-Squared`. 
 
-<h1> Table of contents </h1>
-- [1.0 Phenotypic data assessment ](#10-phenotypic-data-assessment-)
-  - [Summary statistics table of the selected phenotpe data across years and locations](#summary-statistics-table-of-the-selected-phenotpe-data-across-years-and-locations)
-  - [Data visualization ](#data-visualization)
-  - [Heritability ](#heritability)
-  - [Model variance component analysis](#model-variance-component-analysis)
-  - [estimate BLUPS](#Estimating-Best-Linear-UnBiased-Predictors-(BLUP)-for-each-Line-by-trait)
-    - [Histograms of the BLUPs for each trait](#histograms-of-the-blups-for-each-trait)
-- [2.0 Genotypic data ](#20-genotypic-data-)
-  - [Plot Minor and Major Allele Frequency raw marker data:](#plot-minor-and-major-allele-frequency-raw-marker-data)
-  - [Filtering genotype calls of MAF and minimum site count](#filtering-genotype-calls-of-maf-and-minimum-site-count)
-  - [Thinning of markers by position](#thinning-of-markers-by-position)
-  - [Plot MAF of thinned marker set:](#plot-maf-of-thinned-marker-set)
-  - [Plot Multidimenisonal Scaling (MDS) to explore genetic structure of the genotypes ](#plot-multidimenisonal-scaling-mds-to-explore-genetic-structure-of-the-genotypes-)
-  - [Converting thinned genotype data into numerical format and imputing for Machine Learning](#converting-thinned-genotype-data-into-numerical-format-and-imputing-for-machine-learning)
-  - [Intersecting genotype and phenotype data](#intersecting-genotype-and-phenotype-data)
- - [3.0 Genomic selection algorithms](#30-genomic-selection-algorithms)
-  - [Randomizing and Partitioning the dataset to build training and testing sets](#randomizing-and-partitioning-the-dataset-to-build-training-and-testing-sets)
-    - [Randomizing the order of the dataset](#randomizing-the-order-of-the-dataset)
-    - [Confirm train and test set sizes](#confirm-train-and-test-set-sizes)
-- [Pollen DAP BLUPs](#pollen-dap-blups)
-  - [glmnet model](#glmnet-model)
-  - [Random forest - rf function](#random-forest---rf-function)
-- [Grain Yield BLUPs](#grain-yield-blups)
-  - [glmnet model](#glmnet-model-1)
-  - [Random forest model](#random-forest-model-1)
-- [Summarize the results](#summarize-the-results-1)
-  - [plot both GS models by RMSE](#plot-both-gs-models-by-rmse-1)
-- [4.0 Summary of genomic selection algorithms on selected traits](#40-summary-of-genomic-selection-algorithms-on-selected-traits)
-- [References](#references)
+<div id="toc_container">
+<p class="toc_title">Contents</p>
+<ul class="toc_list">
+  <li><a href="#1.0_Phenotypic_data_assessment"># 1.0 Phenotypic data assessment</a>
+  <li><a href="#2.0_Genotypic_data">2.0 Genotypic data</a></li>
+  <li><a href="#3.0_Genomic_selection_algorithms">3.0 Genomic selection algorithms</a></li>
+  <li><a href="#4.0_Summary_of_genomic_selection_algorithms_on_selected_traits"> 4.0 Summary of genomic selection algorithms on selected traits</a></li>
+</ul>
+</div>
 
 
 
 
 
-# 1.0 Phenotypic data assessment 
+# 1.0 Phenotypic data assessment
 
 ## Download G2F phenotypic data from year 2016 and 2017
 ```{r}
