@@ -9,6 +9,15 @@ share-img: /image/lepmap/cropped_nih_geneticmap.jpg
 __Building genetic maps__ can be challenging and sometimes quite stressful, especially, when dealing with thousands or even millions of markers. In this post, I am hoping to help anyone who would like to get started to build a decent genetic map in an open software 
 <a href="https://sourceforge.net/projects/lep-map3/"> Lep-MAP3 </a>, and finally, evaluating the accuarcy of the genetic map and plotting it.
 
+<h1> Table of contents</h1>
+- [QC analysis](#-quality-control-analysis-)
+- [Install LepMap3](#-installing-lep-map3-)
+- [Running LepMap modules](#-running-lep-map3-)
+- [Convert Phased data into Gnenotyes](#-30-converting-phased-output-data-from-ordermarkers2-to-genotypes-)
+- [4way-Cross rQTL](#-covnvert-genotype-data-into-4-way-cross-rqtl-input-data-)
+- [Validate Genetic Map](#-40-validate-the-genetic-map-by-conducting-qtl-analysis-)
+- [Plot in MapChart](#-50-graphical-presentation-of-linkage-maps-in-mapchart-)
+
 __Note__ If you have an amplicon sequencing (`AmpSeq` or `rhAmpSeq`) haplotype data, you can convert the data into a psuedo VCF file using <a href="https://github.com/avinashkarn/analyze_amplicon/blob/master/haplotype_to_VCF.pl"> Haplotype to VCF </a> PERL script.
 
 <h2> Quality control analysis </h2>
