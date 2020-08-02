@@ -15,7 +15,7 @@ In this tutorial, negative binomial was used to perform differential gene expres
  - Perform `genome alignment` to identify the origination of the reads
  - Generate the `count matrix` of the aligned reads i.e. the number of reads aligning to the exons of each gene.
 
-# Table of Contents
+<h1>Table of Contents</h1>
 
 -[Import Gene Count and Meta data](#step-10-loading-data-gene-count-and-metadata-in-r)
 -[QC analysis](#step-21-quality-control-analysis)
