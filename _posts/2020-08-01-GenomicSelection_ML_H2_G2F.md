@@ -490,7 +490,7 @@ $ ./tassel-5-standalone/run_pipeline.pl -Xmx20g -importGuess genotype_imputed_20
 
 ```
 
-Summary of the 2017 genotypic data after filteration of markers and taxa
+## Summary of the genotypic data after filteration of markers and taxa
 
 |Stat Type |	Value|
 |----------|-------|
@@ -520,7 +520,7 @@ Even after stringent filtering, there are about 10% missing data in filtered dat
 $ ./tassel-5-standalone/run_pipeline.pl -log log_thinMarkers.txt -Xmx20g -importGuess genotype_imputed_2017_filteredMAF01min1000.vcf -ThinSitesByPositionPlugin -o thinned10k_geno_2017.vcf -minDist 10000 -endPlugin
 ```
 
-Summary of the markers after thinning them: 
+## Summary of the markers after thinning them: 
 
 |Stat Type	| Value|
 |-----------|------|
