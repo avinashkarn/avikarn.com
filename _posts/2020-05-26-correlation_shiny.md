@@ -8,8 +8,6 @@ share-img: /image/shiny/plot_corr.png
 
 R Shiny statistical output visualization app, where a user can upload their own numeric data in .csv or .txt formats, and generate a correlation matrix plots that also contains density plots and printed coefficient of correlation values. Please check it out by uploading your own data below.
 
-<div id="amzn-assoc-ad-5aa4eae4-a805-4a28-b0fc-de63cef0ce9d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=5aa4eae4-a805-4a28-b0fc-de63cef0ce9d"></script>
-
 ## Application Overview
 
 - Upload your own numerical data
