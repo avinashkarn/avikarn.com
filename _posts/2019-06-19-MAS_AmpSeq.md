@@ -9,8 +9,6 @@ share-img: /image/ampseq/Keep2.jpg
 This tutorial video is my attempt to introduce the basics of the AmpSeq data analyis in __Marker Assisted Selection__ . 
 For general information on technology behind AmpSeq please read one of my previous blog post on it at this link: https://avikarn.com/2019-04-21-AmpSeq/  
 
-<div id="amzn-assoc-ad-09c07923-9f87-4521-a693-a87a797d468d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=09c07923-9f87-4521-a693-a87a797d468d"></script>
-
 <center>
 <iframe width="100%" height="300" src="https://www.youtube.com/embed/qt8cGyexXPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
@@ -41,4 +39,3 @@ Happy AmpSeq-ing !
 
 Image credits: I would like to gratefully thank __Mike Colizzi__ for sharing images used in the tutorial video.
 
-<div id="amzn-assoc-ad-09c07923-9f87-4521-a693-a87a797d468d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=09c07923-9f87-4521-a693-a87a797d468d"></script>
