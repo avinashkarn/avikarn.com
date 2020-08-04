@@ -20,6 +20,8 @@ __Building genetic maps__ can be challenging and sometimes quite stressful, espe
 - [Validate Genetic Map](#-40-validate-the-genetic-map-by-conducting-qtl-analysis-)
 - [Plot in MapChart](#-50-graphical-presentation-of-linkage-maps-in-mapchart-)
 
+<div id="amzn-assoc-ad-47b68ed6-c69f-4eed-911c-29e9a9a0032e"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=47b68ed6-c69f-4eed-911c-29e9a9a0032e"></script>
+
 __Note__ If you have an amplicon sequencing (`AmpSeq` or `rhAmpSeq`) haplotype data, you can convert the data into a psuedo VCF file using <a href="https://github.com/avinashkarn/analyze_amplicon/blob/master/haplotype_to_VCF.pl"> Haplotype to VCF </a> PERL script.
 
 <h2> Quality control analysis </h2>
@@ -37,6 +39,8 @@ Please watch below video to: download , install and configure `FileZilla`. It wi
 <iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/adxmlHDim6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
+
+<div id="amzn-assoc-ad-a283c6ab-dad2-43ee-a789-19b6a6f6809a"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=a283c6ab-dad2-43ee-a789-19b6a6f6809a"></script>
 
 <center><h2> Installing Lep-MAP3 </h2></center>
 <strong>The Lep-MAP3 software is built in Linux and one has to have some experience in working in command-line environment.</strong>
@@ -187,6 +191,8 @@ Finally import the converted the 4-waycross genetic map in RQTL using the below 
 
 <center><img src="/image/lepmap/qtl.png"></center>
 
+<div id="amzn-assoc-ad-09c07923-9f87-4521-a693-a87a797d468d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=09c07923-9f87-4521-a693-a87a797d468d"></script>
+
 <hr>	
 
 
@@ -199,6 +205,7 @@ https://www.wur.nl/en/show/Mapchart.htm
 
 <center><img src="/image/lepmap/mapChart.png"></center>
 
+<div id="amzn-assoc-ad-5aa4eae4-a805-4a28-b0fc-de63cef0ce9d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=5aa4eae4-a805-4a28-b0fc-de63cef0ce9d"></script>
 
 __Thank you__ for reading this tutorial. I really hope these steps will get you started in genetic map construction in Lep-MAP3. The key is to <strong> PRACTISE. </strong>. If you have any comments or suggestions, please let comment below or send me an email. 
 
