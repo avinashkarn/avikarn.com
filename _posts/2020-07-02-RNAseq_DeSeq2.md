@@ -24,6 +24,7 @@ In this tutorial, negative binomial was used to perform differential gene expres
 - [Top DF genes](#step-51-top-df-genes-sort-by-pvalue)
 - [Visualizing DF genes](#step-6-visualizing-results-of-the-df-genes)
 
+<div id="amzn-assoc-ad-098dc3dc-36a3-4d6d-af1c-1f461194a72b"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=098dc3dc-36a3-4d6d-af1c-1f461194a72b"></script>
 
 The dataset used in the tutorial is from the published <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2877581/">Hammer et al 2010 </a> study. The read count matrix and the meta data was obatined from the <a href="http://bowtie-bio.sourceforge.net/recount/"> Recount project website </a> Briefly, the Hammer experiment studied the effect of a spinal nerve ligation (SNL) versus control (normal) samples in rats at two weeks and after two months. In this tutorial, we explore the differential gene expression at first and second time point and the difference in the fold change between the two time points.
 
