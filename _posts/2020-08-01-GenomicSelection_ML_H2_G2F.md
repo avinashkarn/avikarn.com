@@ -28,7 +28,7 @@ From the data set, five important agronomic traits were selected: `Days to Anthe
 - [4.0 Summary of genomic selection algorithms on selected traits](#40-summary-of-genomic-selection-algorithms-on-selected-traits)
 
 
-<div id="amzn-assoc-ad-a0af9e90-2c84-491c-906a-960a83fcf33e"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=a0af9e90-2c84-491c-906a-960a83fcf33e"></script>
+<div id="amzn-assoc-ad-2d63fad6-c94b-4ff1-88df-b93b6613e474"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=2d63fad6-c94b-4ff1-88df-b93b6613e474"></script>
 
 # 1.0 Phenotypic data assessment
 
@@ -1190,6 +1190,8 @@ From above table, we can tell that the random forest model appears to be slighlt
 
 
 In summary, Pollen DAP trait had a high heritability, and both GS models had a relatively statisfactory prediction accuracy in both training and test data sets. In contrast, grain yield had moderate heriatblity indicating significant influence of genetic and environmental componets on this trait, and both GS models built with only genomic markers failed, which tells us that heritability of a trait is an important characteristics as so are the environmental components. Therefore, its strongly advised to calculate the heritability of trait of interest prior to building any GS model, so that one has idea of what to expect from the GS model performance. 
+
+<div id="amzn-assoc-ad-2d63fad6-c94b-4ff1-88df-b93b6613e474"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=2d63fad6-c94b-4ff1-88df-b93b6613e474"></script>
 
 # References
 
