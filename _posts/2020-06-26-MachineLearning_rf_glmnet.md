@@ -10,6 +10,8 @@ share-img: /image/mlr_rf/plot11.JPG
 
 In this tutorial, I used two popular machine learning algorithms: `Random Forest` and `GLMnet` for `Genomic Prediction` of a quantitative trait. There are several machine learning R packages available, however, in this tutorial i used `caret` package. The objective was to develop two models: `Random forest` and `glmnet` using real data sets consisting genetic markers, that were used as `predictors` to predict a quantitative trait (names of the variables were disguised in this tutorial), and finally, comparing the performance of the two models by testing them on a validation set. 
 
+<div id="amzn-assoc-ad-2d63fad6-c94b-4ff1-88df-b93b6613e474"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=2d63fad6-c94b-4ff1-88df-b93b6613e474"></script>
+
 # Data preparation
 
 ## Step 1. libraries and set seed
@@ -302,6 +304,8 @@ bwplot(resamples, metric = "RMSE")
 dotplot(resamples, metric = "RMSE")
 ```
 <center><img src="/image/mlr_rf/plot16.JPG"></center>
+
+<div id="amzn-assoc-ad-2d63fad6-c94b-4ff1-88df-b93b6613e474"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=2d63fad6-c94b-4ff1-88df-b93b6613e474"></script>
 
 ## Conclusion:
 
