@@ -53,6 +53,8 @@ dim(read_Count)
 
 <center><img src="/image/rna/Capture2.PNG"></center>
 
+<div id="amzn-assoc-ad-098dc3dc-36a3-4d6d-af1c-1f461194a72b"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=098dc3dc-36a3-4d6d-af1c-1f461194a72b"></script>
+
 ### Import the metadata 
 
 Use `View` function to check the full data set.
@@ -127,6 +129,8 @@ dds <- DESeqDataSetFromMatrix(countData= read_Count,
                                       design = ~ 1)
 
 ```
+
+<div id="amzn-assoc-ad-5aa4eae4-a805-4a28-b0fc-de63cef0ce9d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=5aa4eae4-a805-4a28-b0fc-de63cef0ce9d"></script>
 
 # Step 2.1 Quality Control analysis 
 
@@ -388,6 +392,8 @@ resSort <- res[order(res$pvalue),]
 
 head(resSort)
 ```
+
+<div id="amzn-assoc-ad-098dc3dc-36a3-4d6d-af1c-1f461194a72b"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=098dc3dc-36a3-4d6d-af1c-1f461194a72b"></script>
 
 ## Step 5.2 Check the annotation of these highly significant genes:
 
