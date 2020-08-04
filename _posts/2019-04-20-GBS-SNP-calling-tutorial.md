@@ -8,6 +8,8 @@ share-img: /image/GBS/GBS.png
 
 __Genotype-by-Sequencing (GBS)__ is reduced representation of a genome, which utilizes restriction enzymes (e.g. *ApeKI*) and NextGen sequencing to identify biallelic markers and presence/absence markers. __In this post__, my attempt is to consisely present the GBS SNP calling process in *7 steps* using the TASSEL GBSv2 pipeline. Pleae note:, <strong>Buckler et al. </strong> provides descriptive documentation on this SNP calling at this <a href="https://www.maizegenetics.net/tassel"> Link </a>
 
+<div id="amzn-assoc-ad-a283c6ab-dad2-43ee-a789-19b6a6f6809a"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=a283c6ab-dad2-43ee-a789-19b6a6f6809a"></script>
+
 <center> <h2> Flowchart of the GBSv2 SNP calling pipeline </h2></center>
 <center><img style="max-width:95%" src="/image/GBS/gbsv2pipeline.png" width="auto" height="auto"></center>
 
@@ -98,6 +100,8 @@ $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -ProductionSNPCa
 The output VCF file can be opened directly on GUI version of the <a href="https://www.maizegenetics.net/tassel">TASSEL <a/>software.
 	
 <center><h3> --- End of Tutorial --- </h3></center>
+
+<div id="amzn-assoc-ad-09c07923-9f87-4521-a693-a87a797d468d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=09c07923-9f87-4521-a693-a87a797d468d"></script>
 
 __Thank you__ for reading this tutorial. I really hope these steps will get you started in GBS snp calling in TASSEL. If you have any questions or comments, please let comment below or send me an email. 
 
