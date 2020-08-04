@@ -10,9 +10,6 @@ __Structure Software__ is a freely available software package that one may use f
 
 Download sample data set: <a href="https://avikarn.com/image/structure/data_test_1.txt">Click here</a>
 
-<div id="amzn-assoc-ad-09c07923-9f87-4521-a693-a87a797d468d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=09c07923-9f87-4521-a693-a87a797d468d"></script>
-
-
 In this tutorial, I will show how to prepare `input` files and run the `Structure` software. For detail information, please read this article at this <a href="https://web.stanford.edu/group/pritchardlab/structure.html">link</a>
 
 <h1> Step 1: Preparing the Input file </h1>
@@ -60,8 +57,6 @@ Follow the steps shown in the below figure to run this step. __Please remember__
 <center><img src="/image/structure/structure5.gif" alt="Viewing the results"></center>
 <hr>
 
-<div id="amzn-assoc-ad-09c07923-9f87-4521-a693-a87a797d468d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=09c07923-9f87-4521-a693-a87a797d468d"></script>
-
 <h2> 2.2 Running Structure Harvester </h2>
 One your web browser search for `structure harvester`, and click the first the search result. Next, upload the `results.zip` file, click `harvest` to run the Structure Harvester program. It can take about few mins to run, however, it definitely depends on your data. Once the job is completed, the program outputs the summary of the analysis, the key output to look at is `Delta K` plot and `Evanno table`. 
 <hr>
@@ -85,7 +80,6 @@ __Thank you__ for reading this tutorial. If you have any questions or comments, 
 
 Happy Structure-ing !
 
-<div id="amzn-assoc-ad-09c07923-9f87-4521-a693-a87a797d468d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=09c07923-9f87-4521-a693-a87a797d468d"></script>
 
 <h3> Bibliography </h3>
 <p>Pritchard, Jonathan K., William Wen, and Daniel Falush. "Documentation for STRUCTURE software: Version 2." (2003).</p>
