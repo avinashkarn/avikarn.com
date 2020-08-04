@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  Food Blog
+title: "Food Blog"
+meta-title: "Food Blog"
 subtitle: Welcome to my food blog!
 share-img: /image/foodblog/dinner1.jpg
 tags: [Food Blog]
