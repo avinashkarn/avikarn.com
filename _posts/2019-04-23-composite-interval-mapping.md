@@ -8,6 +8,8 @@ share-img: /image/cim/scan.png
 
 In the __Quantitative Trait Locus (QTL)__ analysis, `composite interval mapping (CIM)` method  estimates the QTL positon with higher accuracy and statistical significance by combining interval mapping with multiple regression. This method also controls background noise resulting from genetic variations in other regions of the genome that affect the detection of the true QTL. In this post, my objective is to describe and walk you through all the basic steps one might need run the composite inteval mapping in `R` software. For further descriptive information on R/qtl, please read the paper by <strong> Karl Broman </strong> at this link: http://www.rqtl.org/
 
+<div id="amzn-assoc-ad-09c07923-9f87-4521-a693-a87a797d468d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=09c07923-9f87-4521-a693-a87a797d468d"></script>
+
 <center> <h1> To get started</h1> </center>
 
 <h2> Step 1. Download and install R software and R studio </h2>
@@ -18,6 +20,8 @@ In the __Quantitative Trait Locus (QTL)__ analysis, `composite interval mapping 
   <li> Download and install R studio from this <a href="https://www.rstudio.com/products/rstudio/download">link</a></li>
   <li> Finally, install the library <strong> qtl </strong> in R </li>
 </ol>
+
+<div id="amzn-assoc-ad-5aa4eae4-a805-4a28-b0fc-de63cef0ce9d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=5aa4eae4-a805-4a28-b0fc-de63cef0ce9d"></script>
 
 <h2> Step 1.1 - Install qtl library in R following the below steps: </h2>
 <img src="/image/cim/installlibrary.gif">
@@ -159,6 +163,8 @@ An example output is show below:
 ```
 <hr>
 <center><h2> --- End of Tutorial --- </h2> </center> 
+
+<div id="amzn-assoc-ad-09c07923-9f87-4521-a693-a87a797d468d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=09c07923-9f87-4521-a693-a87a797d468d"></script>
 
 __Thank you__ for reading this tutorial. I really hope this helpful in giving you the concept and technology behind AmpSeq and the data analysis. If you have any questions or comments, please let comment below or send me an email.
 
