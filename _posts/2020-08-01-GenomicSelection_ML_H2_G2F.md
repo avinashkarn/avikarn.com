@@ -28,7 +28,7 @@ From the data set, five important agronomic traits were selected: `Days to Anthe
 - [4.0 Summary of genomic selection algorithms on selected traits](#40-summary-of-genomic-selection-algorithms-on-selected-traits)
 
 
-
+<div id="amzn-assoc-ad-a0af9e90-2c84-491c-906a-960a83fcf33e"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=a0af9e90-2c84-491c-906a-960a83fcf33e"></script>
 
 # 1.0 Phenotypic data assessment
 
