@@ -21,7 +21,6 @@ In the __Quantitative Trait Locus (QTL)__ analysis, `composite interval mapping 
   <li> Finally, install the library <strong> qtl </strong> in R </li>
 </ol>
 
-<div id="amzn-assoc-ad-5aa4eae4-a805-4a28-b0fc-de63cef0ce9d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=5aa4eae4-a805-4a28-b0fc-de63cef0ce9d"></script>
 
 <h2> Step 1.1 - Install qtl library in R following the below steps: </h2>
 <img src="/image/cim/installlibrary.gif">
@@ -164,7 +163,6 @@ An example output is show below:
 <hr>
 <center><h2> --- End of Tutorial --- </h2> </center> 
 
-<div id="amzn-assoc-ad-09c07923-9f87-4521-a693-a87a797d468d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=09c07923-9f87-4521-a693-a87a797d468d"></script>
 
 __Thank you__ for reading this tutorial. I really hope this helpful in giving you the concept and technology behind AmpSeq and the data analysis. If you have any questions or comments, please let comment below or send me an email.
 
