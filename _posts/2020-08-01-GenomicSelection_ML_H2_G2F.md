@@ -28,8 +28,6 @@ From the data set, five important agronomic traits were selected: `Days to Anthe
 - [4.0 Summary of genomic selection algorithms on selected traits](#40-summary-of-genomic-selection-algorithms-on-selected-traits)
 
 
-<div id="amzn-assoc-ad-2d63fad6-c94b-4ff1-88df-b93b6613e474"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=2d63fad6-c94b-4ff1-88df-b93b6613e474"></script>
-
 # 1.0 Phenotypic data assessment
 
 ## Download G2F phenotypic data from year 2016 and 2017
@@ -492,7 +490,6 @@ $ ./tassel-5-standalone/run_pipeline.pl -log log.txt -Xms2g -Xmx10g  -fork1 -h5 
 genotype_imputed_2017_filtered -exportType VCF -runfork1
 
 ```
-<div id="amzn-assoc-ad-a283c6ab-dad2-43ee-a789-19b6a6f6809a"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=a283c6ab-dad2-43ee-a789-19b6a6f6809a"></script>
 
 Next, genotype summary of the filtered file was generated in TASSEL using *-GenotypeSummaryPlugin* and using the below command line: 
 
@@ -628,7 +625,6 @@ intrsct_phenoGeno <- inner_join(pheno_BlUPs_noMissing, geno_numericThinImpu)
 dim(intrsct_phenoGeno)
 
 ```
-<div id="amzn-assoc-ad-5aa4eae4-a805-4a28-b0fc-de63cef0ce9d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=5aa4eae4-a805-4a28-b0fc-de63cef0ce9d"></script>
 
 # 3.0 Genomic selection algorithms
 
@@ -1174,8 +1170,6 @@ par(mfrow=c(1,1))
 
 From above table, we can tell that the random forest model appears to be slighlty better model incoparison to glmnet for grain yield.
 
-<div id="amzn-assoc-ad-098dc3dc-36a3-4d6d-af1c-1f461194a72b"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=098dc3dc-36a3-4d6d-af1c-1f461194a72b"></script>
-
 # 4.0 Summary of genomic selection algorithms on selected traits
 
 | Trait | Model | Set | RMSE| R-Sq |
@@ -1192,8 +1186,6 @@ From above table, we can tell that the random forest model appears to be slighlt
  
 
 In summary, Pollen DAP trait had a high heritability, and both GS models had a relatively statisfactory prediction accuracy in both training and test data sets. In contrast, grain yield had moderate heriatblity indicating significant influence of genetic and environmental componets on this trait, and both GS models built with only genomic markers failed, which tells us that heritability of a trait is an important characteristics as so are the environmental components. Therefore, its strongly advised to calculate the heritability of trait of interest prior to building any GS model, so that one has idea of what to expect from the GS model performance. 
-
-<div id="amzn-assoc-ad-2d63fad6-c94b-4ff1-88df-b93b6613e474"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=2d63fad6-c94b-4ff1-88df-b93b6613e474"></script>
 
 # References
 
