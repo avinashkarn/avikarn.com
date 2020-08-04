@@ -13,9 +13,6 @@ bigimg:
   - "/image/foodblog/samosa1.jpg" : "SAMOSAA"
 ---
 
-
-<div id="amzn-assoc-ad-4beb12bd-b059-4ba8-bd7f-9c9f21e858ad"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=4beb12bd-b059-4ba8-bd7f-9c9f21e858ad"></script>
-
 <style>
 div.gallery {
   border: 1px solid #ccc;
