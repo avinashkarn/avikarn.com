@@ -44,8 +44,7 @@ Since 2018 Jan, I have been a Computational biologist/Molecular breeding data sc
 Technical Skills: R, Python, Statistics, Machine Learning, Genetics, Genomics, Plant Breeding, Molecular Biology, Quantitative Genetics, Data Processing in Shell, Bioinformatics, UNIX/LINUX, BASH, HPC cluster, PERL, CSS, HTML, SQL, and GitHub 
 </p>
  
- <div id="amzn-assoc-ad-098dc3dc-36a3-4d6d-af1c-1f461194a72b"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=098dc3dc-36a3-4d6d-af1c-1f461194a72b"></script>
- 
+
 <p class="about-text">
 <span class="fa fa-leaf about-icon"></span>
 <ul>
