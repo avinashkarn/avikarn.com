@@ -42,8 +42,6 @@ title: Let’s connect!
 
 <hr>
 
-<div id="amzn-assoc-ad-098dc3dc-36a3-4d6d-af1c-1f461194a72b"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=098dc3dc-36a3-4d6d-af1c-1f461194a72b"></script>
-
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359651-1"></script>
 <script>
