@@ -28,6 +28,7 @@ subtitle: Quantitative & Computational Geneticist
   </div>
 </div>
 
+<script>
   var typed3 = new Typed('#typed3', {
     strings: ['I blog about: <i>strings</i> with', 'My strings are: <strong>HTML</strong>', 'My strings are: Chars &times; &copy;'],
     typeSpeed: 0,
@@ -35,7 +36,7 @@ subtitle: Quantitative & Computational Geneticist
     smartBackspace: true, // this is a default
     loop: true
   });
-  
+</script>
   
 <!-- particles.js exclusion -->
 <style>
