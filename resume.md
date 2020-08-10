@@ -28,6 +28,15 @@ subtitle: Quantitative & Computational Geneticist
   </div>
 </div>
 
+  var typed3 = new Typed('#typed3', {
+    strings: ['I blog about: <i>strings</i> with', 'My strings are: <strong>HTML</strong>', 'My strings are: Chars &times; &copy;'],
+    typeSpeed: 0,
+    backSpeed: 0,
+    smartBackspace: true, // this is a default
+    loop: true
+  });
+  
+  
 <!-- particles.js exclusion -->
 <style>
   #particles-js{
