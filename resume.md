@@ -24,8 +24,8 @@ subtitle: Quantitative & Computational Geneticist
       loop: true,
       backDelay: 1000
 
-    });
   });
+});
 </script>
 
 <div class="row">
