@@ -5,6 +5,7 @@ meta-title: Avi Karn, Ph.D.
 subtitle: Quantitative & Computational Geneticist
 ---
 
+<div>
 <script src="/js/jquery-1.11.2.min.js"></script> <!-- Typed.js uses old jquery ver -->
 <script src="/js/typed.js" type="text/javascript"></script>
 <script>
@@ -35,6 +36,7 @@ subtitle: Quantitative & Computational Geneticist
   
 </style>
 
+</div>
 
 <div id="aboutme-section">
 
