@@ -25,7 +25,9 @@ subtitle: Quantitative & Computational Geneticist
     });
   });
 </script>
+ 
 
+<div id="aboutme-section">
 
   <div class="row">
     <div class="col-sm-12">
@@ -35,9 +37,6 @@ subtitle: Quantitative & Computational Geneticist
     </div>
   </div>
   
-
-<div id="aboutme-section">
-
 <p class="about-text">
 <span class="fa fa-coffee about-icon"></span>
 Hi! My name is Avinash Karn, I go by <strong>Avi</strong>. I am very passionate about plants and cutting-edge technology. I have in-depth knowledge and a rigorous hands on experience in the field of plant breeding, quantitative genetics, computational biology and high-throughput phenotyping for over 10 years now, which I earned during my research work with plant breeders/geneticists, bioinformaticists, pathologist in my undergraduate, graduate and my postdoctoral career here in the United States.
