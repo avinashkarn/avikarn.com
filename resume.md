@@ -12,7 +12,16 @@ subtitle: Quantitative & Computational Geneticist
   
 </style>
 
-<!-- Typed.js --> 
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="text-center">
+          <h3>I blog about <span class="typed" style="color:#bb00cc";></span></h3>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Typed.js --> 
 
 <script src="/js/jquery-1.11.2.min.js"></script> <!-- Typed.js uses old jquery ver -->
 <script src="/js/typed.js" type="text/javascript"></script>
@@ -27,15 +36,6 @@ subtitle: Quantitative & Computational Geneticist
     });
   });
 </script>
-
-
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="text-center">
-          <h3>I blog about <span class="typed" style="color:#bb00cc";></span></h3>
-      </div>
-    </div>
-  </div>
 
 <div id="aboutme-section">
 
