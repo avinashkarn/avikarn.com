@@ -29,7 +29,7 @@ subtitle: Quantitative & Computational Geneticist
   });
 </script>
 
-
+</div>
  
 <!-- particles.js exclusion -->
 <style>
@@ -39,7 +39,7 @@ subtitle: Quantitative & Computational Geneticist
   
 </style>
 
-</div>
+
 
 <div id="aboutme-section">
 
