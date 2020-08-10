@@ -29,11 +29,11 @@ subtitle: Quantitative & Computational Geneticist
 </script>
 
 <div class="row">
-  <div class="col-sm-12">
-    <div class="text-center">
-        <h3>I blog about <span class="typed" style="color:#bb00cc";></span></h3>
-    </div>
+<div class="col-sm-12">
+  <div class="text-center">
+      <h3>I blog about <span class="typed" style="color:#bb00cc";></span></h3>
   </div>
+</div>
 </div>
   
 
