@@ -4,13 +4,6 @@ title: About me
 meta-title: Avi Karn, Ph.D.
 subtitle: Quantitative & Computational Geneticist
 ---
-<!-- particles.js exclusion -->
-<style>
-  #particles-js{
-      display: none;
-  }
-  
-</style>
 
 <script src="/js/jquery-1.11.2.min.js"></script> <!-- Typed.js uses old jquery ver -->
 <script src="/js/typed.js" type="text/javascript"></script>
@@ -25,9 +18,6 @@ subtitle: Quantitative & Computational Geneticist
     });
   });
 </script>
- 
-
-<div id="aboutme-section">
 
   <div class="row">
     <div class="col-sm-12">
@@ -36,7 +26,18 @@ subtitle: Quantitative & Computational Geneticist
       </div>
     </div>
   </div>
+
+<!-- particles.js exclusion -->
+<style>
+  #particles-js{
+      display: none;
+  }
   
+</style>
+
+
+<div id="aboutme-section">
+
 <p class="about-text">
 <span class="fa fa-coffee about-icon"></span>
 Hi! My name is Avinash Karn, I go by <strong>Avi</strong>. I am very passionate about plants and cutting-edge technology. I have in-depth knowledge and a rigorous hands on experience in the field of plant breeding, quantitative genetics, computational biology and high-throughput phenotyping for over 10 years now, which I earned during my research work with plant breeders/geneticists, bioinformaticists, pathologist in my undergraduate, graduate and my postdoctoral career here in the United States.
