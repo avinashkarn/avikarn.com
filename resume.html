@@ -20,11 +20,19 @@ subtitle: Quantitative & Computational Geneticist
   });
 </script>
 
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
 
 <div class="row">
   <div class="col-sm-12">
     <div class="text-center">
-        <h3>I write about <span class="typed" style="color:#bb00cc";></span></h3>
+        <h3>I write about <span class="typed" style=getRandomColor();></span></h3>
     </div>
   </div>
 </div>
