@@ -13,6 +13,14 @@ bigimg:
   - "/image/foodblog/samosa1.jpg" : "SAMOSAA"
 ---
 
+<!-- particles.js exclusion -->
+<style>
+  #particles-js{
+      display: none;
+  }
+  
+</style>
+
 <style>
 div.gallery {
   border: 1px solid #ccc;
