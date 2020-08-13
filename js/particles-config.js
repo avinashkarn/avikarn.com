@@ -12,7 +12,7 @@ particlesJS('particles-js',
       }
     },
     "color": {
-      "value": "#9041d7"
+      "value": "#c415dc"
     },
     "shape": {
       "type": "star",
@@ -52,7 +52,7 @@ particlesJS('particles-js',
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#e31f1f",
+      "color": "#3a3c66",
       "opacity": 0.4,
       "width": 1
     },
