@@ -157,6 +157,7 @@ img.hover-shadow {
 
 <h2 style="text-align:center">Astronomy</h2>
 <br>
+  
 <div class="row">
   
   <div class="col-md-3">
@@ -178,11 +179,13 @@ img.hover-shadow {
     <div class="col-md-12">
     <img src="/image/astronomy/20200807_011039.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
     </div>
-  </div>
+  </div>                            
 </div>
 
 <br>
-  
+
+                                                                                                     <div class="row">
+                                                                                                   
   <div class="col-md-3">
     <div class="col-md-12">
     <img src="/image/astronomy/carter_moon.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
@@ -203,17 +206,77 @@ img.hover-shadow {
     </div>                                                                                          
   </div>
 
+</div>
 <br>
-  
+ 
+<div class="row">
+
   <div class="col-md-3">
     <div class="col-md-12">
     <img src="/image/astronomy/stack_saturn_080720-2.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
     </div>
-  </div>
-                                                                                                      
+  </div>                                                                                            
 </div>
 
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
 
+    <div class="mySlides">
+      <div class="numbertext">1 / 9</div>
+      <img src="/image/astronomy/20200714_221250.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">2 / 9</div>
+      <img src="/image/astronomy/20200715_001823.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 9</div>
+      <img src="/image/astronomy/20200717_230100.jpg" style="width:100%">
+    </div>
+    
+<div class="mySlides">
+      <div class="numbertext">4 / 9</div>
+      <img src="/image/astronomy/20200807_011039.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">5 / 9</div>
+      <img src="/image/astronomy/carter_moon.jpg" style="width:100%">
+    </div>
+                                                                 
+    <div class="mySlides">
+      <div class="numbertext">6 / 9</div>
+      <img src="/image/astronomy/carter_moon.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">7 / 9</div>
+      <img src="/image/astronomy/moon2.jpg" style="width:100%">
+    </div>                                                                    
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 9</div>
+      <img src="/image/astronomy/moon3.jpg" style="width:100%">
+    </div>
+                                                                         
+     <div class="mySlides">
+      <div class="numbertext">9 / 9</div>
+      <img src="/image/astronomy/stack_saturn_080720-2.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    
+    
+  </div>
+</div>
+                     
 
 <script>
 function openModal() {
