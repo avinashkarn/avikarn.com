@@ -114,6 +114,10 @@ div.desc {
 </div>
 </div>
 
+
+<br>
+
+
 <div class="row"> 
   
 <div class="responsive">
@@ -153,9 +157,19 @@ div.desc {
 
 </div>
 
+<br>
 
 <div class="row"> 
-  
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/pizza1.jpg">
+      <img src="/image/foodblog/pizza1.jpg" alt="Mountains" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Vegetarian cheese pizza</div>
+  </div>
+</div>
+
 <div class="responsive">
   <div class="gallery">
     <a href="/food/2019-07-02-Aloo">
@@ -184,6 +198,8 @@ div.desc {
 
 </div>
 
+<br>
+
 <div class="row"> 
 <div class="responsive">
   <div class="gallery">
@@ -194,14 +210,7 @@ div.desc {
   </div>
 </div>
   
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="/image/foodblog/pizza1.jpg">
-      <img src="/image/foodblog/pizza1.jpg" alt="Mountains" width="auto" height="400" class="img-thumbnail">
-    </a>
-    <div class="desc">Vegetarian cheese pizza</div>
-  </div>
-</div>
+
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/friedchicken_salad.jpg">
