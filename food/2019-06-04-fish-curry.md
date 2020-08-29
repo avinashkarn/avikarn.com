@@ -39,9 +39,6 @@ Your browser does not support the video tag.
     <li> Frying pan (preferably a cast iron pan) </li>
 </ul>
 
-<code>
-    <ins class="epn-placement" data-config-id="5d1c1b573b11ab5f8b750af4"></ins>
-</code>
 
 <h2> 1. Ingredients : </h2>
 
