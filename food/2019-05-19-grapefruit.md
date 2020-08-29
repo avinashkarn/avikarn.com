@@ -27,7 +27,6 @@ This is a very simple dish that one can easily prepare in less than no time! Ple
   <li> Author: My wife, Anita</li>
 </ul>
 <hr>
-   <a href="https://click.linksynergy.com/fs-bin/click?id=iVSc/qZ7CV4&offerid=607010.6&type=4&subid=0" rel="nofollow"><IMG alt="DIY Home Security Devices" border="0" src="https://www.fortresssecuritystore.com/affiliate/images/diy_shopnow.jpg"></a><IMG border="0" width="1" height="1" src="https://ad.linksynergy.com/fs-bin/show?id=iVSc/qZ7CV4&bids=607010.6&type=4&subid=0">
   
 <h3> Ingredients</h3>
 
@@ -39,10 +38,6 @@ This is a very simple dish that one can easily prepare in less than no time! Ple
     <li> Black Salt</li>
     <li> Sugar (optional)</li>
 </ul>
-<a href="https://click.linksynergy.com/fs-bin/click?id=876kEArXFCo&offerid=320088.10000147&type=4&subid=0" rel="nofollow"><IMG alt="Birthday Cakes Delivered" border="0" src="https://www.bakemeawish.com/banner/golden_fudge_728x90_v4.jpg"></a><IMG border="0" width="1" height="1" src="https://ad.linksynergy.com/fs-bin/show?id=876kEArXFCo&bids=320088.10000147&type=4&subid=0">
-<code>
-    <ins class="epn-placement" data-config-id="5d1c1b573b11ab5f8b750af4"></ins>
-</code>
 
 <hr>
 
@@ -56,7 +51,7 @@ This is a very simple dish that one can easily prepare in less than no time! Ple
 
 <p> Happy Cooking! And please let me know if you have any questions or comments.</p>
 
-<a href="https://click.linksynergy.com/fs-bin/click?id=876kEArXFCo&offerid=551783.14&subid=0&type=4" rel="nofollow"><IMG border="0"   alt="Qatar Airways" src="https://ad.linksynergy.com/fs-bin/show?id=876kEArXFCo&bids=551783.14&subid=0&type=4&gridnum=16"></a>
+
 <hr>
 <center>
 <form>
