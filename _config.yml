@@ -23,6 +23,7 @@
 
 # List of links in the navigation bar
   navbar-links:
+    Search: "search"
     About Me/Contact: "resume"
     Tutorials:
       - Machine Learning 1: "https://avikarn.com/2020-06-26-MachineLearning_rf_glmnet/"
