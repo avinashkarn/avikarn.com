@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Evaluate Genotype Accuarcy in TASSEL GUI"
+title: "Evaluate Genotype Accuracy in TASSEL GUI"
 tags: [Imputation, GUI, Genotype, TASSEL, Bioinformatics]
 image: /image/imputeAccuracy/plotImputeAccuracy.png
 share-img: /image/imputeAccuracy/plotImputeAccuracy.png
