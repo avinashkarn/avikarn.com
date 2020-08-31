@@ -16,9 +16,11 @@ __Genotype-by-Sequencing (GBS)__ is reduced representation of a genome, which ut
 
 <h2> Step 1. Preparing files and creating folders </h2>
 To get started, create four folders named: `fastq`, `key`, `output`, `referenceGenome`, using the command below:
+
 ```powershell
 $ mkdir fastq  key  output  referenceGenome
 ```
+
 __1.1__ Place the GBS sequencing files (.fastq.gz) files in the <strong> fastq </strong> folder. Please remember the file names has to be in this fromat `flowcell_lane_fastq.txt.gz` If your fastq files does not have `.fastq.txt.gz`extenion, then pleae re-name them. 
 
 __1.2__ Prepare the *Key file* with headers and information shown below figure, and place the file in the <strong> key </strong> folder.
@@ -32,6 +34,7 @@ Command:
 ```powershell
 $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -GBSSeqToTagDBPlugin -e ApeKI -i fastq/ -db output/GBSV2.db -k key/keyFile_160_271.txt -kmerLength 64 -minKmerL 20 -mnQS 20 -mxKmerNum 100000000 -endPlugin -runfork1
 ```
+
 In the above command, ApeKI = enzyme used in the library preparation; GBSV2.db = the name of the local database.
 
 <h2> Step 3. TagExportToFastqPlugin </h2>
@@ -40,6 +43,7 @@ Command:
 ```powershell
 $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -TagExportToFastqPlugin -db output/GBSV2.db -o output/tagsForAlign.fa.gz -c 1 -endPlugin  -runfork1
 ```
+
 <h2> Step 4. Run Alignment Program(s) </h2>
 __4.1__ Run `Bowtie2` software to create an index from the reference genome.
 Command:
