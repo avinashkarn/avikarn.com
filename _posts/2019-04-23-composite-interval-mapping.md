@@ -43,12 +43,12 @@ See below the screenshot to understand the formatting of the input file.
 Please double check the formatting of the file is correct. Once ready, open `R studio` and type the following commands to get started. 
 
 <h3> Step 3.1. Import <strong>qtl</strong> library </h3>
-```html
+```powershell
 library(qtl)
 ```
 
 <h3> Step 3.2. Load the .csv file with the genotype and phenotype data </h3>
-```html
+```powershell
 phenoGeno <-read.cross(format = "csv", file = "file.csv",  
                  na.strings= c('NA'), genotypes = c("A","B","H"))
 ```
@@ -56,7 +56,7 @@ In the above command, if your genetic data is formatted differently then specify
 
 <h3> Step 3.3. Summary of the data file and plotting </h3>
 Type:
-```html
+```powershell
 summary(phenoGeno)
 plot(phenoGeno)
 ```
@@ -65,7 +65,7 @@ You should see a plot similiar to shown below:
 
 <h3> Step 3.4. Calculating genotype probabilities </h3>
 In this step, `Hidden Markov model technology` is used to calculate the probabilities of the true underlying genotypes. 
-```html
+```powershell
 phenoGeno <- calc.genoprob(phenoGeno, step=0, off.end=0.0, error.prob=1.0e-4,stepwidth = "fixed", map.function="kosambi")
 
 phenoGeno_cross <- sim.geno(phenoGeno,  n.draws=32, step=0, off.end=0.0, error.prob=1.0e-4, stepwidth = "fixed", map.function="kosambi")
@@ -74,33 +74,33 @@ phenoGeno_cross <- sim.geno(phenoGeno,  n.draws=32, step=0, off.end=0.0, error.p
 
 <h3> Step 3.5. running QTL scan using CIM method with permutations</h3>
 1. Type the below command in the console to run the qtl scan using `CIM` method.
-```html
+```powershell
 scan.cim = cim(phenoGeno_cross, pheno.col=2, map.function="kosambi")
 ```
 <strong>Note</strong> In `#value` type the column number of the phenotype
 
 2. Run `permutation` test by typing the below command:
-```html
+```powershell
 scan.cim.perm = cim(phenoGeno_cross, pheno.col=2, map.function="kosambi", n.perm=1000)
 ```
 It is recommended to run at 1,000 permutation test.
 
 3. check the LOD threshold after permutations and significant QTL above the threshold.
-```html
+```powershell
 summary(scan.cim.perm)
 summary(scan.cim, threshold = #value)
 ```
 <strong>Note</strong> In `#value` Add the LOD score at desired `alpha` (0.05 0r 0.1) 
 
 4. Plot the QTL scan
-```html
+```powershell
 plot(scan.cim)
 ```
 <img src="/image/cim/scan2.png" >
 
 <h3> Step 4.0 QTL effect plot</h3>
 Type the below command to plot the `effect plot` of the QTL on the phenotype.
-```html
+```powershell
 plotPXG(phenoGeno_cross, pheno.col = #value, marker = c("#value"))
 ```
 Provide phenotype colum number in `pheno.col` and marker name in `marker =`
@@ -109,7 +109,7 @@ Output:
 <img src="/image/cim/effect.png">
 
 <h3> Step 5.0 Make QTL model with the significant marker</h3>
-```html
+```powershell
 qtl <- makeqtl(phenoGeno_cross, chr=c(#value), pos=c(#value),what=c("prob")) 
        
 fitqtl <- fitqtl(don, pheno.col=c(#value), formula = y~Q1, qtl= qtl, method = "hk", get.ests = T)
@@ -119,7 +119,7 @@ summary(fitqtl)
 <strong>Note</strong> In `#value` Add the signifincat marker's coordinates i.e. `chromosome` and `pos`.
 
 Below is the screenshot of the output one might except to see in the R shell:
-```html
+```console
 fitqtl summary
 
 Method: Haley-Knott regression 
@@ -143,16 +143,17 @@ Intercept  3.01835  0.09467 31.882
 9@2.5d    -1.41852  0.18935 -7.492
 
 ```
-<strong>Note: </strong>`Additive effect` (a) = (BB - AA)/2 and `Dominance effect` (d) = AB - (AA + BB)/2.
+{: .box-note}
+<i class="fa fa-commenting" aria-hidden="true"></i> **Note:** `Additive effect` (a) = (BB - AA)/2 and `Dominance effect` (d) = AB - (AA + BB)/2.
 
 <h3> Step 6.0 Identify QTL intervals using LOD drop </h3>
-```html
+```powershell
 lodint(results = scan.cim, chr = #value, drop = 1.8)
 ```
 Provide the `cM` to drop in the `drop =` and the `chr` 
 
 An example output is show below: 
-```html
+```powershell
 >   lodint(scan.cim, chr=2, drop=1.8)
            chr    pos      lod
 2_14850509   3 45.290 11.44917
