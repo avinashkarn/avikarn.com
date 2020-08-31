@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: default
+permalink: "search"
 title: "Search"
 css: "/css/search.css"
 ---
