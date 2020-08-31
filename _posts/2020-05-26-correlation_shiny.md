@@ -10,10 +10,10 @@ R Shiny statistical output visualization app, where a user can upload their own 
 
 ## Application Overview
 
-- Upload your own numerical data
-- Define if the data have or do not have headers
-- Define what separators (comma, semicolon and tab) are used in the data
-- Define if the data has quotes or no quotes
+- Upload your own `numerical` data
+- Define `headers` in your data
+- Define `separators` (comma, semicolon and tab)
+- Define if the data has `quotes`
 - Custom pick columns to display on the correlation matrix
 - User can download "Iris.csv" file to genetrate the correlation plot
 
