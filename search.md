@@ -3,7 +3,9 @@ layout: default
 permalink: "search"
 title: "Search"
 css: "/css/search.css"
+
 ---
+
 <!-- particles.js exclusion -->
 <style>
   #particles-js{
