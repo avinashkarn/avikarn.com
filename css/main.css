@@ -32,11 +32,11 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 800;
 }
 a {
-  color: #008AFF;
+  color: {{ site.link-col }};
 }
 a:hover,
 a:focus {
-  color: #890000;
+  color: {{ site.hover-col }};
 }
 blockquote {
   color: #808080;
