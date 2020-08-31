@@ -48,7 +48,7 @@
       - Astronomy: "astronomy"
       - Cooking: "foodblog"
       - Photography: "photography"
-  nav-search: "search"
+#  nav-search: "search"
     #Resume: "resume"
     #Shop: "https://dealecommerce.com"
 #  Tags: "tags"
