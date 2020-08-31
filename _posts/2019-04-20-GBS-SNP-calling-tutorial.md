@@ -60,7 +60,7 @@ Command:
 $ bowtie2  -p 15 --very-sensitive -x referenceGenome/PN40024v2/PN40024v2 -U output/tagsForAlign.fa.gz -S tagsForAlignFullvs.sam
 ```
 <strong> Below is the example of the alignment statistics: </strong>
-```powershell
+```console
 595364 reads; of these:
 595364 (100.00%) were unpaired; of these:
 81305 (13.66%) aligned 0 times
@@ -77,7 +77,7 @@ $ /programs/tassel-5-standalone_20180419/run_pipeline.pl -fork1 -SAMToGBSdbPlugi
 ```
 
 <strong> Below is the example output: </strong>
-```powershell
+```console
 Total number of cut sites: 250131
 Number of cut sites with 1 tag: 130620
 Number of cut sites with 2 tags: 55554
