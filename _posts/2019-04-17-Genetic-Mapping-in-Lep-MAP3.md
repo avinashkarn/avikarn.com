@@ -21,7 +21,8 @@ __Building genetic maps__ can be challenging and sometimes quite stressful, espe
 - [Plot in MapChart](#-50-graphical-presentation-of-linkage-maps-in-mapchart-)
 
 
-__Note__ If you have an amplicon sequencing (`AmpSeq` or `rhAmpSeq`) haplotype data, you can convert the data into a psuedo VCF file using <a href="https://github.com/avinashkarn/analyze_amplicon/blob/master/haplotype_to_VCF.pl"> Haplotype to VCF </a> PERL script.
+{: .box-note}
+<i class="fa fa-commenting" aria-hidden="true"></i> **Note:** If you have an amplicon sequencing (`AmpSeq` or `rhAmpSeq`) haplotype data, you can convert the data into a psuedo VCF file using <a href="https://github.com/avinashkarn/analyze_amplicon/blob/master/haplotype_to_VCF.pl"> Haplotype to VCF </a> PERL script.
 
 <h2> Quality control analysis </h2>
 Prior to building genetic maps - I strongly advise to perform QC analysis on your genetic data.
@@ -72,10 +73,11 @@ There are two files that are required as input files:
 <h3>Step 1.2. Parent Call</h3>
 The parental genotypes are called using the `ParentCall2` module, using the below command:
 
-```bash
+```powershell
 $ java -cp [path]/Lep-MAP3/bin ParentCall2 data = pedigree.txt  vcfFile = File.vcf > p.call
 ```
-__Note__ `path` is the directory where Lep-MAP3 is located on your computer.
+{: .box-note}
+<i class="fa fa-commenting" aria-hidden="true"></i> **Note:** `path` is the directory where Lep-MAP3 is located on your computer.
 
 <hr>
 <center><img src="/image/lepmap/runlepmap3.gif"></center>
@@ -85,24 +87,25 @@ __Note__ `path` is the directory where Lep-MAP3 is located on your computer.
 <h3>Step 1.3. Filtering </h3>
 This an optional step - However, One may use the `Filtering2` module to remove `non-informative markers` (Markers that are monomorphic or homozygous in both parents), and `distorted markers` (markers segregating in a non-Mendelian fashion) using the below command line:
 
-```bash
+```powershell
  $ java -cp /path/Lep-MAP3/bin Filtering2 data=p.call  removeNonInformative=1 dataTolerance=0.0000001  > p_fil.call
 ```
 
-__Note__: Use the parameter `removeNonInformative` to remove markers that are homozygous/monomorphic, and `dataTolerance` to remove distorted markers at __given__ p-value threshold.
+{: .box-note}
+<i class="fa fa-commenting" aria-hidden="true"></i> **Note:** Use the parameter `removeNonInformative` to remove markers that are homozygous/monomorphic, and `dataTolerance` to remove distorted markers at __given__ p-value threshold.
 
 <h3>Step 1.4. Separate Chromosomes </h3>
 
 In this step, `SeparateChromosomes2` module is used to categorize markers into linkage groups (LGs) using the below command:
 
-```bash
+```powershell
 $ java -cp /path/Lep-MAP3/bin  SeparateChromosomes2 data=p_fil.call lodLimit=5 > map.txt
 ```
 
 __Note__: One can use parameters such as `lodLimit` and `theta` to split the linkage groups. 
 
 One can check the number of markers in the in `map` file using the below command:
-```bash
+```powershell
 $ sort map.txt|uniq -c|sort -n 
 ```
 <br>
@@ -111,7 +114,7 @@ $ sort map.txt|uniq -c|sort -n
 
 In this step, markers separated into their corresponding linkage groups are ordered using `OrderMarkers2` module using the below command:
 
-```bash
+```powershell
 $ java -cp /path/Lep-MAP3/bin  OrderMarkers2 data=p_fil.call map=map.txt > order.txt
 ```
 
@@ -126,11 +129,12 @@ If the physical positons of the markers in the curated genetic map curation are 
 
 Command to obtain the marker information using `cut`:
 
-```bash
+```powershell
 cut -f1,2 p.call > cut_pcall.txt
 
 ```
-__Please make sure to use the p.call file that you used in the ordering step__
+{: .box-note}
+<i class="fa fa-commenting" aria-hidden="true"></i> **Note:** Please make sure to use the p.call file that you used in the ordering step!
 
 Follow the below steps to perform the correlation analysis:
 
@@ -148,7 +152,7 @@ The phased data from `OrderMarkers2` step can be converted to fully informative 
 <br>
 
 Next, run the `map2genotypes.awk` script by following the command shown below.
-```bash
+```powershell
 	$ awk -vfullData=1 -f map2genotypes.awk order.txt > genotypes.txt
 ```
 
@@ -169,7 +173,7 @@ LepMap3 imputes and phase the genotype calls, therefore, A and B allele represen
 <h2> Covnvert genotype data into 4-way cross RQtl input data </h2>
 In case both parents are heterozygotes, the cross is a 4way cross, also know as `AB x CD` phased output data from OrderMarkers2 __(1 1, 12, 21, 22)__ into Rqtl 4way code that __1, 2, 3 and 4__ as shown in the below table.  Also, please remember, in LepMap pedigree file: `male parent = 1 , female parent  = 2`,  and first digit of the phased genotypes is inherited from paternal parent and the second from maternal parent.
 
-```{html}
+```console
 LepMap	RQtl-4way-code	RQtl genotype
 1 1	1	AC
 1 2	2	BC
@@ -177,7 +181,7 @@ LepMap	RQtl-4way-code	RQtl genotype
 2 2	4	BD
 ```
 Finally import the converted the 4-waycross genetic map in RQTL using the below command: 
- ```
+ ```powershell
  GenoData = read.cross(format = "csv", file = "geneticMap.csv", genotypes=NULL,
                      estimate.map = F, crosstype="4way")
 ```
