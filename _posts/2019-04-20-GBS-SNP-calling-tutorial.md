@@ -5,7 +5,6 @@ tags: [GBS, SNP calling, TASSEL, Bioinformatics]
 image: /image/GBS/GBS.png
 share-img: /image/GBS/GBS.png
 category: PowerShell
-bigimg: /image/GBS/GBS.png
 
 ---
 
