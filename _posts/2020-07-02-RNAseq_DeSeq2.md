@@ -40,7 +40,7 @@ There are eight samples from this study, that are 4 `controls` and 4 samples of 
 
 Use `View` function to check the full data set.
 
-```{r}
+```powershell
 read_Count <- read.table("hammer_count_table.txt", header = T)
 
 
@@ -57,7 +57,7 @@ dim(read_Count)
 
 Use `View` function to check the full data set.
 
-```{r}
+```powershell
 
 metadata <- read.table("hammer_phenodata.txt", header = T)
 
@@ -73,7 +73,7 @@ head(metadata)
 Prior to creatig the `DESeq2` object, its mandatory to check the if the rows and columns of the both data sets match using the below codes.
 
 Call row and column names of the two data sets:
-```{r}
+```powershell
 rownames(metadata)
 
 colnames(read_Count)
@@ -81,13 +81,13 @@ colnames(read_Count)
 
 Finally, check if the rownames and column names fo the two data sets match using the below code.
 
-```{r}
+```powershell
 all(rownames(metadata) == colnames(read_Count))
 ```
 
 In case, while you encounter the two dataset do not match, please use the `match()` function to match order between two vectors. 
 
-```{r}
+```powershell
 match(rownames(metadata), colnames(read_Count))
 
 idx <- match(rownames(metadata), colnames(read_Count))
@@ -106,7 +106,7 @@ all(rownames(reordered_metaData) == colnames(read_Count))
 
 ## Step 1.2 Load the required libraries 
 
-```{r}
+```powershell
 # Load library for DESeq2
 library(DESeq2)
 # Load library for RColorBrewer
@@ -120,7 +120,7 @@ library(tidyverse)
 
 ## Step 1.3 Create the DESeq2 object
 
-```{r}
+```powershell
 # Create matrix
 dds <- DESeqDataSetFromMatrix(countData= read_Count,
                                       colData = reordered_metaData,
@@ -136,7 +136,7 @@ We need to normaize the DESeq object to generate normalized read counts.
 
 Determine the size factors to be used for normalization using code below:
 
-```{r}
+```powershell
 dds <- estimateSizeFactors(dds)
 
 sizeFactors(dds)
@@ -146,7 +146,7 @@ sizeFactors(dds)
 
 Plot column sums according to size factor
 
-```{r}
+```powershell
 plot(sizeFactors(dds), colSums(counts(dds)))
 abline(lm(colSums(counts(dds)) ~ sizeFactors(dds) + 0))
 ```
@@ -159,7 +159,7 @@ We can coduct `hierarchical clustering` and `principal component analysis` to ex
 
 First we extract the normalized read counts
 
-```{r}
+```powershell
 normlzd_dds <- counts(dds, normalized=T)
 
 head(normlzd_dds)
@@ -172,7 +172,7 @@ head(normlzd_dds)
 
 Hierarchical clustering by `protocol`
 
-```{r}
+```powershell
 plot(hclust(dist(t(normlzd_dds))), labels=colData(dds)$protocol)
 ```
 
@@ -180,7 +180,7 @@ plot(hclust(dist(t(normlzd_dds))), labels=colData(dds)$protocol)
 
 Hierarchical clustering by `time`
 
-```{r}
+```powershell
 plot(hclust(dist(t(normlzd_dds))), labels=colData(dds)$Time)
 
 ```
@@ -193,7 +193,7 @@ We can see from the above plots that samples are cluster more by `protocol` than
 
 From the below plot we can see that there is an extra variance at the lower read count values, also knon as `Poisson noise`. 
 
-```{r}
+```powershell
 plot(log(normlzd_dds[,1])+1, log(normlzd_dds[,2])+1, cex =.1)
 
 ```
@@ -216,7 +216,7 @@ plot(log(normlzd_dds[,1])+1, log(normlzd_dds[,2])+1, cex =.1)
 
 We use the variance stablizing transformation method to shrink the sample values for lowly expressed genes with high variance.
 
-```{r}
+```powershell
 
 # Varaiance Stabilizing transformation
 vsd <- vst(dds, blind = T)
@@ -235,7 +235,7 @@ vsd_cor
 
 ## Step 3.2 Compute correlation values between samples using heatmap
 
-```{r}
+```powershell
 
 pheatmap(vsd_cor)
 
@@ -248,7 +248,7 @@ pheatmap(vsd_cor)
 
 We perform PCA to check to see how samples cluster and if it meets the experimental design. 
 
-```{r}
+```powershell
 
 plotPCA(vsd, intgroup = "protocol")
 
@@ -264,7 +264,7 @@ The below plot shows the variance in gene expression increases with mean express
 
 First calculate the mean and variance for each gene.
 
-```{r}
+```powershell
 # Calculating mean for each gene
 mean_readCounts <- apply(read_Count[,1:3], 1, mean)
 
@@ -276,7 +276,7 @@ var_readCounts <- apply(read_Count[,1:3], 1, var)
 
 Plot the mean versus variance in read count data
 
-```{r}
+```powershell
 df <- data.frame(mean_readCounts, var_readCounts)
 
 # ggplot2 library
@@ -319,7 +319,7 @@ In this data, we have identified that the covariate `protocol` is the major sour
 
 The below codes run the the model, and then we extract the results for all genes. 
 
-```{r}
+```powershell
 
 design(dds) <- ~ Time + protocol
 
@@ -328,7 +328,7 @@ dds <- DESeq(dds)
 
 Significant DE genes - Summary
 
-```{r}
+```powershell
 res <-results(dds)
 
 
@@ -345,7 +345,7 @@ Summary of the above output provides the percentage of genes (both up and down r
 
 We can plot the fold change over the average expression level of all samples using the `MA-plot` function.
 
-```{r}
+```powershell
 
 plotMA(res, ylim=c(-5,5) )
 ```
@@ -356,7 +356,7 @@ In the above plot, highlighted in red are genes which has an adjusted p-values l
 
 However, we can also specify/highlight genes which have a log 2 fold change greater in absolute value than 1 using the below code.
 
-```{r}
+```powershell
 resBigFC <- results(dds, lfcThreshold=1, altHypothesis="greaterAbs")
 plotMA(resBigFC, ylim=c(-5,5))
 abline(h=c(-1,1),lwd=5)
@@ -370,7 +370,7 @@ The below curve allows to accurately identify DF expressed genes, i.e., more sam
 
 __Note__ genes with extremly high dispersion values (blue circles) are not shrunk toward the curve, and only slightly high estimates are.
 
-```{r}
+```powershell
 plotDispEsts(dds)
 
 ```
@@ -383,7 +383,7 @@ In the above plot, the curve is displayed as a red line, that also has the estim
 # Step 5.1 Top DF genes: sort by pvalue
 
 In this step, we identify the top genes by sorting them by p-value.
-```{r}
+```powershell
 resSort <- res[order(res$pvalue),]
 
 head(resSort)
@@ -392,7 +392,7 @@ head(resSort)
 ## Step 5.2 Check the annotation of these highly significant genes:
 
 First install below library/ 
-```{r}
+```powershell
 # if (!requireNamespace("BiocManager", quietly = TRUE))
 #     install.packages("BiocManager")
 # 
@@ -404,7 +404,7 @@ keytypes(org.Rn.eg.db)
 ```
 
 
-```{r}
+```powershell
 
 head(rownames(dds))
 
@@ -424,7 +424,7 @@ head(rownames(dds))
 
 
 ## The first 20 genes according to the lowest p-value
-```{r}
+```powershell
 
 
 head(resSort, n=10)
@@ -444,7 +444,7 @@ geneinfo
 
 This plot is helpful in looking at how different the expression of all significant genes are between sample groups.
 
-```{r}
+```powershell
 
 res_sig <- data.frame(normlzd_dds[geneinfo$ENSEMBL, ])
 
@@ -487,7 +487,7 @@ From the above plot, we can see the both types of samples tend to cluster into t
 
 Similarly, This plot is helpful in looking at the top significant genes to investigate the expression levels between sample groups.
 
-```{r}
+```powershell
 top_20 <- data.frame(normlzd_dds)[1:20, ] %>%
   rownames_to_column(var = "ensgene")
 
