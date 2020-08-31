@@ -2,7 +2,8 @@
 layout: page
 title: "Avi Karn - Quantitative & Computational Geneticist"
 meta-title: About me
-subtitle: “SHARE YOUR KNOWLEDGE. IT IS A WAY TO ACHIEVE IMMORTALITY.” -DALAI LAMA
+bg-img: "/img/frontpage/teosynTrial.jpg"
+
 ---
 
 <div id="aboutme-section">
