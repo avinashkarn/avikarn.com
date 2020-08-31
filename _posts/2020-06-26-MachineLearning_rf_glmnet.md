@@ -14,7 +14,7 @@ In this tutorial, I used two popular machine learning algorithms: `Random Forest
 
 ## Step 1. libraries and set seed
 
-```{r}
+```powershell
 library(randomForest)
 library(mlbench)
 library(caret)
@@ -31,7 +31,7 @@ The genetic marker data was converted into numeric format. One can use `TASSEL` 
 
 <p>Download the dataset i used in this tutorial here at this link: <a href="https://avikarn.com/image/mlr_rf/rhGeno_numericImpu_malateBlues_HI.txt">Click here</a></p>
 
-```{r}
+```powershell
 phenoGeno <- read.table("rhGeno_numericImpu_malateBlues_HI.txt", header = T, na.strings = "NA")
 
 ## Explore the data
@@ -45,7 +45,7 @@ tail(phenoGeno)
 
 ### Step 2.1 Distribution of the phenotype data
 
-```{r}
+```powershell
 hist(phenoGeno$phenotype)
 ```
 <center><img src="/image/mlr_rf/plot2.png"></center>
@@ -59,7 +59,7 @@ The phenotype data is normally distributed, and no preprocessing was performed. 
 In the next step, the imported data was split into 60/40 split, since the dataset i have used in this tutorial is small and, therefore, 60/40 gives a larger and more reliable test set.
 
 ### Step 3.2 Randomizing the order of the dataset
-```{r}
+```powershell
 rows <- sample(nrow(phenoGeno))
 
 phenoGeno <- phenoGeno[rows, ]
@@ -72,7 +72,7 @@ head(phenoGeno)
 
 For this tutorial, data will be split into 60/40, which provides a larger and more reliable test/validation set.
 
-```{r}
+```powershell
 
 split <- round(nrow(phenoGeno) * 0.60)
 
@@ -82,7 +82,7 @@ test_set <- phenoGeno[(split + 1):nrow(phenoGeno),]
 ```
 
 ### Step 3.4 Confirm train and test set sizes
-```{r}
+```powershell
 # Check the ratios of training and test sets
 nrow(train_set)/nrow(phenoGeno)
 
@@ -105,7 +105,7 @@ The name `Random forest` is a popular name in the area of machine learning. This
 ## TrainControl object
 Before creating and running the models, its a good idea to create a `trainControl` object to tune parameters and further control how models are created.
 
-```{r}
+```powershell
 myTrainingControl <- trainControl(method = "cv", 
                               number = 10, 
                               savePredictions = TRUE, 
@@ -117,7 +117,7 @@ myTrainingControl <- trainControl(method = "cv",
 
 Markers in the column from 2:1942 were used as predictors (`x`) and the `phenotype` column as the `y` variable. Similarly, the performance of the model was evaluated using root mean square error (`RMSE`) (One can choose other method such as `ROC`, `AUC` etc as well), and finally choosing random forest `rf` as the method in the model.
 
-```{r}
+```powershell
 # Create tunegrid for mtry to tune the model. 
 tunegrid <- data.frame(.mtry=c(2,4,6, 10, 15, 20, 100))
 
@@ -135,7 +135,7 @@ randomForestFit
 
 Plotting the `randomForetFit` model. 
 
-```{r}
+```powershell
 plot(randomForestFit, main = "Random Forest")
 ```
 
@@ -145,7 +145,7 @@ The best mtry with lowest RMSE for this model was 10.
 
 Next, we can plot the important predictors based on their calculated importance scores using `varImp` function.
 
-```{r}
+```powershell
 plot(varImp(randomForestFit), top = 20)
 ```
 <center><img src="/image/mlr_rf/plot7.png"></center>
@@ -156,7 +156,7 @@ After building the supevised random forest learning model, The top 20 predictors
 
 Now we can test the robustness of the model by testing it on `test_set` data set, and regressing the predicted and measured values.
 
-```{r}
+```powershell
 prediction_rf <- predict(randomForestFit, test_set)
 
 plot(test_set$phenotype, prediction_rf,
@@ -169,7 +169,7 @@ abline(lm(prediction_rf~test_set$phenotype))
 
 And we can also calculate the `RMSE` between the predicted and measured values.
 
-```{r}
+```powershell
 error_rf <- prediction_rf - test_set$phenotype
 rmse_rf <- sqrt(mean(error_rf^2))
 rmse_rf
@@ -186,7 +186,7 @@ First, we create the glmnet models, which is a combination of lasso and ridge re
 
 ## glmnet model
 
-```{r}
+```powershell
 glmnetFit = train(x = train_set[2:1942], 
             y = train_set$phenotype, 
             method = "glmnet",
@@ -208,7 +208,7 @@ From the above output of the model, we see that alpha = 1, indicating lasso regr
 
 ## Comparing models: Ridge vs LASSO
 
-```{r}
+```powershell
 plot(glmnetFit, main = "Glmnet")
 
 ```
@@ -217,7 +217,7 @@ plot(glmnetFit, main = "Glmnet")
 From the above comparison model, we can say that the lamda of 0.9 has lowest RMSE.
 
 ## Full regularization path
-```{r}
+```powershell
 plot(glmnetFit$finalModel)
 ```
 
@@ -226,7 +226,7 @@ plot(glmnetFit$finalModel)
 Next, we can plot the important predictors in this model based on their calculated importance scores using `varImp` function.
 
 
-```{r}
+```powershell
 plot(varImp(glmnetFit), top = 20)
 
 ```
@@ -240,7 +240,7 @@ plot(varImp(glmnetFit), top = 20)
 
 Now we can test the robustness of the glmnet model by testing it on `test_set` data set, and regressing the predicted and measured values.
 
-```{r}
+```powershell
 prediction_glmnet <- predict(glmnetFit, test_set)
 
 plot(test_set$phenotype, prediction_glmnet,
@@ -254,14 +254,14 @@ From the above plot, we see that the most important variables only classify the 
 
 And we can also calculate the `RMSE` between the predicted and measured values.
 
-```{r}
+```powershell
 error_glm <- prediction_glmnet - test_set$phenotype
 rmse_glm <- sqrt(mean(error_glm^2))
 rmse_glm
 ```
 
 ## Scatter plots of the predicted values from two models
-```{r}
+```powershell
 plot(test_set$phenotype, prediction_glmnet,
       pch=17, col=c("red"), ylab = "Predicted", xlab = "Measured")
 points(test_set$phenotype, prediction_rf, pch=20, col=("blue"))
@@ -276,7 +276,7 @@ legend(14,9, legend=c("GLMnet", "Random Forest"),
 ## Comparing the Random Forest and Glmnet models
 We can compare the performance of the models by studying their MAE, RMSE and R-squared values side-by-side, making it very convenient.
 
-```{r}
+```powershell
 # Create model_list
 model_list <- list(random_forest = randomForestFit, glmnet = glmnetFit)
 
@@ -296,7 +296,7 @@ From above table, we can tell that the random forest model appears to be better 
 ## plot models by MAE, R-squrared and RMSE
 
 Similarly, we can visually inspect the models accuracies.
-```{r}
+```powershell
 
 bwplot(resamples, metric = "RMSE")
 dotplot(resamples, metric = "RMSE")
