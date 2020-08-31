@@ -219,6 +219,8 @@ img {
 
 
 /* Multi-level navigation links */
+
+/* Multi-level navigation links */
 .navbar-custom .nav .navlinks-container {
   position: relative;
 }
@@ -234,7 +236,7 @@ img {
   display: block;
   padding: 10px;
   padding-left: 30px;
-  background-color: {{ site.navbar-children-col }};
+  background: #f5f5f5;
   text-decoration: none !important;
   border-width: 0 1px 1px 1px;
   font-weight: normal;
@@ -252,7 +254,7 @@ img {
     text-align: center;
   }
   .navbar-custom .nav .navlinks-container:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.2);
   }
   .navbar-custom .nav .navlinks-container:hover .navlinks-children {
     display: block;
@@ -266,6 +268,7 @@ img {
     border-width: 0 1px 1px;
   }
 }
+
 
 /* --- Footer --- */
 
