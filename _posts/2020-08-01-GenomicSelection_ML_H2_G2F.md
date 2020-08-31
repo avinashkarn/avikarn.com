@@ -31,7 +31,7 @@ From the data set, five important agronomic traits were selected: `Days to Anthe
 # 1.0 Phenotypic data assessment
 
 ## Download G2F phenotypic data from year 2016 and 2017
-```{r}
+```powershell
 #install.packages("RCurl")
 library(RCurl)
 
