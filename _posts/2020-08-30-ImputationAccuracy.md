@@ -10,7 +10,10 @@ Compare imputation accuracies of different imputation methods (Beagle 5.1, LinkI
 
 <br>
 
-In this tutorial, I am only showing how one can evaluate the imputation accuracy in TASSEL GUI using `LinkImpute (LD kNNi) imputation algorithm. In my research experince, I have worked with genotype data of maize, teosinte, soybean, and grapes, and <a href="https://www.g3journal.org/content/5/11/2383.short">LinkImpute</a> has been an efficient imputation algorithm with low imputation error rate. However, I strongly suggest to try other imputation methods and compare their error rates, which can be easily done in TASSEL GUI software by following the below steps:
+In this tutorial, I am only showing how one can evaluate the imputation accuracy in TASSEL GUI using `LinkImpute (LD kNNi)` imputation algorithm. In my research experince, I have worked with genotype data of maize, teosinte, soybean, and grapes, and <a href="https://www.g3journal.org/content/5/11/2383.short">LinkImpute</a> has been an efficient imputation algorithm with low imputation error rate. 
+
+{: .box-note}
+<i class="fa fa-commenting" aria-hidden="true"></i> **Note:** I strongly suggest to try other imputation methods and compare their error rates, which can be easily done in TASSEL GUI software by following the below steps:
 
 - `Import` your genotype data (VCF, Hapmap and other formats)
 - `Mask` about 1-10% of the genotype data using `Mask Genotype` plugin under `Data`
