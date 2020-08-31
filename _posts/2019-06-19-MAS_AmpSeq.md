@@ -21,7 +21,7 @@ For general information on technology behind AmpSeq please read one of my previo
   <li> Remove markers with unknown, uninformative or with a lot of missing data. </li>
   <li> Unvalidated desirable alleles are recommended to be validated prior to impleting those markers in production phase of the analysis</li>
   <li> Please keep an eye on markers with low read counts, especially that are homozygous, because it could be a heterozygous undercalling issue. </li>
-<li> Minor suggestion, while color highlighting in MS Excel using Find and Replace function, please double check the highlighted cells. Because sometimes for example while trying to highlight allele "1", undesirable allele "94/94:1" gets highlighted - please watch out for those! </li>
+<li> Minor suggestion, while color highlighting in MS Excel using Find and Replace function, please double check the highlighted cells. Because sometimes for example while trying to highlight allele `1`, undesirable allele `94/94:1` gets highlighted - please watch out for those! </li>
   <li> Adding the "Keep/Discard" column is optional. However, I prefer having it because its very helpful in making selection on multiple traits/loci in a common genetic background. </li>
 </ul>
 
