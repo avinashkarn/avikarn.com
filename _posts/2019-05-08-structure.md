@@ -17,8 +17,9 @@ In this tutorial, I am using `numerical` SNP data as in `input` genotype file. O
 
 <center><img src="/image/structure/input.JPG" alt="Input File"></center>
 
-<hr>
-__Please Note__ Missing data is denoted as `-9` in the above image. 
+
+{: .box-note}
+<i class="fa fa-commenting" aria-hidden="true"></i> **Note:** Missing data is denoted as `-9` in the above image. 
 
 
 <center><h1> Step 2: Running the Structure software </h1></center>
