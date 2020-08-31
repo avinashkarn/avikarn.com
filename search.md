@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Search"
 css: "/css/search.css"
 ---
