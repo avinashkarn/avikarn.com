@@ -45,7 +45,7 @@ download.file("https://de.cyverse.org/anon-files//iplant/home/shared/commons_rep
 ```
 
 ## Import the downloaded two data sets in R environment
-```{r}
+```powershell
 library(dplyr)
 
 # import 2016 phenotype data
@@ -59,7 +59,7 @@ pheno_2017 <- read.csv(file = "pheno_2017_g2f_clean.csv", header = T, sep = ",",
 ```
 
 ## Checking the imported phenotype data
-```{r}
+```powershell
 glimpse(pheno_2016)
 View(pheno_2016)
 
@@ -70,7 +70,7 @@ glimpse(pheno_2017)
 
 Select five traits from the imported .csv data set from 2016 and 2017, and merging both data sets.
 
-```{r}
+```powershell
 library(dplyr)
 ## 2016 selected phenotypes and creating new object
 pheno_2016_selected <- pheno_2016 %>%
@@ -97,7 +97,7 @@ tail(merged_pheno)
 
 
 ## Summary statistics table of the selected phenotpe data across years and locations
-```{r}
+```powershell
 
 library(dplyr)
 library(tidyr)
@@ -132,7 +132,7 @@ From the above table, `Plant height` and `grain yield` has the highest variance,
 Box plots of each phenotype by year and multiple location.
 
 ### Flowering time data
-```{r}
+```powershell
 
 library(ggplot2)
 
@@ -159,7 +159,7 @@ From the above plot, both flowering time data are consistent among two years and
 
 
 ### Plant and ear height
-```{r}
+```powershell
 
 ## Plant height
 ggplot(merged_pheno, aes(x=Plant.Height..cm., fill = as.factor(Year))) +
@@ -183,7 +183,7 @@ geom_boxplot(alpha=0.6)  + facet_wrap(~Field.Location) +
 Both plant and ear height data across years and location are considerably consisent, with few outliers in the data set.
 
 ### Grain Yield
-```{r}
+```powershell
 
 ## Grain Yield
 ggplot(merged_pheno, aes(x=Grain.Yield..bu.A., fill = as.factor(Year))) +
@@ -213,7 +213,7 @@ The grain yield that appears to fairly consistent between two years however, thi
 Calculating variance componets and Heritability on a `line mean basis` for each phenotype using `lme4` package in R.
 
 Checking data structure
-```{r}
+```powershell
 attach(merged_pheno)
 
 ## checking data structure
@@ -237,7 +237,7 @@ GRAIN_YLD = as.numeric(Grain.Yield..bu.A.)
 
 ### Pollen DAP data
 
-```{r}
+```powershell
 library(lme4)
 
 ## Model variance component analysis
@@ -258,7 +258,7 @@ cat("Heritabilty of Pollen DAP days is", H2_pollen, "\n")
 
 
 ### Silk DAP data
-```{r}
+```powershell
 silk_varcomp = lmer(SILK ~ (1|LINE) + (1|LOC) + (1|YEAR) +  (1|LINE:LOC) + (1|LINE:YEAR))
 
 summary(silk_varcomp)
@@ -276,7 +276,7 @@ cat("Heritabilty of Silk DAP days is", H2_silk, "\n")
 
 
 ### Plant height data
-```{r}
+```powershell
 plantHT_varcomp = lmer(PLNT_HT ~ (1|LINE) + (1|LOC) + (1|YEAR) + (1|LINE:LOC) + (1|LINE:YEAR))
 
 summary(plantHT_varcomp)
@@ -293,7 +293,7 @@ cat("Heritabilty of ear height data is", H2_plHT, "\n")
 
 
 ### Ear height data
-```{r}
+```powershell
 earHT_varcomp = lmer(EAR_HT ~ (1|LINE) + (1|LOC) + (1|YEAR) + (1|LINE:LOC) + (1|LINE:YEAR))
 
 summary(earHT_varcomp)
@@ -309,7 +309,7 @@ cat("Heritabilty of ear height data is", H2_earHT, "\n")
 
 
 ### Grain yield data
-```{r}
+```powershell
 Yield_varcomp = lmer(GRAIN_YLD ~ (1|LINE) + (1|LOC) + (1|YEAR) + (1|LINE:LOC) + (1|LINE:YEAR))
 
 summary(Yield_varcomp)
@@ -341,7 +341,7 @@ All traits have high broad-sense heritabilty except grain yield, which implies t
 BLUPs shrink the estimates toward the mean and allow us to account for environmental, year-to-year variance factors in the model as well as the missing data.
 
 ### Pollen DAP days
-```{r}
+```powershell
 # estimate BLUPS
 pollen_blup = ranef(pollen_varcomp)
 # look at output structure
@@ -359,7 +359,7 @@ LINEBLUP_pollen = pollen_lineblup[,1]
 ```
 
 ### Silk DAP days
-```{r}
+```powershell
 # estimate BLUPS
 silk_blup = ranef(silk_varcomp)
 # look at output structure
@@ -377,7 +377,7 @@ LINEBLUP_silk = silk_lineblup[,1]
 
 
 ### Plant height
-```{r}
+```powershell
 # estimate BLUPS
 plntHT_blup = ranef(plantHT_varcomp)
 # look at output structure
@@ -394,7 +394,7 @@ LINEBLUP_plntHT = plntHT_lineblup[,1]
 ```
 
 ### Ear height
-```{r}
+```powershell
 # estimate BLUPS
 earHT_blup = ranef(earHT_varcomp)
 # look at output structure
@@ -412,7 +412,7 @@ LINEBLUP_earHT = earHT_lineblup[,1]
 
 
 ### Grain Yield
-```{r}
+```powershell
 # estimate BLUPS
 yield_blup = ranef(Yield_varcomp)
 # look at output structure
@@ -430,7 +430,7 @@ LINEBLUP_yield = yield_lineblup[,1]
 
 ### Histograms of the BLUPs for each trait
 
-```{r}
+```powershell
 
 par(mfrow=c(2,3))
 hist(LINEBLUP_pollen, col="grey", main = "Pollen DAP BLUPs")
@@ -466,7 +466,7 @@ The genotype summary of the raw genetic data set was calculated in TASSEL comman
 
 ## Plot Minor and Major Allele Frequency raw marker data:
 
-```{r}
+```powershell
 
 rawMarkerSum <- read.table("raw_geno_summary3.txt", header = T)
 
@@ -485,7 +485,7 @@ Minor allele frequency in the raw data is extremely high (<5e+05), indicating pr
 
 In TASSEL, SNP calls were filtered stringently for MAF threshold of 0.1 and minimum count of 1000 to remove extremely rare variants and the number of markers with high missing data. Similarly, taxa with greater 80% missing genotype calls were also filtered using the command line below.
 
-```bash
+```console
 
 $ ./tassel-5-standalone/run_pipeline.pl -log log.txt -Xms2g -Xmx10g  -fork1 -h5 genotype_imputed_2017.h5 -filterAlign -filterAlignMinFreq--exit-with-session 0.05 -filterAlignMinCount 200 -FilterTaxaPropertiesPlugin -minNotMissing 0.2 -endPlugin  -export -w
 genotype_imputed_2017_filtered -exportType VCF -runfork1
@@ -494,7 +494,7 @@ genotype_imputed_2017_filtered -exportType VCF -runfork1
 
 Next, genotype summary of the filtered file was generated in TASSEL using *-GenotypeSummaryPlugin* and using the below command line: 
 
-```bash
+```console
 $ ./tassel-5-standalone/run_pipeline.pl -Xmx20g -importGuess genotype_imputed_2017_filteredMAF01min1000.vcf -GenotypeSummaryPlugin -endPlugin -export GenoSummary_filtered
 
 ```
@@ -525,7 +525,7 @@ Even after stringent filtering, there are about 10% missing data in filtered dat
 
 232,681 markers were obtained after post-filtering the raw marker set. To reduce the computational workload and redundant markers in strong LD, filtered marker set were thinned by their physical position using *_ThinSitesByPositionPlugin* with minimum physical distance between markers of 10,000 bp.
 
-```bash
+```console
 $ ./tassel-5-standalone/run_pipeline.pl -log log_thinMarkers.txt -Xmx20g -importGuess genotype_imputed_2017_filteredMAF01min1000.vcf -ThinSitesByPositionPlugin -o thinned10k_geno_2017.vcf -minDist 10000 -endPlugin
 ```
 
@@ -553,7 +553,7 @@ Proportion of missing genotype calls is same after thinning.
 
 ## Plot MAF of thinned marker set:
 
-```{r}
+```powershell
 
 thinSiteSum <- read.table("thinnedGeno_summary3.txt", header = T)
 
@@ -572,7 +572,7 @@ MAF post-filtering and thinning has removed most of the rare variants in the dat
 
 MDS with elucidean distance was calcuated using post-filtered and thinned marker data to detect the underlying dimensions of the observed genetic distance i.e `Identity-By-Descent (IBS)` among the lines in the data set.
 
-```{r}
+```powershell
 mds <- read.table("MDS_thinned10k_geno.txt", header = T)
 head(mds)
 ggplot(mds, aes(x=PC1, y=PC2, color = PC1))+
@@ -589,7 +589,7 @@ ggplot(mds, aes(x=PC1, y=PC2, color = PC1))+
 
 command line: 
 
-```bash
+```console
 $ ./tassel-5-standalone/run_pipeline.pl -Xmx20g -log 10g_numeric.txt -importGuess thinned10k_geno_2017.vcf -NumericalGenotypePlugin -endPlugin -export Numeric_thinned_2017_geno -exportType ReferenceProbability
 ```
 
@@ -597,13 +597,13 @@ Running Numerical Imputation by means from TASSEL command line:
 
 The numeric imputation was performed by computing the mean of the respective marker columns.
 
-```bash
+```console
 $ ./tassel-5-standalone/run_pipeline.pl -Xms10g -Xmx30g -log log_numericImpute.txt -importGuess Numeric_thinned_2017_geno.txt -ImputationPlugin -ByMean  -endPlugin -export Numeric_thinned_2017_geno_Imputed -exportType ReferenceProbability
 ```
 
 ## Intersecting genotype and phenotype data
 
-```{r}
+```powershell
 
 pheno_BlUPs_noMissing <- read.table("pheno_BLUPs_allTraits_wGBStaxaNames_noMissingData.txt", header = T, na.strings = "NA") 
 geno_numericThinImpu <- read.table("Numeric_thinned_2017_geno_Imputed.txt", header = T)
@@ -618,7 +618,7 @@ head(pheno_BlUPs_noMissing)
 
 The phenotype and numerical genotype data were intersected by the Taxa names in each data set, and any Taxa with missing data were removed from the GS analysis.
 
-```{r}
+```powershell
 
 ## return all rows from x where there are matching values in y, and all columns from x and y
 intrsct_phenoGeno <- inner_join(pheno_BlUPs_noMissing, geno_numericThinImpu)
@@ -633,7 +633,7 @@ In the GS analysis, BLUPs only two traits -- Pollen DAP (high H2) and Grain yiel
 
 ## libraries and set seed
 
-```{r}
+```powershell
 library(randomForest)
 library(mlbench)
 library(caret)
@@ -649,7 +649,7 @@ set.seed(07232020)
 The imported data was split into 70/30 split, since this dataset gives a larger and more reliable test set.
 
 ### Randomizing the order of the dataset
-```{r}
+```powershell
 rows <- sample(nrow(intrsct_phenoGeno))
 
 intrsct_phenoGeno <- intrsct_phenoGeno[rows, ]
@@ -658,7 +658,7 @@ intrsct_phenoGeno <- intrsct_phenoGeno[rows, ]
 
 ### Find the rows to split
 
-```{r}
+```powershell
 
 split <- round(nrow(intrsct_phenoGeno) * 0.70)
 
@@ -668,7 +668,7 @@ test_set <- intrsct_phenoGeno[(split + 1):nrow(intrsct_phenoGeno),]
 ```
 
 ### Confirm train and test set sizes
-```{r}
+```powershell
 # Check the ratios of training and test sets
 nrow(train_set)/nrow(intrsct_phenoGeno)
 
@@ -698,7 +698,7 @@ It is a extension of `glm` models with a built-in variable selection that also h
 Before creating and running the models, its a good idea to create a `trainControl` object to tuning parameters and further control how models are created.
 
 
-```{r}
+```powershell
 myControl <- trainControl(
   method = "cv",
   number =10,
@@ -713,7 +713,7 @@ fitting the glmnet model:
 
 First, we create the glmnet models, which is a combination of lasso and ridge regression, and we can fit the mix of the two models by selecting the values for `alpha` and `lambda`.
 
-```{r}
+```powershell
 
 glmnetFit_pollen = train(x = train_set[7:28601], 
             y = train_set$PollenDAP_BLUPs, 
@@ -736,7 +736,7 @@ From the above output of the model, we see that alpha = 0, indicating ridge regr
 
 ### Comparing models: Ridge vs LASSO
 
-```{r}
+```powershell
 plot(glmnetFit_pollen, main = "GlmnetFit Pollen DAP")
 
 ```
@@ -745,7 +745,7 @@ plot(glmnetFit_pollen, main = "GlmnetFit Pollen DAP")
 
 
 ### Full regularization path
-```{r}
+```powershell
 plot(glmnetFit_pollen$finalModel)
 ```
 
@@ -753,7 +753,7 @@ plot(glmnetFit_pollen$finalModel)
 
 ### Plot top 20 important variables for Pollen DAP
 
-```{r}
+```powershell
 plot(varImp(glmnetFit_pollen), top = 20)
 
 ```
@@ -766,7 +766,7 @@ Marker `S7_161300485` on chromosome 7 was calculated to be the most important va
 
 Now we can test the robustness of the glmnet model by testing it on `test_set` data set, and regressing the predicted and measured values.
 
-```{r}
+```powershell
 prediction_glmnet_pollen <- predict(glmnetFit_pollen, test_set)
 
 df_pollen_mes_glmnet <- data.frame(test_set$PollenDAP_BLUPs)
@@ -774,7 +774,7 @@ df_pollen_pred_glmnet <- data.frame(prediction_glmnet_pollen)
 
 ```
 
-```{r}
+```powershell
 library(ggplot2)
 library(reshape2)
 
@@ -793,7 +793,7 @@ In the above plot, we see that glmnet model pollen predicting the phenotype cons
 
 The `RMSE` and `R-Sq` between the predicted and measured values are below:
 
-```{r}
+```powershell
 error_glm_pollen <- prediction_glmnet_pollen - test_set$PollenDAP_BLUPs
 rmse_glm_pollen <- sqrt(mean(error_glm_pollen^2))
 
@@ -802,7 +802,7 @@ cat("RMSE of glmnet model for Pollen DAP is", rmse_glm_pollen)
 
 R-squared:
 
-```{r}
+```powershell
 # creat Rsq function
 rsq <- function(x, y) summary(lm(y~x))$r.squared
 
@@ -819,7 +819,7 @@ This alogrithm is often acurrate than other algorithms, easier to tune, require 
 
 Markers in the column from 2:1942 were used as predictors (`x`) and the `phenotype` column as the `y` variable. Similarly, the performance of the model was evaluated using root mean square error (`RMSE`) (One can choose other method such as `ROC`, `AUC` etc as well), and finally choosing random forest `rf` as the method in the model.
 
-```{r}
+```powershell
 # Create tunegrid for mtry to tune the model. 
 tunegrid <- data.frame(.mtry=c(2,4,6, 10, 15, 20, 100))
 
@@ -839,7 +839,7 @@ randomForestFit_pollen
 
 Plotting the `randomForestFit` for Pollen BLUPs model. 
 
-```{r}
+```powershell
 plot(randomForestFit_pollen, main = "Pollen DAP - Random Forest")
 ```
 
@@ -849,7 +849,7 @@ The best mtry with lowest RMSE for this model was 6.
 
 Next, plotting the important predictors based on their calculated importance scores using `varImp` function.
 
-```{r}
+```powershell
 plot(varImp(randomForestFit_pollen), top = 20)
 ```
 
@@ -861,7 +861,7 @@ After building the supevised random forest learning model, The top 20 predictors
 
 Now we can test the robustness of the model by testing it on `test_set` data set, and regressing the predicted and measured values.
 
-```{r}
+```powershell
 prediction_pollen_rf <- predict(randomForestFit_pollen, test_set)
 
 df_pollen_mes_rf <- data.frame(test_set$PollenDAP_BLUPs)
@@ -883,7 +883,7 @@ ggplot(pollen_rf_bind, aes(x=test_set.PollenDAP_BLUPs, y=prediction_pollen_rf)) 
 
 And we can also calculate the `RMSE` between the predicted and measured values.
 
-```{r}
+```powershell
 error_pollen_rf <- prediction_pollen_rf - test_set$PollenDAP_BLUPs
 rmse_pollen_rf <- sqrt(mean(error_pollen_rf^2))
 
@@ -892,7 +892,7 @@ cat("RMSE of Random Forest model for Pollen DAP is", rmse_pollen_rf)
 
 R-squared:
 
-```{r}
+```powershell
 # creat Rsq function
 rsq <- function(x, y) summary(lm(y~x))$r.squared
 
@@ -905,7 +905,7 @@ cat("R-squared of Random Forest model for Pollen DAP is", Rsq_Pollen_rf)
 
 We can compare the performance of the models by studying their MAE, RMSE and R-squared values side-by-side, making it very convenient.
 
-```{r}
+```powershell
 # Create model_list
 model_list_pollen <- list(random_forest = randomForestFit_pollen, glmnet = glmnetFit_pollen)
 
@@ -923,7 +923,7 @@ summary(resamples_pollen)
 ## plot both GS models by RMSE
 
 Similarly, we can visually inspect the models accuracies.
-```{r}
+```powershell
 par(mfrow=c(1,2))
 bwplot(resamples_pollen, metric = "RMSE")
 dotplot(resamples_pollen, metric = "RMSE")
@@ -941,7 +941,7 @@ From above table, we can tell that the glmnet model appears to be better model f
 
 ### making custom trainControl
 
-```{r}
+```powershell
 myControl <- trainControl(
   method = "cv",
   number =10,
@@ -954,7 +954,7 @@ myControl <- trainControl(
 
 fitting the model for grain yield using the glmnet model
 
-```{r}
+```powershell
 
 glmnetFit_yield = train(x = train_set[7:28601], 
             y = train_set$yield_BLUPs, 
@@ -975,7 +975,7 @@ print(glmnetFit_yield)
 
 ### Comparing models: Ridge vs LASSO
 
-```{r}
+```powershell
 plot(glmnetFit_yield, main = "GlmnetFit Grain Yield")
 
 ```
@@ -985,13 +985,13 @@ plot(glmnetFit_yield, main = "GlmnetFit Grain Yield")
 From the above comparison model, we can tell that the alpha and lamda of 1 has lowest RMSE.
 
 ### Full regularization path
-```{r}
+```powershell
 plot(glmnetFit_yield$finalModel)
 ```
 <center><img src="/image/g2f_GS/Capture30.JPG"></center>
 
 ### Top predictors
-```{r}
+```powershell
 plot(varImp(glmnetFit_yield), top = 20)
 
 ```
@@ -1004,7 +1004,7 @@ Markers `S3_210537524` was calculated as the most important variable by glmnet m
 
 Now we can test the robustness of the glmnet model by testing it on `test_set` data set, and regressing the predicted and measured values.
 
-```{r}
+```powershell
 prediction_glmnet_yield <- predict(glmnetFit_yield, test_set)
 
 df_yield_mes_glmnet <- data.frame(test_set$yield_BLUPs)
@@ -1027,7 +1027,7 @@ From the above plot, we see poor correlation between the predicted and observed 
 
 `RMSE` and `R-Sq` between the predicted and measured values.
 
-```{r}
+```powershell
 error_glm_yield <- prediction_glmnet_yield - test_set$yield_BLUPs
 rmse_glm_yield <- sqrt(mean(error_glm_yield^2))
 
@@ -1038,7 +1038,7 @@ cat("RMSE of Glmnet model for Grain yield is", rmse_glm_yield)
 
 R-squared:
 
-```{r}
+```powershell
 # creat Rsq function
 rsq <- function(x, y) summary(lm(y~x))$r.squared
 
@@ -1052,7 +1052,7 @@ cat("R-squared of Glmnet model for Grain yield is", Rsq_grain_glmnet)
 ## Random forest model
 
 
-```{r}
+```powershell
 # Create tunegrid for mtry to tune the model. 
 tunegrid <- data.frame(.mtry=c(2,4,6, 10, 15, 20, 100))
 
@@ -1072,7 +1072,7 @@ randomForestFit_yield
 
 Plotting the `randomForetFit` model. 
 
-```{r}
+```powershell
 plot(randomForestFit_yield, main = "Grain yield - Random Forest")
 ```
 
@@ -1082,7 +1082,7 @@ The best mtry with lowest RMSE for this model was 2.
 
 Next, we can plot the important predictors based on their calculated importance scores using `varImp` function.
 
-```{r}
+```powershell
 plot(varImp(randomForestFit_yield), top = 20)
 ```
 
@@ -1094,7 +1094,7 @@ From the above plot, we tell that the `S6_153099472` was the most important vari
 
 Now we can test the robustness of the model by testing it on `test_set` data set, and regressing the predicted and measured values.
 
-```{r}
+```powershell
 prediction_yield_rf <- predict(randomForestFit_yield, test_set)
 
 df_yield_mes_rf <- data.frame(test_set$yield_BLUPs)
@@ -1118,7 +1118,7 @@ Similar to glmnet model, random forest fail to predict the grain yield.
 
 And we can also calculate the `RMSE` between the predicted and measured values.
 
-```{r}
+```powershell
 error_yield_rf <- prediction_yield_rf - test_set$yield_BLUPs
 rmse_yield_rf <- sqrt(mean(error_yield_rf^2))
 
@@ -1128,7 +1128,7 @@ cat("RMSE of Random Forest model for Grain yield is", rmse_yield_rf)
 
 R-squared:
 
-```{r}
+```powershell
 # creat Rsq function
 rsq <- function(x, y) summary(lm(y~x))$r.squared
 
@@ -1141,7 +1141,7 @@ cat("R-squared of Random Forest model for Grain yield is", Rsq_grain_rf)
 
 We can compare the performance of the models by studying their MAE, RMSE and R-squared values side-by-side, making it very convenient.
 
-```{r}
+```powershell
 # Create model_list
 model_list_yield <- list(random_forest = randomForestFit_yield, glmnet = glmnetFit_yield)
 
@@ -1158,7 +1158,7 @@ summary(resamples_yield)
 ## plot both GS models by RMSE
 
 Similarly, we can visually inspect the models accuracies.
-```{r}
+```powershell
 par(mfrow=c(1,2))
 bwplot(resamples_yield, metric = "RMSE")
 dotplot(resamples_yield, metric = "RMSE")
