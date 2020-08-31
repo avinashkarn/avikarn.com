@@ -3,7 +3,12 @@ layout: default
 title: "Search"
 css: "/css/search.css"
 ---
-
+<!-- particles.js exclusion -->
+<style>
+  #particles-js{
+      display: none;
+  }
+  
 # Search AviKarn.com
 
 ### Using the Amazing Google
