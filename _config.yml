@@ -23,7 +23,6 @@
 
 # List of links in the navigation bar
   navbar-links:
-    Search: "search"
     About Me/Contact: "resume"
     Tutorials:
       - Machine Learning 1: "https://avikarn.com/2020-06-26-MachineLearning_rf_glmnet/"
@@ -49,7 +48,7 @@
       - Astronomy: "astronomy"
       - Cooking: "foodblog"
       - Photography: "photography"
-    
+  nav-search: "search"
     #Resume: "resume"
     #Shop: "https://dealecommerce.com"
 #  Tags: "tags"
