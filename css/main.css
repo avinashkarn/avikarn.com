@@ -732,6 +732,7 @@ td.gutter {
 /* --- Typed.js --- */
 .typed-cursor {
   opacity: 1;
+  color: #6935db;
   font-weight: 100;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
