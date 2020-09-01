@@ -70,6 +70,8 @@ glimpse(pheno_2017)
 ```
 <br>
 
+Output:
+
 ```console
  Rows: 16,377
  Columns: 38
@@ -175,6 +177,7 @@ df_mergePheno.summary.tidy <- df_mergePheno.summary %>% gather(stat, val) %>%
 print(df_mergePheno.summary.tidy)
 ```
 <br>
+Output:
 ```console
  # A tibble: 5 x 6
    Phenotype            min   max  mean median    sd
@@ -204,7 +207,7 @@ geom_boxplot(alpha=0.6) + facet_wrap(~Field.Location) +
   scale_x_log10() +
   ggtitle("Pollen DAP Days")
 ```
-
+Output:
 <center><img src="/image/g2f_GS/Capture4.JPG"></center>
 
 <br>
@@ -217,7 +220,7 @@ geom_boxplot(alpha=0.6)  + facet_wrap(~Field.Location) +
   ggtitle("Silk DAP Days")
 
 ```
-
+Output:
 <center><img src="/image/g2f_GS/Capture5.JPG"></center>
 
 <br>
@@ -243,6 +246,7 @@ geom_boxplot(alpha=0.6)  + facet_wrap(~Field.Location) +
 
 ```
 <br>
+Output:
 <center><img src="/image/g2f_GS/Capture6.JPG"></center>
 <hr>
 <center><img src="/image/g2f_GS/Capture7.JPG"></center>
@@ -265,6 +269,7 @@ geom_boxplot(alpha=0.6)  + facet_wrap(~Field.Location) +
 
 ```
 <br>
+Output:
 <center><img src="/image/g2f_GS/Capture8.JPG"></center>
 
 <br>
