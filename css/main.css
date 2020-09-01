@@ -348,7 +348,7 @@ footer .theme-by {
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: {{ site.hover-col }};
+  color: {{ site.hover-col | default:"#3e5af7" }};
 }
 
 .post-preview .post-title {
