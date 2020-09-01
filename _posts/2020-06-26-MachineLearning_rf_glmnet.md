@@ -31,6 +31,8 @@ The genetic marker data was converted into numeric format. One can use `TASSEL` 
 
 <p>Download the dataset i used in this tutorial here at this link: <a href="https://avikarn.com/image/mlr_rf/rhGeno_numericImpu_malateBlues_HI.txt">Click here</a></p>
 
+Code: 
+
 ```powershell
 phenoGeno <- read.table("rhGeno_numericImpu_malateBlues_HI.txt", header = T, na.strings = "NA")
 
@@ -39,7 +41,17 @@ head(phenoGeno)
 tail(phenoGeno)
 
 ```
-<center><img src="/image/mlr_rf/plot1.JPG"></center>
+
+Output:
+```console
+   phenotype marker1 marker2 marker3 marker4 marker5 marker6 marker7 marker8
+ 1  3.301974     0.5     0.0     0.5     0.0     0.0   0.500       1     0.0
+ 2  3.314499     0.0     0.0     1.0     0.0     0.0   1.000       1     0.0
+ 3  4.701069     0.5     0.0     1.0     0.0     0.0   0.500       1     0.0
+ 4  4.943334     1.0     0.5     0.5     0.5     0.5   0.252       1     0.5
+ 5  5.061315     0.0     0.0     1.0     0.0     0.0   0.500       1     0.0
+ 6  5.144740     0.5     0.0     0.5     0.0     0.0   1.000       1     0.0
+```
 
 
 
@@ -117,6 +129,8 @@ myTrainingControl <- trainControl(method = "cv",
 
 Markers in the column from 2:1942 were used as predictors (`x`) and the `phenotype` column as the `y` variable. Similarly, the performance of the model was evaluated using root mean square error (`RMSE`) (One can choose other method such as `ROC`, `AUC` etc as well), and finally choosing random forest `rf` as the method in the model.
 
+Code:
+
 ```powershell
 # Create tunegrid for mtry to tune the model. 
 tunegrid <- data.frame(.mtry=c(2,4,6, 10, 15, 20, 100))
@@ -131,8 +145,31 @@ randomForestFit = train(x = train_set[2:1942],
 # print the model output 
 randomForestFit
 ```
-<center><img src="/image/mlr_rf/plot5.JPG"></center>
+Output:
 
+```console
+ Random Forest 
+ 
+  101 samples
+ 1941 predictors
+ 
+ No pre-processing
+ Resampling: Bootstrapped (25 reps) 
+ Summary of sample sizes: 101, 101, 101, 101, 101, 101, ... 
+ Resampling results across tuning parameters:
+ 
+   mtry  RMSE      Rsquared   MAE     
+     2   2.754033  0.1057086  2.233488
+     4   2.736635  0.1023974  2.221954
+     6   2.717262  0.1151134  2.203889
+    10   2.710155  0.1121776  2.200923
+    15   2.700049  0.1159634  2.197863
+    20   2.700378  0.1109506  2.194062
+   100   2.668136  0.1296488  2.159293
+ 
+ RMSE was used to select the optimal model using the smallest value.
+ The final value used for the model was mtry = 100.
+```
 Plotting the `randomForetFit` model. 
 
 ```powershell
@@ -186,6 +223,8 @@ First, we create the glmnet models, which is a combination of lasso and ridge re
 
 ## glmnet model
 
+Code: 
+
 ```powershell
 glmnetFit = train(x = train_set[2:1942], 
             y = train_set$phenotype, 
@@ -201,7 +240,46 @@ glmnetFit = train(x = train_set[2:1942],
 print(glmnetFit)
 ```
 
-<center><img src="/image/mlr_rf/plot9.JPG"></center>
+Output:
+
+```console
+ glmnet 
+ 
+  101 samples
+ 1941 predictors
+ 
+ No pre-processing
+ Resampling: Bootstrapped (25 reps) 
+ Summary of sample sizes: 101, 101, 101, 101, 101, 101, ... 
+ Resampling results across tuning parameters:
+ 
+   alpha  lambda  RMSE      Rsquared    MAE     
+   0      0.0     2.724706  0.13509467  2.256743
+   0      0.1     2.724706  0.13509467  2.256743
+   0      0.2     2.724706  0.13509467  2.256743
+   0      0.3     2.724706  0.13509467  2.256743
+   0      0.4     2.724706  0.13509467  2.256743
+   0      0.5     2.724706  0.13509467  2.256743
+   0      0.6     2.724706  0.13509467  2.256743
+   0      0.7     2.724706  0.13509467  2.256743
+   0      0.8     2.724706  0.13509467  2.256743
+   0      0.9     2.724706  0.13509467  2.256743
+   0      1.0     2.724706  0.13509467  2.256743
+   1      0.0     3.005565  0.09225936  2.467820
+   1      0.1     2.897531  0.09590490  2.359915
+   1      0.2     2.833422  0.09475887  2.279513
+   1      0.3     2.817838  0.08354247  2.255736
+   1      0.4     2.798377  0.08085184  2.229348
+   1      0.5     2.776585  0.08554465  2.205043
+   1      0.6     2.767135  0.08753894  2.193391
+   1      0.7     2.767016  0.08620681  2.193196
+   1      0.8     2.773281  0.08476073  2.200689
+   1      0.9     2.784696  0.08616074  2.215916
+   1      1.0     2.800997  0.08520355  2.235143
+ 
+ RMSE was used to select the optimal model using the smallest value.
+ The final values used for the model were alpha = 0 and lambda = 1.
+```
 
 From the above output of the model, we see that alpha = 1, indicating lasso regression was performed, where, the size of the penalty was 0.7 
 
@@ -288,7 +366,33 @@ resamples
 summary(resamples)
 ```
 
-<center><img src="/image/mlr_rf/plot15.JPG"></center>
+Output:
+
+```console
+Call:
+ summary.resamples(object = resamples)
+ 
+ Models: random_forest, glmnet 
+ Number of resamples: 25 
+ 
+ MAE 
+                   Min.  1st Qu.   Median     Mean  3rd Qu.     Max. NA's
+ random_forest 1.827043 1.955185 2.227830 2.159293 2.325698 2.462633    0
+ glmnet        1.906341 2.115096 2.219258 2.256743 2.358562 2.839599    0
+ 
+ RMSE 
+                   Min.  1st Qu.   Median     Mean  3rd Qu.     Max. NA's
+ random_forest 2.251769 2.464010 2.697926 2.668136 2.850605 3.100536    0
+ glmnet        2.323055 2.544948 2.697235 2.724706 2.819970 3.509943    0
+ 
+ Rsquared 
+                       Min.    1st Qu.   Median      Mean   3rd Qu.      Max.
+ random_forest 4.784201e-02 0.07672433 0.117394 0.1296488 0.1714565 0.3358213
+ glmnet        8.322920e-07 0.06500280 0.126212 0.1350947 0.1709628 0.4315585
+               NA's
+ random_forest    0
+ glmnet           0
+```
 
 From above table, we can tell that the random forest model appears to be better model incoparison to glmnet.
 
