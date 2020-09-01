@@ -57,6 +57,7 @@ pheno_2016 <- read.csv(file = "pheno_2016_g2f_clean.csv", header = T, sep = ",",
 pheno_2017 <- read.csv(file = "pheno_2017_g2f_clean.csv", header = T, sep = ",",
                        na.strings = c("","NaN"), fileEncoding="UTF-8-BOM")
 ```
+<br>
 
 ## Checking the imported phenotype data
 ```powershell
@@ -66,7 +67,10 @@ View(pheno_2016)
 glimpse(pheno_2017)
 #View(pheno_2017)
 ```
+<br>
 <center><img src="/image/g2f_GS/Capture1.JPG"></center>
+
+<br>
 
 Select five traits from the imported .csv data set from 2016 and 2017, and merging both data sets.
 
@@ -93,8 +97,11 @@ tail(merged_pheno)
 
 #View(merged_pheno)
 ```
+<br>
 <center><img src="/image/g2f_GS/Capture2.JPG"></center>
 
+
+<br>
 
 ## Summary statistics table of the selected phenotpe data across years and locations
 ```powershell
@@ -121,9 +128,11 @@ df_mergePheno.summary.tidy <- df_mergePheno.summary %>% gather(stat, val) %>%
 
 print(df_mergePheno.summary.tidy)
 ```
-
+<br>
 <center><img src="/image/g2f_GS/Capture3.JPG"></center>
 
+
+<br>
 
 From the above table, `Plant height` and `grain yield` has the highest variance, while `flowering time data` has the lowest variance.
 
@@ -150,10 +159,12 @@ geom_boxplot(alpha=0.6)  + facet_wrap(~Field.Location) +
   ggtitle("Silk DAP Days")
 
 ```
-
+<br>
 <center><img src="/image/g2f_GS/Capture4.JPG"></center>
+<hr>
 <center><img src="/image/g2f_GS/Capture5.JPG"></center>
 
+<br>
 
 From the above plot, both flowering time data are consistent among two years and across years, however, with a couple of exceptions such as data from ONH2 (Canada), which appears to early flowering in 2017 and late in 2016, possibly due to difference in the weather conditions. Similarly, there are locations were no data were collected and or with only single year data.
 
@@ -175,12 +186,17 @@ geom_boxplot(alpha=0.6)  + facet_wrap(~Field.Location) +
   ggtitle("Ear height (cm)")
 
 ```
-
+<br>
 <center><img src="/image/g2f_GS/Capture6.JPG"></center>
+<hr>
 <center><img src="/image/g2f_GS/Capture7.JPG"></center>
 
+<br>
 
 Both plant and ear height data across years and location are considerably consisent, with few outliers in the data set.
+
+
+<br>
 
 ### Grain Yield
 ```powershell
@@ -192,7 +208,10 @@ geom_boxplot(alpha=0.6)  + facet_wrap(~Field.Location) +
   ggtitle("Grain Yield (bu/Acre)")
 
 ```
+<br>
 <center><img src="/image/g2f_GS/Capture8.JPG"></center>
+
+<br>
 
 The grain yield that appears to fairly consistent between two years however, this data set has a high number of outliers in comparison to other traits.
 
@@ -207,6 +226,9 @@ The grain yield that appears to fairly consistent between two years however, thi
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+
+<br>
 
 ## Heritability 
 
@@ -235,6 +257,8 @@ GRAIN_YLD = as.numeric(Grain.Yield..bu.A.)
 ```
 
 
+<br>
+
 ### Pollen DAP data
 
 ```powershell
@@ -253,9 +277,11 @@ H2_pollen = 10.47035 /(10.47035 + 0.05196/34 + 0.13156/2 + 20.16058/36)
 
 cat("Heritabilty of Pollen DAP days is", H2_pollen, "\n")
 ```
-
+<br>
 <center><img src="/image/g2f_GS/Capture9.JPG"></center>
 
+
+<br>
 
 ### Silk DAP data
 ```powershell
@@ -273,6 +299,7 @@ cat("Heritabilty of Silk DAP days is", H2_silk, "\n")
 
 ```
 
+<br>
 
 
 ### Plant height data
@@ -289,6 +316,7 @@ H2_plHT = 287.302 /(287.302 + 2.628/34 + 2.589/2 + 604.888/36)
 cat("Heritabilty of ear height data is", H2_plHT, "\n")
 
 ```
+<br>
 
 
 
@@ -307,6 +335,7 @@ cat("Heritabilty of ear height data is", H2_earHT, "\n")
 
 ```
 
+<br>
 
 ### Grain yield data
 ```powershell
@@ -323,6 +352,7 @@ cat("Heritabilty of ear height data is", H2_yield, "\n")
 
 
 ```
+<br>
 
 ### Summary table of the heritablity of each trait
 
@@ -335,6 +365,7 @@ cat("Heritabilty of ear height data is", H2_yield, "\n")
 |Grain yield | 0.76 |
 
 All traits have high broad-sense heritabilty except grain yield, which implies that the grain yield is significantly influenced by environmental and other unknown factors, and using only genetic markers for GS could result spurious results.
+<br>
 
 ## Estimating Best Linear UnBiased Predictors (BLUP) for each Line by trait
 
@@ -426,6 +457,7 @@ write.csv(yield_lineblup, file="yield_lineblup.csv")
 
 LINEBLUP_yield = yield_lineblup[,1]
 ```
+<br>
 
 
 ### Histograms of the BLUPs for each trait
@@ -441,21 +473,10 @@ hist(LINEBLUP_yield, col="grey", main = "Yield BLUPs")
 par(mfrow=c(1,1))
 
 ```
-
+<br>
 <center><img src="/image/g2f_GS/Capture10.JPG"></center>
 
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- inside_web_post -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5126027065024936"
-     data-ad-slot="2632452569"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<br>
 
 
 # 2.0 Genotypic data 
@@ -476,8 +497,9 @@ library(ggplot2);library(reshape2)
 rawdata<- melt(df_rawMF)
 ggplot(rawdata, aes(x=value, fill=variable)) + geom_histogram(bins = 100) + ggtitle("Raw genotype allele freq.")
 ```
-
+<br>
 <center><img src="/image/g2f_GS/Capture11.JPG"></center>
+<br>
 
 Minor allele frequency in the raw data is extremely high (<5e+05), indicating presence of rare variants in disproportionate number, and therefore needs to be filtered prior to any downstream analysis to avoid any bias in the result.
 
@@ -520,6 +542,7 @@ Summary of the 2017 genotypic data after filteration of markers and taxa
 |Average Minor Allele Frequency	| 0.28261 |
 
 Even after stringent filtering, there are about 10% missing data in filtered data set. But before that, the number of filtered markers or predictors are on higher end which could possibly be in high `linkage disequilibrium (LD)` with one another and not providing any additional importance in the analysis but adding computational burdern. Therefore, this marker set was further thinned by its physical position and imputed.
+<br>
 
 ## Thinning of markers by position
 
@@ -528,6 +551,7 @@ Even after stringent filtering, there are about 10% missing data in filtered dat
 ```console
 $ ./tassel-5-standalone/run_pipeline.pl -log log_thinMarkers.txt -Xmx20g -importGuess genotype_imputed_2017_filteredMAF01min1000.vcf -ThinSitesByPositionPlugin -o thinned10k_geno_2017.vcf -minDist 10000 -endPlugin
 ```
+<br>
 
 Summary of the markers after thinning them: 
 
@@ -550,6 +574,7 @@ Summary of the markers after thinning them:
 |Average Minor Allele Frequency |	0.27872 |
 
 Proportion of missing genotype calls is same after thinning.
+<br>
 
 ## Plot MAF of thinned marker set:
 
@@ -563,10 +588,11 @@ library(ggplot2);library(reshape2)
 data<- melt(x)
 ggplot(data,aes(x=value, fill=variable)) + geom_histogram(alpha=0.5, bins = 100) + ggtitle("Thinned genotype allele freq.")
 ```
-
+<br>
 <center><img src="/image/g2f_GS/Capture12.JPG"></center>
 
 MAF post-filtering and thinning has removed most of the rare variants in the data set.
+<br>
 
 ## Plot Multidimenisonal Scaling (MDS) to explore genetic structure of the genotypes 
 
@@ -579,8 +605,9 @@ ggplot(mds, aes(x=PC1, y=PC2, color = PC1))+
   geom_point() +
   ggtitle("MDS plot")
 ```
-
+<br>
 <center><img src="/image/g2f_GS/Capture13.JPG"></center>
+<br>
 
 
 ## Converting thinned genotype data into numerical format and imputing for Machine Learning
@@ -682,9 +709,10 @@ hist(train_set$yield_BLUPs, main = "Train set - Grain Yield", xlab = "Grain Yiel
 hist(test_set$yield_BLUPs, main = "Test set - Grain Yield", xlab = "Grain Yield BLUPs")
 par(mfrow=c(1,1))
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture15.JPG"></center>
-
+<br>
 As needed, the distribution of training and testing set is about the same, which is import to prevent any bias in the result.
 
 # Pollen DAP BLUPs
@@ -728,6 +756,7 @@ glmnetFit_pollen = train(x = train_set[7:28601],
 print(glmnetFit_pollen)
 
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture16.JPG"></center>
 
@@ -740,6 +769,7 @@ From the above output of the model, we see that alpha = 0, indicating ridge regr
 plot(glmnetFit_pollen, main = "GlmnetFit Pollen DAP")
 
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture17.JPG"></center>
 
@@ -748,6 +778,7 @@ plot(glmnetFit_pollen, main = "GlmnetFit Pollen DAP")
 ```powershell
 plot(glmnetFit_pollen$finalModel)
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture18.JPG"></center>
 
@@ -757,6 +788,7 @@ plot(glmnetFit_pollen$finalModel)
 plot(varImp(glmnetFit_pollen), top = 20)
 
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture19.JPG"></center>
 
@@ -773,6 +805,7 @@ df_pollen_mes_glmnet <- data.frame(test_set$PollenDAP_BLUPs)
 df_pollen_pred_glmnet <- data.frame(prediction_glmnet_pollen)
 
 ```
+<br>
 
 ```powershell
 library(ggplot2)
@@ -786,6 +819,7 @@ ggplot(pollen_glmnet_bind, aes(x=test_set.PollenDAP_BLUPs, y=prediction_glmnet_p
 
 
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture20.JPG"></center>
 
@@ -799,6 +833,7 @@ rmse_glm_pollen <- sqrt(mean(error_glm_pollen^2))
 
 cat("RMSE of glmnet model for Pollen DAP is", rmse_glm_pollen)
 ```
+<br>
 
 R-squared:
 
@@ -810,6 +845,7 @@ Rsq_Pollen_glmnet <- rsq(test_set$PollenDAP_BLUPs, prediction_glmnet_pollen)
 
 cat("R-squared of glmnet model for Pollen DAP is", Rsq_Pollen_glmnet)
 ```
+<br>
 
 ## Random forest - rf function
 
@@ -833,6 +869,7 @@ randomForestFit_pollen = train(x = train_set[7:28601],
 # print the model output 
 randomForestFit_pollen
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture21.JPG"></center>
 
@@ -842,6 +879,7 @@ Plotting the `randomForestFit` for Pollen BLUPs model.
 ```powershell
 plot(randomForestFit_pollen, main = "Pollen DAP - Random Forest")
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture22.JPG"></center>
 
@@ -852,10 +890,12 @@ Next, plotting the important predictors based on their calculated importance sco
 ```powershell
 plot(varImp(randomForestFit_pollen), top = 20)
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture23.JPG"></center>
 
 After building the supevised random forest learning model, The top 20 predictors can be ranked by their importance, and from the above plot, we tell that the marker S2_53055530, along with other 6 markers contributing in expalining the variance of the phenotype.
+<br>
 
 ### Validation of Random Forest model
 
@@ -877,9 +917,11 @@ ggplot(pollen_rf_bind, aes(x=test_set.PollenDAP_BLUPs, y=prediction_pollen_rf)) 
   geom_smooth(method="lm", se=TRUE, fullrange=FALSE, level=0.95)
 
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture24.JPG"></center>
 
+<br>
 
 And we can also calculate the `RMSE` between the predicted and measured values.
 
@@ -900,6 +942,7 @@ Rsq_Pollen_rf <- rsq(test_set$PollenDAP_BLUPs, prediction_pollen_rf)
 
 cat("R-squared of Random Forest model for Pollen DAP is", Rsq_Pollen_rf)
 ```
+<br>
 
 ### Comparing the GS models by their type 
 
@@ -916,9 +959,11 @@ resamples_pollen
 # Summarize the results
 summary(resamples_pollen)
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture25.JPG"></center>
 
+<br>
 
 ## plot both GS models by RMSE
 
@@ -929,6 +974,7 @@ bwplot(resamples_pollen, metric = "RMSE")
 dotplot(resamples_pollen, metric = "RMSE")
 par(mfrow=c(1,1))
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture26.JPG"></center>
 <center><img src="/image/g2f_GS/Capture27.JPG"></center>
@@ -969,9 +1015,11 @@ glmnetFit_yield = train(x = train_set[7:28601],
 print(glmnetFit_yield)
 
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture28.JPG"></center>
 
+<br>
 
 ### Comparing models: Ridge vs LASSO
 
@@ -979,6 +1027,7 @@ print(glmnetFit_yield)
 plot(glmnetFit_yield, main = "GlmnetFit Grain Yield")
 
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture29.JPG"></center>
 
@@ -995,10 +1044,12 @@ plot(glmnetFit_yield$finalModel)
 plot(varImp(glmnetFit_yield), top = 20)
 
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture31.JPG"></center>
 
 Markers `S3_210537524` was calculated as the most important variable by glmnet model.
+<br>
 
 ### Validation of glmnet model
 
@@ -1020,8 +1071,10 @@ ggplot(yield_glmnet_bind, aes(x=test_set.yield_BLUPs, y=prediction_glmnet_yield)
   geom_smooth(method="lm", se=TRUE, fullrange=FALSE, level=0.95)
 
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture32.JPG"></center>
+<br>
 
 From the above plot, we see poor correlation between the predicted and observed values for grain yield data set.
 
@@ -1034,6 +1087,7 @@ rmse_glm_yield <- sqrt(mean(error_glm_yield^2))
 
 cat("RMSE of Glmnet model for Grain yield is", rmse_glm_yield)
 ```
+<br>
 
 
 R-squared:
@@ -1047,6 +1101,7 @@ Rsq_grain_glmnet <- rsq(test_set$yield_BLUPs, prediction_glmnet_yield)
 cat("R-squared of Glmnet model for Grain yield is", Rsq_grain_glmnet)
 ```
 
+<br>
 
 
 ## Random forest model
@@ -1066,8 +1121,10 @@ randomForestFit_yield = train(x = train_set[7:28601],
 # print the model output 
 randomForestFit_yield
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture33.JPG"></center>
+<br>
 
 
 Plotting the `randomForetFit` model. 
@@ -1075,6 +1132,7 @@ Plotting the `randomForetFit` model.
 ```powershell
 plot(randomForestFit_yield, main = "Grain yield - Random Forest")
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture34.JPG"></center>
 
@@ -1085,6 +1143,7 @@ Next, we can plot the important predictors based on their calculated importance 
 ```powershell
 plot(varImp(randomForestFit_yield), top = 20)
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture35.JPG"></center>
 
@@ -1110,6 +1169,7 @@ ggplot(yield_rf_bind, aes(x=test_set.yield_BLUPs, y=prediction_yield_rf)) +
   geom_smooth(method="lm", se=TRUE, fullrange=FALSE, level=0.95)
 
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture36.JPG"></center>
 
@@ -1152,6 +1212,7 @@ resamples_yield
 # Summarize the results
 summary(resamples_yield)
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture37.JPG"></center>
 
@@ -1164,11 +1225,12 @@ bwplot(resamples_yield, metric = "RMSE")
 dotplot(resamples_yield, metric = "RMSE")
 par(mfrow=c(1,1))
 ```
+<br>
 
 <center><img src="/image/g2f_GS/Capture38.JPG"></center>
 <center><img src="/image/g2f_GS/Capture39.JPG"></center>
 
-
+<br>
 From above table, we can tell that the random forest model appears to be slighlty better model incoparison to glmnet for grain yield.
 
 # 4.0 Summary of genomic selection algorithms on selected traits
