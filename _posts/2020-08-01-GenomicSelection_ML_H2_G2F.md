@@ -71,29 +71,29 @@ glimpse(pheno_2017)
 <br>
 
 ```console
-## Rows: 16,377
-## Columns: 38
-## $ Year                                    <int> 2016, 2016, 2016, 2016, 201...
-## $ Field.Location                          <chr> "ARH1", "ARH1", "ARH1", "AR...
-## $ RecId                                   <int> 3094939, 3095402, 3093386, ...
-## $ Source                                  <chr> "15SFG:2004", "15SJWE:G2F:1...
-## $ Pedigree                                <chr> "2369/PHZ51", "LH195/PHN37"...
-## $ Replicate                               <int> 2, 2, 2, 2, 1, 2, 1, 1, 2, ...
-## $ Block                                   <int> 2, 2, 2, 2, 1, 2, 1, 1, 2, ...
-## $ Plot                                    <int> 2, 53, 123, 137, 172, 217, ...
-## $ Range                                   <int> 2, NA, 14, 15, 3, 17, 6, 3,...
-## $ Pass                                    <int> 4, NA, 8, 7, 2, 7, 5, 9, 1,...
-## $ LOCAL_CHECK..Yes..No.Blank..            <chr> NA, NA, NA, NA, NA, NA, NA,...
-## $ Plot.Length.Field                       <dbl> 25, 25, 25, 25, 25, 25, 25,...
-## $ Alley.Length                            <dbl> 5, 5, 5, 5, 5, 5, 3, 5, 5, ...
-## $ Row.Spacing                             <int> 38, 38, 38, 38, 38, 38, 30,...
-## $ Plot.Area                               <dbl> 126.67, 126.67, 126.67, 126...
-## $ Rows.Plot                               <lgl> NA, NA, NA, NA, NA, NA, NA,...
-## $ Packet.Plot                             <lgl> NA, NA, NA, NA, NA, NA, NA,...
-## $ Kernels.Packet                          <lgl> NA, NA, NA, NA, NA, NA, NA,...
-## $ X..Seed                                 <int> 98, 98, 98, 98, 98, 98, 100...
-## $ Date.Planted                            <chr> "4/7/16", "4/7/16", "4/7/16...
-## $ Date.Harvested                          <chr> "8/30/16", "8/30/16", "8/30...
+ Rows: 16,377
+ Columns: 38
+ $ Year                                    <int> 2016, 2016, 2016, 2016, 201...
+ $ Field.Location                          <chr> "ARH1", "ARH1", "ARH1", "AR...
+ $ RecId                                   <int> 3094939, 3095402, 3093386, ...
+ $ Source                                  <chr> "15SFG:2004", "15SJWE:G2F:1...
+ $ Pedigree                                <chr> "2369/PHZ51", "LH195/PHN37"...
+ $ Replicate                               <int> 2, 2, 2, 2, 1, 2, 1, 1, 2, ...
+ $ Block                                   <int> 2, 2, 2, 2, 1, 2, 1, 1, 2, ...
+ $ Plot                                    <int> 2, 53, 123, 137, 172, 217, ...
+ $ Range                                   <int> 2, NA, 14, 15, 3, 17, 6, 3,...
+ $ Pass                                    <int> 4, NA, 8, 7, 2, 7, 5, 9, 1,...
+ $ LOCAL_CHECK..Yes..No.Blank..            <chr> NA, NA, NA, NA, NA, NA, NA,...
+ $ Plot.Length.Field                       <dbl> 25, 25, 25, 25, 25, 25, 25,...
+ $ Alley.Length                            <dbl> 5, 5, 5, 5, 5, 5, 3, 5, 5, ...
+ $ Row.Spacing                             <int> 38, 38, 38, 38, 38, 38, 30,...
+ $ Plot.Area                               <dbl> 126.67, 126.67, 126.67, 126...
+ $ Rows.Plot                               <lgl> NA, NA, NA, NA, NA, NA, NA,...
+ $ Packet.Plot                             <lgl> NA, NA, NA, NA, NA, NA, NA,...
+ $ Kernels.Packet                          <lgl> NA, NA, NA, NA, NA, NA, NA,...
+ $ X..Seed                                 <int> 98, 98, 98, 98, 98, 98, 100...
+ $ Date.Planted                            <chr> "4/7/16", "4/7/16", "4/7/16...
+ $ Date.Harvested                          <chr> "8/30/16", "8/30/16", "8/30...
 
 ```
 <br>
@@ -128,20 +128,20 @@ tail(merged_pheno)
 
 Output:
 ```console
-##           Pedigree Year Field.Location Replicate Block Plot Pollen.DAP..days.
-## 1       2369/PHZ51 2016           ARH1         2     2    2                72
-## 2      LH195/PHN37 2016           ARH1         2     2   53                69
-## 3      PHHB9/PHM57 2016           ARH1         2     2  123                72
-## 4    PHW53/LH123HT 2016           ARH1         2     2  137                70
-## 5       B119/3IIH6 2016           ARH1         1     1  172                67
-## 6 BSSSC0_038/3IIH6 2016           ARH1         2     2  217                69
-##   Silk.DAP..days. Plant.Height..cm. Ear.Height..cm. Grain.Yield..bu.A.
-## 1              73               188             107          111.83608
-## 2              69               205             122          124.12257
-## 3              75               170             100           84.60683
-## 4              72               200              97          130.43523
-## 5              69               175             125          119.27595
-## 6              70               145              84           99.01134
+           Pedigree Year Field.Location Replicate Block Plot Pollen.DAP..days.
+ 1       2369/PHZ51 2016           ARH1         2     2    2                72
+ 2      LH195/PHN37 2016           ARH1         2     2   53                69
+ 3      PHHB9/PHM57 2016           ARH1         2     2  123                72
+ 4    PHW53/LH123HT 2016           ARH1         2     2  137                70
+ 5       B119/3IIH6 2016           ARH1         1     1  172                67
+ 6 BSSSC0_038/3IIH6 2016           ARH1         2     2  217                69
+   Silk.DAP..days. Plant.Height..cm. Ear.Height..cm. Grain.Yield..bu.A.
+ 1              73               188             107          111.83608
+ 2              69               205             122          124.12257
+ 3              75               170             100           84.60683
+ 4              72               200              97          130.43523
+ 5              69               175             125          119.27595
+ 6              70               145              84           99.01134
 ```
 
 
@@ -176,14 +176,14 @@ print(df_mergePheno.summary.tidy)
 ```
 <br>
 ```console
-## # A tibble: 5 x 6
-##   Phenotype            min   max  mean median    sd
-##   <chr>              <dbl> <dbl> <dbl>  <dbl> <dbl>
-## 1 Ear.Height..cm.    20     266  106.    107  30.2 
-## 2 Grain.Yield..bu.A.  7.97  323. 143.    145. 47.7 
-## 3 Plant.Height..cm.  71     347  218.    225  49.2 
-## 4 Pollen.DAP..days.  29      96   68.2    68   8.94
-## 5 Silk.DAP..days.    29      99   69.3    70   9.01
+ # A tibble: 5 x 6
+   Phenotype            min   max  mean median    sd
+   <chr>              <dbl> <dbl> <dbl>  <dbl> <dbl>
+ 1 Ear.Height..cm.    20     266  106.    107  30.2 
+ 2 Grain.Yield..bu.A.  7.97  323. 143.    145. 47.7 
+ 3 Plant.Height..cm.  71     347  218.    225  49.2 
+ 4 Pollen.DAP..days.  29      96   68.2    68   8.94
+ 5 Silk.DAP..days.    29      99   69.3    70   9.01
 ```
 <br>
 
@@ -228,14 +228,14 @@ From the above plot, both flowering time data are consistent among two years and
 ### Plant and ear height
 ```powershell
 
-## Plant height
+# Plant height
 ggplot(merged_pheno, aes(x=Plant.Height..cm., fill = as.factor(Year))) +
 geom_boxplot(alpha=0.6)  + facet_wrap(~Field.Location) +
   scale_x_log10() +
   ggtitle("Plant height (cm)")
 
 
-## Ear height
+# Ear height
 ggplot(merged_pheno, aes(x=Ear.Height..cm., fill = as.factor(Year))) +
 geom_boxplot(alpha=0.6)  + facet_wrap(~Field.Location) +
   scale_x_log10() +
@@ -257,7 +257,7 @@ Both plant and ear height data across years and location are considerably consis
 ### Grain Yield
 ```powershell
 
-## Grain Yield
+# Grain Yield
 ggplot(merged_pheno, aes(x=Grain.Yield..bu.A., fill = as.factor(Year))) +
 geom_boxplot(alpha=0.6)  + facet_wrap(~Field.Location) +
   scale_x_log10() +
@@ -294,10 +294,10 @@ Checking data structure
 ```powershell
 attach(merged_pheno)
 
-## checking data structure
+# checking data structure
 str(merged_pheno)
 
-## renaming variables 
+# renaming variables 
 
 YEAR = as.factor(Year)
 LINE = as.factor(Pedigree)
@@ -315,18 +315,18 @@ GRAIN_YLD = as.numeric(Grain.Yield..bu.A.)
 output:
 
 ```console
-## 'data.frame':    34758 obs. of  11 variables:
-##  $ Pedigree          : chr  "2369/PHZ51" "LH195/PHN37" "PHHB9/PHM57" "PHW53/LH123HT" ...
-##  $ Year              : int  2016 2016 2016 2016 2016 2016 2016 2016 2016 2016 ...
-##  $ Field.Location    : chr  "ARH1" "ARH1" "ARH1" "ARH1" ...
-##  $ Replicate         : int  2 2 2 2 1 2 1 1 2 2 ...
-##  $ Block             : int  2 2 2 2 1 2 1 1 2 2 ...
-##  $ Plot              : int  2 53 123 137 172 217 104 179 170 174 ...
-##  $ Pollen.DAP..days. : int  72 69 72 70 67 69 62 67 67 67 ...
-##  $ Silk.DAP..days.   : int  73 69 75 72 69 70 63 69 69 69 ...
-##  $ Plant.Height..cm. : num  188 205 170 200 175 145 244 183 177 146 ...
-##  $ Ear.Height..cm.   : num  107 122 100 97 125 84 124 114 109 96 ...
-##  $ Grain.Yield..bu.A.: num  111.8 124.1 84.6 130.4 119.3 ...
+ 'data.frame':    34758 obs. of  11 variables:
+  $ Pedigree          : chr  "2369/PHZ51" "LH195/PHN37" "PHHB9/PHM57" "PHW53/LH123HT" ...
+  $ Year              : int  2016 2016 2016 2016 2016 2016 2016 2016 2016 2016 ...
+  $ Field.Location    : chr  "ARH1" "ARH1" "ARH1" "ARH1" ...
+  $ Replicate         : int  2 2 2 2 1 2 1 1 2 2 ...
+  $ Block             : int  2 2 2 2 1 2 1 1 2 2 ...
+  $ Plot              : int  2 53 123 137 172 217 104 179 170 174 ...
+  $ Pollen.DAP..days. : int  72 69 72 70 67 69 62 67 67 67 ...
+  $ Silk.DAP..days.   : int  73 69 75 72 69 70 63 69 69 69 ...
+  $ Plant.Height..cm. : num  188 205 170 200 175 145 244 183 177 146 ...
+  $ Ear.Height..cm.   : num  107 122 100 97 125 84 124 114 109 96 ...
+  $ Grain.Yield..bu.A.: num  111.8 124.1 84.6 130.4 119.3 ...
 ```
 
 <br>
@@ -352,30 +352,30 @@ cat("Heritabilty of Pollen DAP days is", H2_pollen, "\n")
 <br>
 
 ```console
-## Linear mixed model fit by REML ['lmerMod']
-## Formula: POLLEN ~ (1 | LINE) + (1 | LOC) + (1 | YEAR) + (1 | LINE:LOC) +  
-##     (1 | LINE:YEAR)
-## 
-## REML criterion at convergence: 151506.8
-## 
-## Scaled residuals: 
-##     Min      1Q  Median      3Q     Max 
-## -5.1637 -0.4649  0.0036  0.4833  7.4742 
-## 
-## Random effects:
-##  Groups    Name        Variance Std.Dev.
-##  LINE:LOC  (Intercept)  0.05186 0.2277  
-##  LINE:YEAR (Intercept)  0.13160 0.3628  
-##  LINE      (Intercept) 10.47045 3.2358  
-##  LOC       (Intercept) 78.26891 8.8470  
-##  YEAR      (Intercept)  0.02846 0.1687  
-##  Residual              20.16066 4.4901  
-## Number of obs: 25515, groups:  
-## LINE:LOC, 9242; LINE:YEAR, 1305; LINE, 815; LOC, 30; YEAR, 2
-## 
-## Fixed effects:
-##             Estimate Std. Error t value
-## (Intercept)   67.377      1.624   41.48
+ Linear mixed model fit by REML ['lmerMod']
+ Formula: POLLEN ~ (1 | LINE) + (1 | LOC) + (1 | YEAR) + (1 | LINE:LOC) +  
+     (1 | LINE:YEAR)
+ 
+ REML criterion at convergence: 151506.8
+ 
+ Scaled residuals: 
+     Min      1Q  Median      3Q     Max 
+ -5.1637 -0.4649  0.0036  0.4833  7.4742 
+ 
+ Random effects:
+  Groups    Name        Variance Std.Dev.
+  LINE:LOC  (Intercept)  0.05186 0.2277  
+  LINE:YEAR (Intercept)  0.13160 0.3628  
+  LINE      (Intercept) 10.47045 3.2358  
+  LOC       (Intercept) 78.26891 8.8470  
+  YEAR      (Intercept)  0.02846 0.1687  
+  Residual              20.16066 4.4901  
+ Number of obs: 25515, groups:  
+ LINE:LOC, 9242; LINE:YEAR, 1305; LINE, 815; LOC, 30; YEAR, 2
+ 
+ Fixed effects:
+             Estimate Std. Error t value
+ (Intercept)   67.377      1.624   41.48
 ```
 
 
@@ -388,7 +388,7 @@ silk_varcomp = lmer(SILK ~ (1|LINE) + (1|LOC) + (1|YEAR) +  (1|LINE:LOC) + (1|LI
 summary(silk_varcomp)
 
 
-## formula calucalting heritability on mean basis
+# formula calucalting heritability on mean basis
 # H2 = var(LINE)/[var(LINE) + var(LINE:LOC)/N] + var(LINE:YEAR)/N + var(RESIDUAL)/N]
 
 H2_silk = 12.2271 /(12.2271 + 0.0155/34 + 0.2316/2 + 20.7834/36)
@@ -406,7 +406,7 @@ plantHT_varcomp = lmer(PLNT_HT ~ (1|LINE) + (1|LOC) + (1|YEAR) + (1|LINE:LOC) + 
 
 summary(plantHT_varcomp)
 
-## formula calucalting heritability on mean basis
+# formula calucalting heritability on mean basis
 # H2 = var(LINE)/[var(LINE) + var(LINE:LOC)/N] + var(LINE:YEAR)/N + var(RESIDUAL)/N]
 
 H2_plHT = 287.302 /(287.302 + 2.628/34 + 2.589/2 + 604.888/36)
@@ -441,7 +441,7 @@ Yield_varcomp = lmer(GRAIN_YLD ~ (1|LINE) + (1|LOC) + (1|YEAR) + (1|LINE:LOC) + 
 
 summary(Yield_varcomp)
 
-## formula calucalting heritability on mean basis
+# formula calucalting heritability on mean basis
 # H2 = var(LINE)/[var(LINE) + var(LINE:LOC)/N] + var(LINE:YEAR)/N + var(RESIDUAL)/N]
 
 H2_yield = 187.64 /(187.64 + (92.85/34) + (54.95/2) + (1000.21/36))
@@ -605,7 +605,7 @@ Minor allele frequency in the raw data is extremely high (<5e+05), indicating pr
 
 In TASSEL, SNP calls were filtered stringently for MAF threshold of 0.1 and minimum count of 1000 to remove extremely rare variants and the number of markers with high missing data. Similarly, taxa with greater 80% missing genotype calls were also filtered using the command line below.
 
-```console
+```powershell
 
 $ ./tassel-5-standalone/run_pipeline.pl -log log.txt -Xms2g -Xmx10g  -fork1 -h5 genotype_imputed_2017.h5 -filterAlign -filterAlignMinFreq--exit-with-session 0.05 -filterAlignMinCount 200 -FilterTaxaPropertiesPlugin -minNotMissing 0.2 -endPlugin  -export -w
 genotype_imputed_2017_filtered -exportType VCF -runfork1
@@ -614,7 +614,7 @@ genotype_imputed_2017_filtered -exportType VCF -runfork1
 
 Next, genotype summary of the filtered file was generated in TASSEL using *-GenotypeSummaryPlugin* and using the below command line: 
 
-```console
+```powershell
 $ ./tassel-5-standalone/run_pipeline.pl -Xmx20g -importGuess genotype_imputed_2017_filteredMAF01min1000.vcf -GenotypeSummaryPlugin -endPlugin -export GenoSummary_filtered
 
 ```
@@ -646,7 +646,7 @@ Even after stringent filtering, there are about 10% missing data in filtered dat
 
 232,681 markers were obtained after post-filtering the raw marker set. To reduce the computational workload and redundant markers in strong LD, filtered marker set were thinned by their physical position using *_ThinSitesByPositionPlugin* with minimum physical distance between markers of 10,000 bp.
 
-```console
+```powershell
 $ ./tassel-5-standalone/run_pipeline.pl -log log_thinMarkers.txt -Xmx20g -importGuess genotype_imputed_2017_filteredMAF01min1000.vcf -ThinSitesByPositionPlugin -o thinned10k_geno_2017.vcf -minDist 10000 -endPlugin
 ```
 <br>
@@ -714,7 +714,7 @@ ggplot(mds, aes(x=PC1, y=PC2, color = PC1))+
 
 command line: 
 
-```console
+```powershell
 $ ./tassel-5-standalone/run_pipeline.pl -Xmx20g -log 10g_numeric.txt -importGuess thinned10k_geno_2017.vcf -NumericalGenotypePlugin -endPlugin -export Numeric_thinned_2017_geno -exportType ReferenceProbability
 ```
 
@@ -722,7 +722,7 @@ Running Numerical Imputation by means from TASSEL command line:
 
 The numeric imputation was performed by computing the mean of the respective marker columns.
 
-```console
+```powershell
 $ ./tassel-5-standalone/run_pipeline.pl -Xms10g -Xmx30g -log log_numericImpute.txt -importGuess Numeric_thinned_2017_geno.txt -ImputationPlugin -ByMean  -endPlugin -export Numeric_thinned_2017_geno_Imputed -exportType ReferenceProbability
 ```
 
