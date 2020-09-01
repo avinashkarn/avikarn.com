@@ -60,6 +60,7 @@ pheno_2017 <- read.csv(file = "pheno_2017_g2f_clean.csv", header = T, sep = ",",
 <br>
 
 ## Checking the imported phenotype data
+Code:
 ```powershell
 glimpse(pheno_2016)
 View(pheno_2016)
@@ -68,12 +69,38 @@ glimpse(pheno_2017)
 #View(pheno_2017)
 ```
 <br>
-<center><img src="/image/g2f_GS/Capture1.JPG"></center>
 
+```console
+## Rows: 16,377
+## Columns: 38
+## $ Year                                    <int> 2016, 2016, 2016, 2016, 201...
+## $ Field.Location                          <chr> "ARH1", "ARH1", "ARH1", "AR...
+## $ RecId                                   <int> 3094939, 3095402, 3093386, ...
+## $ Source                                  <chr> "15SFG:2004", "15SJWE:G2F:1...
+## $ Pedigree                                <chr> "2369/PHZ51", "LH195/PHN37"...
+## $ Replicate                               <int> 2, 2, 2, 2, 1, 2, 1, 1, 2, ...
+## $ Block                                   <int> 2, 2, 2, 2, 1, 2, 1, 1, 2, ...
+## $ Plot                                    <int> 2, 53, 123, 137, 172, 217, ...
+## $ Range                                   <int> 2, NA, 14, 15, 3, 17, 6, 3,...
+## $ Pass                                    <int> 4, NA, 8, 7, 2, 7, 5, 9, 1,...
+## $ LOCAL_CHECK..Yes..No.Blank..            <chr> NA, NA, NA, NA, NA, NA, NA,...
+## $ Plot.Length.Field                       <dbl> 25, 25, 25, 25, 25, 25, 25,...
+## $ Alley.Length                            <dbl> 5, 5, 5, 5, 5, 5, 3, 5, 5, ...
+## $ Row.Spacing                             <int> 38, 38, 38, 38, 38, 38, 30,...
+## $ Plot.Area                               <dbl> 126.67, 126.67, 126.67, 126...
+## $ Rows.Plot                               <lgl> NA, NA, NA, NA, NA, NA, NA,...
+## $ Packet.Plot                             <lgl> NA, NA, NA, NA, NA, NA, NA,...
+## $ Kernels.Packet                          <lgl> NA, NA, NA, NA, NA, NA, NA,...
+## $ X..Seed                                 <int> 98, 98, 98, 98, 98, 98, 100...
+## $ Date.Planted                            <chr> "4/7/16", "4/7/16", "4/7/16...
+## $ Date.Harvested                          <chr> "8/30/16", "8/30/16", "8/30...
+
+```
 <br>
 
 Select five traits from the imported .csv data set from 2016 and 2017, and merging both data sets.
 
+Code:
 ```powershell
 library(dplyr)
 ## 2016 selected phenotypes and creating new object
@@ -98,12 +125,31 @@ tail(merged_pheno)
 #View(merged_pheno)
 ```
 <br>
-<center><img src="/image/g2f_GS/Capture2.JPG"></center>
+
+Output:
+```console
+##           Pedigree Year Field.Location Replicate Block Plot Pollen.DAP..days.
+## 1       2369/PHZ51 2016           ARH1         2     2    2                72
+## 2      LH195/PHN37 2016           ARH1         2     2   53                69
+## 3      PHHB9/PHM57 2016           ARH1         2     2  123                72
+## 4    PHW53/LH123HT 2016           ARH1         2     2  137                70
+## 5       B119/3IIH6 2016           ARH1         1     1  172                67
+## 6 BSSSC0_038/3IIH6 2016           ARH1         2     2  217                69
+##   Silk.DAP..days. Plant.Height..cm. Ear.Height..cm. Grain.Yield..bu.A.
+## 1              73               188             107          111.83608
+## 2              69               205             122          124.12257
+## 3              75               170             100           84.60683
+## 4              72               200              97          130.43523
+## 5              69               175             125          119.27595
+## 6              70               145              84           99.01134
+```
 
 
 <br>
 
 ## Summary statistics table of the selected phenotpe data across years and locations
+
+Code:
 ```powershell
 
 library(dplyr)
@@ -129,9 +175,16 @@ df_mergePheno.summary.tidy <- df_mergePheno.summary %>% gather(stat, val) %>%
 print(df_mergePheno.summary.tidy)
 ```
 <br>
-<center><img src="/image/g2f_GS/Capture3.JPG"></center>
-
-
+```console
+## # A tibble: 5 x 6
+##   Phenotype            min   max  mean median    sd
+##   <chr>              <dbl> <dbl> <dbl>  <dbl> <dbl>
+## 1 Ear.Height..cm.    20     266  106.    107  30.2 
+## 2 Grain.Yield..bu.A.  7.97  323. 143.    145. 47.7 
+## 3 Plant.Height..cm.  71     347  218.    225  49.2 
+## 4 Pollen.DAP..days.  29      96   68.2    68   8.94
+## 5 Silk.DAP..days.    29      99   69.3    70   9.01
+```
 <br>
 
 From the above table, `Plant height` and `grain yield` has the highest variance, while `flowering time data` has the lowest variance.
@@ -150,7 +203,12 @@ ggplot(merged_pheno, aes(x=Pollen.DAP..days., fill = as.factor(Year))) +
 geom_boxplot(alpha=0.6) + facet_wrap(~Field.Location) +
   scale_x_log10() +
   ggtitle("Pollen DAP Days")
+```
 
+<center><img src="/image/g2f_GS/Capture4.JPG"></center>
+
+<br>
+```powershell
 
 ## Silk.DAP..days.
 ggplot(merged_pheno, aes(x=Silk.DAP..days., fill = as.factor(Year))) +
@@ -159,9 +217,7 @@ geom_boxplot(alpha=0.6)  + facet_wrap(~Field.Location) +
   ggtitle("Silk DAP Days")
 
 ```
-<br>
-<center><img src="/image/g2f_GS/Capture4.JPG"></center>
-<hr>
+
 <center><img src="/image/g2f_GS/Capture5.JPG"></center>
 
 <br>
@@ -256,6 +312,22 @@ GRAIN_YLD = as.numeric(Grain.Yield..bu.A.)
 
 ```
 
+output:
+
+```console
+## 'data.frame':    34758 obs. of  11 variables:
+##  $ Pedigree          : chr  "2369/PHZ51" "LH195/PHN37" "PHHB9/PHM57" "PHW53/LH123HT" ...
+##  $ Year              : int  2016 2016 2016 2016 2016 2016 2016 2016 2016 2016 ...
+##  $ Field.Location    : chr  "ARH1" "ARH1" "ARH1" "ARH1" ...
+##  $ Replicate         : int  2 2 2 2 1 2 1 1 2 2 ...
+##  $ Block             : int  2 2 2 2 1 2 1 1 2 2 ...
+##  $ Plot              : int  2 53 123 137 172 217 104 179 170 174 ...
+##  $ Pollen.DAP..days. : int  72 69 72 70 67 69 62 67 67 67 ...
+##  $ Silk.DAP..days.   : int  73 69 75 72 69 70 63 69 69 69 ...
+##  $ Plant.Height..cm. : num  188 205 170 200 175 145 244 183 177 146 ...
+##  $ Ear.Height..cm.   : num  107 122 100 97 125 84 124 114 109 96 ...
+##  $ Grain.Yield..bu.A.: num  111.8 124.1 84.6 130.4 119.3 ...
+```
 
 <br>
 
@@ -278,7 +350,33 @@ H2_pollen = 10.47035 /(10.47035 + 0.05196/34 + 0.13156/2 + 20.16058/36)
 cat("Heritabilty of Pollen DAP days is", H2_pollen, "\n")
 ```
 <br>
-<center><img src="/image/g2f_GS/Capture9.JPG"></center>
+
+```console
+## Linear mixed model fit by REML ['lmerMod']
+## Formula: POLLEN ~ (1 | LINE) + (1 | LOC) + (1 | YEAR) + (1 | LINE:LOC) +  
+##     (1 | LINE:YEAR)
+## 
+## REML criterion at convergence: 151506.8
+## 
+## Scaled residuals: 
+##     Min      1Q  Median      3Q     Max 
+## -5.1637 -0.4649  0.0036  0.4833  7.4742 
+## 
+## Random effects:
+##  Groups    Name        Variance Std.Dev.
+##  LINE:LOC  (Intercept)  0.05186 0.2277  
+##  LINE:YEAR (Intercept)  0.13160 0.3628  
+##  LINE      (Intercept) 10.47045 3.2358  
+##  LOC       (Intercept) 78.26891 8.8470  
+##  YEAR      (Intercept)  0.02846 0.1687  
+##  Residual              20.16066 4.4901  
+## Number of obs: 25515, groups:  
+## LINE:LOC, 9242; LINE:YEAR, 1305; LINE, 815; LOC, 30; YEAR, 2
+## 
+## Fixed effects:
+##             Estimate Std. Error t value
+## (Intercept)   67.377      1.624   41.48
+```
 
 
 <br>
@@ -641,6 +739,26 @@ geno_numericThinImpu <- as.data.frame(geno_numericThinImpu)
 
 head(pheno_BlUPs_noMissing)
 #head(geno_numericThinImpu)
+```
+<br>
+
+Output:
+
+```console
+##                 Taxa  earBLUPs PlantHTBLUPs yield_BLUPs PollenDAP_BLUPs
+## 1 PI601318:250033667 -29.39624    -23.67643    1.503655      -5.0852823
+## 2 PI601170:250032540 -27.66371    -37.79167    1.988569      -5.2087454
+## 3    PHJ89:100000663 -26.73055    -17.46497    6.775845      -5.4622321
+## 4    S8324:100000684 -26.71990    -30.55353  -23.851084      -9.3000384
+## 5     CG60:100001134 -26.41626    -40.89895  -16.331693      -6.9434702
+## 6 PI601575:250035073 -26.06640    -31.77753    8.341925      -0.3779614
+##   silkDAP_BLUPs
+## 1    -5.1033176
+## 2    -5.3709531
+## 3    -5.5588561
+## 4    -9.2906753
+## 5    -7.8424272
+## 6    -0.2195389
 ```
 
 The phenotype and numerical genotype data were intersected by the Taxa names in each data set, and any Taxa with missing data were removed from the GS analysis.
