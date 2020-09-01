@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Avi Karn - Quantitative & Computational Geneticist"
+title: Avi Karn - Quantitative & Computational Geneticist
 meta-title: About me
-bg-img: "image/frontpage/teosynTrial.jpg"
+cvr-img: "image/frontpage/teosynTrial.jpg"
 
 ---
 
