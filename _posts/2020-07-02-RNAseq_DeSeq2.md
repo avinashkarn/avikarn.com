@@ -4,8 +4,8 @@ title: "RNA-Seq data analysis in R - Investigate differentially expressed genes 
 tags: [RNA-Seq, Differential Expression, DESeq, Data analysis]
 image: /image/rna/Capture14.PNG
 share-img: /image/rna/Capture14.PNG
-cover-img: /image/rna/Capture14.PNG
 thumbnail-img: /image/rna/Capture14.PNG
+
 ---
 
 
