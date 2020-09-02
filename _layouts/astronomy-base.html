@@ -1,11 +1,9 @@
 ---
 common-css:
   - "/css/bootstrap.min.css"
-  - "/css/fonts.css"
   - "/css/bootstrap-social.css"
   - "/css/main.css"
   - "/css/particle-js-style.css"
-  - "/fontawesome470/css/font-awesome.min.css"
 common-ext-css:
   - "//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 common-googlefonts:
@@ -16,7 +14,8 @@ common-js:
   - "/js/bootstrap.min.js"
   - "/js/main.js"
   - "/js/particles.min.js"
-  - "/astronomy/js/particlesjs-config-astronomy.js"
+  - "../astronomy/js/particlesjs-config-astronomy.js"
+
 ---
 
 <!DOCTYPE html>
@@ -24,11 +23,11 @@ common-js:
   <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
   {% include head.html %}
 
-<body>
-  <div class="mobile-js-hide">
-    <!-- particles.js container -->
-    <div id="particles-js"></div>
-  </div>
+  <body>
+    <div class="mobile-js-hide">
+      <!-- particles.js container -->
+      <div id="particles-js"></div>
+    </div>
 
     {% include gtm_body.html %}
     
@@ -39,5 +38,6 @@ common-js:
     {% include footer.html %}
   
     {% include footer-scripts.html %}
+  
   </body>
 </html>
