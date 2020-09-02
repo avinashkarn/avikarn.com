@@ -303,13 +303,13 @@ div.desc {
     <div class="desc">Grilled Cod Fish with Lemon</div>
   </div>
 </div>
-  
+
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="/image/foodblog/pavbhaji.jpg">
-      <img src="/image/foodblog/pavbhaji.jpg" alt="Paav Bhaji" width="auto" height="400" class="img-thumbnail">
+    <a target="_blank" href="/image/foodblog/soupmomo.jpg">
+      <img src="/image/foodblog/soupmomo.jpg" alt="soup momo" width="auto" height="400" class="img-thumbnail">
     </a>
-    <div class="desc">Paav Bhaji</div>
+    <div class="desc">soup Mo:Mo</div>
   </div>
 </div>
 
@@ -336,15 +336,15 @@ div.desc {
     <div class="desc">Samosa with Chholey</div>
   </div>
 </div>
-
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="/image/foodblog/soupmomo.jpg">
-      <img src="/image/foodblog/soupmomo.jpg" alt="soup momo" width="auto" height="400" class="img-thumbnail">
+    <a target="_blank" href="/image/foodblog/pavbhaji.jpg">
+      <img src="/image/foodblog/pavbhaji.jpg" alt="Paav Bhaji" width="auto" height="400" class="img-thumbnail">
     </a>
-    <div class="desc">soup Mo:Mo</div>
+    <div class="desc">Paav Bhaji</div>
   </div>
 </div>
+
 
 
 </div>
