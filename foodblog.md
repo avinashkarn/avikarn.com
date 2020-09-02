@@ -238,6 +238,12 @@ div.desc {
   </div>
 </div>
 
+</div>
+
+<br>
+
+<div class="row"> 
+
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/biryani10.jpg">
@@ -246,14 +252,7 @@ div.desc {
     <div class="desc">Egg & Chicken Biryani</div>
   </div>
 </div>
-
-
-</div>
-
-<br>
-
-<div class="row"> 
-  
+ 
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/chaat.jpg">
@@ -262,7 +261,6 @@ div.desc {
     <div class="desc">Samosa Chaat</div>
   </div>
 </div>
-  
 
 <div class="responsive">
   <div class="gallery">
@@ -282,6 +280,12 @@ div.desc {
   </div>
 </div>
 
+</div>
+
+<br>
+
+<div class="row"> 
+  
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/grilledburrito.jpg">
@@ -299,12 +303,6 @@ div.desc {
     <div class="desc">Grilled Cod Fish with Lemon</div>
   </div>
 </div>
-
-</div>
-
-<br>
-
-<div class="row"> 
   
 <div class="responsive">
   <div class="gallery">
@@ -314,7 +312,6 @@ div.desc {
     <div class="desc">Paav Bhaji</div>
   </div>
 </div>
-  
 
 <div class="responsive">
   <div class="gallery">
@@ -325,6 +322,12 @@ div.desc {
   </div>
 </div>
 
+</div>
+
+<br>
+
+<div class="row">
+  
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/samosaChole.jpg">
@@ -342,7 +345,6 @@ div.desc {
     <div class="desc">soup Mo:Mo</div>
   </div>
 </div>
-
 
 
 </div>
