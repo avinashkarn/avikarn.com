@@ -10,7 +10,7 @@ bigimg:
   - "/image/foodblog/momo1.jpg" : "Mo:Mo: Dumplings"
   - "/image/foodblog/pizza1.jpg" : "Homemade Pizzzza"
   - "/image/foodblog/salad1.jpg" : "Salad"
-  - "/image/foodblog/samosa1.jpg" : "SAMOSAA"
+  - "/image/foodblog/nepalithali.jpg" : "Traditional Nepalese Thali"
 ---
 
 <!-- particles.js exclusion -->
@@ -201,6 +201,7 @@ div.desc {
 <br>
 
 <div class="row"> 
+  
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/salad1.jpg">
@@ -209,7 +210,6 @@ div.desc {
     <div class="desc">Cabbage and Orange Salad</div>
   </div>
 </div>
-  
 
 <div class="responsive">
   <div class="gallery">
@@ -219,6 +219,7 @@ div.desc {
     <div class="desc">Oven roasted chicken & green Salad</div>
   </div>
 </div>
+
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="/image/foodblog/lalmohan1.jpg">
@@ -227,7 +228,125 @@ div.desc {
     <div class="desc">Gulab Jamun</div>
   </div>
 </div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/aloofritters.jpg">
+      <img src="/image/foodblog/aloofritters.jpg" alt="Potatoe Fritters with Milk tea" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Potatoe Fritters with Milk tea</div>
+  </div>
 </div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/biryani10.jpg">
+      <img src="/image/foodblog/biryani10.jpg" alt="Egg & Chicken Biryani" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Egg & Chicken Biryani</div>
+  </div>
+</div>
+
+
+</div>
+
+<br>
+
+<div class="row"> 
+  
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/chaat.jpg">
+      <img src="/image/foodblog/chaat.jpg" alt="Chaat" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Samosa Chaat</div>
+  </div>
+</div>
+  
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/cholebhature.jpg">
+      <img src="/image/foodblog/cholebhature.jpg" alt="chole bhature" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Choley Bhature</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/chowmein.jpg">
+      <img src="/image/foodblog/chowmein.jpg" alt="chowmein" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Chicken chowmein</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/grilledburrito.jpg">
+      <img src="/image/foodblog/grilledburrito.jpg" alt="grilled burrito" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Grilled Black beans burrito</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/grilledfish.jpg">
+      <img src="/image/foodblog/grilledfish.jpg" alt="grilled fish" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Grilled Cod Fish with Lemon</div>
+  </div>
+</div>
+
+</div>
+
+<br>
+
+<div class="row"> 
+  
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/pavbhaji.jpg">
+      <img src="/image/foodblog/pavbhaji.jpg" alt="Paav Bhaji" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Paav Bhaji</div>
+  </div>
+</div>
+  
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/porkcutlet.jpg">
+      <img src="/image/foodblog/porkcutlet.jpg" alt="pork cutlet" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Pork Cutlet</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/samosaChole.jpg">
+      <img src="/image/foodblog/samosaChole.jpg" alt="samosa Choley" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Chicken chowmein</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/soupmomo.jpg">
+      <img src="/image/foodblog/soupmomo.jpg" alt="soup momo" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">soup Mo:Mo</div>
+  </div>
+</div>
+
+
+
+</div>
+
 
 <div class="clearfix"></div>
 
