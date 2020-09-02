@@ -344,6 +344,102 @@ div.desc {
     <div class="desc">Paav Bhaji</div>
   </div>
 </div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/nimki.jpg">
+      <img src="/image/foodblog/nimki.jpg" alt="Nimki snack" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Nimki snack</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/chilliMomo.jpg">
+      <img src="/image/foodblog/chilliMomo.jpg" alt="chilli Momo" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Chilli Momo</div>
+  </div>
+</div>
+
+</div>
+
+<br>
+
+<div class="row">
+  
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/tofurice.jpg">
+      <img src="/image/foodblog/tofurice.jpg" alt="tofu rice" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Tofu Rice</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/pestoPasta.jpg">
+      <img src="/image/foodblog/pestoPasta.jpg" alt="pesto Pasta" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Pesto Pasta</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/onionFritters.jpg">
+      <img src="/image/foodblog/onionFritters.jpg" alt="onion Fritters" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Onion Fritters</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/dosa.jpg">
+      <img src="/image/foodblog/dosa.jpg" alt="Plain Dosa" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">Plain Dosa</div>
+  </div>
+</div>
+
+
+
+</div>
+
+<br>
+
+<div class="row">
+  
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/alooTikkiSandwih.jpg">
+      <img src="/image/foodblog/alooTikkiSandwih.jpg" alt="aloo Tikki Sandwich" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">aloo Tikki Sandwich</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/friedriceWithChicken.jpg">
+      <img src="/image/foodblog/friedriceWithChicken.jpg" alt="fried rice With Chicken" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">fried rice with chicken</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/jalebi.jpg">
+      <img src="/image/foodblog/jalebi.jpg" alt="jalebi" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">jalebi</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/image/foodblog/bananaFritters.jpg">
+      <img src="/image/foodblog/bananaFritters.jpg" alt="banana Fritters" width="auto" height="400" class="img-thumbnail">
+    </a>
+    <div class="desc">banana Fritters</div>
+  </div>
+</div>
 
 
 
