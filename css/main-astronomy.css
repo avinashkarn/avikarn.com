@@ -12,7 +12,7 @@ body {
   color: #404040;
   position: relative;
   background: #FFF;
-  background-color: {{ site.page-col }};
+  background-color: #000d4a;
   {% if site.page-img %}
   background-image: url({{ site.page-img }});
   background-attachment: fixed;
