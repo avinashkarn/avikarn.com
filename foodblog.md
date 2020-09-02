@@ -330,7 +330,7 @@ div.desc {
     <a target="_blank" href="/image/foodblog/samosaChole.jpg">
       <img src="/image/foodblog/samosaChole.jpg" alt="samosa Choley" width="auto" height="400" class="img-thumbnail">
     </a>
-    <div class="desc">Chicken chowmein</div>
+    <div class="desc">Samosa with Chholey</div>
   </div>
 </div>
 
