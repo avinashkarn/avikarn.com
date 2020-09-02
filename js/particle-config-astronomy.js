@@ -1,16 +1,18 @@
+/* particle.js configuration json */
+
 particlesJS('particles-js',
-            
+  
   {
   "particles": {
     "number": {
-      "value": 57,
+      "value": 50,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 1000
       }
     },
     "color": {
-      "value": ""#000000"
+      "value": "#c415dc"
     },
     "shape": {
       "type": "star",
@@ -50,8 +52,8 @@ particlesJS('particles-js',
     "line_linked": {
       "enable": false,
       "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.14204657549380909,
+      "color": "#3a3c66",
+      "opacity": 0.4,
       "width": 1
     },
     "move": {
@@ -78,7 +80,7 @@ particlesJS('particles-js',
       },
       "onclick": {
         "enable": false,
-        "mode": "push"
+        "mode": "bubble"
       },
       "resize": true
     },
@@ -109,6 +111,6 @@ particlesJS('particles-js',
     }
   },
   "retina_detect": true
-  }
+}
             
 );
