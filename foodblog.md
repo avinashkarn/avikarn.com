@@ -434,8 +434,8 @@ div.desc {
 </div>
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="/image/foodblog/bananaFritters.jpg">
-      <img src="/image/foodblog/bananaFritters.jpg" alt="banana Fritters" width="auto" height="400" class="img-thumbnail">
+    <a target="_blank" href="/image/photography/bananaFritters.jpg">
+      <img src="/image/photography/bananaFritters.jpg" alt="banana Fritters" width="auto" height="400" class="img-thumbnail">
     </a>
     <div class="desc">banana Fritters</div>
   </div>
