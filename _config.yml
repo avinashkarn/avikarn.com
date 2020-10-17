@@ -23,7 +23,7 @@
 
 # List of links in the navigation bar
   navbar-links:
-    About Me/Contact: "resume"
+    About Me / Contact: "resume"
     Tutorials:
       - Machine Learning 1: "https://avikarn.com/2020-06-26-MachineLearning_rf_glmnet/"
       - RNA-seq DF: "https://avikarn.com/2020-07-02-RNAseq_DeSeq2/"
