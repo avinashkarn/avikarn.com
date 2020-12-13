@@ -22,7 +22,7 @@ __Building genetic maps__ can be challenging and sometimes quite stressful, espe
 
 
 {: .box-note}
-<i class="fa fa-commenting" aria-hidden="true"></i> **Note:** If you have an amplicon sequencing (`AmpSeq` or `rhAmpSeq`) haplotype data, you can convert the data into a psuedo VCF file using <a href="https://github.com/avinashkarn/analyze_amplicon/blob/master/haplotype_to_VCF.pl"> Haplotype to VCF </a> PERL script.
+<i class="fa fa-commenting" aria-hidden="true"></i> **Note:** If you have an amplicon sequencing (`AmpSeq` or `rhAmpSeq`) haplotype data, you can convert the data into a psuedo VCF file using <a href="https://github.com/avinashkarn/analyze_amplicon/blob/master/haplotype_to_VCF.pl"> Haplotype to VCF </a> PERL script. 
 
 <h2> Quality control analysis </h2>
 Prior to building genetic maps - I strongly advise to perform QC analysis on your genetic data.
