@@ -25,7 +25,7 @@
   navbar-links:
     About Me / Contact: "resume"
     Tutorials:
-      - Machine Learning 1: "https://avikarn.com/2020-06-26-MachineLearning_rf_glmnet/"
+      - GS Machine Learning: "https://avikarn.com/2020-08-01-GenomicSelection_ML_H2_G2F/"
       - RNA-seq DF: "https://avikarn.com/2020-07-02-RNAseq_DeSeq2/"
       - Genetic Mapping: "https://avikarn.com/2019-04-17-Genetic-Mapping-in-Lep-MAP3/"    
       - AmpSeq Concept: "https://avikarn.com/2019-04-21-AmpSeq/"
