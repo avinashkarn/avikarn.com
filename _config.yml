@@ -101,7 +101,7 @@
 # Select which links to show in the footer
   footer-links-active:
     rss: false
-    facebook: true
+    facebook: false
     email: true
     twitter: true
     google-plus: false
@@ -122,7 +122,7 @@
 # Select which share links to show in posts
   share-links-active:
     twitter: true
-    facebook: true
+    facebook: false
     google: false
     linkedin: true
 
