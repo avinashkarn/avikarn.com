@@ -1,27 +1,25 @@
 ---
 layout: base
 ---
-
-
 <!DOCTYPE html>
 <title>Example</title>
+
 <!-- Styles -->	
 <style>
 .example1 {
  height: 50px;	
- overflow: show;
+ overflow: hidden;
  position: relative;
 }
 .example1 h3 {
- font-size: 12px;
- font-size: 16px;
- color: red;
+ font-size: 3em;
+ color: limegreen;
  position: absolute;
- width: 300%;
- height: 300%;
+ width: 100%;
+ height: 100%;
  margin: 0;
  line-height: 50px;
- text-align: left;
+ text-align: center;
  /* Starting position */
  -moz-transform:translateX(100%);
  -webkit-transform:translateX(100%);	
@@ -53,13 +51,16 @@ layout: base
  }
 }
 </style>
-<!-- HTML -->	
-<div class="example1">
-	<h3>DISCLAIMER: For the record, none of the ideas expressed in this blog post are shared, supported, or endorsed in any manner by my employer, AgReliant Genetics LLC.</h3>
-</div>
+
 
 
 {% include header.html type="page" %}
+
+<!-- HTML -->	
+<div class="example1">
+<h3>DISCLAIMER: Contents on this website are solely my own and do not express the views or opinions of my employer, AgReliant Genetics LLC</h3>
+</div>
+
 <div class="container" role="main">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
