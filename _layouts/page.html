@@ -1,65 +1,37 @@
 ---
 layout: base
 ---
-<!DOCTYPE html>
-<title>Example</title>
+.commentary {
+  font-family:Roboto-Regular;
+  font-size:20px;
+  color:#101010;
+float:left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
 
-<!-- Styles -->	
-<style>
-.example1 {
- height: 50px;	
- overflow: hidden;
- position: relative;
+marquee img {
+    margin-left:3%;
+    margin-right:3%;
+    float:left;
+    white-space:nowrap;
 }
-.example1 h3 {
- font-size: 3em;
- color: limegreen;
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- /* Starting position */
- -moz-transform:translateX(100%);
- -webkit-transform:translateX(100%);	
- transform:translateX(100%);
- /* Apply animation to this element */	
- -moz-animation: example1 15s linear infinite;
- -webkit-animation: example1 15s linear infinite;
- animation: example1 15s linear infinite;
-}
-/* Move it (define the animation) */
-@-moz-keyframes example1 {
- 0%   { -moz-transform: translateX(100%); }
- 100% { -moz-transform: translateX(-100%); }
-}
-@-webkit-keyframes example1 {
- 0%   { -webkit-transform: translateX(100%); }
- 100% { -webkit-transform: translateX(-100%); }
-}
-@keyframes example1 {
- 0%   { 
- -moz-transform: translateX(100%); /* Firefox bug fix */
- -webkit-transform: translateX(100%); /* Firefox bug fix */
- transform: translateX(100%); 		
- }
- 100% { 
- -moz-transform: translateX(-100%); /* Firefox bug fix */
- -webkit-transform: translateX(-100%); /* Firefox bug fix */
- transform: translateX(-100%); 
- }
-}
-</style>
+
 
 
 
 {% include header.html type="page" %}
 
-<!-- HTML -->	
-<div class="example1">
-<h3>DISCLAIMER: Contents on this website are solely my own and do not express the views or opinions of my employer, AgReliant Genetics LLC</h3>
-</div>
+<marquee scrollamount="30" behavior="scroll" direction="left" style="background-color:#FEC33B">
+
+  <div style="padding-top:10px;">
+    <div style="white-space:nowrap; width:300%" *ngFor = "let text of data">
+      <span class="commentary">DISCLAIMER: Contents on this website are solely my own and do not express the views or opinions of my employer, AgReliant Genetics LLC</span>
+    </div>
+  </div>
+</marquee>
+
 
 <div class="container" role="main">
   <div class="row">
