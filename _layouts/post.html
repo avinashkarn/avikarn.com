@@ -16,26 +16,26 @@ layout: base
 <style>
 .example1 {
  height: 50px;	
- overflow: hidden;
+ overflow: show;
  position: relative;
 }
 .example1 h3 {
- font-size: 3em;
+ font-size: 16px;
  color: red;
  position: absolute;
  width: 100%;
  height: 100%;
  margin: 0;
  line-height: 50px;
- text-align: center;
+ text-align: left;
  /* Starting position */
  -moz-transform:translateX(100%);
  -webkit-transform:translateX(100%);	
  transform:translateX(100%);
  /* Apply animation to this element */	
- -moz-animation: example1 15s linear infinite;
- -webkit-animation: example1 15s linear infinite;
- animation: example1 15s linear infinite;
+ -moz-animation: example1 30s linear infinite;
+ -webkit-animation: example1 30s linear infinite;
+ animation: example1 30s linear infinite;
 }
 /* Move it (define the animation) */
 @-moz-keyframes example1 {
@@ -60,15 +60,16 @@ layout: base
 }
 </style>
 
-<!-- HTML -->	
-<div class="example1">
-<h4>DISCLAIMER: Contents on this website are solely my own and do not express the views or opinions of my employer, AgReliant Genetics LLC</h4>
-</div>
+
 
 
 
 {% include header.html type="post" %}
 
+<!-- HTML -->	
+<div class="example1">
+<h3>DISCLAIMER: For the record, none of the ideas expressed in this blog post are shared, supported, or endorsed in any manner by my employer, AgReliant Genetics LLC.</h3>
+</div>
 
 <div class="container">
   <div class="row">
@@ -131,8 +132,7 @@ layout: base
         {% endif %}
       </ul>
 
-      <marquee behavior="scroll" direction="left">DISCLAIMER: Contents on this website are solely my own and do not express the views or opinions of my employer, AgReliant Genetics LLC </marquee>
-      {% if page.comments %}
+      
         <div class="disqus-comments">
           {% include disqus.html %}
         </div>
