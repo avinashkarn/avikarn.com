@@ -3,58 +3,30 @@ layout: base
 ---
 
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Title of the document</title>
-    <style>
-      div {
-        background-color: #1c87c9;
-        color: #fff;
-        padding: 5px;
-      }
-      p {
-        -moz-animation: marquee 30s linear infinite;
-        -webkit-animation: marquee 30s linear infinite;
-        animation: marquee 30s linear infinite;
-      }
-      @-moz-keyframes marquee {
-        0% {
-          transform: translateX(100%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-      @-webkit-keyframes marquee {
-        0% {
-          transform: translateX(100%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-      @keyframes marquee {
-        0% {
-          -moz-transform: translateX(100%);
-          -webkit-transform: translateX(100%);
-          transform: translateX(100%)
-        }
-        100% {
-          -moz-transform: translateX(-100%);
-          -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div>
-      <p>DISCLAIMER: For the record, none of the ideas expressed in this blog post are shared, supported, or endorsed in any manner by my employer, AgReliant Genetics LLC.</p>
-    </div>
-  </body>
-</html>
+.commentary {
+  font-family:Roboto-Regular;
+  font-size:15px;
+  color:#101010;
+float:left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
 
+marquee img {
+    margin-left:3%;
+    margin-right:3%;
+    float:left;
+    white-space:nowrap;
+}
+<marquee scrollamount="30" behavior="scroll" direction="left" style="background-color:#FEC33B">
+
+  <div style="padding-top:10px;">
+    <div style="white-space:nowrap; width:300%" *ngFor = "let text of data">
+      <span class="commentary">DISCLAIMER: For the record, none of the ideas expressed in this blog post are shared, supported, or endorsed in any manner by my employer, AgReliant Genetics LLC.</span>
+
+    </div>
+  </div>
 
 {% include header.html type="page" %}
 <div class="container" role="main">
