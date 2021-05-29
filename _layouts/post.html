@@ -2,16 +2,6 @@
 layout: base
 ---
 
-.commentary {
-  font-family:Roboto-Regular;
-  font-size:20px;
-  color:#801c1c;
-float:left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space:nowrap;
-}
-
 <!-- particles.js exclusion -->
 <style>
   #particles-js{
@@ -23,13 +13,13 @@ float:left;
 {% include header.html type="post" %}
 
 <marquee scrollamount="10" behavior="scroll" direction="left" style="background-color:#b7fe3b">
-
   <div style="padding-top:10px;">
     <div style="white-space:nowrap; width:300%" *ngFor = "let text of data">
-      <span class="commentary">DISCLAIMER: For the record, none of the ideas expressed in this blog post are shared, supported, or endorsed in any manner by my employer, AgReliant Genetics LLC.</span>
+      <span class="commentary">DISCLAIMER: The postings expressed in this site are my own and are NOT shared, supported, or endorsed in any manner by AgReliant Genetics LLC.</span>
     </div>
   </div>
 </marquee>
+
 
 <div class="container">
   <div class="row">
