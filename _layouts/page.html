@@ -1,15 +1,6 @@
 ---
 layout: base
 ---
-.commentary {
-  font-family:Roboto-Regular;
-  font-size:20px;
-  color:#801c1c;
-float:left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space:nowrap;
-}
 
 
 {% include header.html type="page" %}
@@ -18,7 +9,7 @@ float:left;
 
   <div style="padding-top:10px;">
     <div style="white-space:nowrap; width:300%" *ngFor = "let text of data">
-      <span class="commentary">DISCLAIMER:The postings expressed in this site are my own and are NOT shared, supported, or endorsed in any manner by AgReliant Genetics LLC.</span>
+      <span class="commentary">DISCLAIMER: The postings expressed in this site are my own and are NOT shared, supported, or endorsed in any manner by AgReliant Genetics LLC.</span>
     </div>
   </div>
 </marquee>
