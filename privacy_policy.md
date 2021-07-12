@@ -1,6 +1,6 @@
 <center><h1>Privacy Policy</h1></center>
 
-DISCLAIMER: The postings expressed in this site are my own and are NOT shared, supported, or endorsed in any manner by AgReliant Genetics LLC.
+<i>DISCLAIMER: The postings expressed in this site are my own and are NOT shared, supported, or endorsed by any individual or organization.</i>
 
 https://AviKarn.com website follows the following privacy policy for all visitors on this website and its content:
 
