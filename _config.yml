@@ -24,7 +24,6 @@
 # List of links in the navigation bar
   navbar-links:
     About Me / Contact: "resume"
-      - Terms & Conditions: "https://avikarn.com/Terms_Conditions/"
       - Privacy Policy: "https://avikarn.com/privacy_policy/"
     Tutorials:
       - GS Machine Learning: "https://avikarn.com/2020-08-01-GenomicSelection_ML_H2_G2F/"
